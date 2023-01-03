@@ -1,132 +1,3 @@
-.header {
-  display: flex;
-  justify-content: center;
-
-  .header__container {
-    max-width: 1709px;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    @include adaptiv-paddingBottom(30, 20);
-    @include adaptiv-paddingTop(8, 4);
-    border-bottom: 1px solid #d9d9d9;
-  }
-
-  .header__title {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    max-width: 372px;
-  }
-
-  .header__logo {
-    display: flex;
-    cursor: pointer;
-    margin-right: 13px;
-  }
-
-	.header__social--icon:hover{
-		fill:black;
-	}
-
-	
-
-  .header__name {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    @include adaptiv-font(18, 12);
-    line-height: 22px;
-    color: #1b1b1b;
-  }
-
-  .header__nav--list {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .header__nav--link:not(:last-child) {
-    padding-right: 30px;
-  }
-
-  .header__social {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-
-  .header__nav--link {
-    outline: none;
-    text-decoration: none;
-  }
-
-  .header__nav--link-info {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1b1b1b;
-    transition: all 0.3s;
-  }
-
-  .header__nav--link-info:hover {
-    color: rgba(27, 27, 27, 0.7);
-  }
-
-  .header__nav--link:active {
-    color: #b34030;
-  }
-
-  .header__social--wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    margin-right: 33px;
-  }
-
-  .header__search {
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-
-  .header__search > i {
-    font-size: 18px;
-  }
-
-  .header__social--wrap:hover > .header__social--input {
-    max-width: 240px;
-    padding: 0 6px;
-  }
-
-  .header__social--input {
-    border: none;
-    background: none;
-    outline: none;
-    padding: 0;
-    transition: all 0.3s;
-    width: 0;
-    font-size: 16px;
-  }
-
-  .header__social--link:not(:last-child) {
-    margin-right: 25px;
-  }
-
-  .header__social--massanger {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-	.header__social--icon:hover{
-		color: #1b1b1b;
-	}
-}
-
 .photos {
   margin-top: 50px;
   display: flex;
@@ -144,31 +15,31 @@
     grid-area: 1 / 1 / 3 / 5;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-		width: 100%;
+    width: 100%;
   }
 
   &__left {
     grid-area: 1 / 1 / 3 / 3;
-		width: 100%;
-		max-width: 840px;
+    width: 100%;
+    max-width: 840px;
   }
 
   &__right {
     grid-area: 1 / 3 / 2 / 5;
-		width: 100%;
-		max-width: 840px;
+    width: 100%;
+    max-width: 840px;
   }
 
   &__right--right {
     grid-area: 2 / 3 / 3 / 4;
-		width: 100%;
-		max-width: 405px;
+    width: 100%;
+    max-width: 405px;
   }
 
   &__right--left {
     grid-area: 2 / 4 / 3 / 5;
-		width: 100%;
-		max-width: 405px;
+    width: 100%;
+    max-width: 405px;
   }
 
   .photos__text {
@@ -204,7 +75,7 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
-	@include adaptiv-marginBottom(150, 60);
+  @include adaptiv-marginBottom(150, 60);
 
   .match__container {
     width: 90%;
@@ -213,21 +84,18 @@
     flex-direction: column;
   }
 
- 
+  .match__block--line {
+    display: flex;
+    flex-direction: row;
+  }
 
-	.match__block--line{
-		display: flex;
-		flex-direction: row;
-	}
-
-	.line{
-		height: 2px;
-		width: 100%;
-		background: #952212;
-		margin-top: 30px;
-		width: 100%
-		
-	}
+  .line {
+    height: 2px;
+    width: 100%;
+    background: #952212;
+    margin-top: 30px;
+    width: 100%;
+  }
 
   .match__head {
     @include adaptiv-font(45, 20);
@@ -238,8 +106,8 @@
     letter-spacing: 0.01em;
     color: #1b1b1b;
     @include adaptiv-marginBottom(62, 36);
-		width: 100%;
-		max-width: 550px;
+    width: 100%;
+    max-width: 550px;
   }
 
   .match__block {
@@ -249,18 +117,16 @@
     justify-content: space-between;
     position: relative;
     border-right: 1px solid #d9d9d9;
-		min-width: 0;
-		align-items: center;
+    min-width: 0;
+    align-items: center;
   }
-
-	
 
   .match__opposition {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     @include adaptiv-marginBottom(30, 19);
-		min-width: 0;
+    min-width: 0;
   }
 
   .match__command {
@@ -270,7 +136,7 @@
     justify-content: center;
     text-align: center;
     max-width: 223px;
-		min-width: 0;
+    min-width: 0;
   }
 
   .match__data {
@@ -279,7 +145,7 @@
     align-self: center;
     text-align: center;
     border-top: 1px solid #d9d9d9;
-		min-width: 0;
+    min-width: 0;
   }
 
   .match__decal {
@@ -294,7 +160,7 @@
     line-height: 20px;
     letter-spacing: 0.01em;
     color: #952212;
-		min-width: 0;
+    min-width: 0;
   }
 
   .match__name {
@@ -305,20 +171,20 @@
     line-height: 22px;
     text-align: center;
     color: #1b1b1b;
-		min-width: 0;
-		transition: all 0.3s;
-		text-decoration: none;
-		outline: none;
+    min-width: 0;
+    transition: all 0.3s;
+    text-decoration: none;
+    outline: none;
   }
 
-	.match__name:hover{
-		color: rgba(27, 27, 27, 0.7);
-	}
+  .match__name:hover {
+    color: rgba(27, 27, 27, 0.7);
+  }
 
   .match__image {
     margin-bottom: 5px;
-		min-width: 0;
-		cursor: pointer;
+    min-width: 0;
+    cursor: pointer;
   }
 
   .match__time {
@@ -332,10 +198,8 @@
     color: #952212;
     margin-bottom: 5px;
     padding-top: 10px;
-		min-width: 0;
+    min-width: 0;
   }
-
-	
 
   .match__area {
     font-family: "Montserrat";
@@ -346,7 +210,7 @@
     text-align: center;
     letter-spacing: 0.01em;
     color: #1b1b1b;
-		min-width: 0;
+    min-width: 0;
   }
 
   .match__live {
@@ -355,45 +219,44 @@
     flex-direction: column;
     align-self: center;
     align-items: center;
-		min-width: 0;
+    min-width: 0;
   }
 
-	.match__arrows{
-		display: flex;
-		justify-content: center;
-		margin-top: 36px;
-	}
+  .match__arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+  }
 
-	.match__decal--decal{
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 800;
-		font-size: 25px;
-		line-height: 150%;
-		text-align: center;
-		color: #952212;
-	}
+  .match__decal--decal {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 150%;
+    text-align: center;
+    color: #952212;
+  }
 }
 
-.stats{
-	display: flex;
+.stats {
+  display: flex;
   justify-content: center;
 
-	&__container{
-		width: 90%;
+  &__container {
+    width: 90%;
     max-width: 1709px;
     display: flex;
     flex-direction: column;
-	}
+  }
 
-	&__block--line{
-		display: flex;
-		flex-direction: row;
-		
-	}
+  &__block--line {
+    display: flex;
+    flex-direction: row;
+  }
 
-	&__header{
-		@include adaptiv-font(45, 20);
+  &__header {
+    @include adaptiv-font(45, 20);
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 800;
@@ -404,50 +267,43 @@
     @include adaptiv-marginBottom(62, 36);
     width: fit-content;
     align-items: flex-end;
-		margin-right: 30px;
-	}
+    margin-right: 30px;
+  }
 
-	&__line{
-		height: 2px;
-		width: 100%;
-		background: #952212;
-	  margin-top: 30px;
-	}
+  &__line {
+    height: 2px;
+    width: 100%;
+    background: #952212;
+    margin-top: 30px;
+  }
 
-	&__total{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
+  &__total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-	&__charts--container{
-		max-width: 1056px;
-		width: 100%;
-		border: 1px solid rgba(27, 27, 27, 0.1);
-		border-radius: 10px;
-	}
+  &__charts--container {
+    max-width: 1056px;
+    width: 100%;
+    border: 1px solid rgba(27, 27, 27, 0.1);
+    border-radius: 10px;
+  }
 
-	&__chart{
-		width: 100%;
-		max-width: 1056px;
-		
-	}
+  &__chart {
+    width: 100%;
+    max-width: 1056px;
+  }
 
-	&__title{
-		display: flex;
-		align-self: flex-start;
-		padding: 30px;
-		width: 100%;
-		
-	}
+  &__title {
+    display: flex;
+    align-self: flex-start;
+    padding: 30px;
+    width: 100%;
+  }
 
-	&__row--title{
-		background: linear-gradient(90.5deg, #2660AE -4.69%, #0EA1D2 112.03%);
-		width: 100%;
-	}
-
-	
-
+  &__row--title {
+    background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
+    width: 100%;
+  }
 }
-
-

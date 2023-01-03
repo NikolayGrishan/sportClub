@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('../blocks/head/head.html')
+  @@include('../blocks/head/head.html')
 
-<body>
-  <div class="wrapper">
+  <body>
+    <div class="wrapper">
+      @@include('../blocks/header/header.html')
+      <!-- /.header -->
 
-    @@include('../blocks/header/header.html')
-    <!-- /.header --> 
+      <main class="main">
+        @@include('../blocks/main/home.html')
+        <!-- /.home -->
+      </main>
+      <!-- /.main -->
 
-    <main class="main">
-      
-    </main>
-    <!-- /.main -->
+      @@include('../blocks/footer/footer.html')
+      <!-- /.footer -->
+    </div>
+    <!-- /.wrapper -->
 
-
-    @@include('../blocks/footer/footer.html')
-    <!-- /.footer -->
-      
-  </div>
-  <!-- /.wrapper -->
-
-  <script src="js/main.min.js"></script>
-</body>
-
+    <script src="js/main.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>

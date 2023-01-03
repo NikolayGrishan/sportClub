@@ -1,10 +1,10 @@
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: inherit;
 }
 
@@ -126,7 +126,6 @@ img {
   display: block;
 }
 
-
 input,
 button,
 textarea,
@@ -139,19 +138,24 @@ textarea {
   outline: none;
 }
 
-textarea{
+textarea {
   resize: none;
 }
 
-a{
+a {
   text-decoration: none;
   cursor: pointer;
 }
 
-button{
+button {
   border: none;
   cursor: pointer;
-  background-color:transparent;
+  background-color: transparent;
   padding: 0;
-  outline:none;
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }

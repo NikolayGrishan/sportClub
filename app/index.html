@@ -1,35 +1,354 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title></title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+  />
+  <title>Sportclub.by</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+  />
 </head>
 
-<body>
-  <div class="wrapper">
 
-    <header class="header">
-  
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="header__container">
+    <div class="header__title">
+      <img class="header__logo" src="/image/logo__club.png" alt="logo" />
+      <h2 class="header__name">РЕСПУБЛИКАНСКИЕ СОРЕВНОВАНИЯ ПО ХОККЕЮ</h2>
+    </div>
+    <div class="header__nav">
+      <div class="header__nav--list">
+        <a href="" class="header__nav--link">
+          <h2 class="header__nav--link-info">Новости</h2>
+        </a>
+        <a href="" class="header__nav--link">
+          <h2 class="header__nav--link-info">Статистика</h2>
+        </a>
+        <a href="" class="header__nav--link">
+          <h2 class="header__nav--link-info">Фото</h2>
+        </a>
+        <a href="" class="header__nav--link">
+          <h2 class="header__nav--link-info">Документы</h2>
+        </a>
+        <a href="" class="header__nav--link">
+          <h2 class="header__nav--link-info">О турнире</h2>
+        </a>
+      </div>
+    </div>
+    <div class="header__social">
+      <div class="header__social--wrap">
+        <input
+          type="text"
+          class="header__social--input"
+          placeholder="Поиск..."
+        />
+        <a class="header__search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="header__social--massanger">
+        <a href="" class="header__social--link"
+          ><img src="/image/svg/vk.svg" alt="" class="header__social--icon"
+        /></a>
+        <a href="" class="header__social--link"
+          ><img src="/image/svg/inst.svg" alt="" class="header__social--icon"
+        /></a>
+        <a href="" class="header__social--link"
+          ><img src="/image/svg/fb.svg" alt="" class="header__social--icon"
+        /></a>
+        <a href="" class="header__social--link"
+          ><img src="/image/svg/YT.svg" alt="" class="header__social--icon"
+        /></a>
+      </div>
+    </div>
+  </div>
 </header>
-    <!-- /.header --> 
 
-    <main class="main">
-      
-    </main>
-    <!-- /.main -->
+      <!-- /.header -->
 
+      <main class="main">
+        
+      <!-- <header class="header">
+        
+      </header> -->
+      <section class="photos">
+        <div class="photos__container">
+          <div class="photos__collage">
+            <img class="photos__left" src="/image/big__plan.png" alt="" />
+            <img class="photos__right" src="/image/back__plan.png" alt="" />
+            <img class="photos__right--right" src="/image/custom.png" alt="" />
+            <img class="photos__right--left" src="/image/people.png" alt="" />
+          </div>
+          <a class="photos__nav--link" href="">
+            <p class="photos__text">Все фото</p>
+          </a>
+        </div>
+      </section>
+      <section class="match">
+        <div class="match__container">
+					<div class="match__block--line">
+          	<h2 class="match__head">СЛЕДУЮЩИЕ МАТЧИ</h2>
+						<div class="match__line line"></div>
+					</div>
+          <div class="slider match__slider">
+            <div class="match__block">
+              <div class="match__opposition">
+                <div class="match__command">
+                  <img
+                    class="match__image"
+                    src="/image/presidents_team.png"
+                    alt=""
+                  />
+                  <a class="match__name" href=""><p class="match__name">
+                    Команда Президента <br />
+                    Республики Беларусь
+                  </p></a>
+                </div>
+                <div class="match__live">
+                  <p class="match__decal">LIVE</p>
+                  <img class="match__icon" src="/image/svg/live.svg" alt="" />
+                </div>
+                <div class="match__command">
+                  <img class="match__image" src="/image/vitebsk.png" alt="" />
+                  <a class="match__name" href=""><p class="match__name">
+                    Команда <br />
+                    Витебской области
+                  </p></a>
+                </div>
+              </div>
+              <div class="match__data">
+                <p class="match__time">22.10.2022 12:00</p>
+                <p class="match__area">Олимпик Арена (малая площадка)</p>
+              </div>
+            </div>
+            <div class="match__block">
+              <div class="match__opposition">
+                <div class="match__command">
+                  <img
+                    class="match__image"
+                    src="/image/brest.png"
+                    alt=""
+                  />
+                  <a class="match__name" href=""><p class="match__name">
+                    Команда <br>
+										Брестской области
+                  </p></a>
+                </div>
+                <div class="match__live">
+                  <p class="match__decal--decal">VS</p>
+                </div>
+                <div class="match__command">
+                  <img class="match__image" src="/image/mogilev.png" alt="" />
+                  <p class="match__name">
+                    <a class="match__name" href="">Команда <br>
+										Могилевской области
+                  </p></a>
+                </div>
+              </div>
+              <div class="match__data">
+                <p class="match__time">22.10.2022 12:00</p>
+                <p class="match__area">Олимпик Арена (малая площадка)</p>
+              </div>
+            </div>
+            <div class="match__block">
+              <div class="match__opposition">
+                <div class="match__command">
+                  <img
+                    class="match__image"
+                    src="/image/minsk.png"
+                    alt=""
+                  />
+                  <a class="match__name" href=""><p class="match__name">
+                    Команда <br>
+										Минской области
+                  </p></a>
+                </div>
+                <div class="match__live">
+									<p class="match__decal--decal">VS</p>
+                </div>
+                <div class="match__command">
+                  <img class="match__image" src="/image/grodno.png" alt="" />
+                  <a class="match__name" href=""><p class="match__name">
+                    Команда <br>
+										Гродненской области
+                  </p></a>
+                </div>
+              </div>
+              <div class="match__data">
+                <p class="match__time">22.10.2022 12:00</p>
+                <p class="match__area">Олимпик Арена (малая площадка)</p>
+              </div>
+            </div>
+            <div class="match__block">
+              <div class="match__opposition">
+                <div class="match__command">
+                  <img
+                    class="match__image"
+                    src="/image/presidents_team.png"
+                    alt=""
+                  />
+                 <a class="match__name" href=""><p class="match__name">
+                    Команда Президента <br />
+                    Республики Беларусь
+                  </p></a>
+                </div>
+                <div class="match__live">
+									<p class="match__decal--decal">VS</p>
+                </div>
+                <div class="match__command">
+                  <img class="match__image" src="/image/vitebsk.png" alt="" />
+                  <a class="match__name" href=""><p class="match__name">
+                    Команда <br />
+                    Гродненской области
+                  </p></a>
+                </div>
+              </div>
+              <div class="match__data">
+                <p class="match__time">22.10.2022 12:00</p>
+                <p class="match__area">Олимпик Арена (малая площадка)</p>
+              </div>
+            </div>
+          </div>
+					<div class="match__arrows">
+					</div>
+        </div>
+      </section>
+			<section class="stats">
+				<div class="stats__container">
+					<div class="stats__block--line">
+          	<h2 class="stats__header">Статистика</h2>
+						<div class="stats__line line"></div>
+					</div>
+					<div class="stats__total">
+						<div class="stats__charts--container">
+							<table class="stats__chart">
+								<tr class="stats__row--title">
+									<td colspan="2" class="stats__title">Общая таблица</td>
+								</tr>
+								<tr class="stats__row">
+									<th class="stats__head">Команда</th>
+									<th class="stats__head">И</th>
+									<th class="stats__head">В</th>
+									<th class="stats__head">Н</th>
+									<th class="stats__head">П</th>
+									<th class="stats__head">Ш</th>
+									<th class="stats__head">Р</th>
+									<th class="stats__head">О</th>
+								</tr>
+								<tr class="stats__row">
+									<th class="stats__command">Команда Брестской области</th>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0:0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+								</tr>
+								<tr class="stats__row">
+									<th class="stats__command">Команда Гомельскойй области</th>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0:0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+								</tr>
+								<tr class="stats__row">
+									<th class="stats__command">Команда Витебской области</th>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0:0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+								</tr>
+								<tr class="stats__row">
+									<th class="stats__command">Команда Гродненской области</th>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0:0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+								</tr>
+								<tr class="stats__row">
+									<th class="stats__command">Команда Минской области</th>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0:0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+								</tr>
+								<tr class="stats__row">
+									<th class="stats__command">Команда Президента Республики Беларусь</th>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0:0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+								</tr>
+								<tr class="stats__row">
+									<th class="stats__command">Команда Могилевской области</th>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0:0</td>
+									<td class="stats__point">0</td>
+									<td class="stats__point">0</td>
+								</tr>
+							</table>
+						</div>
+					
+						<div class="stats__last">
 
-    <footer class="footer">
+						</div>
+					</div>
+				</div>
+			</section>
+
+		
+  
+
+        <!-- /.home -->
+      </main>
+      <!-- /.main -->
+
+      <footer class="footer">
 
 </footer>
-    <!-- /.footer -->
-      
-  </div>
-  <!-- /.wrapper -->
+      <!-- /.footer -->
+    </div>
+    <!-- /.wrapper -->
 
-  <script src="js/main.min.js"></script>
-</body>
-
+    <script src="js/main.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
