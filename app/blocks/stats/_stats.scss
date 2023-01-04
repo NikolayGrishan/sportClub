@@ -1,0 +1,68 @@
+.stats {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 90%;
+    max-width: 1709px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__block--line {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__header {
+    @include adaptiv-font(45, 20);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+    color: #1b1b1b;
+    position: relative;
+    @include adaptiv-marginBottom(62, 36);
+    width: fit-content;
+    align-items: flex-end;
+    margin-right: 30px;
+  }
+
+  &__line {
+    height: 2px;
+    width: 100%;
+    background: #952212;
+    margin-top: 30px;
+  }
+
+  &__total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__charts--container {
+    max-width: 1056px;
+    width: 100%;
+    border: 1px solid rgba(27, 27, 27, 0.1);
+    border-radius: 10px;
+  }
+
+  &__chart {
+    width: 100%;
+    max-width: 1056px;
+  }
+
+  &__title {
+    display: flex;
+    align-self: flex-start;
+    padding: 30px;
+    width: 100%;
+  }
+
+  &__row--title {
+    background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
+    width: 100%;
+  }
+}

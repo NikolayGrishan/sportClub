@@ -1,0 +1,71 @@
+.photos {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  .photos__container {
+    max-width: 1709px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__collage {
+    display: grid;
+    grid-area: 1 / 1 / 3 / 5;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+  }
+
+  &__left {
+    grid-area: 1 / 1 / 3 / 3;
+    width: 100%;
+    max-width: 840px;
+  }
+
+  &__right {
+    grid-area: 1 / 3 / 2 / 5;
+    width: 100%;
+    max-width: 840px;
+  }
+
+  &__right--right {
+    grid-area: 2 / 3 / 3 / 4;
+    width: 100%;
+    max-width: 405px;
+  }
+
+  &__right--left {
+    grid-area: 2 / 4 / 3 / 5;
+    width: 100%;
+    max-width: 405px;
+  }
+
+  .photos__text {
+    margin-top: 25px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #952212;
+    cursor: pointer;
+  }
+
+  .photos__text:hover {
+    color: #b34030;
+    transition: all 0.3s;
+  }
+
+  .photos__nav--link {
+    outline: none;
+    text-decoration: none;
+    align-self: end;
+  }
+
+  .photos__href {
+    width: 100%;
+  }
+}
