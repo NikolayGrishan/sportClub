@@ -1,7 +1,0 @@
-/node_modules
-/dist
-/package-lock.json
-/.gitignore
-/gulpfile.js
-/package.json
-/app/*.html
