@@ -15,12 +15,40 @@ $(document).ready(function(){
 				swipe:true,
 				touchThreshold:15,
 				waitForAnimate:false,
+				variableWidth:true,
 				appendArrows:$('.match__arrows'),
 
 								responsive: [
 					{
-						breakpoint: 1000,
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 2,
+							arrows:false,
+							dots: true,
+						}
+					},{
+						breakpoint: 500,
+						settings: {
+							slidesToShow: 1,
+							variableWidth:false,
+							arrows:false,
+							dots: true,
+						}
 					}
 				]
 		});
+});
+
+$(document).ready(function(){
+	$('.slider--n').slick({
+			arrows:true,
+			slidesToShow:1.25,
+			slidesToScroll:1,
+			speed:1000,
+			easing:'lenear',
+			appendArrows:$('.news__arrows'),
+			draggable:false,
+			infinite:true,
+			initialSlide:1,					
+	});
 });

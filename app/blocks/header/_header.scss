@@ -22,10 +22,15 @@
   }
 
   .header__logo {
-    display: flex;
     cursor: pointer;
-    margin-right: 13px;
+		
   }
+
+	.header__logo--link{
+		margin-right: 13px;
+		width: 30%;
+		min-width: 66px;
+	}
 
   .header__social--icon:hover {
     fill: black;
@@ -40,15 +45,10 @@
     color: #1b1b1b;
   }
 
-	.header__nav{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
 
   .header__nav--list {
     display: flex;
-    flex-direction: row;
+    
 		
   }
 
@@ -139,49 +139,3 @@
 
 }
 
-@media (max-width: 1300px) {
-		.header{
-			&__burger{
-				display: block;
-				position: relative;
-				width: 25px;
-				height: 25px;
-			}
-
-			&__burger::before,
-			&__burger::after{
-				content: '';
-				background-color: #333333;
-				position: absolute;
-				width: 100%;
-				height: 2px;
-				left: 0;
-			}
-
-			&__burger::before{
-				top: 0;
-			}
-
-			&__burger::after{
-				bottom: 0;
-			}
-
-			&__burger span{
-				position: absolute;
-				background-color: #333333;
-				left: 0;
-				width: 100%;
-				height: 2px;
-				top:12px
-
-			}
-
-			&__nav{
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
-		}
-}
