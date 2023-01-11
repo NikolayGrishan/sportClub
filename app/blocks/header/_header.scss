@@ -1,198 +1,113 @@
 .header {
-  display: flex;
-  justify-content: center;
-
-  .header__container {
-    max-width: 1709px;
-    width: 90%;
+  &__container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
-    @include adaptiv-paddingBottom(30, 20);
-    @include adaptiv-paddingTop(8, 4);
-    border-bottom: 1px solid #d9d9d9;
-  }
-
-  .header__title {
-    display: flex;
-    flex-direction: row;
     align-items: flex-end;
-    max-width: 372px;
+    border-bottom: 1px solid #d9d9d9;
+    @include adaptiv-paddingTop(51, 37);
+    @include adaptiv-paddingBottom(30, 18);
   }
 
-  .header__logo {
-    cursor: pointer;
-		
-  }
-
-	.header__logo--link{
-		margin-right: 13px;
-		width: 30%;
-		min-width: 66px;
-	}
-
-  .header__social--icon:hover {
-    fill: black;
-  }
-
-  .header__name {
-    font-family: "Montserrat";
-    font-style: normal;
+  &__title {
     font-weight: 700;
     @include adaptiv-font(18, 12);
     line-height: 22px;
     color: #1b1b1b;
+    @include adaptiv-paddingLeft(73, 70);
   }
 
-<<<<<<< Updated upstream
-
-  .header__nav--list {
+  &__logo {
     display: flex;
-    
-		
-=======
-  .header__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .header__nav--list {
-    display: flex;
-    flex-direction: row;
->>>>>>> Stashed changes
-  }
-
-  .header__nav--link:not(:last-child) {
-    padding-right: 30px;
-  }
-
-  .header__social {
-    display: flex;
-    flex-direction: row;
     align-items: flex-end;
+    position: relative;
+    max-width: 350px;
   }
 
-  .header__nav--link {
-    outline: none;
-    text-decoration: none;
+  &__img {
+    position: absolute;
   }
 
-  .header__nav--link-info {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1b1b1b;
-    transition: all 0.3s;
-  }
-
-  .header__nav--link-info:hover {
-    color: rgba(27, 27, 27, 0.7);
-  }
-
-  .header__nav--link:active {
-    color: #b34030;
-  }
-
-  .header__social--wrap {
+  &__nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    margin-right: 33px;
+    padding-right: 15px;
+
+    &-item {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #1b1b1b;
+      white-space: nowrap;
+
+      &:not(:last-child) {
+        @include adaptiv-paddingRight(30, 5);
+      }
+
+      &:hover {
+        transition: all 0.3s;
+        opacity: 0.5;
+      }
+    }
   }
 
-  .header__search {
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-
-  .header__search > i {
-    font-size: 18px;
-  }
-
-  .header__social--wrap:hover > .header__social--input {
-    max-width: 240px;
-    padding: 0 6px;
-  }
-
-  .header__social--input {
-    border: none;
-    background: none;
-    outline: none;
-    padding: 0;
-    transition: all 0.3s;
-    width: 0;
-    font-size: 16px;
-  }
-
-  .header__social--link:not(:last-child) {
-    margin-right: 25px;
-  }
-
-  .header__social--massanger {
+  &__social {
     display: flex;
-    flex-direction: row;
     align-items: center;
+
+    &-item {
+      min-width: 24px;
+
+      &:not(:first-child) {
+        @include adaptiv-marginLeft(20, 5);
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s;
+      }
+    }
   }
 
-  .header__social--icon:hover {
-    color: #1b1b1b;
+  &__search {
+    @include adaptiv-marginRight(10, 0);
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s;
+    }
   }
 
   &__burger {
+    cursor: pointer;
     display: none;
+    margin-left: 20px;
   }
 }
 
-<<<<<<< Updated upstream
-=======
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
   .header {
+    &__logo {
+      max-width: 300px;
+    }
+    &__nav {
+      display: none;
+    }
+    &__social {
+      &-item {
+        display: none;
+      }
+    }
     &__burger {
       display: block;
-      position: relative;
-      width: 25px;
-      height: 25px;
-    }
-
-    &__burger::before,
-    &__burger::after {
-      content: "";
-      background-color: #333333;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      left: 0;
-    }
-
-    &__burger::before {
-      top: 0;
-    }
-
-    &__burger::after {
-      bottom: 0;
-    }
-
-    &__burger span {
-      position: absolute;
-      background-color: #333333;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      top: 12px;
-    }
-
-    &__nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
     }
   }
 }
->>>>>>> Stashed changes
+
+@media (max-width: 420px) {
+  .header {
+    &__logo {
+      max-width: 200px;
+    }
+    &__title {
+      line-height: 15px;
+    }
+  }
+}
