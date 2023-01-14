@@ -43,7 +43,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".slider--n").slick({
     arrows: true,
-    slidesToShow: 1.25,
+    slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1000,
     easing: "lenear",
@@ -51,6 +51,29 @@ $(document).ready(function () {
     draggable: false,
     infinite: true,
     initialSlide: 1,
+		touchThreshold: 15,
+    waitForAnimate: false,
+
+		responsive: [
+      {
+        breakpoint: 1067,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+					variableWidth: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: false,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   });
 });
 
