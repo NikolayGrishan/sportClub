@@ -51,17 +51,17 @@ $(document).ready(function () {
     draggable: false,
     infinite: true,
     initialSlide: 1,
-		touchThreshold: 15,
+    touchThreshold: 15,
     waitForAnimate: false,
-		variableWidth: true,
+    variableWidth: true,
 
-		responsive: [
+    responsive: [
       {
         breakpoint: 1067,
         settings: {
           slidesToShow: 1,
           arrows: false,
-					variableWidth: true,
+          variableWidth: true,
           dots: true,
         },
       },
@@ -113,4 +113,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   statsTabs();
+
+  function dropDown() {
+    $(".stats__document-title").click(function (event) {
+      $(this).toggleClass("active").next().slideToggle();
+    });
+  }
+  dropDown();
 });
