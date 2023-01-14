@@ -1,18 +1,21 @@
 .stats {
   display: flex;
   justify-content: center;
-	flex-direction: column;
-	@include adaptiv-marginBottom(150, 80);
-  &__container {
-    width: 90%;
-    max-width: 1709px;
-    display: flex;
-    flex-direction: column;
-  }
+  flex-direction: column;
+  @include adaptiv-marginBottom(150, 80);
 
-  &__block--line {
-    display: flex;
-    flex-direction: row;
+  &__block {
+    &--line {
+      display: flex;
+    }
+
+    &--tab {
+      display: none;
+
+      &_active {
+        display: block;
+      }
+    }
   }
 
   &__header {
@@ -28,7 +31,7 @@
     width: fit-content;
     align-items: flex-end;
     margin-right: 30px;
-		padding-left: 5%;
+    padding-left: 5%;
   }
 
   &__line {
@@ -40,20 +43,28 @@
 
   &__total {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+    &--command {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+      justify-content: space-between;
+      @include adaptiv-marginRight(30, 16);
+      @include adaptiv-marginLeft(38, 16);
+      border-bottom: 1px solid #d9d9d9;
+      @include adaptiv-paddingBottom(21, 10);
+    }
   }
 
   &__charts--container {
     width: 60%;
     border: 1px solid rgba(27, 27, 27, 0.1);
     border-radius: 10px;
-		margin-right: 40px;
+    @include adaptiv-marginRight(40, 5);
   }
 
   &__chart {
     width: 100%;
-		border-radius: 10px;
   }
 
   &__title {
@@ -61,203 +72,269 @@
     align-self: flex-start;
     padding: 30px;
     width: 100%;
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 800;
-		@include adaptiv-font(25, 18);
-		line-height: 30px;
-		letter-spacing: 0.01em;
-		color: #FFFFFF;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    @include adaptiv-font(25, 18);
+    line-height: 30px;
+    color: #ffffff;
+
+    &--double {
+      display: flex;
+      justify-content: center;
+      padding: 30px 0;
+      background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    &--tab {
+      margin: 0 16px;
+      text-align: center;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      @include adaptiv-font(25, 18);
+      line-height: 30px;
+      color: rgba(255, 255, 255, 0.5);
+      white-space: nowrap;
+
+      &:hover {
+        transition: all 0.3s;
+        color: #ffffff;
+      }
+
+      &_active {
+        color: #ffffff;
+        border-bottom: 3px solid #ffffff;
+      }
+    }
   }
 
-  &__row--title {
-    background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
-    width: 100%;
+  &__row {
+    @include adaptiv-marginRight(30, 16);
+    @include adaptiv-marginLeft(25, 16);
+    margin-top: 9px;
+    margin-bottom: 9px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    &--first {
+      @include adaptiv-marginTop(30, 16);
+      border-bottom: 1px solid rgba(217, 217, 217, 0.4);
+      padding-bottom: 6px;
+    }
+
+    &--last {
+      @include adaptiv-marginBottom(30, 16);
+    }
+
+    &--even {
+      background: rgba(217, 217, 217, 0.2);
+    }
+
+    &--title {
+      background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
+      width: 100%;
+    }
   }
 
-	
+  &__point {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    @include adaptiv-font(18, 12);
+    line-height: 22px;
+    color: #1b1b1b;
+  }
 
+  &__command {
+    width: 50%;
 
-	&__point{
-		text-align: center;
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 400;
-		@include adaptiv-font(18, 12);
-		line-height: 22px;
-		color: #1B1B1B;
-		
-	}
+    &-text {
+      display: flex;
+      text-align: left;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      @include adaptiv-font(18, 10);
+      line-height: 150%;
+      color: #1b1b1b;
+      align-items: center;
+      padding-left: 9px;
 
-	&__command{
-		text-align: left;
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 800;
-		@include adaptiv-font(18, 10);
-		line-height: 150%;
-		color: #1B1B1B;
-	}
+      &:hover {
+        transition: all 0.3s;
+        color: #952212;
+      }
+    }
 
-	
+    &-img {
+      width: 40px;
+      @include adaptiv-marginRight(13, 5);
+    }
 
-	&__command--head{
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 800;
-		@include adaptiv-font(18, 15);
-		line-height: 150%;
-		color: #1B1B1B;
-	}
+    &--head {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      @include adaptiv-font(18, 15);
+      line-height: 150%;
+      color: #1b1b1b;
+      text-align: center;
+    }
+  }
 
-	&__head{
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 800;
-		@include adaptiv-font(18, 15);
-		line-height: 22px;
-		color: #1B1B1B;
-	}
+  &__head {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    @include adaptiv-font(18, 15);
+    line-height: 22px;
+    color: #1b1b1b;
+  }
 
-	&__last{
+  &__last {
     width: 40%;
     border: 1px solid rgba(27, 27, 27, 0.1);
     border-radius: 10px;
-		display: flex;
-		flex-direction: column;
-	}
+    display: flex;
+    flex-direction: column;
+  }
 
-	&__title--double{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		@include adaptiv-paddingBottom(34, 34);
-		@include adaptiv-paddingTop(34, 34);
-		background: linear-gradient(90.5deg, #2660AE -4.69%, #0EA1D2 112.03%);
-		border-radius: 10px 10px 0px 0px;
-	}
+  &__match {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
 
-	&__title--tab{
-		@include adaptiv-paddingRight(46, 59);
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 800;
-		@include adaptiv-font(25, 18);
-		line-height: 30px;
-		letter-spacing: 0.01em;
-		color: rgba(255, 255, 255, 0.5);
+  &__team {
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 39%;
+  }
 
-	}
+  &__versus {
+    white-space: nowrap;
+    align-self: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    @include adaptiv-font(25, 18);
+    text-align: center;
+    color: #952212;
+    width: 22%;
+  }
 
-	
-	
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 25%;
+    margin-right: 7px;
+  }
 
-	&__total--command{
-		display: flex;
-		flex-direction: row;
-		padding-top: 30px;
-		justify-content: space-between;
-		@include adaptiv-paddingRight(30, 16);
-		@include adaptiv-paddingLeft(38, 16);
-		border-bottom: 1px solid #D9D9D9;
-		@include adaptiv-paddingBottom(21, 10);
-	}
+  &__logo {
+    width: 60px;
+  }
 
-	&__row{
-		display: flex;
-		flex-direction: row;
-	}
+  &__number {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #1b1b1b;
+    padding-top: 10px;
+  }
 
-	&__team{
-		align-self: center;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 150px;;
-		
-	}
+  &__square {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #1b1b1b;
+  }
 
-	&__versus{
-		align-items: center;
-		align-self: center;
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 800;
-		@include adaptiv-font(25, 18);
-		text-align: center;
-		color: #952212;
-		@include adaptiv-paddingRight(25, 10);
-		@include adaptiv-paddingLeft(25, 10);
-		width: 105px;
-	}
+  &__name {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #1b1b1b;
+  }
 
+  &__final {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #ffffff;
+    background: #952212;
+    border-radius: 50px;
+    padding: 6px 15px;
+    white-space: nowrap;
+  }
+}
 
-	&__data{
-		align-self: center;
-		text-align: center;
-		width: 25%;
-	}
+@media (max-width: 1000px) {
+  .stats {
+    &__total {
+      flex-direction: column;
+    }
+    &__charts--container {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    &__last {
+      width: 100%;
+    }
+    &__title {
+      &--tab {
+        &:first-child {
+          @include adaptiv-marginRight(200, 5);
+        }
+        &:last-child {
+          @include adaptiv-marginLeft(200, 5);
+        }
+      }
+    }
+  }
+}
 
-	&__logo{
-		object-fit: cover;
-		max-width: 50px;
-	}
-
-	&__number{
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 800;
-		font-size: 18px;
-		line-height: 22px;
-		text-align: center;
-		letter-spacing: 0.01em;
-		color: #1B1B1B;
-	}
-
-	&__square{
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 15px;
-		text-align: center;
-		letter-spacing: 0.01em;
-		color: #1B1B1B;
-	}
-
-	&__name{
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 800;
-		font-size: 12px;
-		line-height: 15px;
-		text-align: center;
-		color: #1B1B1B;
-	}
-
-	&__block--tab{
-			display: none;
-
-			
-	}
-
-	&__block--tab:target{
-		display: block;
-	}
-
-	&__final{
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 800;
-		font-size: 12px;
-		line-height: 15px;
-		text-align: center;
-		letter-spacing: 0.01em;
-		color: #FFFFFF;
-		background: #952212;
-		border-radius: 50px;
-	}
-
+@media (max-width: 700px) {
+  .stats {
+    .container {
+      width: 100%;
+    }
+    &__title {
+      &--double {
+        justify-content: space-between;
+      }
+      &--tab {
+        &:first-child {
+          margin-right: 0;
+          @include adaptiv-marginLeft(400, 10);
+        }
+        &:last-child {
+          margin-left: 0;
+          @include adaptiv-marginRight(400, 10);
+        }
+      }
+    }
+  }
 }

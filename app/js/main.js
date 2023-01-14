@@ -99,4 +99,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   openMobileSidebar();
+
+  function statsTabs() {
+    let statsNav = $(".stats__title--tab");
+    let statsContent = $(".stats__block--tab");
+
+    statsNav.on("click", function (event) {
+      let activeContent = $(this).attr("data-target");
+      statsNav.removeClass("stats__title--tab_active");
+      statsContent.removeClass("stats__block--tab_active");
+      $(activeContent).addClass("stats__block--tab_active");
+      $(this).addClass("stats__title--tab_active");
+    });
+  }
+  statsTabs();
 });
