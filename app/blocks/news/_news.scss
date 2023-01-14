@@ -124,6 +124,11 @@
 		&__block{
 			flex-direction: column;
 			max-width: 500px;
+		
+		}
+
+		&__image{
+			padding-right: 0;
 		}
 	}
 }

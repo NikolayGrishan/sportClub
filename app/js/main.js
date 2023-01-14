@@ -53,6 +53,7 @@ $(document).ready(function () {
     initialSlide: 1,
 		touchThreshold: 15,
     waitForAnimate: false,
+		variableWidth: true,
 
 		responsive: [
       {
