@@ -17,11 +17,13 @@
   }
 
   &__name {
+    font-family: "Montserrat";
+    font-style: normal;
     font-weight: 700;
     @include adaptiv-font(18, 12);
     line-height: 22px;
     color: #ffffff;
-    max-width: 292px;
+    max-width: 332px;
     margin-left: 10px;
   }
 
@@ -40,6 +42,16 @@
 
   &__img2 {
     margin-right: 47px;
+    height: 120px;
+    width: 136px;
+    background: url('/images/footer/logo2.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__img2:hover {
+    background: url('/images/footer/logo2.1.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
   }
 
   &__info {
@@ -50,13 +62,21 @@
   }
 
   &__tel {
+    font-family: "Montserrat";
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: #ffffff;
   }
 
+  &__tel:hover {
+    color: #EBEBEB;
+  }
+
   &__mail {
+    font-family: "Montserrat";
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -64,13 +84,24 @@
     padding-bottom: 20px;
   }
 
+  &__mail:hover {
+    color: #EBEBEB;
+  }
+
   &__adress {
+    font-family: "Montserrat";
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     text-align: right;
     color: #ffffff;
     @include adaptiv-paddingBottom(65, 35);
+  }
+
+  &__adress:hover {
+    color: #EBEBEB;
+    cursor: pointer;
   }
 
   &__social {
@@ -84,6 +115,8 @@
   }
 
   &__bottom {
+    font-family: "Montserrat";
+    font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
@@ -129,6 +162,7 @@
   .footer {
     &__container {
       flex-direction: column;
+      align-items: center;
     }
     &__title {
       padding-bottom: 75px;
@@ -141,6 +175,18 @@
     }
     &__adress {
       text-align: left;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    &__name {
+      max-width: 169px;
+      line-height: 14.63px;
+    }
+    &__container {
+      align-items: flex-start;
     }
   }
 }
