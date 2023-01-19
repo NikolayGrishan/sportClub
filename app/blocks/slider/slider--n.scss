@@ -10,6 +10,14 @@
 /* Коннкретный слайдер */
 .slider--n {
   position: relative;
+  .slick-list {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 450px;
+    padding: 0px 15px 0px 15px;
+  }
 }
 
 .news__arrows .slick-arrow.slick-prev {
