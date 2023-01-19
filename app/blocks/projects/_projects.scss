@@ -1,0 +1,90 @@
+.projects {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    margin-top: 165px;
+
+    &__container {
+        min-width: 1130px;
+        // height: 336px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        top: -40px;
+        right: 20px;
+    }
+
+    &__block--line {
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+    }
+
+    .line {
+        height: 1px;
+        background: rgba(31, 20, 18, 0.1);
+        margin-top: 25px;
+        width: 32.5%;
+    }
+
+    .line2 {
+        margin-left: 29%;
+        margin-right: 20px;
+        width: 8%;
+    }
+
+    &__head {
+        @include adaptiv-font(45, 20);
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        line-height: 55px;
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        // @include adaptiv-marginBottom(62, 36);
+        padding-left: 40px;
+        margin-right: 30px;
+        padding-bottom: 12px;
+    }
+
+    &__text {
+        max-width: 442px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        @include adaptiv-font(18, 15);
+        @include adaptiv-paddingBottom(40, 7);
+        line-height: 150%;
+        color: #1b1b1b;
+        min-width: 0;
+        padding-left: 40px;
+    }
+
+    
+
+    &__btn {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(18, 15);
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        background: #ffffff;
+        border: 2px solid #952212;
+        border-radius: 5px;
+        padding: 22px 60px;
+        margin-left: 40px;
+        margin-bottom: 57px;
+        transition: all 0.3s ease 0s;
+    }
+
+    &__btn:hover {
+        background: #952212;
+        color: #ffffff;
+    }
+}
