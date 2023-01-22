@@ -1,10 +1,14 @@
 $(document).ready(function () {
     $(".popup").magnificPopup();
+});
 
-    $("#cross").click(function () {
+$(document).ready(function () {
+    $('#cross').click(function() {
         $.magnificPopup.close();
     });
+});
 
+$(document).ready(function () {
     $(".slider").slick({
         arrows: true,
         slidesToShow: 3,
