@@ -57,6 +57,54 @@
     display: flex;
     align-items: center;
 
+    &__vk {
+      width: 24px;
+      height: 24px;
+      background: url('/images/svg/vk.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      &:hover {
+        background: url('/images/svg/vk-black.svg');
+      }
+    }
+
+    &__inst {
+      width: 24px;
+      height: 24px;
+      background: url('/images/svg/inst.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      &:hover {
+        background: url('/images/svg/inst-black.svg');
+      }
+    }
+
+    &__fb {
+      width: 24px;
+      height: 24px;
+      background: url('/images/svg/fb.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      &:hover {
+        background: url('/images/svg/fb-black.svg');
+      }
+    }
+
+    &__YT {
+      width: 24px;
+      height: 24px;
+      background: url('/images/svg/YT.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      &:hover {
+        background: url('/images/svg/YT-black.svg');
+      }
+    }
+
     &-item {
       min-width: 24px;
 
@@ -73,9 +121,14 @@
 
   &__search {
     @include adaptiv-marginRight(10, 0);
+    width: 24px;
+    height: 24px;
+    background: url('/images/svg/search.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
     &:hover {
-      transform: scale(1.1);
-      transition: all 0.3s;
+      cursor: pointer;
+      background: url('/images/svg/search-black.svg');
     }
   }
 

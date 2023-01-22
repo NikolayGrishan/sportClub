@@ -6,7 +6,6 @@
 
     &__container {
         min-width: 1130px;
-        // height: 336px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         position: relative;
@@ -21,7 +20,7 @@
     &__block--line {
         display: flex;
         flex-direction: row;
-        padding-top: 40px;
+        @include adaptiv-paddingTop(40, 25);
     }
 
     .line {
@@ -57,20 +56,20 @@
         font-style: normal;
         font-weight: 400;
         @include adaptiv-font(18, 15);
-        @include adaptiv-paddingBottom(40, 7);
         line-height: 150%;
         color: #1b1b1b;
         min-width: 0;
         padding-left: 40px;
+        padding-right: 10px;
     }
-
-    
 
     &__btn {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 800;
         @include adaptiv-font(18, 15);
+        @include adaptiv-marginTop(40, 25);
+        @include adaptiv-marginBottom(57, 40);
         line-height: 22px;
         letter-spacing: 0.01em;
         color: #1b1b1b;
@@ -79,12 +78,85 @@
         border-radius: 5px;
         padding: 22px 60px;
         margin-left: 40px;
-        margin-bottom: 57px;
         transition: all 0.3s ease 0s;
     }
 
     &__btn:hover {
         background: #952212;
         color: #ffffff;
+    }
+}
+
+@media (max-width: 1300px) {
+    .projects {
+        .line2 {
+            margin-left: 35%;
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .projects {
+        &__container {
+            min-width: 1027px;
+        }
+    }
+}
+
+@media (max-width: 1075px) {
+    .projects {
+        margin-bottom: 100px;
+        margin-top: 83px;
+        &__container {
+            min-width: initial;
+            min-height: 460px;
+        }
+
+        &__img {
+            width: 292px;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            top: initial;
+            right: initial;
+            margin-bottom: 20px;
+        }
+
+        &__btn {
+            padding: 24px 119px;
+            margin-left: 0px;
+            display: block;
+            margin-left: 40px;
+        }
+
+        .line2 {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .projects {
+        &__container {
+            max-width: 343px;
+        }
+
+        &__head {
+            padding-left: 16px;
+            margin-right: 14px;
+        }
+
+        &__text {
+            padding-left: 16px;
+        }
+
+        &__btn {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .line {
+            width: 100%;
+        }
     }
 }
