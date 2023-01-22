@@ -1,477 +1,593 @@
 <section class="stats">
-  <div class="stats__block--line">
-    <h2 class="stats__header">Статистика</h2>
-    <div class="stats__line line"></div>
-  </div>
-  <div class="container">
-    <div class="stats__total">
-      <div class="stats__charts--container">
-        <table class="stats__chart">
-          <tr class="stats__row--title">
-            <td colspan="7" class="stats__title">Общая таблица</td>
-          </tr>
-          <tr class="stats__row stats__row--first">
-            <th class="stats__command stats__command--head">Команда</th>
-            <th class="stats__head">И</th>
-            <th class="stats__head">В</th>
-            <th class="stats__head">Н</th>
-            <th class="stats__head">П</th>
-            <th class="stats__head">Ш</th>
-            <th class="stats__head">Р</th>
-            <th class="stats__head">О</th>
-          </tr>
-          <tr class="stats__row">
-            <th class="stats__command">
-              <a class="stats__command-text" href="">
-                <img
-                  class="stats__command-img"
-                  src="/images/brest.png"
-                  alt=""
-                />
-                Команда Брестской области
-              </a>
-            </th>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0:0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-          </tr>
-          <tr class="stats__row stats__row--even">
-            <th class="stats__command">
-              <a class="stats__command-text" href="">
-                <img
-                  class="stats__command-img"
-                  src="/images/gomel.png"
-                  alt=""
-                />
-                Команда Гомельской области
-              </a>
-            </th>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0:0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-          </tr>
-          <tr class="stats__row">
-            <th class="stats__command">
-              <a class="stats__command-text" href="">
-                <img
-                  class="stats__command-img"
-                  src="/images/vitebsk.png"
-                  alt=""
-                />
-                Команда Витебской области
-              </a>
-            </th>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0:0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-          </tr>
-          <tr class="stats__row stats__row--even">
-            <th class="stats__command">
-              <a class="stats__command-text" href="">
-                <img
-                  class="stats__command-img"
-                  src="/images/grodno.png"
-                  alt=""
-                />
-                Команда Гродненской области
-              </a>
-            </th>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0:0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-          </tr>
-          <tr class="stats__row">
-            <th class="stats__command">
-              <a class="stats__command-text" href="">
-                <img
-                  class="stats__command-img"
-                  src="/images/minsk.png"
-                  alt=""
-                />
-                Команда Минской области
-              </a>
-            </th>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0:0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-          </tr>
-          <tr class="stats__row stats__row--even">
-            <th class="stats__command">
-              <a class="stats__command-text" href="">
-                <img
-                  class="stats__command-img"
-                  src="/images/presidents.png"
-                  alt=""
-                />
-                Команда Президента Республики Беларусь
-              </a>
-            </th>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0:0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-          </tr>
-          <tr class="stats__row stats__row--last">
-            <th class="stats__command">
-              <a class="stats__command-text" href="mogilev-page.html">
-                <img
-                  class="stats__command-img"
-                  src="/images/mogilev.png"
-                  alt=""
-                />
-                Команда Могилевской области
-              </a>
-            </th>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0:0</td>
-            <td class="stats__point">0</td>
-            <td class="stats__point">0</td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="stats__last">
-        <nav class="stats__title--double">
-          <button
-            class="stats__title--tab stats__title--tab_active"
-            data-target="#tab_01"
-          >
-            Последние матчи
-          </button>
-          <button class="stats__title--tab" data-target="#tab_02">
-            Плей-офф
-          </button>
-        </nav>
-        <div class="stats__scroll">
-          <div class="stats__block--tab stats__block--tab_active" id="tab_01">
-            <div class="stats__total--command">
-              <div class="stats__data">
-                <p class="stats__number">09.04.2022</p>
-                <p class="stats__square">Олимпик Арена (малая площадка)</p>
-              </div>
-              <div class="stats__match">
-                <a class="stats__team" href="">
-                  <img
-                    src="/images/presidents.png"
-                    alt=""
-                    class="stats__logo"
-                  />
-                  <p class="stats__name">
-                    Команда Президента Республики Беларусь
-                  </p>
-                </a>
-                <p class="stats__versus">5 : 1</p>
-                <a class="stats__team" href="">
-                  <img src="/images/vitebsk.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Гродненской области</p>
-                </a>
-              </div>
-            </div>
-            <div class="stats__total--command">
-              <div class="stats__data">
-                <p class="stats__number">02.04.2022</p>
-                <p class="stats__square">Ледовый дворец спорта Барановичи</p>
-              </div>
-              <div class="stats__match">
-                <a class="stats__team" href="">
-                  <img src="/images/vitebsk.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Брестской области</p>
-                </a>
-                <p class="stats__versus">2 : 1</p>
-                <a class="stats__team" href="">
-                  <img src="/images/gomel.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Гомельской области</p>
-                </a>
-              </div>
-            </div>
-            <div class="stats__total--command">
-              <div class="stats__data">
-                <p class="stats__number">02.04.2022</p>
-                <p class="stats__square">Минский Ледовый дворец</p>
-              </div>
-              <div class="stats__match">
-                <a class="stats__team" href="">
-                  <img src="/images/minsk.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Минской области</p>
-                </a>
-                <p class="stats__versus">1 : 6</p>
-                <a class="stats__team" href="">
-                  <img src="/images/vitebsk.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Брестской области</p>
-                </a>
-              </div>
-            </div>
-            <div class="stats__total--command">
-              <div class="stats__data">
-                <p class="stats__number">26.03.2022</p>
-                <p class="stats__square">Олимпик Арена (малая площадка)</p>
-              </div>
-              <div class="stats__match">
-                <a class="stats__team" href="">
-                  <img
-                    src="/images/presidents.png"
-                    alt=""
-                    class="stats__logo"
-                  />
-                  <p class="stats__name">
-                    Команда Президента Республики Беларусь
-                  </p>
-                </a>
-                <p class="stats__versus">8 : 6</p>
-                <a class="stats__team" href="">
-                  <img src="/images/gomel.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Гомельской области</p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="stats__block--tab" id="tab_02">
-            <div class="stats__total--command">
-              <div class="stats__data">
-                <span class="stats__final">Финал 2-й матч</span>
-                <p class="stats__number">09.04.2022</p>
-                <p class="stats__square">Олимпик Арена (малая площадка)</p>
-              </div>
-              <div class="stats__match">
-                <a class="stats__team" href="">
-                  <img
-                    src="/images/presidents.png"
-                    alt=""
-                    class="stats__logo"
-                  />
-                  <p class="stats__name">
-                    Команда Президента Республики Беларусь
-                  </p>
-                </a>
-                <p class="stats__versus">5 : 1</p>
-                <a class="stats__team" href="">
-                  <img src="/images/minsk.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Минской области</p>
-                </a>
-              </div>
-            </div>
-            <div class="stats__total--command">
-              <div class="stats__data">
-                <span class="stats__final">Финал 1-й матч</span>
-                <p class="stats__number">02.04.2022</p>
-                <p class="stats__square">Ледовый дворец спорта Барановичи</p>
-              </div>
-              <div class="stats__match">
-                <a class="stats__team" href="">
-                  <img src="/images/minsk.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Минской области</p>
-                </a>
-                <p class="stats__versus">1 : 6</p>
-                <a class="stats__team" href="">
-                  <img
-                    src="/images/presidents.png"
-                    alt=""
-                    class="stats__logo"
-                  />
-                  <p class="stats__name">
-                    Команда Президента Республики Беларусь
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="stats__total--command">
-              <div class="stats__data">
-                <span class="stats__final">Полуфинал</span>
-                <p class="stats__number">02.04.2022</p>
-                <p class="stats__square">Минский Ледовый дворец</p>
-              </div>
-              <div class="stats__match">
-                <a class="stats__team" href="">
-                  <img
-                    src="/images/presidents.png"
-                    alt=""
-                    class="stats__logo"
-                  />
-                  <p class="stats__name">
-                    Команда Президента Республики Беларусь
-                  </p>
-                </a>
-                <p class="stats__versus">8 : 6</p>
-                <a class="stats__team" href="">
-                  <img src="/images/gomel.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Гомельской области</p>
-                </a>
-              </div>
-            </div>
-            <div class="stats__total--command">
-              <div class="stats__data">
-                <span class="stats__final">Полуфинал</span>
-                <p class="stats__number">26.03.2022</p>
-                <p class="stats__square">Олимпик Арена (малая площадка)</p>
-              </div>
-              <div class="stats__match">
-                <a class="stats__team" href="">
-                  <img src="/images/minsk.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Минской области</p>
-                </a>
-                <p class="stats__versus">10 : 5</p>
-                <a class="stats__team" href="">
-                  <img src="/images/brest.png" alt="" class="stats__logo" />
-                  <p class="stats__name">Команда Брестской области</p>
-                </a>
-              </div>
-            </div>
-          </div>
+    <div class="hidden">
+        <div id="form">
+          <button>Отправить</button>
         </div>
-      </div>
     </div>
-
-    <div class="stats__total">
-      <div class="stats__document">
-        <div class="stats__title stats__document-title">
-          Документы турнира
-          <img
-            class="stats__document-title--down"
-            src="/images/icons/drop-down.svg"
-            alt=""
-          />
-          <img
-            class="stats__document-title--up"
-            src="/images/icons/drop-up.svg"
-            alt=""
-          />
-        </div>
-        <div class="stats__document-info">
-          <div class="stats__document-item">
-            <p class="stats__document-text">Положение турнира</p>
-            <div class="stats__document-download">
-              <a class="stats__document-link" href="">
-                <img src="/images/icons/download.svg" alt="" />
-              </a>
-              <a class="stats__document-pdf" href="">
-                <img src="/images/icons/pdf.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="stats__document-item">
-            <p class="stats__document-text">Календарь турнира</p>
-            <div class="stats__document-download">
-              <a class="stats__document-link" href="">
-                <img src="/images/icons/download.svg" alt="" />
-              </a>
-              <a class="stats__document-pdf" href="">
-                <img src="/images/icons/pdf.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="stats__document-item">
-            <p class="stats__document-text" id="document-text-last-child">Бланк согласования игроков</p>
-            <div class="stats__document-download">
-              <a class="stats__document-link" href="">
-                <img src="/images/icons/download.svg" alt="" />
-              </a>
-              <a class="stats__document-pdf" href="">
-                <img src="/images/icons/pdf.svg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="stats__bombardier">
-        <table class="stats__chart stats__bombardier-table">
-          <tr class="stats__row--title">
-            <td colspan="6" class="stats__title">Лучшие бомбардиры</td>
-          </tr>
-          <tr class="stats__row stats__row--first stats__bombardier-row">
-            <th class="stats__command--head stats__bombardier-play">Игрок</th>
-            <th class="stats__command--head stats__bombardier-team">Команда</th>
-            <th class="stats__head">И</th>
-            <th class="stats__head">Ш</th>
-            <th class="stats__head">А</th>
-            <th class="stats__head">О</th>
-          </tr>
-          <tr class="stats__row stats__bombardier-row">
-            <td class="stats__bombardier-play">
-              <a class="stats__bombardier-player" href="">Олег Антоненко</a>
-            </td>
-            <th class="stats__bombardier-team">
-              <img
-                class="stats__bombardier-img"
-                src="/images/presidents.png"
-                alt=""
-              />
-              <span class="stats__bombardier-text">
-                Команда Президента Республики Беларусь
-              </span>
-            </th>
-            <td class="stats__point">9</td>
-            <td class="stats__point">7</td>
-            <td class="stats__point">16</td>
-            <td class="stats__point">23</td>
-          </tr>
-          <tr class="stats__row stats__bombardier-row stats__row--even">
-            <td class="stats__bombardier-play">
-              <a class="stats__bombardier-player" href="">Николай Лукашенко</a>
-            </td>
-            <th class="stats__bombardier-team">
-              <img
-                class="stats__bombardier-img"
-                src="/images/presidents.png"
-                alt=""
-              />
-              <span class="stats__bombardier-text">
-                Команда Президента Республики Беларусь
-              </span>
-            </th>
-            <td class="stats__point">9</td>
-            <td class="stats__point">10</td>
-            <td class="stats__point">5</td>
-            <td class="stats__point">15</td>
-          </tr>
-          <tr class="stats__row stats__bombardier-row">
-            <td class="stats__bombardier-play">
-              <a class="stats__bombardier-player" href="">Михаил Грабовский</a>
-            </td>
-            <th class="stats__bombardier-team">
-              <img
-                class="stats__bombardier-img"
-                src="/images/presidents.png"
-                alt=""
-              />
-              <span class="stats__bombardier-text">
-                Команда Президента Республики Беларусь
-              </span>
-            </th>
-            <td class="stats__point">7</td>
-            <td class="stats__point">9</td>
-            <td class="stats__point">5</td>
-            <td class="stats__point">14</td>
-          </tr>
-        </table>
-        <a class="stats__bombardier-all" href="">Все бомбардиры</a>
-      </div>
+    <div class="stats__block--line">
+        <h2 class="stats__header">Статистика</h2>
+        <div class="stats__line line"></div>
     </div>
-  </div>
+    <div class="container">
+        <div class="stats__total">
+            <div class="stats__charts--container">
+                <table class="stats__chart">
+                    <tr class="stats__row--title">
+                        <td colspan="7" class="stats__title">Общая таблица</td>
+                    </tr>
+                    <tr class="stats__row stats__row--first">
+                        <th class="stats__command stats__command--head">
+                            Команда
+                        </th>
+                        <th class="stats__head">И</th>
+                        <th class="stats__head">В</th>
+                        <th class="stats__head">Н</th>
+                        <th class="stats__head">П</th>
+                        <th class="stats__head">Ш</th>
+                        <th class="stats__head">Р</th>
+                        <th class="stats__head">О</th>
+                    </tr>
+                    <tr class="stats__row">
+                        <th class="stats__command">
+                            <a class="stats__command-text" href="">
+                                <img
+                                    class="stats__command-img"
+                                    src="/images/brest.png"
+                                    alt=""
+                                />
+                                Команда Брестской области
+                            </a>
+                        </th>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0:0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                    </tr>
+                    <tr class="stats__row stats__row--even">
+                        <th class="stats__command">
+                            <a class="stats__command-text" href="">
+                                <img
+                                    class="stats__command-img"
+                                    src="/images/gomel.png"
+                                    alt=""
+                                />
+                                Команда Гомельской области
+                            </a>
+                        </th>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0:0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                    </tr>
+                    <tr class="stats__row">
+                        <th class="stats__command">
+                            <a class="stats__command-text" href="">
+                                <img
+                                    class="stats__command-img"
+                                    src="/images/vitebsk.png"
+                                    alt=""
+                                />
+                                Команда Витебской области
+                            </a>
+                        </th>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0:0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                    </tr>
+                    <tr class="stats__row stats__row--even">
+                        <th class="stats__command">
+                            <a class="stats__command-text" href="">
+                                <img
+                                    class="stats__command-img"
+                                    src="/images/grodno.png"
+                                    alt=""
+                                />
+                                Команда Гродненской области
+                            </a>
+                        </th>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0:0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                    </tr>
+                    <tr class="stats__row">
+                        <th class="stats__command">
+                            <a class="stats__command-text" href="">
+                                <img
+                                    class="stats__command-img"
+                                    src="/images/minsk.png"
+                                    alt=""
+                                />
+                                Команда Минской области
+                            </a>
+                        </th>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0:0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                    </tr>
+                    <tr class="stats__row stats__row--even">
+                        <th class="stats__command">
+                            <a class="stats__command-text" href="">
+                                <img
+                                    class="stats__command-img"
+                                    src="/images/presidents.png"
+                                    alt=""
+                                />
+                                Команда Президента Республики Беларусь
+                            </a>
+                        </th>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0:0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                    </tr>
+                    <tr class="stats__row stats__row--last">
+                        <th class="stats__command">
+                            <a
+                                class="stats__command-text"
+                                href="mogilev-page.html"
+                            >
+                                <img
+                                    class="stats__command-img"
+                                    src="/images/mogilev.png"
+                                    alt=""
+                                />
+                                Команда Могилевской области
+                            </a>
+                        </th>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0:0</td>
+                        <td class="stats__point">0</td>
+                        <td class="stats__point">0</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="stats__last">
+                <nav class="stats__title--double">
+                    <button
+                        class="stats__title--tab stats__title--tab_active"
+                        data-target="#tab_01"
+                    >
+                        Последние матчи
+                    </button>
+                    <button class="stats__title--tab" data-target="#tab_02">
+                        Плей-офф
+                    </button>
+                </nav>
+                <div class="stats__scroll">
+                    <div
+                        class="stats__block--tab stats__block--tab_active"
+                        id="tab_01"
+                    >
+                        <div class="stats__total--command">
+                            <div class="stats__data">
+                                <p class="stats__number">09.04.2022</p>
+                                <p class="stats__square">
+                                    Олимпик Арена (малая площадка)
+                                </p>
+                            </div>
+                            <div class="stats__match">
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/presidents.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Президента Республики Беларусь
+                                    </p>
+                                </a>
+                                <p class="stats__versus">5 : 1</p>
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/vitebsk.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Гродненской области
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stats__total--command">
+                            <div class="stats__data">
+                                <p class="stats__number">02.04.2022</p>
+                                <p class="stats__square">
+                                    Ледовый дворец спорта Барановичи
+                                </p>
+                            </div>
+                            <div class="stats__match">
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/vitebsk.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Брестской области
+                                    </p>
+                                </a>
+                                <p class="stats__versus">2 : 1</p>
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/gomel.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Гомельской области
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stats__total--command">
+                            <div class="stats__data">
+                                <p class="stats__number">02.04.2022</p>
+                                <p class="stats__square">
+                                    Минский Ледовый дворец
+                                </p>
+                            </div>
+                            <div class="stats__match">
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/minsk.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Минской области
+                                    </p>
+                                </a>
+                                <p class="stats__versus">1 : 6</p>
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/vitebsk.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Брестской области
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stats__total--command">
+                            <div class="stats__data">
+                                <p class="stats__number">26.03.2022</p>
+                                <p class="stats__square">
+                                    Олимпик Арена (малая площадка)
+                                </p>
+                            </div>
+                            <div class="stats__match">
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/presidents.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Президента Республики Беларусь
+                                    </p>
+                                </a>
+                                <p class="stats__versus">8 : 6</p>
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/gomel.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Гомельской области
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats__block--tab" id="tab_02">
+                        <div class="stats__total--command">
+                            <div class="stats__data">
+                                <span class="stats__final">Финал 2-й матч</span>
+                                <p class="stats__number">09.04.2022</p>
+                                <p class="stats__square">
+                                    Олимпик Арена (малая площадка)
+                                </p>
+                            </div>
+                            <div class="stats__match">
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/presidents.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Президента Республики Беларусь
+                                    </p>
+                                </a>
+                                <p class="stats__versus">5 : 1</p>
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/minsk.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Минской области
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stats__total--command">
+                            <div class="stats__data">
+                                <span class="stats__final">Финал 1-й матч</span>
+                                <p class="stats__number">02.04.2022</p>
+                                <p class="stats__square">
+                                    Ледовый дворец спорта Барановичи
+                                </p>
+                            </div>
+                            <div class="stats__match">
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/minsk.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Минской области
+                                    </p>
+                                </a>
+                                <p class="stats__versus">1 : 6</p>
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/presidents.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Президента Республики Беларусь
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stats__total--command">
+                            <div class="stats__data">
+                                <span class="stats__final">Полуфинал</span>
+                                <p class="stats__number">02.04.2022</p>
+                                <p class="stats__square">
+                                    Минский Ледовый дворец
+                                </p>
+                            </div>
+                            <div class="stats__match">
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/presidents.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Президента Республики Беларусь
+                                    </p>
+                                </a>
+                                <p class="stats__versus">8 : 6</p>
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/gomel.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Гомельской области
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="stats__total--command">
+                            <div class="stats__data">
+                                <span class="stats__final">Полуфинал</span>
+                                <p class="stats__number">26.03.2022</p>
+                                <p class="stats__square">
+                                    Олимпик Арена (малая площадка)
+                                </p>
+                            </div>
+                            <div class="stats__match">
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/minsk.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Минской области
+                                    </p>
+                                </a>
+                                <p class="stats__versus">10 : 5</p>
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="/images/brest.png"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Брестской области
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats__total">
+            <div class="stats__document">
+                <div class="stats__title stats__document-title">
+                    Документы турнира
+                    <img
+                        class="stats__document-title--down"
+                        src="/images/icons/drop-down.svg"
+                        alt=""
+                    />
+                    <img
+                        class="stats__document-title--up"
+                        src="/images/icons/drop-up.svg"
+                        alt=""
+                    />
+                </div>
+                <div class="stats__document-info">
+                    <div class="stats__document-item">
+                        <p class="stats__document-text">Положение турнира</p>
+                        <div class="stats__document-download">
+                            <a class="stats__document-link" href="">
+                                <img src="/images/icons/download.svg" alt="" />
+                            </a>
+                            <a class="stats__document-pdf" href="">
+                                <img src="/images/icons/pdf.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stats__document-item">
+                        <p class="stats__document-text">Календарь турнира</p>
+                        <div class="stats__document-download">
+                            <a class="stats__document-link" href="">
+                                <img src="/images/icons/download.svg" alt="" />
+                            </a>
+                            <a class="stats__document-pdf" href="">
+                                <img src="/images/icons/pdf.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stats__document-item">
+                        <p
+                            class="stats__document-text"
+                            id="document-text-last-child"
+                        >
+                            Бланк согласования игроков
+                        </p>
+                        <div class="stats__document-download">
+                            <a class="stats__document-link" href="">
+                                <img src="/images/icons/download.svg" alt="" />
+                            </a>
+                            <a class="stats__document-pdf" href="">
+                                <img src="/images/icons/pdf.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats__bombardier">
+                <table class="stats__chart stats__bombardier-table">
+                    <tr class="stats__row--title">
+                        <td colspan="6" class="stats__title">
+                            Лучшие бомбардиры
+                        </td>
+                    </tr>
+                    <tr
+                        class="stats__row stats__row--first stats__bombardier-row"
+                    >
+                        <th class="stats__command--head stats__bombardier-play">
+                            Игрок
+                        </th>
+                        <th class="stats__command--head stats__bombardier-team">
+                            Команда
+                        </th>
+                        <th class="stats__head">И</th>
+                        <th class="stats__head">Ш</th>
+                        <th class="stats__head">А</th>
+                        <th class="stats__head">О</th>
+                    </tr>
+                    <tr class="stats__row stats__bombardier-row">
+                        <td class="stats__bombardier-play">
+                            <a class="stats__bombardier-player" href=""
+                                >Олег Антоненко</a
+                            >
+                        </td>
+                        <th class="stats__bombardier-team">
+                            <img
+                                class="stats__bombardier-img"
+                                src="/images/presidents.png"
+                                alt=""
+                            />
+                            <span class="stats__bombardier-text">
+                                Команда Президента Республики Беларусь
+                            </span>
+                        </th>
+                        <td class="stats__point">9</td>
+                        <td class="stats__point">7</td>
+                        <td class="stats__point">16</td>
+                        <td class="stats__point">23</td>
+                    </tr>
+                    <tr
+                        class="stats__row stats__bombardier-row stats__row--even"
+                    >
+                        <td class="stats__bombardier-play">
+                            <a class="stats__bombardier-player" href=""
+                                >Николай Лукашенко</a
+                            >
+                        </td>
+                        <th class="stats__bombardier-team">
+                            <img
+                                class="stats__bombardier-img"
+                                src="/images/presidents.png"
+                                alt=""
+                            />
+                            <span class="stats__bombardier-text">
+                                Команда Президента Республики Беларусь
+                            </span>
+                        </th>
+                        <td class="stats__point">9</td>
+                        <td class="stats__point">10</td>
+                        <td class="stats__point">5</td>
+                        <td class="stats__point">15</td>
+                    </tr>
+                    <tr class="stats__row stats__bombardier-row">
+                        <td class="stats__bombardier-play">
+                            <a class="stats__bombardier-player popup" href="#form"
+                                >Михаил Грабовский</a
+                            >
+                        </td>
+                        <th class="stats__bombardier-team">
+                            <img
+                                class="stats__bombardier-img"
+                                src="/images/presidents.png"
+                                alt=""
+                            />
+                            <span class="stats__bombardier-text">
+                                Команда Президента Республики Беларусь
+                            </span>
+                        </th>
+                        <td class="stats__point">7</td>
+                        <td class="stats__point">9</td>
+                        <td class="stats__point">5</td>
+                        <td class="stats__point">14</td>
+                    </tr>
+                </table>
+                <a class="stats__bombardier-all" href="">Все бомбардиры</a>
+            </div>
+        </div>
+    </div>
 </section>
