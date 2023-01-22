@@ -18,6 +18,7 @@
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
   />
+  <link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 
 
@@ -224,8 +225,78 @@
 
         <section class="stats">
     <div class="hidden">
-        <div id="form">
-          <button>Отправить</button>
+        <div id="form" class="form">
+            <div class="stats__popup">
+                <div class="stats__closePopup">
+                  <img src="/images/svg/cross.svg" alt="" class="stats__cross" id="cross">
+                </div>
+                <div class="stats__info">
+                  <img src="/images/michail__grabovski.png" alt="Michael Grabovski" class="stats__imgPlayer">
+                  <div class="stats__player">
+                    <h2 class="stats__nameTitle">Михаил Грабовский</h2>
+                    <div class="stats__teamCase">
+                      <img src="/images/presidents.png" alt="" class="stats__logoTeam">
+                      <p class="stats__textTeam">Команда Президента Республики Беларусь</p>
+                    </div>
+                    <div class="stats__teamLine"></div>
+                    <div class="stats__tables">
+                      <table class="stats__table">
+                        <tbody>
+                          <tr>
+                            <td class="stats__tdHead">Дата рождения:</td>
+                            <td class="stats__tdText">31. 01. 1984</td>
+                          </tr>
+                          <tr>
+                            <td class="stats__tdHead">Рост:</td>
+                            <td class="stats__tdText">1, 80см</td>
+                          </tr>
+                          <tr>
+                            <td class="stats__tdHead">Вес:</td>
+                            <td class="stats__tdText">82кг</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="stats__tableTwo">
+                        <tbody>
+                          <tr>
+                            <td class="stats__tdHeadTwo">Номер:</td>
+                            <td class="stats__tdTextTwo">44</td>
+                          </tr>
+                          <tr>
+                            <td class="stats__tdHeadTwo">Хват:</td>
+                            <td class="stats__tdTextTwo">Правый</td>
+                          </tr>
+                          <tr>
+                            <td class="stats__tdHeadTwo">Страна:</td>
+                            <td class="stats__tdTextTwo">Беларусь</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="stats__statistic">
+                    <p class="stats__statsTitleAdaptiv">Статистика</p>
+                    <table class="stats__tableThree">
+                        <tbody>
+                          <tr class="stats__trHead">
+                            <td class="stats__tdHeadThreeF">Статистика</td>
+                            <td class="stats__tdHeadThree stats__first">И</td>
+                            <td class="stats__tdHeadThree">Ш</td>
+                            <td class="stats__tdHeadThree">А</td>
+                            <td class="stats__tdHeadThree">О</td>
+                          </tr>
+                          <tr>
+                            <td class="stats__tdHeadThreeF"></td>
+                            <td class="stats__tdTextThree stats__first">7</td>
+                            <td class="stats__tdTextThree">9</td>
+                            <td class="stats__tdTextThree">5</td>
+                            <td class="stats__tdTextThree">14</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
         </div>
     </div>
     <div class="stats__block--line">
@@ -790,7 +861,9 @@
                     </tr>
                     <tr class="stats__row stats__bombardier-row">
                         <td class="stats__bombardier-play">
-                            <a class="stats__bombardier-player popup" href="#form"
+                            <a
+                                class="stats__bombardier-player popup"
+                                href="#form"
                                 >Михаил Грабовский</a
                             >
                         </td>
@@ -1061,5 +1134,6 @@
     <script src="/js/jquery-3.6.1.min.js"></script>
     <script src="/js/slick.min.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
   </body>
 </html>
