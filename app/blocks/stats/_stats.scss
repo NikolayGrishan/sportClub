@@ -23,6 +23,201 @@
         border-radius: 10px;
     }
 
+    &__popupBombardires {
+        background-color: #f5f5f5;
+        max-width: 1100px;
+        margin: auto;
+        position: relative;
+        box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
+        border-radius: 10px;
+    }
+
+    &__capBombardires {
+        background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
+        border-radius: 10px 10px 0px 0px;
+        padding: 30px;
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+    }
+
+    &__bodyBobbardires {
+        padding: 0px 25px 30px 30px;
+    }
+
+    &__teamLogo {
+        width: 31%;
+    }
+
+    &__linkTeamLogo {
+        display: flex;
+        align-items: center;
+        img {
+            width: 50px;
+            margin-right: 24px;
+        }
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #1b1b1b;
+            max-width: 207px;
+        }
+    }
+
+    &__playerBombardier {
+        display: flex;
+        align-items: center;
+        width: 22%;
+        &-texting {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 12);
+            line-height: 22px;
+            color: #1b1b1b;
+            @include adaptiv-paddingLeft(21px,10px);
+            &:hover {
+                color: #952212;
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    &__tableHeadPoints {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(18, 15);
+        line-height: 150%;
+        color: #1b1b1b;
+        text-align: center;
+        width: 5%;
+        &--texting {
+            display: flex;
+            align-items: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            @include adaptiv-font(18, 12);
+            line-height: 22px;
+            color: #1b1b1b;
+            width: 5%;
+            justify-content: center;
+        }
+    }
+
+    &__tableHeadTeam {
+        width: 15%;
+
+        &--teaming {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 150%;
+            color: #1b1b1b;
+            text-align: left;
+        }
+    }
+
+    &__tableHead {
+        width: 38%;
+
+        &--heading {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 150%;
+            color: #1b1b1b;
+            text-align: left;
+            @include adaptiv-paddingLeft(21px,10px);
+        }
+
+        &-texting {
+            display: flex;
+            text-align: left;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 10);
+            line-height: 150%;
+            color: #1b1b1b;
+            align-items: center;
+            padding-left: 21px;
+            &:hover {
+                transition: all 0.3s;
+                color: #952212;
+            }
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1b1b1b;
+            margin-right: 6px;
+            &:nth-child(6n) {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    &__arrowLeft {
+        font-size: 0;
+        background: url("/images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
+        width: 45px;
+        height: 45px;
+        border: none;
+        transition: all 0.3s;
+        margin-right: 20px;
+        cursor: pointer;
+        &:hover {
+            background: url("/images/svg/pagination-lhover.svg") 0 0 / 100%
+                no-repeat;
+        }
+    }
+
+    &__arrowRight {
+        font-size: 0;
+        background: url("/images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
+        width: 45px;
+        height: 45px;
+        border: none;
+        transition: all 0.3s;
+        margin-left: 20px;
+        cursor: pointer;
+        &:hover {
+            background: url("/images/svg/pagination-rhover.svg") 0 0 / 100%
+                no-repeat;
+        }
+    }
+
+    &__even {
+        background: rgba(217, 217, 217, 0.2);
+    }
+
+    &__capTitle {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+    }
+
     &__info {
         display: flex;
         align-items: flex-start;
@@ -599,6 +794,8 @@
         }
 
         &-text {
+            font-family: "Montserrat";
+            font-style: normal;
             font-weight: 400;
             font-size: 18px;
             line-height: 150%;
@@ -663,6 +860,21 @@
 
 @media (max-width: 900px) {
     .stats {
+        &__tableHeadTeam {
+            width: 23%;
+        }
+        &__tableHead {
+            width: 30%;
+        }
+        &__bodyBobbardires {
+            padding: 0px 0px 16px 16px;
+        }
+        &__linkTeamLogo {
+            justify-content: end;
+            p {
+                display: none;
+            }
+        }
         &__popup {
             max-width: 375px;
             padding: 16px;

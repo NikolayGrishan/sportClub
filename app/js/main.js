@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    $(".popupBombardires").magnificPopup();
+});
+
+$(document).ready(function () {
+    $('#crossBombardires').click(function() {
+        $.magnificPopup.close();
+    });
+});
+
+$(document).ready(function () {
     $(".popup").magnificPopup();
 });
 
@@ -58,6 +68,44 @@ $(document).ready(function () {
         speed: 1000,
         easing: "lenear",
         appendArrows: $(".news__arrows"),
+        draggable: false,
+        infinite: true,
+        initialSlide: 1,
+        touchThreshold: 15,
+        waitForAnimate: false,
+        variableWidth: true,
+
+        responsive: [
+            {
+                breakpoint: 1067,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    variableWidth: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                    arrows: false,
+                    dots: true,
+                },
+            },
+        ],
+    });
+});
+
+$(document).ready(function () {
+    $(".slider--rhl").slick({
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: "lenear",
+        appendArrows: $(".news--rhl__arrows"),
         draggable: false,
         infinite: true,
         initialSlide: 1,
