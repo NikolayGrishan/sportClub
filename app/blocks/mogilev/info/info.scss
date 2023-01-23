@@ -1,0 +1,263 @@
+.info {
+    display: flex;
+    align-items: flex-start;
+    &__teamCase {
+        width: 70%;
+        // max-/dswidth: 900px;
+    }
+    &__play {
+        margin-left: 28px;
+        width: 50%;
+    }
+
+    &__match {
+        margin-bottom: 38px;
+    }
+
+    &__last {
+        width: 100%;
+        border: 1px solid rgba(27, 27, 27, 0.1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__chart {
+        width: 100%;
+    }
+
+    &__bombardier {
+        border: 1px solid rgba(27, 27, 27, 0.1);
+        border-radius: 10px;
+        &-table {
+            @include adaptiv-marginBottom(25, 5);
+        }
+
+        &-row {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            @include adaptiv-paddingLeft(20, 10);
+            @include adaptiv-paddingRight(40, 20);
+        }
+
+        &-team {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-play {
+            width: 40%;
+            text-align: left;
+            align-self: center;
+        }
+
+        &-amplya {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1f1412;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-year {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #1f1412;
+        }
+
+        &-number {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #1f1412;
+        }
+
+        &-player {
+            white-space: nowrap;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 12);
+            line-height: 15px;
+            color: #1b1b1b;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #952212;
+            }
+        }
+    }
+
+    &__row {
+        @include adaptiv-marginRight(30, 16);
+        @include adaptiv-marginLeft(25, 16);
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        &--first {
+            margin-top: 11px;
+            border-bottom: 1px solid rgba(217, 217, 217, 0.4);
+        }
+
+        &--last {
+            @include adaptiv-marginBottom(30, 16);
+        }
+
+        &--even {
+            background: rgba(217, 217, 217, 0.2);
+        }
+
+        &--title {
+            display: block;
+            border-radius: 10px 10px 0px 0px;
+            background: linear-gradient(
+                90.5deg,
+                #2660ae -4.69%,
+                #0ea1d2 112.03%
+            );
+            width: 100%;
+        }
+    }
+
+    &__command {
+        width: 50%;
+
+        &-text {
+            display: flex;
+            text-align: left;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 10);
+            line-height: 150%;
+            color: #1b1b1b;
+            align-items: center;
+            padding-left: 9px;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #952212;
+            }
+        }
+
+        &-img {
+            width: 40px;
+            @include adaptiv-marginRight(13, 5);
+        }
+
+        &--head {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 150%;
+            color: #1b1b1b;
+        }
+    }
+
+    &__scroll {
+        height: 460px;
+        overflow-x: auto;
+    }
+    ::-webkit-scrollbar {
+        width: 9px;
+    }
+    ::-webkit-scrollbar-track {
+        background: rgba(217, 217, 217, 0.5);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #952212;
+        border-radius: 5px;
+    }
+
+    &__title {
+        display: flex;
+        align-self: flex-start;
+        padding: 30px;
+        width: 100%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(25, 18);
+        line-height: 30px;
+        color: #ffffff;
+
+        &--double {
+            display: flex;
+            justify-content: flex-start;
+            padding: 30px 0;
+            background: linear-gradient(
+                90.5deg,
+                #2660ae -4.69%,
+                #0ea1d2 112.03%
+            );
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        &--tab {
+            margin: 0 31px;
+            text-align: left;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(25, 18);
+            line-height: 30px;
+            color: #ffffff;
+            white-space: nowrap;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .info {
+        &__scroll {
+            height: 460px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .info {
+        &__scroll {
+            height: 400px;
+        }
+        &__title {
+            &--tab {
+                &:first-child {
+                    @include adaptiv-marginRight(200, 5);
+                }
+                &:last-child {
+                    @include adaptiv-marginLeft(200, 5);
+                }
+            }
+        }
+    }
+}

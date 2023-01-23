@@ -1,0 +1,5 @@
+.margins {
+    &__container {
+        @include adaptiv-marginTop(200, 100);
+    }
+}
