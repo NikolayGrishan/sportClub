@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    $(".searchingPopup").magnificPopup();
+});
+
+$(document).ready(function () {
+    $('#crossSearching').click(function() {
+        $.magnificPopup.close();
+    });
+});
+
+$(document).ready(function () {
     $(".popupBombardires").magnificPopup();
 });
 
