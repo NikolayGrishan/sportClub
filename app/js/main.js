@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $(".searchingPopup").magnificPopup();
+    $(".searchingPopup").magnificPopup({
+        alignTop: true
+    });
 });
 
 $(document).ready(function () {
