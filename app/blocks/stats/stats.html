@@ -1,4 +1,4 @@
-<section class="stats">
+<section class="stats" id="stats">
     <div class="hidden">
         <div id="form" class="form">
             <div class="stats__popup">
@@ -620,7 +620,10 @@
                         class="stats__block--tab stats__block--tab_active"
                         id="tab_01"
                     >
-                        <div class="stats__total--command" onclick="location.href='otchet-about-match.html'">
+                        <div
+                            class="stats__total--command"
+                            onclick="location.href='otchet-about-match.html'"
+                        >
                             <div class="stats__data">
                                 <p class="stats__number">09.04.2022</p>
                                 <p class="stats__square">
@@ -651,7 +654,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="stats__total--command" onclick="location.href='otchet-about-match.html'">
+                        <div
+                            class="stats__total--command"
+                            onclick="location.href='otchet-about-match.html'"
+                        >
                             <div class="stats__data">
                                 <p class="stats__number">02.04.2022</p>
                                 <p class="stats__square">
@@ -682,7 +688,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="stats__total--command" onclick="location.href='otchet-about-match.html'">
+                        <div
+                            class="stats__total--command"
+                            onclick="location.href='otchet-about-match.html'"
+                        >
                             <div class="stats__data">
                                 <p class="stats__number">02.04.2022</p>
                                 <p class="stats__square">
@@ -713,7 +722,10 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="stats__total--command" onclick="location.href='otchet-about-match.html'">
+                        <div
+                            class="stats__total--command"
+                            onclick="location.href='otchet-about-match.html'"
+                        >
                             <div class="stats__data">
                                 <p class="stats__number">26.03.2022</p>
                                 <p class="stats__square">
@@ -879,7 +891,7 @@
             </div>
         </div>
 
-        <div class="stats__playOff">
+        <div class="stats__playOff" id="playOff">
             <div class="stats__playOffTitle">
                 <h2>Плей-офф</h2>
             </div>
@@ -889,120 +901,222 @@
                     <h2 class="stats__finalSeria">Финальная серия</h2>
                     <h2 class="stats__winner">Победитель</h2>
                 </div>
+                
                 <div class="stats__playOffRating">
-                    <div class="stats__playOffCaseSemiFinal">
-                        <div class="stats__playOffPresidentTeam">
-                            <img
-                                src="/images/presidents.png"
-                                alt="team"
-                                class="stats__playOffLogoTeam"
-                            />
-                            <p class="stats__playOffNameTeam">
-                                Команда Президента Республики Беларусь
-                            </p>
-                            <p class="stats__playOffNumberTeam">8</p>
+                    <h2 class="stats__semiFinalAdaptiv">Полуфинал</h2>
+                    <div class="stats__playOffSemiFinalBlock">
+                        <div class="stats__playOffCaseTeam">
+                            <div class="stats__playOffCaseLogoNameTeam">
+                                <img
+                                    src="/images/presidents.png"
+                                    alt="logo"
+                                    class="stats__playOffLogoTeam"
+                                />
+                                <div class="stats__playOffTextCase">
+                                    <p class="stats__playOffTeamText">
+                                        Команда Президента
+                                    </p>
+                                    <p class="stats__playOffTeamText">
+                                        Республики Беларусь
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="stats__playOffTeamPoints">8</p>
                         </div>
-                        <div class="stats__playOffGomelTeam">
-                            <img
-                                src="/images/gomel.png"
-                                alt="team"
-                                class="stats__playOffLogoTeam"
-                            />
-                            <p class="stats__playOffNameTeamGomel">
-                                Команда Гомельской области
-                            </p>
-                            <p class="stats__playOffNumberTeam">6</p>
+                        <div class="stats__playOffCaseTeam">
+                            <div class="stats__playOffCaseLogoNameTeam">
+                                <img
+                                    src="/images/gomel.png"
+                                    alt="logo"
+                                    class="stats__playOffLogoTeam"
+                                />
+                                <div class="stats__playOffTextCase">
+                                    <p class="stats__playOffTeamText">
+                                        Команда
+                                    </p>
+                                    <p class="stats__playOffTeamText">
+                                        Гомельской области
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="stats__playOffTeamPoints">6</p>
                         </div>
-                        <div class="stats__playOffMinskTeam">
-                            <img
-                                src="/images/minsk.png"
-                                alt="team"
-                                class="stats__playOffLogoTeam"
-                            />
-                            <p class="stats__playOffNameTeam-minsk">
-                                Команда Минской области
-                            </p>
-                            <p class="stats__playOffNumberTeam">10</p>
+                        <div class="stats__playOffCaseTeam">
+                            <div class="stats__playOffCaseLogoNameTeam">
+                                <img
+                                    src="/images/minsk.png"
+                                    alt="logo"
+                                    class="stats__playOffLogoTeam"
+                                />
+                                <div class="stats__playOffTextCase">
+                                    <p class="stats__playOffTeamText">
+                                        Команда
+                                    </p>
+                                    <p class="stats__playOffTeamText">
+                                        Минской области
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="stats__playOffTeamPoints">10</p>
                         </div>
-                        <div class="stats__playOffPresidentTeam-brest">
-                            <img
-                                src="/images/brest.png"
-                                alt="team"
-                                class="stats__playOffLogoTeam"
-                            />
-                            <p class="stats__playOffNameTeam">
-                                Команда Брестской области
-                            </p>
-                            <p class="stats__playOffNumberTeam">5</p>
+                        <div class="stats__playOffCaseTeam">
+                            <div class="stats__playOffCaseLogoNameTeam">
+                                <img
+                                    src="/images/brest.png"
+                                    alt="logo"
+                                    class="stats__playOffLogoTeam"
+                                />
+                                <div class="stats__playOffTextCase">
+                                    <p class="stats__playOffTeamText">
+                                        Команда
+                                    </p>
+                                    <p class="stats__playOffTeamText">
+                                        Брестской области
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="stats__playOffTeamPoints">6</p>
                         </div>
                     </div>
                     <img
                         src="/images/playOffBranch.png"
                         alt=""
-                        class="stats__playOffBranchLeft"
+                        class="stats__playOffShemaLeft"
                     />
-                    <div class="stats__playOffCaseSemiFinal">
-                        <div class="stats__playOffTeamCase">
-                            <h2 class="stats__playOffFirstMatch">1-й матч</h2>
-                            <div class="stats__playOffCaseReverseFirst">
-                                <div class="stats__playOffPresidentTeam">
-                                    <img
-                                        src="/images/minsk.png"
-                                        alt="team"
-                                        class="stats__playOffLogoTeam"
-                                    />
-                                    <p class="stats__playOffNameTeam">
-                                        Команда Минской области
-                                    </p>
-                                    <p class="stats__playOffNumberTeam">1</p>
+                    <h2 class="stats__finalSeriaAdaptiv">Финальная серия</h2>
+                    <div class="stats__playOffFinalBlock">
+                        <div class="stats__playOffSecondMatch">
+                            <!-- <div class="stats__playOffMatchTitle"> -->
+                            <h2>1-й матч</h2>
+                            <!-- </div> -->
+
+                            <div class="stats__playOffCaseMatchTeam">
+                                <div class="stats__playOffCaseTeamF">
+                                    <div class="stats__playOffCaseLogoNameTeam">
+                                        <img
+                                            src="/images/minsk.png"
+                                            alt="logo"
+                                            class="stats__playOffLogoTeam"
+                                        />
+                                        <div class="stats__playOffTextCase">
+                                            <p class="stats__playOffTeamText">
+                                                Команда
+                                            </p>
+                                            <p class="stats__playOffTeamText">
+                                                Минской области
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="stats__playOffTeamPoints">1</p>
                                 </div>
-                                <div class="stats__playOffGomelTeam">
-                                    <img
-                                        src="/images/presidents.png"
-                                        alt="team"
-                                        class="stats__playOffLogoTeam"
-                                    />
-                                    <p class="stats__playOffNameTeamGomel">
-                                        Команда Президента Республики Беларусь
-                                    </p>
-                                    <p class="stats__playOffNumberTeam">6</p>
+                                <div class="stats__playOffCaseTeamF">
+                                    <div class="stats__playOffCaseLogoNameTeam">
+                                        <img
+                                            src="/images/presidents.png"
+                                            alt="logo"
+                                            class="stats__playOffLogoTeam"
+                                        />
+                                        <div class="stats__playOffTextCase">
+                                            <p class="stats__playOffTeamText">
+                                                Команда Президента
+                                            </p>
+                                            <p class="stats__playOffTeamText">
+                                                Республики Беларусь
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="stats__playOffTeamPoints">6</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="stats__playOffMinskTeam">
-                            <img
-                                src="/images/presidents.png"
-                                alt="team"
-                                class="stats__playOffLogoTeam"
-                            />
-                            <p class="stats__playOffNameTeam-minsk">
-                                Команда Президента Республики Беларусь
-                            </p>
-                            <p class="stats__playOffNumberTeam">5</p>
-                        </div>
-                        <div class="stats__playOffPresidentTeam-brest">
-                            <img
-                                src="/images/minsk.png"
-                                alt="team"
-                                class="stats__playOffLogoTeam"
-                            />
-                            <p class="stats__playOffNameTeam">
-                                Команда Минской области
-                            </p>
-                            <p class="stats__playOffNumberTeam">1</p>
+
+                        <div class="stats__playOffSecondMatchTeam">
+                            <h2>2-й матч</h2>
+                            <div class="stats__playOffCaseMatchTeam">
+                                <div
+                                    class="stats__playOffCaseTeamF"
+                                    id="stats__caseTwo"
+                                >
+                                    <div class="stats__playOffCaseLogoNameTeam">
+                                        <img
+                                            src="/images/presidents.png"
+                                            alt="logo"
+                                            class="stats__playOffLogoTeam"
+                                        />
+                                        <div class="stats__playOffTextCase">
+                                            <p class="stats__playOffTeamText">
+                                                Команда Президента
+                                            </p>
+                                            <p class="stats__playOffTeamText">
+                                                Республики Беларусь
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="stats__playOffTeamPoints">5</p>
+                                </div>
+                                <div class="stats__playOffCaseTeamF">
+                                    <div class="stats__playOffCaseLogoNameTeam">
+                                        <img
+                                            src="/images/minsk.png"
+                                            alt="logo"
+                                            class="stats__playOffLogoTeam"
+                                        />
+                                        <div class="stats__playOffTextCase">
+                                            <p class="stats__playOffTeamText">
+                                                Команда
+                                            </p>
+                                            <p class="stats__playOffTeamText">
+                                                Минской области
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="stats__playOffTeamPoints">1</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                     <img
                         src="/images/playOffBranchRight.png"
                         alt=""
-                        class="stats__playOffBranchRight"
+                        class="stats__playOffShemaRight"
                     />
+
+                    <div class="stats__winnerBlock">
+                        <h2 class="stats__winnerAdaptiv">Победитель</h2>
+                        <div class="stats__winnerTeam">
+                            <img src="/images/presidents.png" alt="" />
+                            <div class="stats__winnerText">
+                                <p>Команда Президента</p>
+                                <p>Республики Беларусь</p>
+                            </div>
+                        </div>
+                        <h2 class="stats__matchThirdPlaceAdaptiv">Матч за 3-е место</h2>
+                        <div class="stats__emptyBlock"></div>
+                        <div class="stats__matchThirdPlace">
+                            <h2>Матч за 3-е место</h2>
+                            <div class="stats__matchFirstTeam">
+                                <img src="/images/brest.png" alt="">
+                                <div class="stats__matchText">
+                                    <p>Команда</p>
+                                    <p>Брестской области</p>
+                                </div>
+                            </div>
+                            <div class="stats__matchFirstTeam">
+                                <img src="/images/gomel.png" alt="">
+                                <div class="stats__matchText">
+                                    <p>Команда</p>
+                                    <p>Гомельской области</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="stats__total">
-            <div class="stats__document">
+            <div class="stats__document" id="documents">
                 <div class="stats__title stats__document-title">
                     Документы турнира
                     <img

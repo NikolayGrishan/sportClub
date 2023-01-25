@@ -1,1227 +1,1486 @@
 .stats {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  @include adaptiv-marginBottom(150, 80);
-
-  .hidden {
-    display: none;
-  }
-
-  &__closePopup {
     display: flex;
-    justify-content: end;
-  }
-
-  &__popup {
-    padding: 20px;
-    background-color: #f5f5f5;
-    max-width: 852px;
-    margin: auto;
-    position: relative;
-    box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
-    border-radius: 10px;
-  }
-
-  &__popupBombardires {
-    background-color: #f5f5f5;
-    max-width: 1100px;
-    margin: auto;
-    position: relative;
-    box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
-    border-radius: 10px;
-  }
-
-  &__capBombardires {
-    background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
-    border-radius: 10px 10px 0px 0px;
-    padding: 30px;
-    display: flex;
-    flex-flow: row-reverse;
-    justify-content: space-between;
-  }
-
-  &__playOff {
-    border: 1px solid rgba(27, 27, 27, 0.1);
-    border-radius: 10px;
-    margin-bottom: 40px;
-  }
-
-  &__playOffTitle {
-    background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
-    border-radius: 10px 10px 0px 0px;
-    padding: 31px 0px 31px 31px;
-    h2 {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      font-size: 25px;
-      line-height: 30px;
-      letter-spacing: 0.01em;
-      color: #ffffff;
-    }
-  }
-
-  &__playOffBody {
-    padding: 0px 31px 48px 31px;
-  }
-
-  &__playOffTitlesCase {
-    border-bottom: 1px solid #d9d9d9;
-    display: flex;
-    justify-content: space-between;
-    h2 {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      font-size: 30px;
-      line-height: 37px;
-      letter-spacing: 0.01em;
-      color: #1b1b1b;
-      margin: 25px 0px;
-      &:first-child {
-        padding-left: 135px;
-      }
-      &:last-child {
-        padding-right: 197px;
-      }
-    }
-  }
-
-  &__playOffRating {
-    display: flex;
-    align-items: center;
-    padding-top: 60px;
-  }
-
-  &__playOffPresidentTeam {
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-    &-brest {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  &__playOffBranchLeft {
-    margin-left: 60px;
-    margin-right: 55px;
-  }
-
-  &__playOffBranchRight {
-    margin-left: 40px;
-    margin-right: 85px;
-  }
-
-  &__playOffMinskTeam {
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  &__playOffLogoTeam {
-    width: 50px;
-  }
-
-  &__playOffNameTeam {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 12px;
-    line-height: 15px;
-    color: #1b1b1b;
-    max-width: 180px;
-    padding: 0px 20px 0px 10px;
-    &-minsk {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      font-size: 12px;
-      line-height: 15px;
-      color: #1b1b1b;
-      max-width: 175px;
-      padding: 0px 45px 0px 10px;
-    }
-  }
-
-  &__playOffGomelTeam {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #d9d9d9;
-    padding-bottom: 22px;
-  }
-
-  &__playOffNameTeamGomel {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 12px;
-    line-height: 15px;
-    color: #1b1b1b;
-    max-width: 180px;
-    padding: 0px 30px 0px 10px;
-  }
-
-  &__playOffNumberTeam {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 25px;
-    line-height: 150%;
-    text-align: center;
-    color: #952212;
-  }
-
-  &__playOffFirstMatch {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 25px;
-    line-height: 150%;
-    text-align: center;
-    color: #d9d9d9;
-    transform: rotate(-90deg);
-    max-width: 120px;
-  }
-
-  &__playOffTeamCase {
-    display: flex;
-    align-items: center;
-  }
-
-  &__bodyBobbardires {
-    padding: 0px 25px 30px 30px;
-  }
-
-  &__teamLogo {
-    width: 31%;
-  }
-
-  &__linkTeamLogo {
-    display: flex;
-    align-items: center;
-    img {
-      width: 50px;
-      margin-right: 24px;
-    }
-    p {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 150%;
-      color: #1b1b1b;
-      max-width: 207px;
-    }
-  }
-
-  &__playerBombardier {
-    display: flex;
-    align-items: center;
-    width: 22%;
-    &-texting {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      @include adaptiv-font(18, 12);
-      line-height: 22px;
-      color: #1b1b1b;
-      @include adaptiv-paddingLeft(21px, 10px);
-      &:hover {
-        color: #952212;
-        transition: all 0.3s;
-      }
-    }
-  }
-
-  &__tableHeadPoints {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    @include adaptiv-font(18, 15);
-    line-height: 150%;
-    color: #1b1b1b;
-    text-align: center;
-    width: 5%;
-    &--texting {
-      display: flex;
-      align-items: center;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 400;
-      @include adaptiv-font(18, 12);
-      line-height: 22px;
-      color: #1b1b1b;
-      width: 5%;
-      justify-content: center;
-    }
-  }
-
-  &__tableHeadTeam {
-    width: 15%;
-
-    &--teaming {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      @include adaptiv-font(18, 15);
-      line-height: 150%;
-      color: #1b1b1b;
-      text-align: left;
-    }
-  }
-
-  &__tableHead {
-    width: 38%;
-
-    &--heading {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      @include adaptiv-font(18, 15);
-      line-height: 150%;
-      color: #1b1b1b;
-      text-align: left;
-      @include adaptiv-paddingLeft(21px, 10px);
-    }
-
-    &-texting {
-      display: flex;
-      text-align: left;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      @include adaptiv-font(18, 10);
-      line-height: 150%;
-      color: #1b1b1b;
-      align-items: center;
-      padding-left: 21px;
-      &:hover {
-        transition: all 0.3s;
-        color: #952212;
-      }
-    }
-  }
-
-  &__arrows {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 25px;
-    p {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 22px;
-      color: #1b1b1b;
-      margin-right: 6px;
-      &:nth-child(6n) {
-        margin-right: 0px;
-      }
-    }
-  }
-
-  &__arrowLeft {
-    font-size: 0;
-    background: url("/images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
-    width: 45px;
-    height: 45px;
-    border: none;
-    transition: all 0.3s;
-    margin-right: 20px;
-    cursor: pointer;
-    &:hover {
-      background: url("/images/svg/pagination-lhover.svg") 0 0 / 100% no-repeat;
-    }
-  }
-
-  &__arrowRight {
-    font-size: 0;
-    background: url("/images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
-    width: 45px;
-    height: 45px;
-    border: none;
-    transition: all 0.3s;
-    margin-left: 20px;
-    cursor: pointer;
-    &:hover {
-      background: url("/images/svg/pagination-rhover.svg") 0 0 / 100% no-repeat;
-    }
-  }
-
-  &__even {
-    background: rgba(217, 217, 217, 0.2);
-  }
-
-  &__capTitle {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: 0.01em;
-    color: #ffffff;
-  }
-
-  &__info {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-
-  &__player {
-    display: flex;
     flex-direction: column;
-    justify-content: start;
-    width: 100%;
-    max-width: 495px;
-  }
+    @include adaptiv-marginBottom(150, 80);
 
-  &__nameTitle {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-  }
-
-  &__teamLine {
-    border-bottom: 1px solid #d9d9d9;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    width: 100%;
-  }
-
-  &__teamCase {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    min-width: 100%;
-  }
-
-  &__cross:hover {
-    cursor: pointer;
-  }
-
-  &__tables {
-    display: flex;
-  }
-
-  &__table {
-    min-width: 285px;
-    table-layout: fixed;
-    margin-right: 25px;
-  }
-  &__tableTwo {
-    min-width: 176px;
-    table-layout: fixed;
-  }
-  &__tableThree {
-    min-width: 435px;
-    margin-left: 46px;
-    border-spacing: 0 11px;
-    border-collapse: separate;
-  }
-  &__table td {
-    padding-bottom: 10px;
-  }
-
-  &__tdHead {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1b1b1b;
-    width: 50px;
-  }
-
-  &__tdText {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1b1b1b;
-    width: 70px;
-  }
-
-  &__tdHeadTwo {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1b1b1b;
-    width: 90px;
-  }
-
-  &__tdTextTwo {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1b1b1b;
-    width: 90px;
-  }
-
-  &__statistic {
-    background: rgba(217, 217, 217, 0.2);
-    margin-left: 45px;
-    max-width: 734px;
-    margin-bottom: 19px;
-  }
-
-  &__imgPlayer {
-    margin-left: 45px;
-    margin-right: 41px;
-  }
-
-  &__logoTeam {
-    width: 60px;
-    margin-right: 5px;
-  }
-
-  &__textTeam {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1b1b1b;
-    max-width: 228px;
-  }
-
-  &__tdHeadThreeF {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1b1b1b;
-    width: 170px;
-  }
-
-  &__tdHeadThree {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1b1b1b;
-    width: 73px;
-    text-align: center;
-  }
-
-  &__tdTextThree {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1b1b1b;
-    width: 73px;
-    text-align: center;
-  }
-
-  &__statsTitleAdaptiv {
-    display: none;
-  }
-
-  &__block {
-    &--line {
-      display: flex;
-    }
-
-    &--tab {
-      display: none;
-
-      &_active {
-        display: block;
-      }
-    }
-  }
-
-  &__header {
-    @include adaptiv-font(45, 20);
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    line-height: 55px;
-    letter-spacing: 0.01em;
-    color: #1b1b1b;
-    position: relative;
-    @include adaptiv-marginBottom(62, 36);
-    width: fit-content;
-    align-items: flex-end;
-    margin-right: 30px;
-    padding-left: 5%;
-  }
-
-  &__line {
-    height: 2px;
-    width: 100%;
-    background: #952212;
-    margin-top: 30px;
-  }
-
-  &__total {
-    display: flex;
-    @include adaptiv-marginBottom(40, 25);
-
-    &--command {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 30px;
-      justify-content: space-between;
-      @include adaptiv-marginRight(30, 16);
-      @include adaptiv-marginLeft(38, 16);
-      border-bottom: 1px solid #d9d9d9;
-      @include adaptiv-paddingBottom(21, 10);
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
-
-  &__charts--container {
-    width: 60%;
-    border: 1px solid rgba(27, 27, 27, 0.1);
-    border-radius: 10px;
-    @include adaptiv-marginRight(40, 5);
-  }
-
-  &__chart {
-    width: 100%;
-  }
-
-  &__title {
-    display: flex;
-    align-self: flex-start;
-    padding: 30px;
-    width: 100%;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    @include adaptiv-font(25, 18);
-    line-height: 30px;
-    color: #ffffff;
-
-    &--double {
-      display: flex;
-      justify-content: center;
-      padding: 30px 0;
-      background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
-      border-radius: 10px 10px 0px 0px;
-    }
-
-    &--tab {
-      margin: 0 16px;
-      text-align: center;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      @include adaptiv-font(25, 18);
-      line-height: 30px;
-      color: rgba(255, 255, 255, 0.5);
-      white-space: nowrap;
-
-      &:hover {
-        transition: all 0.3s;
-        color: #ffffff;
-      }
-
-      &_active {
-        color: #ffffff;
-        border-bottom: 3px solid #ffffff;
-      }
-    }
-  }
-
-  &__row {
-    @include adaptiv-marginRight(30, 16);
-    @include adaptiv-marginLeft(25, 16);
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-right: 15px;
-    display: flex;
-    justify-content: space-between;
-
-    &--first {
-      margin-top: 11px;
-      border-bottom: 1px solid rgba(217, 217, 217, 0.4);
-    }
-
-    &--last {
-      @include adaptiv-marginBottom(30, 16);
-    }
-
-    &--even {
-      background: rgba(217, 217, 217, 0.2);
-    }
-
-    &--title {
-      display: block;
-      border-radius: 10px 10px 0px 0px;
-      background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
-      width: 100%;
-    }
-  }
-
-  &__point {
-    display: flex;
-    align-items: center;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    @include adaptiv-font(18, 12);
-    line-height: 22px;
-    color: #1b1b1b;
-  }
-
-  &__command {
-    width: 50%;
-
-    &-text {
-      display: flex;
-      text-align: left;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      @include adaptiv-font(18, 10);
-      line-height: 150%;
-      color: #1b1b1b;
-      align-items: center;
-      padding-left: 9px;
-
-      &:hover {
-        transition: all 0.3s;
-        color: #952212;
-      }
-    }
-
-    &-img {
-      width: 40px;
-      @include adaptiv-marginRight(13, 5);
-    }
-
-    &--head {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      @include adaptiv-font(18, 15);
-      line-height: 150%;
-      color: #1b1b1b;
-      text-align: center;
-    }
-  }
-
-  &__head {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    @include adaptiv-font(18, 15);
-    line-height: 22px;
-    color: #1b1b1b;
-  }
-
-  &__last {
-    width: 40%;
-    border: 1px solid rgba(27, 27, 27, 0.1);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__scroll {
-    height: 535px;
-    overflow-x: auto;
-  }
-  ::-webkit-scrollbar {
-    width: 9px;
-  }
-  ::-webkit-scrollbar-track {
-    background: rgba(217, 217, 217, 0.5);
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #952212;
-    border-radius: 5px;
-  }
-
-  &__match {
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
-  }
-
-  &__team {
-    align-self: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 39%;
-  }
-
-  &__versus {
-    white-space: nowrap;
-    align-self: center;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    @include adaptiv-font(25, 18);
-    text-align: center;
-    color: #952212;
-    width: 22%;
-  }
-
-  &__data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    width: 25%;
-    margin-right: 7px;
-  }
-
-  &__logo {
-    width: 60px;
-  }
-
-  &__number {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #1b1b1b;
-    padding-top: 10px;
-  }
-
-  &__square {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    color: #1b1b1b;
-  }
-
-  &__name {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    color: #1b1b1b;
-
-    &:hover {
-      transition: all 0.3s;
-      color: #952212;
-    }
-  }
-
-  &__final {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    color: #ffffff;
-    background: #952212;
-    border-radius: 50px;
-    padding: 6px 15px;
-    white-space: nowrap;
-  }
-
-  &__document {
-    @include adaptiv-marginRight(40, 5);
-    box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
-    border-radius: 10px;
-    width: 40%;
-
-    &-title {
-      display: flex;
-      justify-content: space-between;
-      background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
-      border-radius: 10px 10px 0px 0px;
-      cursor: pointer;
-
-      &--up,
-      &--down {
+    .hidden {
         display: none;
-      }
     }
 
-    &-info {
-      @include adaptiv-paddingLeft(54, 16);
-      @include adaptiv-paddingRight(54, 16);
-      @include adaptiv-paddingTop(20, 5);
-      margin-bottom: 16px;
+    &__closePopup {
+        display: flex;
+        justify-content: end;
     }
 
-    &-item {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #d9d9d9;
-      align-items: center;
-      padding-top: 20px;
-      @include adaptiv-paddingBottom(20, 10);
-    }
-
-    &-text {
-      font-family: "Montserrat";
-      font-weight: 800;
-      font-size: 18px;
-      line-height: 22px;
-      color: #952212;
-    }
-
-    #document-text-last-child {
-      max-width: 207px;
-    }
-
-    &-download {
-      display: flex;
-    }
-  }
-
-  &__bombardier {
-    width: 60%;
-    border: 1px solid rgba(27, 27, 27, 0.1);
-    border-radius: 10px;
-
-    &-table {
-      @include adaptiv-marginBottom(25, 5);
-    }
-
-    &-row {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      @include adaptiv-paddingLeft(20, 10);
-      @include adaptiv-paddingRight(40, 20);
-    }
-
-    &-play {
-      width: 30%;
-      text-align: left;
-      align-self: center;
-    }
-
-    &-team {
-      width: 30%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 290px;
-    }
-
-    &-img {
-      width: 60px;
-    }
-
-    &-text {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 150%;
-      color: #1b1b1b;
-    }
-
-    &-player {
-      white-space: nowrap;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      @include adaptiv-font(18, 12);
-      line-height: 15px;
-      color: #1b1b1b;
-
-      &:hover {
-        transition: all 0.3s;
-        color: rgb(27, 27, 27, 0.7);
-      }
-    }
-
-    &-all {
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 25px;
-      @include adaptiv-marginBottom(31, 16);
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      @include adaptiv-font(18, 15);
-      line-height: 22px;
-      color: #952212;
-
-      &:hover {
-        transition: all 0.3s;
-        color: #b34030;
-      }
-    }
-  }
-}
-
-@media (max-width: 1500px) {
-  .stats {
-    &__scroll {
-      height: 525px;
-    }
-  }
-}
-
-@media (max-width: 1300px) {
-  .stats {
-    &__bombardier {
-      &-team {
-        width: 25%;
-      }
-      &-text {
-        display: none;
-      }
-    }
-  }
-}
-
-@media (max-width: 900px) {
-  .stats {
-    &__tableHeadTeam {
-      width: 23%;
-    }
-    &__tableHead {
-      width: 30%;
-    }
-    &__bodyBobbardires {
-      padding: 0px 0px 16px 16px;
-    }
-    &__linkTeamLogo {
-      justify-content: end;
-      p {
-        display: none;
-      }
-    }
     &__popup {
-      max-width: 375px;
-      padding: 16px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        max-width: 852px;
+        margin: auto;
+        position: relative;
+        box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
+        border-radius: 10px;
     }
+
+    &__popupBombardires {
+        background-color: #f5f5f5;
+        max-width: 1100px;
+        margin: auto;
+        position: relative;
+        box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
+        border-radius: 10px;
+    }
+
+    &__capBombardires {
+        background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
+        border-radius: 10px 10px 0px 0px;
+        padding: 30px;
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+    }
+
+    &__playOff {
+        border: 1px solid rgba(27, 27, 27, 0.1);
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+
+    &__playOffTitle {
+        background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
+        border-radius: 10px 10px 0px 0px;
+        padding: 31px 0px 31px 31px;
+        h2 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+        }
+    }
+
+    &__playOffBody {
+        padding: 0px 31px 48px 31px;
+    }
+
+    &__playOffTitlesCase {
+        border-bottom: 1px solid #d9d9d9;
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 37px;
+            letter-spacing: 0.01em;
+            color: #1b1b1b;
+            margin: 25px 0px;
+            &:first-child {
+                padding-left: 135px;
+            }
+            &:last-child {
+                padding-right: 197px;
+            }
+        }
+    }
+
+    &__playOffRating {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__playOffSemiFinalBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 100px;
+    }
+
+    &__playOffCaseTeam {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 246px;
+        &:first-child {
+            margin-bottom: 20px;
+        }
+        &:nth-child(2) {
+            border-bottom: 1px solid #d9d9d9;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        &:nth-child(3) {
+            margin-bottom: 20px;
+        }
+        &:nth-child(4) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__playOffCaseTeamF {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 246px;
+        &:first-child {
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+        &:nth-child(2) {
+            margin-bottom: 20px;
+        }
+        &:nth-child(3) {
+            margin-bottom: 20px;
+        }
+        &:nth-child(4) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__playOffSecondMatch {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #d9d9d9;
+        h2 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 150%;
+            text-align: center;
+            color: #d9d9d9;
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__playOffSecondMatchTeam {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 150%;
+            text-align: center;
+            color: #d9d9d9;
+            transform: rotate(-90deg);
+        }
+    }
+
+    #stats__caseTwo {
+        margin-top: 20px;
+    }
+
+    // &__playOffLine {
+    //     border: 1px solid #d9d9d9;
+    //     margin-top: 20px;
+    //     margin-bottom: 20px;
+    // }
+
+    &__winnerBlock {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        padding-right: 133px;
+    }
+
+    &__winnerTeam {
+        display: flex;
+        align-items: center;
+        margin-top: 77px;
+        margin-bottom: 77px;
+        img {
+            margin-right: 13px;
+            max-width: 75px;
+        }
+    }
+
+    // &__emptyBlock {
+    //   min-height: 52px;
+    // }
+    &__matchThirdPlaceAdaptiv {
+      display: none;
+    }
+
+    &__matchThirdPlace {
+        // margin-top: 77px;
+        h2 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(30,18);
+            line-height: 37px;
+            letter-spacing: 0.01em;
+            color: #1b1b1b;
+            border-bottom: 1px solid #d9d9d9;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__matchFirstTeam {
+        display: flex;
+        align-items: center;
+        img {
+            height: 50px;
+            margin-right: 12px;
+        }
+    }
+
+    &__matchText {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1b1b1b;
+    }
+
+    &__winnerText {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+    }
+
+    &__playOffCaseLogoNameTeam {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__semiFinalAdaptiv {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(30, 18);
+        line-height: 37px;
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        text-align: center;
+        display: none;
+        border-bottom: 1px solid #d9d9d9;
+        margin-bottom: 24px;
+    }
+    &__finalSeriaAdaptiv {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(30, 18);
+        line-height: 37px;
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        text-align: center;
+        margin: 0 auto;
+        display: none;
+    }
+    &__winnerAdaptiv {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(30, 18);
+        line-height: 37px;
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        text-align: center;
+        display: none;
+    }
+
+    &__playOffLogoTeam {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    &__playOffTeamText {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1b1b1b;
+    }
+
+    &__playOffTeamPoints {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 150%;
+        text-align: center;
+        color: #952212;
+    }
+
+    &__bodyBobbardires {
+        padding: 0px 25px 30px 30px;
+    }
+
+    &__teamLogo {
+        width: 31%;
+    }
+
+    &__linkTeamLogo {
+        display: flex;
+        align-items: center;
+        img {
+            width: 50px;
+            margin-right: 24px;
+        }
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #1b1b1b;
+            max-width: 207px;
+        }
+    }
+
+    &__playerBombardier {
+        display: flex;
+        align-items: center;
+        width: 22%;
+        &-texting {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 12);
+            line-height: 22px;
+            color: #1b1b1b;
+            @include adaptiv-paddingLeft(21px, 10px);
+            &:hover {
+                color: #952212;
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    &__tableHeadPoints {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(18, 15);
+        line-height: 150%;
+        color: #1b1b1b;
+        text-align: center;
+        width: 5%;
+        &--texting {
+            display: flex;
+            align-items: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            @include adaptiv-font(18, 12);
+            line-height: 22px;
+            color: #1b1b1b;
+            width: 5%;
+            justify-content: center;
+        }
+    }
+
+    &__tableHeadTeam {
+        width: 15%;
+
+        &--teaming {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 150%;
+            color: #1b1b1b;
+            text-align: left;
+        }
+    }
+
+    &__tableHead {
+        width: 38%;
+
+        &--heading {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 150%;
+            color: #1b1b1b;
+            text-align: left;
+            @include adaptiv-paddingLeft(21px, 10px);
+        }
+
+        &-texting {
+            display: flex;
+            text-align: left;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 10);
+            line-height: 150%;
+            color: #1b1b1b;
+            align-items: center;
+            padding-left: 21px;
+            &:hover {
+                transition: all 0.3s;
+                color: #952212;
+            }
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1b1b1b;
+            margin-right: 6px;
+            &:nth-child(6n) {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    &__arrowLeft {
+        font-size: 0;
+        background: url("/images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
+        width: 45px;
+        height: 45px;
+        border: none;
+        transition: all 0.3s;
+        margin-right: 20px;
+        cursor: pointer;
+        &:hover {
+            background: url("/images/svg/pagination-lhover.svg") 0 0 / 100%
+                no-repeat;
+        }
+    }
+
+    &__arrowRight {
+        font-size: 0;
+        background: url("/images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
+        width: 45px;
+        height: 45px;
+        border: none;
+        transition: all 0.3s;
+        margin-left: 20px;
+        cursor: pointer;
+        &:hover {
+            background: url("/images/svg/pagination-rhover.svg") 0 0 / 100%
+                no-repeat;
+        }
+    }
+
+    &__even {
+        background: rgba(217, 217, 217, 0.2);
+    }
+
+    &__capTitle {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+    }
+
     &__info {
-      flex-direction: column;
-      margin-bottom: 15px;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
     }
-    &__imgPlayer {
-      margin: 3px auto 20px auto;
+
+    &__player {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        max-width: 495px;
     }
+
     &__nameTitle {
-      text-align: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 5px;
     }
+
+    &__teamLine {
+        border-bottom: 1px solid #d9d9d9;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
     &__teamCase {
-      justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        min-width: 100%;
     }
+
+    &__cross:hover {
+        cursor: pointer;
+    }
+
     &__tables {
-      flex-direction: column;
+        display: flex;
     }
+
     &__table {
-      min-width: 286px;
-      max-width: 315px;
-      margin-right: 0px;
-      margin-left: 10px;
+        min-width: 285px;
+        table-layout: fixed;
+        margin-right: 25px;
     }
     &__tableTwo {
-      min-width: 286px;
-      max-width: 315px;
-      margin-right: 0px;
-      margin-left: 10px;
-      td {
-        padding-bottom: 10px;
-      }
-    }
-    &__tdHeadTwo {
-      width: 140px;
-    }
-    &__tdTextTwo {
-      width: 30px;
-    }
-    &__statistic {
-      margin-left: 0px;
+        min-width: 176px;
+        table-layout: fixed;
     }
     &__tableThree {
-      min-width: 270px;
-      max-width: 270px;
-      margin-right: 0px;
-      margin-left: 10px;
-      border-spacing: 0 14px;
+        min-width: 435px;
+        margin-left: 46px;
+        border-spacing: 0 11px;
+        border-collapse: separate;
     }
-    &__statistic {
-      padding-top: 10px;
-      margin-bottom: 0px;
+    &__table td {
+        padding-bottom: 10px;
     }
-    &__statsTitleAdaptiv {
-      display: initial;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 800;
-      font-size: 18px;
-      line-height: 22px;
-      color: #1b1b1b;
-      margin-left: 10px;
-    }
-    &__tdHeadThreeF {
-      display: none;
-    }
-    &__first {
-      text-align: left;
-      width: 45px;
-    }
-  }
-}
 
-@media (max-width: 1000px) {
-  .stats {
+    &__tdHead {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        width: 50px;
+    }
+
+    &__tdText {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        width: 70px;
+    }
+
+    &__tdHeadTwo {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        width: 90px;
+    }
+
+    &__tdTextTwo {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        width: 90px;
+    }
+
+    &__statistic {
+        background: rgba(217, 217, 217, 0.2);
+        margin-left: 45px;
+        max-width: 734px;
+        margin-bottom: 19px;
+    }
+
+    &__imgPlayer {
+        margin-left: 45px;
+        margin-right: 41px;
+    }
+
+    &__logoTeam {
+        width: 60px;
+        margin-right: 5px;
+    }
+
+    &__textTeam {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        max-width: 228px;
+    }
+
+    &__tdHeadThreeF {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        width: 170px;
+    }
+
+    &__tdHeadThree {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        width: 73px;
+        text-align: center;
+    }
+
+    &__tdTextThree {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1b1b1b;
+        width: 73px;
+        text-align: center;
+    }
+
+    &__statsTitleAdaptiv {
+        display: none;
+    }
+
+    &__block {
+        &--line {
+            display: flex;
+        }
+
+        &--tab {
+            display: none;
+
+            &_active {
+                display: block;
+            }
+        }
+    }
+
+    &__header {
+        @include adaptiv-font(45, 20);
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        line-height: 55px;
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        position: relative;
+        @include adaptiv-marginBottom(62, 36);
+        width: fit-content;
+        align-items: flex-end;
+        margin-right: 30px;
+        padding-left: 5%;
+    }
+
+    &__line {
+        height: 2px;
+        width: 100%;
+        background: #952212;
+        margin-top: 30px;
+    }
+
     &__total {
-      flex-direction: column;
+        display: flex;
+        @include adaptiv-marginBottom(40, 25);
+
+        &--command {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            justify-content: space-between;
+            @include adaptiv-marginRight(30, 16);
+            @include adaptiv-marginLeft(38, 16);
+            border-bottom: 1px solid #d9d9d9;
+            @include adaptiv-paddingBottom(21, 10);
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
+
     &__charts--container {
-      width: 100%;
-      @include adaptiv-marginBottom(40, 25);
-      margin-right: 0;
+        width: 60%;
+        border: 1px solid rgba(27, 27, 27, 0.1);
+        border-radius: 10px;
+        @include adaptiv-marginRight(40, 5);
     }
-    &__last {
-      width: 100%;
+
+    &__chart {
+        width: 100%;
     }
-    &__scroll {
-      height: 400px;
-    }
+
     &__title {
-      &--tab {
-        &:first-child {
-          @include adaptiv-marginRight(200, 5);
+        display: flex;
+        align-self: flex-start;
+        padding: 30px;
+        width: 100%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(25, 18);
+        line-height: 30px;
+        color: #ffffff;
+
+        &--double {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+            background: linear-gradient(
+                90.5deg,
+                #2660ae -4.69%,
+                #0ea1d2 112.03%
+            );
+            border-radius: 10px 10px 0px 0px;
         }
-        &:last-child {
-          @include adaptiv-marginLeft(200, 5);
+
+        &--tab {
+            margin: 0 16px;
+            text-align: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(25, 18);
+            line-height: 30px;
+            color: rgba(255, 255, 255, 0.5);
+            white-space: nowrap;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #ffffff;
+            }
+
+            &_active {
+                color: #ffffff;
+                border-bottom: 3px solid #ffffff;
+            }
         }
-      }
+    }
+
+    &__row {
+        @include adaptiv-marginRight(30, 16);
+        @include adaptiv-marginLeft(25, 16);
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        &--first {
+            margin-top: 11px;
+            border-bottom: 1px solid rgba(217, 217, 217, 0.4);
+        }
+
+        &--last {
+            @include adaptiv-marginBottom(30, 16);
+        }
+
+        &--even {
+            background: rgba(217, 217, 217, 0.2);
+        }
+
+        &--title {
+            display: block;
+            border-radius: 10px 10px 0px 0px;
+            background: linear-gradient(
+                90.5deg,
+                #2660ae -4.69%,
+                #0ea1d2 112.03%
+            );
+            width: 100%;
+        }
+    }
+
+    &__point {
+        display: flex;
+        align-items: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        @include adaptiv-font(18, 12);
+        line-height: 22px;
+        color: #1b1b1b;
+    }
+
+    &__command {
+        width: 50%;
+
+        &-text {
+            display: flex;
+            text-align: left;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 10);
+            line-height: 150%;
+            color: #1b1b1b;
+            align-items: center;
+            padding-left: 9px;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #952212;
+            }
+        }
+
+        &-img {
+            width: 40px;
+            @include adaptiv-marginRight(13, 5);
+        }
+
+        &--head {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 150%;
+            color: #1b1b1b;
+            text-align: center;
+        }
+    }
+
+    &__head {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(18, 15);
+        line-height: 22px;
+        color: #1b1b1b;
+    }
+
+    &__last {
+        width: 40%;
+        border: 1px solid rgba(27, 27, 27, 0.1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__scroll {
+        height: 535px;
+        overflow-x: auto;
+    }
+    ::-webkit-scrollbar {
+        width: 9px;
+    }
+    ::-webkit-scrollbar-track {
+        background: rgba(217, 217, 217, 0.5);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #952212;
+        border-radius: 5px;
+    }
+
+    &__match {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+    }
+
+    &__team {
+        align-self: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 39%;
+    }
+
+    &__versus {
+        white-space: nowrap;
+        align-self: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(25, 18);
+        text-align: center;
+        color: #952212;
+        width: 22%;
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        width: 25%;
+        margin-right: 7px;
+    }
+
+    &__logo {
+        width: 60px;
+    }
+
+    &__number {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        padding-top: 10px;
+    }
+
+    &__square {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #1b1b1b;
+    }
+
+    &__name {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #1b1b1b;
+
+        &:hover {
+            transition: all 0.3s;
+            color: #952212;
+        }
+    }
+
+    &__final {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #ffffff;
+        background: #952212;
+        border-radius: 50px;
+        padding: 6px 15px;
+        white-space: nowrap;
     }
 
     &__document {
-      width: 100%;
-      @include adaptiv-marginBottom(40, 25);
-      margin-right: 0;
-      &-title {
-        &--down {
-          display: block;
+        @include adaptiv-marginRight(40, 5);
+        box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
+        border-radius: 10px;
+        width: 40%;
+
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(
+                90.5deg,
+                #2660ae -4.69%,
+                #0ea1d2 112.03%
+            );
+            border-radius: 10px 10px 0px 0px;
+            cursor: pointer;
+
+            &--up,
+            &--down {
+                display: none;
+            }
         }
-      }
-      &-info {
-        display: none;
-      }
-    }
-    .active {
-      .stats__document-title--down {
-        display: none;
-      }
-      .stats__document-title--up {
-        display: block;
-      }
+
+        &-info {
+            @include adaptiv-paddingLeft(54, 16);
+            @include adaptiv-paddingRight(54, 16);
+            @include adaptiv-paddingTop(20, 5);
+            margin-bottom: 16px;
+        }
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #d9d9d9;
+            align-items: center;
+            padding-top: 20px;
+            @include adaptiv-paddingBottom(20, 10);
+        }
+
+        &-text {
+            font-family: "Montserrat";
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 22px;
+            color: #952212;
+        }
+
+        #document-text-last-child {
+            max-width: 207px;
+        }
+
+        &-download {
+            display: flex;
+        }
     }
 
     &__bombardier {
-      width: 100%;
-      @include adaptiv-marginBottom(40, 25);
-      &-team {
-        width: 33%;
-      }
-      &-player {
-        text-decoration-line: underline;
-      }
-      &-text {
-        display: block;
-      }
+        width: 60%;
+        border: 1px solid rgba(27, 27, 27, 0.1);
+        border-radius: 10px;
+
+        &-table {
+            @include adaptiv-marginBottom(25, 5);
+        }
+
+        &-row {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            @include adaptiv-paddingLeft(20, 10);
+            @include adaptiv-paddingRight(40, 20);
+        }
+
+        &-play {
+            width: 30%;
+            text-align: left;
+            align-self: center;
+        }
+
+        &-team {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 290px;
+        }
+
+        &-img {
+            width: 60px;
+        }
+
+        &-text {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #1b1b1b;
+        }
+
+        &-player {
+            white-space: nowrap;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 12);
+            line-height: 15px;
+            color: #1b1b1b;
+
+            &:hover {
+                transition: all 0.3s;
+                color: rgb(27, 27, 27, 0.7);
+            }
+        }
+
+        &-all {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 25px;
+            @include adaptiv-marginBottom(31, 16);
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 22px;
+            color: #952212;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #b34030;
+            }
+        }
     }
-  }
+}
+
+@media (max-width: 1700px) {
+    .stats {
+        &__playOffTitlesCase {
+            h2:first-child {
+                padding-left: 50px;
+            }
+            h2:last-child {
+                padding-right: 50px;
+            }
+        }
+        &__playOffSemiFinalBlock {
+            padding-left: 30px;
+        }
+        &__winnerBlock {
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .stats {
+        &__scroll {
+            height: 525px;
+        }
+        &__playOffTitlesCase {
+            h2:first-child {
+                padding-left: 30px;
+            }
+            h2:last-child {
+                padding-right: 30px;
+            }
+        }
+        &__playOffSemiFinalBlock {
+            padding-left: 0px;
+        }
+        &__winnerBlock {
+            padding-right: 0px;
+        }
+        &__playOffShemaLeft {
+            display: none;
+        }
+        &__playOffShemaRight {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .stats {
+        &__playOffRating {
+            flex-direction: column;
+        }
+        &__playOffTitlesCase {
+            display: none;
+        }
+        &__semiFinalAdaptiv {
+            display: initial;
+            width: 100%;
+            margin-top: 30px;
+            padding-bottom: 15px;
+        }
+        &__finalSeriaAdaptiv {
+            display: initial;
+            margin-top: 35px;
+            border-bottom: 1px solid #d9d9d9;
+            width: 100%;
+            padding-bottom: 15px;
+        }
+        &__winnerAdaptiv {
+            display: initial;
+            margin-top: 30px;
+            border-bottom: 1px solid #d9d9d9;
+            width: 100%;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .stats {
+        &__bombardier {
+            &-team {
+                width: 25%;
+            }
+            &-text {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .stats {
+        &__tableHeadTeam {
+            width: 23%;
+        }
+        &__tableHead {
+            width: 30%;
+        }
+        &__bodyBobbardires {
+            padding: 0px 0px 16px 16px;
+        }
+        &__linkTeamLogo {
+            justify-content: end;
+            p {
+                display: none;
+            }
+        }
+        &__popup {
+            max-width: 375px;
+            padding: 16px;
+        }
+        &__info {
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        &__imgPlayer {
+            margin: 3px auto 20px auto;
+        }
+        &__nameTitle {
+            text-align: center;
+        }
+        &__teamCase {
+            justify-content: center;
+        }
+        &__tables {
+            flex-direction: column;
+        }
+        &__table {
+            min-width: 286px;
+            max-width: 315px;
+            margin-right: 0px;
+            margin-left: 10px;
+        }
+        &__tableTwo {
+            min-width: 286px;
+            max-width: 315px;
+            margin-right: 0px;
+            margin-left: 10px;
+            td {
+                padding-bottom: 10px;
+            }
+        }
+        &__tdHeadTwo {
+            width: 140px;
+        }
+        &__tdTextTwo {
+            width: 30px;
+        }
+        &__statistic {
+            margin-left: 0px;
+        }
+        &__tableThree {
+            min-width: 270px;
+            max-width: 270px;
+            margin-right: 0px;
+            margin-left: 10px;
+            border-spacing: 0 14px;
+        }
+        &__statistic {
+            padding-top: 10px;
+            margin-bottom: 0px;
+        }
+        &__statsTitleAdaptiv {
+            display: initial;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1b1b1b;
+            margin-left: 10px;
+        }
+        &__tdHeadThreeF {
+            display: none;
+        }
+        &__first {
+            text-align: left;
+            width: 45px;
+        }
+        &__playOffCaseTeam {
+            &:nth-child(2) {
+                margin-bottom: 20px;
+                padding-bottom: 0px;
+                border-bottom: none;
+            }
+            &:nth-child(3) {
+                margin-bottom: 10px;
+                padding-bottom: 32px;
+                border-bottom: 1px solid #d9d9d9;
+            }
+        }
+        &__playOffSecondMatch {
+          h2 {
+            width: 116px;
+          }
+        }
+        &__winnerTeam {
+          margin-top: 0px;
+          margin-bottom: 38px;
+        }
+        &__matchThirdPlaceAdaptiv {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 800;
+          @include adaptiv-font(30,18);
+          line-height: 37px;
+          letter-spacing: 0.01em;
+          color: #1b1b1b;
+          border-bottom: 1px solid #d9d9d9;
+          padding-bottom: 15px;
+          margin-bottom: 20px;
+          display: initial;
+          width: 100%;
+          text-align: center;
+        }
+        &__matchThirdPlace {
+          h2 {
+            display: none;
+          }
+        }
+        &__playOffBody {
+          padding: 0px 16px 23px 16px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .stats {
+        &__total {
+            flex-direction: column;
+        }
+        &__charts--container {
+            width: 100%;
+            @include adaptiv-marginBottom(40, 25);
+            margin-right: 0;
+        }
+        &__last {
+            width: 100%;
+        }
+        &__scroll {
+            height: 400px;
+        }
+        &__title {
+            &--tab {
+                &:first-child {
+                    @include adaptiv-marginRight(200, 5);
+                }
+                &:last-child {
+                    @include adaptiv-marginLeft(200, 5);
+                }
+            }
+        }
+
+        &__document {
+            width: 100%;
+            @include adaptiv-marginBottom(40, 25);
+            margin-right: 0;
+            &-title {
+                &--down {
+                    display: block;
+                }
+            }
+            &-info {
+                display: none;
+            }
+        }
+        .active {
+            .stats__document-title--down {
+                display: none;
+            }
+            .stats__document-title--up {
+                display: block;
+            }
+        }
+
+        &__bombardier {
+            width: 100%;
+            @include adaptiv-marginBottom(40, 25);
+            &-team {
+                width: 33%;
+            }
+            &-player {
+                text-decoration-line: underline;
+            }
+            &-text {
+                display: block;
+            }
+        }
+    }
 }
 
 @media (max-width: 870px) {
-  .stats {
-    &__bombardier {
-      &-play {
-        width: 25%;
-      }
-      &-team {
-        width: 42%;
-      }
+    .stats {
+        &__bombardier {
+            &-play {
+                width: 25%;
+            }
+            &-team {
+                width: 42%;
+            }
+        }
     }
-  }
 }
 
 @media (max-width: 700px) {
-  .stats {
-    .container {
-      width: 100%;
-    }
-    &__title {
-      &--double {
-        justify-content: space-between;
-      }
-      &--tab {
-        &:first-child {
-          margin-right: 0;
-          @include adaptiv-marginLeft(400, 10);
+    .stats {
+        .container {
+            width: 100%;
         }
-        &:last-child {
-          margin-left: 0;
-          @include adaptiv-marginRight(400, 10);
+        &__title {
+            &--double {
+                justify-content: space-between;
+            }
+            &--tab {
+                &:first-child {
+                    margin-right: 0;
+                    @include adaptiv-marginLeft(400, 10);
+                }
+                &:last-child {
+                    margin-left: 0;
+                    @include adaptiv-marginRight(400, 10);
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media (max-width: 620px) {
-  .stats {
-    &__bombardier {
-      &-play {
-        width: 30%;
-      }
-      &-player {
-        white-space: normal;
-      }
-      &-team {
-        width: 30%;
-      }
-      &-text {
-        display: none;
-      }
+    .stats {
+        &__bombardier {
+            &-play {
+                width: 30%;
+            }
+            &-player {
+                white-space: normal;
+            }
+            &-team {
+                width: 30%;
+            }
+            &-text {
+                display: none;
+            }
+        }
     }
-  }
 }
 
 @media (max-width: 550px) {
-  .stats {
-    &__total {
-      &--command {
-        flex-direction: column;
-      }
+    .stats {
+        &__total {
+            &--command {
+                flex-direction: column;
+            }
+        }
+        &__match {
+            width: 100%;
+        }
+        &__data {
+            width: 126px;
+            margin-bottom: 10px;
+        }
     }
-    &__match {
-      width: 100%;
-    }
-    &__data {
-      width: 126px;
-      margin-bottom: 10px;
-    }
-  }
 }
