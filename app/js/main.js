@@ -113,35 +113,25 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".slider--rhl").slick({
         arrows: true,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         speed: 1000,
         easing: "lenear",
         appendArrows: $(".news--rhl__arrows"),
         draggable: false,
         infinite: true,
-        initialSlide: 1,
+        initialSlide: 2,
         touchThreshold: 15,
         waitForAnimate: false,
         variableWidth: true,
 
         responsive: [
             {
-                breakpoint: 1067,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 1,
                     arrows: false,
                     variableWidth: true,
-                    dots: true,
-                },
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 1,
-                    variableWidth: false,
-                    arrows: false,
-                    dots: true,
                 },
             },
         ],
