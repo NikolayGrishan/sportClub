@@ -18,6 +18,7 @@
 
     &__block--line {
         display: flex;
+        align-items: center;
         flex-direction: row;
         margin-left: 100px;
 		margin-top: 30px;
@@ -26,7 +27,6 @@
     .line {
         height: 2px;
         background: #952212;
-        margin-top: 15px;
         width: 100%;
     }
 
