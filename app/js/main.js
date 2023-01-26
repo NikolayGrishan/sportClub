@@ -138,6 +138,24 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+	$(".slider--bb").slick({
+			arrows: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			speed: 1000,
+			easing: "lenear",
+			appendArrows: $(".stats__arrows"),
+			draggable: false,
+			infinite: true,
+			initialSlide: 1,
+			touchThreshold: 15,
+			waitForAnimate: false,
+
+			
+	});
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     function openMobileSidebar() {
         const burgerBtn = document.querySelector(".header__burger");

@@ -437,21 +437,8 @@
 
     &__arrows {
         display: flex;
-        align-items: center;
         justify-content: center;
-        margin-top: 25px;
-        p {
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 22px;
-            color: #1b1b1b;
-            margin-right: 6px;
-            &:nth-child(6n) {
-                margin-right: 0px;
-            }
-        }
+        margin-top: 30px;
     }
 
     &__arrowLeft {
