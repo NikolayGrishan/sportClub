@@ -1,5 +1,8 @@
 .otchetAbout {
     @include adaptiv-marginTop(50, 40);
+
+    
+
     &__block--line {
         display: flex;
         flex-direction: row;
@@ -12,7 +15,7 @@
         width: 100%;
     }
 
-    &__head {
+    &__headTitle {
         @include adaptiv-font(45, 20);
         font-family: "Montserrat";
         font-style: normal;
@@ -248,6 +251,248 @@
             }
         }
     }
+
+    &__gameCompositionCase {
+    }
+
+    &__gameCompositionFirst {
+    }
+
+    &__gameCompositionSecond {
+    }
+
+    &__bombardier {
+        margin-top: 30px;
+        width: 60%;
+        border: 1px solid rgba(27, 27, 27, 0.1);
+        border-radius: 10px;
+
+        &-table {
+            @include adaptiv-marginBottom(25, 5);
+        }
+
+        &-row {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            @include adaptiv-paddingLeft(20, 10);
+            @include adaptiv-paddingRight(40, 20);
+        }
+
+        &-play {
+            width: 30%;
+            text-align: left;
+            align-self: center;
+        }
+
+        &-team {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 290px;
+        }
+
+        &-img {
+            width: 60px;
+        }
+
+        &-text {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #1b1b1b;
+        }
+
+        &-player {
+            white-space: nowrap;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 12);
+            line-height: 15px;
+            color: #1b1b1b;
+
+            &:hover {
+                transition: all 0.3s;
+                color: rgb(27, 27, 27, 0.7);
+            }
+        }
+
+        &-all {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 25px;
+            @include adaptiv-marginBottom(31, 16);
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 22px;
+            color: #952212;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #b34030;
+            }
+        }
+    }
+
+    &__chart {
+        width: 100%;
+    }
+
+    &__row {
+        @include adaptiv-marginRight(30, 16);
+        @include adaptiv-marginLeft(25, 16);
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        &--first {
+            margin-top: 11px;
+            border-bottom: 1px solid rgba(217, 217, 217, 0.4);
+        }
+
+        &--last {
+            @include adaptiv-marginBottom(30, 16);
+        }
+
+        &--even {
+            background: rgba(217, 217, 217, 0.2);
+        }
+
+        &--title {
+            display: block;
+            border-radius: 10px 10px 0px 0px;
+            background: linear-gradient(
+                90.5deg,
+                #2660ae -4.69%,
+                #0ea1d2 112.03%
+            );
+            width: 100%;
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-self: flex-start;
+        padding: 30px;
+        width: 100%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(25, 18);
+        line-height: 30px;
+        color: #ffffff;
+
+        &--double {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+            background: linear-gradient(
+                90.5deg,
+                #2660ae -4.69%,
+                #0ea1d2 112.03%
+            );
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        &--tab {
+            margin: 0 16px;
+            text-align: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(25, 18);
+            line-height: 30px;
+            color: rgba(255, 255, 255, 0.5);
+            white-space: nowrap;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #ffffff;
+            }
+
+            &_active {
+                color: #ffffff;
+                border-bottom: 3px solid #ffffff;
+            }
+        }
+    }
+
+    &__command {
+        width: 50%;
+
+        &-text {
+            display: flex;
+            text-align: left;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 10);
+            line-height: 150%;
+            color: #1b1b1b;
+            align-items: center;
+            padding-left: 9px;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #952212;
+            }
+        }
+
+        &-img {
+            width: 40px;
+            @include adaptiv-marginRight(13, 5);
+        }
+
+        &--head {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 150%;
+            color: #1b1b1b;
+            text-align: left;
+        }
+    }
+
+    &__head {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(18, 15);
+        line-height: 22px;
+        color: #1b1b1b;
+    }
+
+    &__point {
+        display: flex;
+        align-items: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        @include adaptiv-font(18, 12);
+        line-height: 22px;
+        color: #1b1b1b;
+    }
+}
+
+@media (max-width: 1300px) {
+    .otchetAbout {
+        &__bombardier {
+            &-team {
+                width: 25%;
+            }
+            &-text {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 1000px) {
@@ -279,6 +524,112 @@
             img {
                 width: 69px;
             }
+        }
+        &__total {
+            flex-direction: column;
+        }
+        &__charts--container {
+            width: 100%;
+            @include adaptiv-marginBottom(40, 25);
+            margin-right: 0;
+        }
+        &__last {
+            width: 100%;
+        }
+        &__scroll {
+            height: 400px;
+        }
+        &__title {
+            &--tab {
+                &:first-child {
+                    @include adaptiv-marginRight(200, 5);
+                }
+                &:last-child {
+                    @include adaptiv-marginLeft(200, 5);
+                }
+            }
+        }
+        &__bombardier {
+            width: 100%;
+            @include adaptiv-marginBottom(40, 25);
+            &-team {
+                width: 33%;
+            }
+            &-player {
+                text-decoration-line: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .otchetAbout {
+        &__bombardier {
+            &-play {
+                width: 25%;
+            }
+            &-team {
+                width: 42%;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .otchetAbout {
+        .container {
+            width: 100%;
+        }
+        &__title {
+            &--double {
+                justify-content: space-between;
+            }
+            &--tab {
+                &:first-child {
+                    margin-right: 0;
+                    @include adaptiv-marginLeft(400, 10);
+                }
+                &:last-child {
+                    margin-left: 0;
+                    @include adaptiv-marginRight(400, 10);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .otchetAbout {
+        &__bombardier {
+            &-play {
+                width: 30%;
+            }
+            &-player {
+                white-space: normal;
+            }
+            &-team {
+                width: 30%;
+            }
+            &-text {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .stats {
+        &__total {
+            &--command {
+                flex-direction: column;
+            }
+        }
+        &__match {
+            width: 100%;
+        }
+        &__data {
+            width: 126px;
+            margin-bottom: 10px;
         }
     }
 }
