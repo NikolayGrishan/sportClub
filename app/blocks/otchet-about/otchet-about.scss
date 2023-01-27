@@ -1,8 +1,6 @@
 .otchetAbout {
     @include adaptiv-marginTop(50, 40);
 
-    
-
     &__block--line {
         display: flex;
         flex-direction: row;
@@ -251,15 +249,258 @@
             }
         }
     }
-
+    // Таблицы
     &__gameCompositionCase {
-    }
-
-    &__gameCompositionFirst {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     &__gameCompositionSecond {
+        margin-top: 30px;
+        width: 40%;
+        border: 1px solid rgba(27, 27, 27, 0.1);
+        border-radius: 10px;
+        margin-left: 30px;
     }
+
+    &__gameComposition {
+        margin-top: 30px;
+        width: 40%;
+        border: 1px solid rgba(27, 27, 27, 0.1);
+        border-radius: 10px;
+
+        &-tableComposition {
+            @include adaptiv-marginBottom(25, 5);
+
+            padding-bottom: 30px;
+        }
+
+        &-rowComposition {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            @include adaptiv-paddingLeft(20, 10);
+            @include adaptiv-paddingRight(40, 20);
+        }
+
+        &-playComposition {
+            width: 40%;
+            text-align: left;
+            align-self: center;
+        }
+
+        &-teamComposition {
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 230px;
+        }
+
+        &-imgComposition {
+            width: 60px;
+        }
+
+        &-textComposition {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #1b1b1b;
+        }
+
+        &-playerComposition {
+            white-space: nowrap;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 12);
+            line-height: 15px;
+            color: #1b1b1b;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #952212;
+            }
+        }
+
+        &-allComposition {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 25px;
+            @include adaptiv-marginBottom(31, 16);
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 22px;
+            color: #952212;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #b34030;
+            }
+        }
+    }
+
+    &__chartComposition {
+        width: 100%;
+    }
+
+    &__rowComposition {
+        @include adaptiv-marginRight(30, 16);
+        @include adaptiv-marginLeft(25, 16);
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+
+        &--firstComposition {
+            margin-top: 11px;
+            border-bottom: 1px solid rgba(217, 217, 217, 0.4);
+        }
+
+        &--lastComposition {
+            @include adaptiv-marginBottom(30, 16);
+        }
+
+        &--evenComposition {
+            background: rgba(217, 217, 217, 0.2);
+        }
+
+        &--titleComposition {
+            display: block;
+            border-radius: 10px 10px 0px 0px;
+            background: linear-gradient(
+                90.5deg,
+                #2660ae -4.69%,
+                #0ea1d2 112.03%
+            );
+            width: 100%;
+        }
+
+        &--lastComp {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__titleCompositionTitle {
+        display: flex;
+        align-self: flex-start;
+        justify-content: space-between;
+        padding: 30px;
+        width: 100%;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(25, 18);
+        line-height: 30px;
+        color: #ffffff;
+        margin-bottom: 39px;
+        &--double {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+            background: linear-gradient(
+                90.5deg,
+                #2660ae -4.69%,
+                #0ea1d2 112.03%
+            );
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        &--tab {
+            margin: 0 16px;
+            text-align: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(25, 18);
+            line-height: 30px;
+            color: rgba(255, 255, 255, 0.5);
+            white-space: nowrap;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #ffffff;
+            }
+
+            &_active {
+                color: #ffffff;
+                border-bottom: 3px solid #ffffff;
+            }
+        }
+    }
+
+    &__commandComposition {
+        width: 50%;
+
+        &-textComposition {
+            display: flex;
+            text-align: left;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 10);
+            line-height: 150%;
+            color: #1b1b1b;
+            align-items: center;
+            padding-left: 9px;
+
+            &:hover {
+                transition: all 0.3s;
+                color: #952212;
+            }
+        }
+
+        &-imgComposition {
+            width: 40px;
+            @include adaptiv-marginRight(13, 5);
+        }
+
+        &--headComposition {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 800;
+            @include adaptiv-font(18, 15);
+            line-height: 150%;
+            color: #1b1b1b;
+            text-align: center;
+        }
+    }
+
+    &__pointComposition {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        @include adaptiv-font(18, 12);
+        line-height: 22px;
+        color: #1b1b1b;
+        width: 18%;
+        text-align: center;
+    }
+
+    &__headComposition {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(18, 15);
+        line-height: 22px;
+        color: #1b1b1b;
+        width: 18%;
+    }
+
+    #otchetAboutLastSecondTable {
+        padding-bottom: 93px;
+        margin-bottom: 30px;
+    }
+    // конец таблиц
 
     &__bombardier {
         margin-top: 30px;
@@ -316,7 +557,7 @@
 
             &:hover {
                 transition: all 0.3s;
-                color: rgb(27, 27, 27, 0.7);
+                color: #952212;
             }
         }
 
