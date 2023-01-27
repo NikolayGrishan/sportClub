@@ -1,3 +1,292 @@
-.news-match {
-    color: blue;
+.otchetAbout {
+    @include adaptiv-marginTop(50, 40);
+    &__block--line {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .line {
+        height: 2px;
+        background: #952212;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    &__head {
+        @include adaptiv-font(45, 20);
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        line-height: 55px;
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        @include adaptiv-marginBottom(17, 30);
+        padding-left: 5%;
+        margin-right: 30px;
+        white-space: nowrap;
+    }
+
+    &__otchetCase {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__otchetPlace {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #d9d9d9;
+        p {
+            &:nth-child(1) {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 0.01em;
+                color: #952212;
+            }
+            &:nth-child(2) {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 0.01em;
+                color: #1b1b1b;
+            }
+        }
+    }
+
+    &__scoreAdaptiv {
+        margin-top: 16px;
+        display: none;
+    }
+
+    &__scoreAdaptivBigNumber {
+        display: flex;
+        align-items: center;
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 55px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #952212;
+        }
+        img {
+            margin-left: 60px;
+            margin-right: 57px;
+        }
+    }
+
+    &__scoreAdaptivSmallNumber {
+        margin-top: 3px;
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #952212;
+        }
+    }
+
+    &__otchetTeam {
+        margin-top: 27px;
+        display: flex;
+    }
+
+    &__otchetFirstTeam {
+        padding-right: 96px;
+        margin-right: 0px;
+    }
+
+    &__otchetTeamLogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        img {
+        }
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            @include adaptiv-font(18, 12);
+            line-height: 22px;
+            text-align: center;
+            color: #1b1b1b;
+            max-width: 223px;
+        }
+    }
+
+    &__otchetFirstTeamTable {
+    }
+
+    &__listFirstTeam {
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            @include adaptiv-font(18, 12);
+            line-height: 22px;
+            color: #1b1b1b;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+    }
+
+    &__ticketFirstTeam {
+        margin-top: 5px;
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            @include adaptiv-font(18, 12);
+            line-height: 22px;
+            color: #1b1b1b;
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__scoreDesktop {
+        margin-top: 46px;
+    }
+
+    &__scoreDesktopBigNumber {
+        display: flex;
+        align-items: center;
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 55px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #952212;
+        }
+        img {
+            margin-left: 60px;
+            margin-right: 57px;
+        }
+    }
+
+    &__scoreDesktopSmallNumber {
+        margin-top: 22px;
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #952212;
+        }
+    }
+
+    &__otchetSecondTeam {
+        margin-left: 0px;
+        padding-left: 108px;
+    }
+
+    &__otchetSecondTeamLogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        img {
+        }
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            @include adaptiv-font(18, 12);
+            line-height: 22px;
+            text-align: center;
+            color: #1b1b1b;
+            max-width: 180px;
+        }
+    }
+
+    &__otchetSecondTeamTable {
+    }
+
+    &__listSecondTeam {
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            @include adaptiv-font(18, 12);
+            line-height: 22px;
+            color: #1b1b1b;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+    }
+
+    &__ticketSecondTeam {
+        margin-top: 5px;
+        p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            @include adaptiv-font(18, 12);
+            line-height: 22px;
+            color: #1b1b1b;
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .otchetAbout {
+        &__scoreAdaptiv {
+            display: initial;
+        }
+
+        &__scoreDesktop {
+            display: none;
+        }
+
+        &__otchetFirstTeam {
+            padding-right: 0px;
+        }
+        &__otchetSecondTeam {
+            padding-left: 0px;
+            margin-left: 41px;
+        }
+        &__listSecondTeam {
+            margin-bottom: 163px;
+        }
+        &__otchetTeamLogo {
+            img {
+                width: 69px;
+            }
+        }
+        &__otchetSecondTeamLogo {
+            img {
+                width: 69px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .otchetAbout {
+        &__otchetSecondTeam {
+            margin-left: 0px;
+        }
+    }
 }

@@ -9,6 +9,7 @@
         letter-spacing: 0.01em;
         color: #1b1b1b;
         @include adaptiv-marginTop(50, 30);
+        padding-left: 5%;
     }
 
     &__font {
@@ -31,8 +32,9 @@
         line-height: 55px;
         letter-spacing: 0.01em;
         color: #1b1b1b;
-        width: 100%;
-        min-width: 1035px;
+        padding-left: 5%;
+        margin-right: 30px;
+        white-space: nowrap;
     }
 
     .line {
@@ -168,9 +170,6 @@
             margin-left: 0px;
             margin-bottom: 25px;
         }
-        &__head {
-            min-width: 600px;
-        }
     }
 }
 
@@ -179,16 +178,13 @@
         &__videoCase {
             margin-left: 40px;
         }
-        &__head {
-            min-width: 200px;
-        }
     }
 }
 
 @media (max-width: 900px) {
     .newsMatch {
         &__head {
-            min-width: 450px;
+            white-space: pre-wrap;
             line-height: 24px;
         }
         &__organisators {
@@ -209,9 +205,6 @@
 
 @media (max-width: 600px) {
     .newsMatch {
-        &__head {
-            min-width: 250px;
-        }
         &__videoFirst {
             video {
                 width: 100%;
