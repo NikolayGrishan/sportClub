@@ -810,7 +810,7 @@
         &__gameCompositionTabs {
             display: initial;
         }
-        
+
         &__gameCompositionCase {
             margin-top: 30px;
         }
@@ -929,7 +929,7 @@
                     margin-left: 0px;
                     margin-right: 30px;
                 }
-                
+
                 &:last-child {
                     margin-left: 30px;
                     margin-right: 0px;
@@ -985,15 +985,15 @@
             &-playerComposition {
                 white-space: pre-wrap;
             }
-        } 
-        
+        }
+
         &__btns {
             button {
                 &:first-child {
                     margin-left: 0px;
                     margin-right: 10px;
                 }
-                
+
                 &:last-child {
                     margin-left: 10px;
                     margin-right: 0px;
@@ -1007,7 +1007,7 @@
         &__gameComposition {
             &-rowComposition {
                 width: 80%;
-                @include adaptiv-marginRight(5,30);
+                @include adaptiv-marginRight(5, 30);
             }
             &--teamComposition {
                 width: 35%;
