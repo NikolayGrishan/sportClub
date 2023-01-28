@@ -265,6 +265,10 @@
         margin-left: 30px;
     }
 
+    &__gameCompositionTabs {
+        display: none;
+    }
+
     &__gameComposition {
         margin-top: 30px;
         width: 40%;
@@ -306,7 +310,7 @@
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
-            font-size: 18px;
+            @include adaptiv-font(18, 12);
             line-height: 150%;
             color: #1b1b1b;
         }
@@ -499,6 +503,45 @@
     #otchetAboutLastSecondTable {
         padding-bottom: 93px;
         margin-bottom: 30px;
+    }
+
+    &__gameAlign {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__gameCompositionText {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        margin-left: 30px;
+    }
+
+    &__gameTextSize {
+        font-size: 18px;
+    }
+
+    &__lastOtchet {
+        width: 60%;
+        border: 1px solid rgba(27, 27, 27, 0.1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 30px;
+    }
+
+    &__lastOtchet {
+        display: none;
     }
     // конец таблиц
 
@@ -723,6 +766,23 @@
     }
 }
 
+@media (max-width: 1440px) {
+    .otchetAbout {
+        &__gameComposition {
+            width: 50%;
+        }
+        &__gameCompositionSecond {
+            width: 50%;
+        }
+        &__headComposition {
+            width: 10%;
+        }
+        &__pointComposition {
+            width: 7%;
+        }
+    }
+}
+
 @media (max-width: 1300px) {
     .otchetAbout {
         &__bombardier {
@@ -732,6 +792,30 @@
             &-text {
                 display: none;
             }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .otchetAbout {
+        &__gameComposition {
+            display: none;
+            &-playerComposition {
+                text-decoration: underline;
+            }
+        }
+        &__gameCompositionSecond {
+            display: none;
+        }
+        &__gameCompositionTabs {
+            display: initial;
+        }
+        
+        &__gameCompositionCase {
+            margin-top: 30px;
+        }
+        #otchetAboutLastSecondTable {
+            padding-bottom: 0px;
         }
     }
 }
@@ -800,6 +884,9 @@
                 text-decoration-line: underline;
             }
         }
+        &__lastOtchet {
+            width: 100%;
+        }
     }
 }
 
@@ -833,6 +920,19 @@
                 &:last-child {
                     margin-left: 0;
                     @include adaptiv-marginRight(400, 10);
+                }
+            }
+        }
+        &__btns {
+            button {
+                &:first-child {
+                    margin-left: 0px;
+                    margin-right: 30px;
+                }
+                
+                &:last-child {
+                    margin-left: 30px;
+                    margin-right: 0px;
                 }
             }
         }
@@ -879,6 +979,39 @@
     .otchetAbout {
         &__otchetSecondTeam {
             margin-left: 0px;
+        }
+
+        &__gameComposition {
+            &-playerComposition {
+                white-space: pre-wrap;
+            }
+        } 
+        
+        &__btns {
+            button {
+                &:first-child {
+                    margin-left: 0px;
+                    margin-right: 10px;
+                }
+                
+                &:last-child {
+                    margin-left: 10px;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .otchetAbout {
+        &__gameComposition {
+            &-rowComposition {
+                width: 80%;
+                @include adaptiv-marginRight(5,30);
+            }
+            &--teamComposition {
+                width: 35%;
+            }
         }
     }
 }
