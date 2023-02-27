@@ -10,6 +10,15 @@ $minWidth: 320;
   );
 }
 
+@mixin adaptiv-lineHeight($pcValue, $mobValue) {
+  $addSize: $pcValue - $mobValue;
+  $differenceWidth: $maxWidth - $minWidth;
+  line-height: calc(
+    #{$mobValue + px} + #{$addSize} *
+      ((100vw - #{$minWidth + px}) / #{$differenceWidth})
+  );
+}
+
 
 
 @mixin adaptiv-padding($pcValue, $mobValue) {

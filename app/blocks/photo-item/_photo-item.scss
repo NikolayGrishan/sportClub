@@ -1,0 +1,184 @@
+.photo-item {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-content {
+            max-width: 1710px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            @include adaptiv-paddingBottom(200, 100);
+            &-arrows {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 25px;
+                &-slickPrev {
+                    width: 45px;
+                    height: 45px;
+                    background: url("/images/svg/pagination-left.svg");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                    margin-right: 15px;
+                }
+                &-slickPrev:hover {
+                    background: url("/images/svg/pagination-lhover.svg");
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                }
+                &-slickNext {
+                    width: 45px;
+                    height: 45px;
+                    background: url("/images/svg/pagination-right.svg");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                }
+                &-slickNext:hover {
+                    background: url("/images/svg/pagination-rhover.svg");
+                    cursor: pointer;
+                    transition: all 0.3s ease 0s;
+                }
+            }
+        }
+    }
+    &__prev {
+        @include adaptiv-marginTop(50, 30);
+        padding-left: 5%;
+        a {
+            @include adaptiv-font(18, 12);
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+        }
+    }
+
+    &__font {
+        color: rgba(27, 27, 27, 0.5);
+    }
+
+    &__fontText {
+        color: #1b1b1b;
+    }
+
+    &__block--line {
+        display: flex;
+        align-items: center;
+        @include adaptiv-marginTop(30, 15);
+        @include adaptiv-marginBottom(50, 30);
+    }
+
+    &__head {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiv-font(45, 20);
+        @include adaptiv-lineHeight(55, 24);
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        padding-left: 5%;
+        margin-right: 30px;
+        white-space: normal;
+        flex: 1 2 1200px;
+    }
+
+    .line {
+        height: 2px;
+        background: #952212;
+        width: 100%;
+        flex: 2 1 709px;
+    }
+
+    .photo-item__container-content-slider {
+        .slider__item {
+            width: 100%;
+            max-width: 318px;
+            height: 100%;
+            max-height: 250px;
+        }
+        .slick-track {
+            display: flex;
+        }
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-slide {
+            width: 100%;
+            max-width: 318px;
+            margin: 0px 30px 0px 0px;
+        }
+        .slick-slide div {
+            width: 318px;
+            height: 100%;
+            max-height: 250px;
+        }
+        .slick-slide div:first-child {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+}
+@media (max-width: 1887px) {
+    .photo-item {
+        &__head {
+            flex: initial;
+        }
+        .line {
+            flex: initial;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .photo-item {
+        .line {
+            width: 80%;
+        }
+        &__container {
+            &-content {
+                &-arrows {
+                    display: none;
+                }
+            }
+        }
+    }
+    .photo-item__container-content-slider {
+        .slick-slide div:first-child {
+            margin: 0px !important;
+        }
+        .slider__item {
+            width: 100%;
+            max-width: 330px;
+            height: 100%;
+            max-height: 370px;
+        }
+        .slick-slide div {
+            width: 330px !important;
+            height: 100%;
+            max-height: 370px !important;
+            a > img {
+                width: 330px;
+                height: 370px;
+            }
+        }
+    }
+}
+@media (max-width: 620px) {
+    .photo-item {
+        &__head {
+            margin-right: 0px;
+        }
+        .line {
+            width: 50%;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .photo-item {
+        .line {
+            width: 20%;
+        }
+    }
+}

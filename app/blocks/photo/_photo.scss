@@ -8,7 +8,6 @@
             width: 90%;
             display: flex;
             flex-direction: column;
-            padding-bottom: 200px;
             @include adaptiv-paddingBottom(200, 100);
             &-links {
                 display: flex;
