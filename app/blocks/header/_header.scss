@@ -58,7 +58,7 @@
         height: 24px; /* Высота кнопки */
         border: none; /* Убираем рамку */
         cursor: pointer;
-        background: url("/images/svg/search.svg") no-repeat 50% 50%; /* Параметры фона */
+        background: url("images/svg/search.svg") no-repeat 50% 50%; /* Параметры фона */
         margin-right: 18px;
         font-family: "Montserrat";
         font-style: normal;
@@ -129,48 +129,48 @@
         &__vk {
             width: 24px;
             height: 24px;
-            background: url("/images/svg/vk.svg");
+            background: url("images/svg/vk.svg");
             background-repeat: no-repeat;
             background-position: center center;
 
             &:hover {
-                background: url("/images/svg/vk-black.svg");
+                background: url("images/svg/vk-black.svg");
             }
         }
 
         &__inst {
             width: 24px;
             height: 24px;
-            background: url("/images/svg/inst.svg");
+            background: url("images/svg/inst.svg");
             background-repeat: no-repeat;
             background-position: center center;
 
             &:hover {
-                background: url("/images/svg/inst-black.svg");
+                background: url("images/svg/inst-black.svg");
             }
         }
 
         &__fb {
             width: 24px;
             height: 24px;
-            background: url("/images/svg/fb.svg");
+            background: url("images/svg/fb.svg");
             background-repeat: no-repeat;
             background-position: center center;
 
             &:hover {
-                background: url("/images/svg/fb-black.svg");
+                background: url("images/svg/fb-black.svg");
             }
         }
 
         &__YT {
             width: 24px;
             height: 24px;
-            background: url("/images/svg/YT.svg");
+            background: url("images/svg/YT.svg");
             background-repeat: no-repeat;
             background-position: center center;
 
             &:hover {
-                background: url("/images/svg/YT-black.svg");
+                background: url("images/svg/YT-black.svg");
             }
         }
 
@@ -192,12 +192,12 @@
         @include adaptiv-marginRight(10, 0);
         width: 24px;
         height: 24px;
-        background: url("/images/svg/search.svg");
+        background: url("images/svg/search.svg");
         background-repeat: no-repeat;
         background-position: center center;
         &:hover {
             cursor: pointer;
-            background: url("/images/svg/search-black.svg");
+            background: url("images/svg/search-black.svg");
         }
     }
 

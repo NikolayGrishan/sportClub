@@ -443,7 +443,7 @@
 
     &__arrowLeft {
         font-size: 0;
-        background: url("/images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
+        background: url("images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
         width: 45px;
         height: 45px;
         border: none;
@@ -451,14 +451,14 @@
         margin-right: 20px;
         cursor: pointer;
         &:hover {
-            background: url("/images/svg/pagination-lhover.svg") 0 0 / 100%
+            background: url("images/svg/pagination-lhover.svg") 0 0 / 100%
                 no-repeat;
         }
     }
 
     &__arrowRight {
         font-size: 0;
-        background: url("/images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
+        background: url("images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
         width: 45px;
         height: 45px;
         border: none;
@@ -466,7 +466,7 @@
         margin-left: 20px;
         cursor: pointer;
         &:hover {
-            background: url("/images/svg/pagination-rhover.svg") 0 0 / 100%
+            background: url("images/svg/pagination-rhover.svg") 0 0 / 100%
                 no-repeat;
         }
     }

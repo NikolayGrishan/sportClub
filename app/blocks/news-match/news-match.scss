@@ -1,5 +1,9 @@
 .newsMatch {
     @include adaptiv-marginBottom(100, 60);
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
     &__prev {
         @include adaptiv-font(18, 12);
         font-family: "Montserrat";
@@ -50,72 +54,20 @@
     }
 
     &__organisators {
-        p:nth-child(1) {
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 400;
-            @include adaptiv-font(18, 15);
-            line-height: 150%;
-            letter-spacing: 0.01em;
-            color: #1f1412;
-            @include adaptiv-marginBottom(15, 5);
-            max-width: 582px;
-            a {
-                color: #952212;
-                text-decoration: underline;
-            }
-        }
-        p:nth-child(2) {
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: 0.01em;
-            color: rgba(31, 20, 18, 0.5);
-            @include adaptiv-font(16, 15);
-            @include adaptiv-marginBottom(30, 23);
-            max-width: 419px;
-        }
-        p:nth-child(3) {
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 700;
-            line-height: 140%;
-            letter-spacing: 0.01em;
-            color: #1f1412;
-            @include adaptiv-font(18, 15);
-            @include adaptiv-marginBottom(12, 10);
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        @include adaptiv-font(18, 15);
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #1f1412;
+        a {
+            color: #952212;
+            text-decoration: underline;
         }
         ul {
-            @include adaptiv-marginBottom(9, 10);
-        }
-        li {
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 400;
-            line-height: 140%;
-            letter-spacing: 0.01em;
-            color: #1f1412;
-            list-style: disc;
-            @include adaptiv-font(18, 15);
-            @include adaptiv-marginBottom(7, 5);
-            &:nth-child(2) {
-                max-width: 338px;
-            }
-        }
-        p:nth-child(5) {
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 400;
-            @include adaptiv-font(18, 15);
-            line-height: 140%;
-            letter-spacing: 0.01em;
-            color: #1f1412;
-            max-width: 487px;
-            a {
-                color: #952212;
-                text-decoration: underline;
-            }
+            margin: 0;
+            padding: 0;
         }
     }
 
@@ -162,6 +114,9 @@
 
 @media (max-width: 1600px) {
     .newsMatch {
+        &__organisators {
+            margin-right: 50px;
+        }
         &__videoCase {
             flex-direction: column;
         }
@@ -189,6 +144,7 @@
         }
         &__organisators {
             max-width: 518px;
+            margin-right: 0px;
         }
         &__bodyCase {
             flex-direction: column;

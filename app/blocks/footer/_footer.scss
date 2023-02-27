@@ -43,10 +43,10 @@
     &__img1 {
         height: 120px;
         width: 100px;
-        background: url("/images/footer/logo1.svg");
+        background: url("images/footer/logo1.svg");
         background-repeat: no-repeat;
         &:hover {
-            background: url("/images/footer/logo1-hover.svg");
+            background: url("images/footer/logo1-hover.svg");
             cursor: pointer;
             transition: all 0.3s;
         }
@@ -56,10 +56,10 @@
         margin-right: 47px;
         height: 120px;
         width: 136px;
-        background: url("/images/footer/logo2.svg");
+        background: url("images/footer/logo2.svg");
         background-repeat: no-repeat;
         &:hover {
-            background: url("/images/footer/logo2-hover.svg");
+            background: url("images/footer/logo2-hover.svg");
             background-repeat: no-repeat;
             cursor: pointer;
             transition: all 0.3s;
@@ -69,10 +69,10 @@
     &__img3 {
         height: 120px;
         width: 120px;
-        background: url("/images/footer/logo3.svg");
+        background: url("images/footer/logo3.svg");
         background-repeat: no-repeat;
         &:hover {
-            background: url("/images/footer/logo3-hover.svg");
+            background: url("images/footer/logo3-hover.svg");
             background-repeat: no-repeat;
             cursor: pointer;
             transition: all 0.3s;
@@ -82,11 +82,11 @@
     &__img4 {
         height: 120px;
         width: 180px;
-        background: url("/images/footer/logo4.svg");
+        background: url("images/footer/logo4.svg");
         background-repeat: no-repeat;
         background-position: center center;
         &:hover {
-            background: url("/images/footer/logo4-hover.svg");
+            background: url("images/footer/logo4-hover.svg");
             background-repeat: no-repeat;
             background-position: center center;
             cursor: pointer;
