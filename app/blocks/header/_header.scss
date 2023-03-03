@@ -85,13 +85,16 @@
         line-height: 22px;
         color: #1b1b1b;
         @include adaptiv-paddingLeft(73, 70);
+        max-width: 406px;
+        overflow-wrap: break-word;
     }
 
     &__logo {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         position: relative;
         max-width: 406px;
+        overflow-wrap: break-word;
     }
 
     &__img {
