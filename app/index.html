@@ -242,8 +242,379 @@
         <!-- /.match -->
 
         <section class="stats" id="stats">
-    <div class="hidden">
-        <div id="form" class="form">
+    <div id="myModal" class="stats__modal" style="display: none;">
+        <div id="allBombardires" class="allBombardires">
+            <div class="stats__popupBombardires">
+                <div class="stats__capBombardires">
+                    <div class="stats__closePopup modal">
+                        <img
+                            src="images/svg/crossBombardires.svg"
+                            alt="cross"
+                            class="stats__cross"
+                            id="crossBombardires"
+                        />
+                    </div>
+                    <h2 class="stats__capTitle">Все бомбардиры</h2>
+                </div>
+                <div class="stats__bodyBobbardires">
+                    <div class="stats__tableContainer">
+                        <div class="slider--bb stats__slider">
+                            <table class="stats__chart">
+                                <tr class="stats__row stats__row--first">
+                                    <th
+                                        class="stats__tableHead stats__tableHead--heading"
+                                    >
+                                        Игрок
+                                    </th>
+                                    <th
+                                        class="stats__tableHeadTeam stats__tableHeadTeam--teaming"
+                                    >
+                                        Команда
+                                    </th>
+                                    <th class="stats__tableHeadPoints">И</th>
+                                    <th class="stats__tableHeadPoints">Ш</th>
+                                    <th class="stats__tableHeadPoints">А</th>
+                                    <th class="stats__tableHeadPoints">О</th>
+                                </tr>
+                                <tr class="stats__row">
+                                    <td class="stats__playerBombardier">
+                                        <a
+                                            class="stats__playerBombardier-texting"
+                                            href="#form"
+                                        >
+                                            Игорь Ворошилов
+                                        </a>
+                                    </td>
+                                    <td class="stats__teamLogo">
+                                        <a class="stats__linkTeamLogo" href="">
+                                            <img
+                                                src="images/presidents.png"
+                                                alt=""
+                                            />
+                                            <p>
+                                                Команда Президента Республики
+                                                Беларусь
+                                            </p>
+                                        </a>
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        9
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        7
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        16
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        23
+                                    </td>
+                                </tr>
+                                <tr class="stats__row stats__even">
+                                    <td class="stats__playerBombardier">
+                                        <a
+                                            class="stats__playerBombardier-texting popup"
+                                            href="#form"
+                                        >
+                                            Игорь Коваленя
+                                        </a>
+                                    </td>
+                                    <td class="stats__teamLogo">
+                                        <a class="stats__linkTeamLogo" href="">
+                                            <img
+                                                src="images/vitebsk.png"
+                                                alt=""
+                                            />
+                                            <p>Команда Витебской области</p>
+                                        </a>
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        9
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        10
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        5
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        15
+                                    </td>
+                                </tr>
+                                <tr class="stats__row">
+                                    <td class="stats__playerBombardier">
+                                        <a
+                                            class="stats__playerBombardier-texting popup"
+                                            href="#form"
+                                        >
+                                            Андрей Костицин
+                                        </a>
+                                    </td>
+                                    <td class="stats__teamLogo">
+                                        <a class="stats__linkTeamLogo" href="">
+                                            <img
+                                                src="images/presidents.png"
+                                                alt=""
+                                            />
+                                            <p>
+                                                Команда Президента Республики
+                                                Беларусь
+                                            </p>
+                                        </a>
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        7
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        9
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        5
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        14
+                                    </td>
+                                </tr>
+                                <tr class="stats__row stats__even">
+                                    <td class="stats__playerBombardier">
+                                        <a
+                                            class="stats__playerBombardier-texting popup"
+                                            href="#form"
+                                        >
+                                            Павел Копытин
+                                        </a>
+                                    </td>
+                                    <td class="stats__teamLogo">
+                                        <a class="stats__linkTeamLogo" href="">
+                                            <img
+                                                src="images/minsk.png"
+                                                alt=""
+                                            />
+                                            <p>Команда Минской области</p>
+                                        </a>
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        9
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        7
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        16
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        23
+                                    </td>
+                                </tr>
+                                <tr class="stats__row">
+                                    <td class="stats__playerBombardier">
+                                        <a
+                                            class="stats__playerBombardier-texting popup"
+                                            href="#form"
+                                        >
+                                            Денис Кокарев
+                                        </a>
+                                    </td>
+                                    <td class="stats__teamLogo">
+                                        <a class="stats__linkTeamLogo" href="">
+                                            <img
+                                                src="images/minsk.png"
+                                                alt=""
+                                            />
+                                            <p>Команда Минской области</p>
+                                        </a>
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        9
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        10
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        5
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        15
+                                    </td>
+                                </tr>
+                                <tr class="stats__row stats__even">
+                                    <td class="stats__playerBombardier">
+                                        <a
+                                            class="stats__playerBombardier-texting popup"
+                                            href="#form"
+                                        >
+                                            Дмитрий Луцевич
+                                        </a>
+                                    </td>
+                                    <td class="stats__teamLogo">
+                                        <a class="stats__linkTeamLogo" href="">
+                                            <img
+                                                src="images/minsk.png"
+                                                alt=""
+                                            />
+                                            <p>Команда Минской области</p>
+                                        </a>
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        7
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        9
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        5
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        14
+                                    </td>
+                                </tr>
+                                <tr class="stats__row">
+                                    <td class="stats__playerBombardier">
+                                        <a
+                                            class="stats__playerBombardier-texting popup"
+                                            href="#form"
+                                        >
+                                            Артем Устименко
+                                        </a>
+                                    </td>
+                                    <td class="stats__teamLogo">
+                                        <a class="stats__linkTeamLogo" href="">
+                                            <img
+                                                src="images/gomel.png"
+                                                alt=""
+                                            />
+                                            <p>Команда Гомельской области</p>
+                                        </a>
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        9
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        7
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        16
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        23
+                                    </td>
+                                </tr>
+                                <tr class="stats__row stats__even">
+                                    <td class="stats__playerBombardier">
+                                        <a
+                                            class="stats__playerBombardier-texting popup"
+                                            href="#form"
+                                        >
+                                            Павел Мусименко
+                                        </a>
+                                    </td>
+                                    <td class="stats__teamLogo">
+                                        <a class="stats__linkTeamLogo" href="">
+                                            <img
+                                                src="images/gomel.png"
+                                                alt=""
+                                            />
+                                            <p>Команда Гомельской области</p>
+                                        </a>
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        9
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        10
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        5
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        15
+                                    </td>
+                                </tr>
+                                <tr class="stats__row">
+                                    <td class="stats__playerBombardier">
+                                        <a
+                                            class="stats__playerBombardier-texting popup"
+                                            href="#form"
+                                        >
+                                            Олег Смолин
+                                        </a>
+                                    </td>
+                                    <td class="stats__teamLogo">
+                                        <a class="stats__linkTeamLogo" href="">
+                                            <img
+                                                src="images/minsk.png"
+                                                alt=""
+                                            />
+                                            <p>Команда Минской области</p>
+                                        </a>
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        7
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        9
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        5
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        14
+                                    </td>
+                                </tr>
+                                <tr class="stats__row stats__even">
+                                    <td class="stats__playerBombardier">
+                                        <a
+                                            class="stats__playerBombardier-texting popup"
+                                            href="#form"
+                                        >
+                                            Олег Полякевич
+                                        </a>
+                                    </td>
+                                    <td class="stats__teamLogo">
+                                        <a class="stats__linkTeamLogo" href="">
+                                            <img
+                                                src="images/vitebsk.png"
+                                                alt=""
+                                            />
+                                            <p>Команда Витебской области</p>
+                                        </a>
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        9
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        10
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        5
+                                    </td>
+                                    <td class="stats__tableHeadPoints--texting">
+                                        15
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="stats__pagination">
+                        <ul>
+                            <li>
+                                <a href="#"><span></span></a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">15</a></li>
+                            <li>
+                                <a href="#"><span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="form" class="form" style="display: none;">
             <div class="stats__popup">
                 <div class="stats__closePopup">
                     <img
@@ -343,1031 +714,6 @@
                 </div>
             </div>
         </div>
-        <div id="allBombardires" class="allBombardires">
-            <div class="stats__popupBombardires">
-                <div class="stats__capBombardires">
-                    <div class="stats__closePopup">
-                        <img
-                            src="images/svg/crossBombardires.svg"
-                            alt="cross"
-                            class="stats__cross"
-                            id="crossBombardires"
-                        />
-                    </div>
-                    <h2 class="stats__capTitle">Все бомбардиры</h2>
-                </div>
-                <div class="stats__bodyBobbardires">
-                    <div class="stats__tableContainer">
-                        <div class="slider--bb stats__slider">
-                            <table class="stats__chart">
-                                <tr class="stats__row stats__row--first">
-                                    <th
-                                        class="stats__tableHead stats__tableHead--heading"
-                                    >
-                                        Игрок
-                                    </th>
-                                    <th
-                                        class="stats__tableHeadTeam stats__tableHeadTeam--teaming"
-                                    >
-                                        Команда
-                                    </th>
-                                    <th class="stats__tableHeadPoints">И</th>
-                                    <th class="stats__tableHeadPoints">Ш</th>
-                                    <th class="stats__tableHeadPoints">А</th>
-                                    <th class="stats__tableHeadPoints">О</th>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Игорь Ворошилов
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/presidents.png"
-                                                alt=""
-                                            />
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Игорь Коваленя
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/vitebsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Витебской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Андрей Костицин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/presidents.png"
-                                                alt=""
-                                            />
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Павел Копытин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Денис Кокарев
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Дмитрий Луцевич
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Артем Устименко
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/gomel.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Гомельской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Павел Мусименко
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/gomel.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Гомельской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Олег Смолин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Олег Полякевич
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/vitebsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Витебской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                            </table>
-                            <table class="stats__chart">
-                                <tr class="stats__row stats__row--first">
-                                    <th
-                                        class="stats__tableHead stats__tableHead--heading"
-                                    >
-                                        Игрок
-                                    </th>
-                                    <th
-                                        class="stats__tableHeadTeam stats__tableHeadTeam--teaming"
-                                    >
-                                        Команда
-                                    </th>
-                                    <th class="stats__tableHeadPoints">И</th>
-                                    <th class="stats__tableHeadPoints">Ш</th>
-                                    <th class="stats__tableHeadPoints">А</th>
-                                    <th class="stats__tableHeadPoints">О</th>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Игорь Ворошилов
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/presidents.png"
-                                                alt=""
-                                            />
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Игорь Коваленя
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/vitebsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Витебской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Андрей Костицин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/presidents.png"
-                                                alt=""
-                                            />
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Павел Копытин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Денис Кокарев
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Дмитрий Луцевич
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Артем Устименко
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/gomel.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Гомельской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Павел Мусименко
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/gomel.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Гомельской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Олег Смолин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Олег Полякевич
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/vitebsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Витебской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                            </table>
-                            <table class="stats__chart">
-                                <tr class="stats__row stats__row--first">
-                                    <th
-                                        class="stats__tableHead stats__tableHead--heading"
-                                    >
-                                        Игрок
-                                    </th>
-                                    <th
-                                        class="stats__tableHeadTeam stats__tableHeadTeam--teaming"
-                                    >
-                                        Команда
-                                    </th>
-                                    <th class="stats__tableHeadPoints">И</th>
-                                    <th class="stats__tableHeadPoints">Ш</th>
-                                    <th class="stats__tableHeadPoints">А</th>
-                                    <th class="stats__tableHeadPoints">О</th>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Игорь Ворошилов
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/presidents.png"
-                                                alt=""
-                                            />
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Игорь Коваленя
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/vitebsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Витебской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Андрей Костицин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/presidents.png"
-                                                alt=""
-                                            />
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Павел Копытин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Денис Кокарев
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Дмитрий Луцевич
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Артем Устименко
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/gomel.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Гомельской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Павел Мусименко
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/gomel.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Гомельской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Олег Смолин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/minsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Олег Полякевич
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <img
-                                                src="images/vitebsk.png"
-                                                alt=""
-                                            />
-                                            <p>Команда Витебской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="stats__arrows"></div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="stats__block--line">
         <h2 class="stats__header">Статистика</h2>
         <div class="stats__line line"></div>
@@ -2303,7 +1649,7 @@
                     </tr>
                 </table>
                 <a
-                    class="stats__bombardier-all popupBombardires"
+                    class="stats__bombardier-all"
                     href="#allBombardires"
                     >Все бомбардиры</a
                 >

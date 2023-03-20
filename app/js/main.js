@@ -10,23 +10,26 @@ $(document).ready(function () {
     });
 });
 
+// popup в popup-е
 $(document).ready(function () {
-    $(".popupBombardires").magnificPopup();
-});
-
-$(document).ready(function () {
-    $("#crossBombardires").click(function () {
-        $.magnificPopup.close();
+    let elem = document.getElementById("myModal");
+    $(".stats__bombardier-all").click(function () {
+        elem.style.display = "flex";
+    });
+    $(".stats__closePopup.modal").click(function () {
+        elem.style.display = "none";
     });
 });
 
+// popup в popup-е
 $(document).ready(function () {
-    $(".popup").magnificPopup();
-});
-
-$(document).ready(function () {
-    $("#cross").click(function () {
-        $.magnificPopup.close();
+    let elem2 = document.getElementById("form");
+    
+    $(".stats__playerBombardier").click(function () {
+        elem2.style.display = "flex";
+    });
+    $(".stats__cross").click(function () {
+        elem2.style.display = "none";
     });
 });
 
@@ -138,21 +141,21 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-    $(".slider--bb").slick({
-        arrows: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 1000,
-        easing: "lenear",
-        appendArrows: $(".stats__arrows"),
-        draggable: false,
-        infinite: true,
-        initialSlide: 1,
-        touchThreshold: 15,
-        waitForAnimate: false,
-    });
-});
+// $(document).ready(function () {
+//     $(".slider--bb").slick({
+//         arrows: true,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         speed: 1000,
+//         easing: "lenear",
+//         appendArrows: $(".stats__arrows"),
+//         draggable: false,
+//         infinite: true,
+//         initialSlide: 1,
+//         touchThreshold: 15,
+//         waitForAnimate: false,
+//     });
+// });
 
 $(document).ready(function () {
     $(".photo-item__container-content-slider").slick({

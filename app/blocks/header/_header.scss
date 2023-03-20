@@ -84,9 +84,8 @@
         @include adaptiv-font(18, 12);
         line-height: 22px;
         color: #1b1b1b;
-        @include adaptiv-paddingLeft(73, 70);
-        max-width: 406px;
-        overflow-wrap: break-word;
+        @include adaptiv-paddingLeft(23, 20);
+        margin: auto;
     }
 
     &__logo {
@@ -98,7 +97,8 @@
     }
 
     &__img {
-        position: absolute;
+        width: 8em;
+        margin: auto;
     }
 
     &__nav {
