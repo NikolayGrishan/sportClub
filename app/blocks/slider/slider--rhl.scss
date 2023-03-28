@@ -16,13 +16,13 @@
     flex-direction: column;
     justify-content: center;
     min-height: 700px;
-    padding: 0px 15px 0px 15px;
+    padding: 30px 15px 30px 15px;
   }
 }
 
 .news--rhl__arrows .slick-arrow.slick-prev {
   font-size: 0;
-  background: url("images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
+  background: url("../images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
   width: 45px;
   height: 45px;
   border: none;
@@ -32,12 +32,12 @@
 }
 
 .news--rhl__arrows .slick-arrow.slick-prev:hover {
-  background: url("images/svg/pagination-lhover.svg") 0 0 / 100% no-repeat;
+  background: url("../images/svg/pagination-lhover.svg") 0 0 / 100% no-repeat;
 }
 
 .news--rhl__arrows .slick-arrow.slick-next {
   font-size: 0;
-  background: url("images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
+  background: url("../images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
   width: 45px;
   height: 45px;
   border: none;
@@ -46,7 +46,7 @@
 }
 
 .news--rhl__arrows .slick-arrow.slick-next:hover {
-  background: url("images/svg/pagination-rhover.svg") 0 0 / 100% no-repeat;
+  background: url("../images/svg/pagination-rhover.svg") 0 0 / 100% no-repeat;
 }
 
 .slider--rhl .slick-dots {

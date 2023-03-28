@@ -114,6 +114,7 @@
     }
 
     &__popupBombardires {
+        margin-top: 65px !important;
         background-color: #f5f5f5;
         max-width: 1100px;
         margin: auto;
@@ -208,8 +209,8 @@
                                             img {
                                                 width: 100%;
                                                 max-width: 50px;
-                                                height: 100%;
-                                                max-height: 50px;
+                                                // height: 100%;
+                                                // max-height: 50px;
                                                 margin-right: 10px;
                                             }
                                             p {
@@ -421,7 +422,8 @@
 
     &__arrowLeft {
         font-size: 0;
-        background: url("images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
+        background: url("../images/svg/pagination-left.svg") 0 0 / 100%
+            no-repeat;
         width: 45px;
         height: 45px;
         border: none;
@@ -429,14 +431,15 @@
         margin-right: 20px;
         cursor: pointer;
         &:hover {
-            background: url("images/svg/pagination-lhover.svg") 0 0 / 100%
+            background: url("../images/svg/pagination-lhover.svg") 0 0 / 100%
                 no-repeat;
         }
     }
 
     &__arrowRight {
         font-size: 0;
-        background: url("images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
+        background: url("../images/svg/pagination-right.svg") 0 0 / 100%
+            no-repeat;
         width: 45px;
         height: 45px;
         border: none;
@@ -444,7 +447,7 @@
         margin-left: 20px;
         cursor: pointer;
         &:hover {
-            background: url("images/svg/pagination-rhover.svg") 0 0 / 100%
+            background: url("../images/svg/pagination-rhover.svg") 0 0 / 100%
                 no-repeat;
         }
     }
@@ -579,6 +582,8 @@
     &__imgPlayer {
         margin-left: 45px;
         margin-right: 41px;
+        width: 100%;
+        max-width: 185px;
     }
 
     &__logoTeam {
@@ -758,6 +763,7 @@
         &--first {
             margin-top: 11px;
             border-bottom: 1px solid rgba(217, 217, 217, 0.4);
+            background: initial !important;
         }
 
         &--last {
@@ -779,16 +785,21 @@
             width: 100%;
         }
     }
+    &__row:nth-child(2n) {
+        background: rgba(217, 217, 217, 0.2);
+    }
 
     &__point {
         display: flex;
         align-items: center;
+        justify-content: center;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         @include adaptiv-font(18, 12);
         line-height: 22px;
         color: #1b1b1b;
+        width: 7.13%;
     }
 
     &__command {
@@ -825,6 +836,7 @@
             line-height: 150%;
             color: #1b1b1b;
             text-align: left;
+            width: 50%;
         }
     }
 
@@ -835,6 +847,7 @@
         @include adaptiv-font(18, 15);
         line-height: 22px;
         color: #1b1b1b;
+        width: 7.14%;
     }
 
     &__last {

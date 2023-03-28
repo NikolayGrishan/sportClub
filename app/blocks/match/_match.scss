@@ -35,8 +35,10 @@
     color: #1b1b1b;
     @include adaptiv-marginBottom(62, 36);
 		padding-left: 5%;
-		width: 100%;
-		max-width: 650px;
+    padding-right: 30px;
+    /* width: 100%; */
+    /* max-width: 650px; */
+    white-space: nowrap;
   }
 
   .match__block {

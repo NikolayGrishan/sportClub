@@ -46,7 +46,7 @@
 
 .match__arrows .slick-arrow.slick-prev{
 	font-size: 0;
-	background: url('images/svg/pagination-left.svg') 0 0 / 100% no-repeat;
+	background: url('../images/svg/pagination-left.svg') 0 0 / 100% no-repeat;
 	width: 45px;
 	height: 45px; 
 	border: none;
@@ -56,12 +56,12 @@
 }
 
 .match__arrows .slick-arrow.slick-prev:hover{
-	background: url('images/svg/pagination-lhover.svg') 0 0 / 100% no-repeat;
+	background: url('../images/svg/pagination-lhover.svg') 0 0 / 100% no-repeat;
 }
 
 .match__arrows .slick-arrow.slick-next{
 	font-size: 0;
-	background: url('images/svg/pagination-right.svg') 0 0 / 100% no-repeat;
+	background: url('../images/svg/pagination-right.svg') 0 0 / 100% no-repeat;
 	width: 45px;
 	height: 45px; 
 	border: none;
@@ -70,7 +70,7 @@
 }
 
 .match__arrows .slick-arrow.slick-next:hover{
-	background: url('images/svg/pagination-rhover.svg') 0 0 / 100% no-repeat;
+	background: url('../images/svg/pagination-rhover.svg') 0 0 / 100% no-repeat;
 }
 
 

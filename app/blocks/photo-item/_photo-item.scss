@@ -17,27 +17,27 @@
                 &-slickPrev {
                     width: 45px;
                     height: 45px;
-                    background: url("/images/svg/pagination-left.svg");
+                    background: url("../images/svg/pagination-left.svg");
                     background-repeat: no-repeat;
                     background-position: center center;
                     background-size: contain;
                     margin-right: 15px;
                 }
                 &-slickPrev:hover {
-                    background: url("/images/svg/pagination-lhover.svg");
+                    background: url("../images/svg/pagination-lhover.svg");
                     cursor: pointer;
                     transition: all 0.3s ease 0s;
                 }
                 &-slickNext {
                     width: 45px;
                     height: 45px;
-                    background: url("/images/svg/pagination-right.svg");
+                    background: url("../images/svg/pagination-right.svg");
                     background-repeat: no-repeat;
                     background-position: center center;
                     background-size: contain;
                 }
                 &-slickNext:hover {
-                    background: url("/images/svg/pagination-rhover.svg");
+                    background: url("../images/svg/pagination-rhover.svg");
                     cursor: pointer;
                     transition: all 0.3s ease 0s;
                 }
@@ -92,7 +92,7 @@
         width: 100%;
         flex: 2 1 709px;
     }
-   
+
     .photo-item__container-content-slider-item > a > img {
         width: 100%;
         max-width: 318px;
