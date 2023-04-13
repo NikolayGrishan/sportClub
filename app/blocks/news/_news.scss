@@ -3,6 +3,8 @@
     justify-content: center;
     overflow: hidden;
     flex-direction: column;
+    margin-top: 50px;
+    @include adaptiv-marginBottom(100, 60);
 
     &__block--line {
         display: flex;
@@ -20,6 +22,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 100%;
     }
 
     &__head {
@@ -30,7 +33,7 @@
         line-height: 55px;
         letter-spacing: 0.01em;
         color: #1b1b1b;
-        @include adaptiv-marginBottom(62, 36);
+        @include adaptiv-marginBottom(50, 0);
         padding-left: 5%;
         margin-right: 30px;
     }
@@ -39,7 +42,7 @@
         display: flex;
         flex-direction: row;
         max-width: 1027px;
-        justify-content: space-between;
+        // justify-content: space-between;
         position: relative;
         background: #ffffff;
         border-radius: 20px;
@@ -103,9 +106,9 @@
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 800;
-        @include adaptiv-font(25, 22);
+        @include adaptiv-font(25, 18);
         @include adaptiv-paddingBottom(20, 10);
-        line-height: 30px;
+        @include adaptiv-lineHeight(30, 22);
         letter-spacing: 0.01em;
         color: #1b1b1b;
         min-width: 0;
@@ -164,9 +167,26 @@
 
 @media (max-width: 500px) {
     .news {
+        &__img {
+            // width: 292px;
+        }
+        &__block {
+            padding: 16px;
+            // width: 324px !important;
+        }
+        &__image {
+            margin-bottom: 15px;
+        }
         &__news-all {
-            justify-content: center;
+            justify-content: flex-end;
             margin-right: 0px;
+            margin-top: 0px;
+        }
+        .news__block.slick-slide {
+            width: 324px !important;
+        }
+        .slider--n .slick-list {
+            padding: 30px 15px 25px 10px;
         }
     }
 }

@@ -1,173 +1,219 @@
 .match {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-	flex-direction: column;
-  @include adaptiv-marginBottom(150, 60);
-
-  .match__container {
-    width: 90%;
-    max-width: 1709px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .match__block--line {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .line {
-    height: 2px;
-    background: #952212;
-    margin-top: 30px;
-    width: 100%;
-  }
-
-  .match__head {
-    @include adaptiv-font(45, 20);
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    line-height: 55px;
-    letter-spacing: 0.01em;
-    color: #1b1b1b;
-    @include adaptiv-marginBottom(62, 36);
-		padding-left: 5%;
-    padding-right: 30px;
-    /* width: 100%; */
-    /* max-width: 650px; */
-    white-space: nowrap;
-  }
-
-  .match__block {
-    display: flex;
-    flex-direction: column;
-    max-width: 532px;
-    justify-content: space-between;
-    position: relative;
-    border-right: 1px solid #d9d9d9;
-    min-width: 0;
-    align-items: center;
-  }
-
-  .match__opposition {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    @include adaptiv-marginBottom(30, 19);
-    min-width: 0;
-		padding-right: 25px;
-		padding-left: 25px;
-  }
-
-  .match__command {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 223px;
-    min-width: 0;
-  }
-
-  .match__data {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    text-align: center;
-    border-top: 1px solid #d9d9d9;
-    min-width: 0;
-  }
-
-  .match__decal {
-    align-self: center;
-    @include adaptiv-paddingRight(21, 12);
-    @include adaptiv-paddingLeft(21, 12);
-    padding-bottom: 6px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    @include adaptiv-font(16, 10);
-    line-height: 20px;
-    letter-spacing: 0.01em;
-    color: #952212;
-    min-width: 0;
-  }
-
-  .match__name {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    @include adaptiv-font(18, 12);
-    line-height: 22px;
-    text-align: center;
-    color: #1b1b1b;
-    min-width: 0;
-    transition: all 0.3s;
-    text-decoration: none;
-    outline: none;
-  }
-
-  .match__name:hover {
-    color: rgba(27, 27, 27, 0.7);
-  }
-
-  .match__image {
-    margin-bottom: 5px;
-    min-width: 0;
-    cursor: pointer;
-  }
-
-  .match__time {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    @include adaptiv-font(18, 12);
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #952212;
-    margin-bottom: 5px;
-    padding-top: 10px;
-    min-width: 0;
-  }
-
-  .match__area {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    @include adaptiv-font(16, 10);
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #1b1b1b;
-    min-width: 0;
-  }
-
-  .match__live {
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    min-width: 0;
-  }
-
-  .match__arrows {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
-    margin-top: 36px;
-  }
+    overflow: hidden;
+    flex-direction: column;
+    @include adaptiv-marginBottom(150, 60);
 
-  .match__decal--decal {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 25px;
-    line-height: 150%;
-    text-align: center;
-    color: #952212;
-  }
+    .match__container {
+        width: 90%;
+        max-width: 1709px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .match__block--line {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .line {
+        height: 2px;
+        background: #952212;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .match__head {
+        @include adaptiv-font(45, 20);
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        line-height: 55px;
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        @include adaptiv-marginBottom(50, 30);
+        padding-left: 5%;
+        padding-right: 30px;
+        /* width: 100%; */
+        /* max-width: 650px; */
+        white-space: nowrap;
+    }
+
+    .match__block {
+        display: flex;
+        flex-direction: column;
+        max-width: 532px;
+        justify-content: space-between;
+        position: relative;
+        border-right: 1px solid #d9d9d9;
+        min-width: 0;
+        align-items: center;
+    }
+
+    .match__opposition {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: start;
+        @include adaptiv-marginBottom(30, 19);
+        min-width: 0;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .match__command {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 230px;
+        min-width: 0;
+    }
+
+    .match__data {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+        border-top: 1px solid #d9d9d9;
+        min-width: 0;
+    }
+
+    .match__decal {
+        align-self: center;
+        @include adaptiv-paddingRight(21, 12);
+        @include adaptiv-paddingLeft(21, 12);
+        padding-bottom: 6px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        @include adaptiv-font(16, 10);
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #952212;
+        min-width: 0;
+    }
+
+    .match__name {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        @include adaptiv-font(18, 12);
+        @include adaptiv-lineHeight(22, 15);
+        text-align: center;
+        color: #1b1b1b;
+        min-width: 0;
+        transition: all 0.3s;
+        text-decoration: none;
+        outline: none;
+        max-width: 230px;
+        overflow-wrap: break-word;
+    }
+
+    .match__name:hover {
+        color: rgba(27, 27, 27, 0.7);
+    }
+
+    .match__image {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 5px;
+        min-width: 0;
+        cursor: pointer;
+    }
+
+    .match__time {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        @include adaptiv-font(18, 12);
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #952212;
+        margin-bottom: 5px;
+        padding-top: 10px;
+        min-width: 0;
+    }
+
+    .match__area {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        @include adaptiv-font(16, 10);
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #1b1b1b;
+        min-width: 0;
+    }
+
+    .match__live {
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        min-width: 0;
+    }
+
+    .match__arrows {
+        display: flex;
+        justify-content: center;
+        margin-top: 36px;
+    }
+
+    .match__decal--decal {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 150%;
+        text-align: center;
+        color: #952212;
+    }
+}
+
+@media (max-width: 767px) {
+    .match__arrows {
+        display: none !important;
+    }
+
+    .match__image {
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .match__image {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .match__command {
+        width: 150px !important;
+    }
+    .match__decal {
+        padding-bottom: 0px !important;
+    }
+    .match__icon {
+        width: 25px;
+        height: 25px;
+    }
+    .match__opposition {
+        justify-content: space-between !important;
+        width: 100%;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .match__decal--decal {
+        font-size: 12px !important;
+    }
+    .match__decal {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
 }

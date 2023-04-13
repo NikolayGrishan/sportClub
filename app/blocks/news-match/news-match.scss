@@ -49,8 +49,9 @@
 
     &__bodyCase {
         display: flex;
+        flex-direction: row-reverse;
         align-items: start;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
     &__organisators {
@@ -61,6 +62,7 @@
         line-height: 150%;
         letter-spacing: 0.01em;
         color: #1f1412;
+        max-width: 582px;
         a {
             color: #952212;
             text-decoration: underline;
@@ -73,11 +75,11 @@
 
     &__videoCase {
         display: flex;
+        flex-direction: column;
     }
 
     &__videoFirst {
         margin-right: 41px;
-        margin-left: 50px;
         p {
             font-family: "Montserrat";
             font-style: normal;
@@ -115,7 +117,7 @@
 @media (max-width: 1600px) {
     .newsMatch {
         &__organisators {
-            margin-right: 50px;
+            margin-left: 50px;
         }
         &__videoCase {
             flex-direction: column;
@@ -124,14 +126,6 @@
             margin-right: 0px;
             margin-left: 0px;
             margin-bottom: 25px;
-        }
-    }
-}
-
-@media (max-width: 1400px) {
-    .newsMatch {
-        &__videoCase {
-            margin-left: 40px;
         }
     }
 }
@@ -147,7 +141,7 @@
             margin-right: 0px;
         }
         &__bodyCase {
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: center;
         }
         &__videoCase {

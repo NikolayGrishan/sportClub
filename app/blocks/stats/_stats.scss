@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    @include adaptiv-marginBottom(150, 80);
+    @include adaptiv-marginBottom(150, 60);
     // 0.0.10 version start
     &__modal {
         display: flex;
@@ -133,9 +133,10 @@
     }
 
     &__playOff {
-        border: 1px solid rgba(27, 27, 27, 0.1);
         border-radius: 10px;
         @include adaptiv-marginBottom(40, 25);
+        transition: all 0.3s ease 0s;
+        border: 1px solid rgba(27, 27, 27, 0.1);
         &-container {
             @include adaptiv-paddingRight(31, 16);
             @include adaptiv-paddingBottom(31, 16);
@@ -278,6 +279,12 @@
                 }
             }
         }
+    }
+    &__playOff:hover {
+        box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        border: 1px solid rgba(27, 27, 27, 0);
     }
 
     &__playOffTitle {
@@ -691,13 +698,23 @@
                 cursor: pointer;
             }
         }
+        &--command:last-child {
+            border-bottom: none;
+        }
     }
 
     &__charts--container {
         width: 60%;
+        transition: all 0.3s ease 0s;
         border: 1px solid rgba(27, 27, 27, 0.1);
         border-radius: 10px;
         @include adaptiv-marginRight(40, 5);
+    }
+    &__charts--container:hover {
+        box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        border: 1px solid rgba(27, 27, 27, 0);
     }
 
     &__chart {
@@ -738,6 +755,7 @@
             line-height: 30px;
             color: rgba(255, 255, 255, 0.5);
             white-space: nowrap;
+            border-bottom: 3px solid rgb(255, 255, 255, 0);
 
             &:hover {
                 transition: all 0.3s;
@@ -825,6 +843,7 @@
 
         &-img {
             width: 40px;
+            height: 40px;
             @include adaptiv-marginRight(13, 5);
         }
 
@@ -852,10 +871,17 @@
 
     &__last {
         width: 40%;
+        transition: all 0.3s ease 0s;
         border: 1px solid rgba(27, 27, 27, 0.1);
         border-radius: 10px;
         display: flex;
         flex-direction: column;
+    }
+    &__last:hover {
+        box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        border: 1px solid rgba(27, 27, 27, 0);
     }
 
     &__scroll {
@@ -886,6 +912,7 @@
         flex-direction: column;
         align-items: center;
         width: 39%;
+        // max-width: 150px;
     }
 
     &__versus {
@@ -910,7 +937,8 @@
     }
 
     &__logo {
-        width: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     &__number {
@@ -966,10 +994,10 @@
 
     &__document {
         @include adaptiv-marginRight(40, 5);
-        box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
         border-radius: 10px;
         width: 40%;
-
+        transition: all 0.3s ease 0s;
+        border: 1px solid rgba(27, 27, 27, 0.1);
         &-title {
             display: flex;
             justify-content: space-between;
@@ -978,13 +1006,16 @@
                 #2660ae -4.69%,
                 #0ea1d2 112.03%
             );
-            border-radius: 10px 10px 0px 0px;
+            border-radius: 10px;
             cursor: pointer;
 
             &--up,
             &--down {
                 display: none;
             }
+        }
+        &-title.active {
+            border-radius: 10px 10px 0px 0px;
         }
 
         &-info {
@@ -1019,12 +1050,18 @@
             display: flex;
         }
     }
+    &__document:hover {
+        box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        border: 1px solid rgba(27, 27, 27, 0);
+    }
 
     &__bombardier {
         width: 60%;
+        transition: all 0.3s ease 0s;
         border: 1px solid rgba(27, 27, 27, 0.1);
         border-radius: 10px;
-
         &-table {
             @include adaptiv-marginBottom(25, 5);
         }
@@ -1037,7 +1074,7 @@
         }
 
         &-play {
-            width: 30%;
+            width: 35%;
             text-align: left;
             align-self: center;
         }
@@ -1051,7 +1088,7 @@
         }
 
         &-img {
-            width: 60px;
+            width: 50px;
         }
 
         &-text {
@@ -1064,17 +1101,17 @@
         }
 
         &-player {
-            white-space: nowrap;
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 800;
             @include adaptiv-font(18, 12);
             line-height: 15px;
             color: #1b1b1b;
-
+            max-width: 260px;
+            overflow-wrap: break-word;
             &:hover {
                 transition: all 0.3s;
-                color: rgb(27, 27, 27, 0.7);
+                color: #952212;
             }
         }
 
@@ -1096,6 +1133,12 @@
             }
         }
     }
+    &__bombardier:hover {
+        box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        border: 1px solid rgba(27, 27, 27, 0);
+    }
 }
 
 @media (max-width: 1700px) {
@@ -1111,6 +1154,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1650px) {
+    .stats {
+        &__last {
+            width: 55.5%;
         }
     }
 }
@@ -1186,6 +1237,28 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1370px) {
+    .stats {
+        &__total {
+            flex-direction: column;
+        }
+        &__charts--container {
+            width: 100%;
+            @include adaptiv-marginBottom(40, 25);
+            margin-right: 0;
+        }
+        &__last {
+            width: 100%;
+        }
+        &__scroll {
+            height: 400px;
+        }
+        &__title--tab {
+            margin: 0 15px;
         }
     }
 }
@@ -1303,20 +1376,6 @@
 
 @media (max-width: 1000px) {
     .stats {
-        &__total {
-            flex-direction: column;
-        }
-        &__charts--container {
-            width: 100%;
-            @include adaptiv-marginBottom(40, 25);
-            margin-right: 0;
-        }
-        &__last {
-            width: 100%;
-        }
-        &__scroll {
-            height: 400px;
-        }
         &__title {
             &--tab {
                 &:first-child {
@@ -1379,6 +1438,16 @@
     }
 }
 
+@media (max-width: 767px) {
+    .stats {
+        &__bombardier {
+            &-text {
+                display: none;
+            }
+        }
+    }
+}
+
 @media (max-width: 700px) {
     .stats {
         .container {
@@ -1397,6 +1466,19 @@
                     margin-left: 0;
                     @include adaptiv-marginRight(400, 10);
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .stats {
+        &__command {
+            &-text {
+                flex-direction: column;
+                align-items: flex-start;
+                text-decoration-line: underline;
+                max-width: 150px;
             }
         }
     }
@@ -1438,6 +1520,31 @@
     }
     .stats__linkTeamLogo img {
         margin-right: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .stats {
+        &__bombardier {
+            margin-bottom: 0px;
+            &-img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &__team {
+            width: 150px;
+        }
+        &__versus {
+            width: 35px;
+        }
+        &__scroll {
+            height: initial;
+            overflow-x: initial;
+        }
+        &__scroll::-webkit-scrollbar {
+            width: 0;
+        }
     }
 }
 
