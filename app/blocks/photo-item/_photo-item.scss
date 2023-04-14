@@ -8,7 +8,7 @@
             width: 90%;
             display: flex;
             flex-direction: column;
-            @include adaptiv-paddingBottom(200, 100);
+            @include adaptiv-paddingBottom(300, 100);
             &-arrows {
                 display: flex;
                 align-items: center;
@@ -95,18 +95,18 @@
 
     .photo-item__container-content-slider-item > a > img {
         width: 100%;
-        max-width: 318px;
+        max-width: 556.67px;
         height: 100%;
-        max-height: 250px;
+        max-height: 370px;
         border-radius: 10px;
     }
 
     .photo-item__container-content-slider {
         .slider__item {
             width: 100%;
-            max-width: 318px;
+            max-width: 556.67px;
             height: 100%;
-            max-height: 250px;
+            max-height: 370px;
         }
         .slick-track {
             display: flex;
@@ -114,19 +114,20 @@
         .slick-list {
             overflow: hidden;
             padding-bottom: 10px;
+            padding-left: 0px;
         }
         .slick-slide {
             width: 100%;
-            max-width: 318px;
-            margin: 0px 30px 0px 0px;
+            max-width: 556.67px;
+            margin: 0px 20px 0px 0px;
         }
         .slick-slide div {
-            width: 318px;
+            width: 556.67px;
             height: 100%;
-            max-height: 250px;
+            max-height: 370px;
         }
         .slick-slide div:first-child {
-            margin: 0px 0px 30px 0px;
+            margin: 0px 0px 20px 0px;
         }
     }
 }
@@ -153,8 +154,12 @@
             }
         }
     }
+    .photo-item__container-content-slider .slick-slide {
+        max-width: 330px !important;
+        margin: 0px 16px 0px 0px !important;
+    }
     .photo-item__container-content-slider {
-        .slick-slide div:first-child {
+        div:first-child {
             margin: 0px !important;
         }
         .slider__item {

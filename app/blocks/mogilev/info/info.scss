@@ -3,7 +3,7 @@
     display: flex;
     align-items: flex-start;
     @include adaptiv-marginBottom(100, 60);
-    &___container {
+    &__container {
         display: flex;
         flex-direction: column;
         // justify-content: center;
@@ -342,6 +342,14 @@
             &--first {
                 margin-bottom: 20px;
             }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .info {
+        &__scroll {
+            overflow-x: hidden;
         }
     }
 }

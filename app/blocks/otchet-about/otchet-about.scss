@@ -105,7 +105,7 @@
     }
 
     &__otchetFirstTeam {
-        padding-right: 96px;
+        @include adaptiv-paddingRight(96, 0);
         margin-right: 0px;
     }
 
@@ -113,15 +113,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 40px;
+        @include adaptiv-marginBottom(40, 12);
         img {
+            width: 100%;
+            max-width: 90px;
+            height: 90px;
+            margin-bottom: 10px;
         }
         p {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 700;
             @include adaptiv-font(18, 12);
-            line-height: 22px;
+            @include adaptiv-lineHeight(22, 15);
             text-align: center;
             color: #1b1b1b;
             max-width: 223px;
@@ -129,6 +133,10 @@
     }
 
     &__otchetFirstTeamTable {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 355px;
     }
 
     &__listFirstTeam {
@@ -139,13 +147,61 @@
             @include adaptiv-font(18, 12);
             line-height: 22px;
             color: #1b1b1b;
-            margin-bottom: 15px;
             text-align: left;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            @include adaptiv-marginBottom(15, 10);
+            &-time {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                @include adaptiv-font(18, 10);
+                @include adaptiv-lineHeight(22, 12);
+                color: #1b1b1b;
+                width: 100%;
+                max-width: 60px;
+                margin-right: 14px;
+                text-align: left;
+            }
+            &-player {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 600;
+                @include adaptiv-font(18, 10);
+                @include adaptiv-lineHeight(22, 12);
+                text-decoration-line: underline;
+                color: #1b1b1b;
+                text-align: left;
+                width: 100%;
+                max-width: 180px;
+            }
+            &-score {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                @include adaptiv-font(18, 10);
+                @include adaptiv-lineHeight(22, 12);
+                text-align: center;
+                color: #1b1b1b;
+                width: 100%;
+                max-width: 45px;
+            }
+        }
+        &-item:last-of-type {
+            margin-bottom: 0px;
         }
     }
 
     &__ticketFirstTeam {
-        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        width: 395px;
         p {
             font-family: "Montserrat";
             font-style: normal;
@@ -155,6 +211,30 @@
             color: #1b1b1b;
             &:first-child {
                 margin-bottom: 10px;
+            }
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p > b {
+                display: block;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                @include adaptiv-font(18, 10);
+                @include adaptiv-lineHeight(22, 12);
+                color: #1b1b1b;
+                width: 260px;
+            }
+            p {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                @include adaptiv-font(18, 10);
+                @include adaptiv-lineHeight(22, 12);
+                color: #1b1b1b;
+                width: 135px;
             }
         }
     }
@@ -177,8 +257,8 @@
             color: #952212;
         }
         img {
-            margin-left: 60px;
-            margin-right: 57px;
+            margin-left: 23px;
+            margin-right: 23px;
         }
     }
 
@@ -198,22 +278,26 @@
 
     &__otchetSecondTeam {
         margin-left: 0px;
-        padding-left: 108px;
+        @include adaptiv-paddingLeft(108, 0);
     }
 
     &__otchetSecondTeamLogo {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 40px;
+        @include adaptiv-marginBottom(40, 12);
         img {
+            width: 100%;
+            max-width: 90px;
+            height: 90px;
+            margin-bottom: 10px;
         }
         p {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 700;
             @include adaptiv-font(18, 12);
-            line-height: 22px;
+            @include adaptiv-lineHeight(22, 15);
             text-align: center;
             color: #1b1b1b;
             max-width: 230px;
@@ -221,6 +305,10 @@
     }
 
     &__otchetSecondTeamTable {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 355px;
     }
 
     &__listSecondTeam {
@@ -231,12 +319,62 @@
             @include adaptiv-font(18, 12);
             line-height: 22px;
             color: #1b1b1b;
-            margin-bottom: 15px;
             text-align: left;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 300px;
+            @include adaptiv-marginBottom(15, 10);
+            &-time {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                @include adaptiv-font(18, 10);
+                @include adaptiv-lineHeight(22, 12);
+                color: #1b1b1b;
+                width: 100%;
+                max-width: 60px;
+                margin-right: 14px;
+                text-align: left;
+            }
+            &-player {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 600;
+                @include adaptiv-font(18, 10);
+                @include adaptiv-lineHeight(22, 12);
+                text-decoration-line: underline;
+                color: #1b1b1b;
+                text-align: left;
+                width: 100%;
+                max-width: 180px;
+            }
+            &-score {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                @include adaptiv-font(18, 10);
+                @include adaptiv-lineHeight(22, 12);
+                text-align: center;
+                color: #1b1b1b;
+                width: 100%;
+                max-width: 45px;
+            }
+        }
+        &-item:last-of-type {
+            margin-bottom: 0px;
         }
     }
 
     &__ticketSecondTeam {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        width: 395px;
+        overflow-wrap: break-word;
         margin-top: 5px;
         p {
             font-family: "Montserrat";
@@ -245,8 +383,35 @@
             @include adaptiv-font(18, 12);
             line-height: 22px;
             color: #1b1b1b;
+            overflow-wrap: break-word;
             &:first-child {
                 margin-bottom: 10px;
+            }
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p > b {
+                display: block;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                @include adaptiv-font(18, 10);
+                @include adaptiv-lineHeight(22, 12);
+                color: #1b1b1b;
+                width: 260px;
+                overflow-wrap: break-word;
+            }
+            p {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                @include adaptiv-font(18, 10);
+                @include adaptiv-lineHeight(22, 12);
+                color: #1b1b1b;
+                width: 135px;
+                overflow-wrap: break-word;
             }
         }
     }
@@ -259,7 +424,7 @@
     }
 
     &__gameCompositionSecond {
-        margin-top: 30px;
+        @include adaptiv-marginTop(50, 60);
         width: 40%;
         border-radius: 10px;
         transition: all 0.3s ease 0s;
@@ -278,7 +443,7 @@
     }
 
     &__gameComposition {
-        margin-top: 30px;
+        @include adaptiv-marginTop(50, 60);
         width: 40%;
         border-radius: 10px;
         transition: all 0.3s ease 0s;
@@ -837,6 +1002,12 @@
         #otchetAboutLastSecondTable {
             padding-bottom: 0px;
         }
+        &__otchetFirstTeam {
+            padding-right: 0px;
+        }
+        &__otchetSecondTeam {
+            padding-left: 0px;
+        }
         &__otchetSecondTeamLogo {
             p {
                 max-width: 200px;
@@ -861,9 +1032,6 @@
         &__otchetSecondTeam {
             padding-left: 0px;
             margin-left: 41px;
-        }
-        &__listSecondTeam {
-            margin-bottom: 163px;
         }
         &__otchetTeamLogo {
             img {
@@ -911,6 +1079,40 @@
         }
         &__lastOtchet {
             width: 100%;
+        }
+        &__listFirstTeam-item {
+            &-time {
+                max-width: 30px;
+            }
+            &-score {
+                max-width: 35px;
+            }
+        }
+        &__listSecondTeam-item {
+            &-time {
+                max-width: 30px;
+            }
+            &-score {
+                max-width: 35px;
+            }
+        }
+        &__ticketFirstTeam {
+            width: initial;
+            &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 10px;
+            }
+        }
+        &__ticketSecondTeam {
+            width: initial;
+            &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 10px;
+            }
         }
     }
 }
@@ -985,6 +1187,15 @@
                 max-width: 160px;
             }
         }
+        &__otchetTeamLogo p {
+            max-width: 170px;
+        }
+        &__otchetFirstTeamTable {
+            min-height: 300px;
+        }
+        &__otchetSecondTeamTable {
+            min-height: 300px;
+        }
     }
 }
 
@@ -1034,6 +1245,28 @@
                     margin-left: 10px;
                     margin-right: 0px;
                 }
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    .otchetAbout {
+        &__otchetTeamLogo img {
+            max-width: 60px;
+            height: 60px;
+        }
+        &__otchetSecondTeamLogo img {
+            max-width: 60px;
+            height: 60px;
+        }
+        &__listFirstTeam-item {
+            max-width: 170px;
+            width: initial;
+            &-time {
+                margin-right: 0px;
+            }
+            &-player {
+                max-width: 115px;
             }
         }
     }

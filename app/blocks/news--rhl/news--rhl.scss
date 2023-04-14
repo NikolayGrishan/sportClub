@@ -1,5 +1,8 @@
 .news--rhl {
-    margin-bottom: 100px;
+    @include adaptiv-marginBottom(200, 100);
+    &__container {
+        margin: 0 auto;
+    }
     &__prev {
         @include adaptiv-font(18, 12);
         font-family: "Montserrat";
@@ -21,7 +24,7 @@
         align-items: center;
         flex-direction: row;
         padding-left: 5%;
-        margin-top: 30px;
+        @include adaptiv-marginTop(30, 10);
     }
 
     .line {
@@ -43,7 +46,8 @@
     }
 
     &__block {
-        background: #ffffff;
+        margin: 0px 20px 0px 20px;
+        position: relative;
         border: 1px solid rgba(27, 27, 27, 0.1);
         display: flex;
         flex-direction: column;
@@ -53,26 +57,62 @@
         @include adaptiv-marginRight(30, 14);
         cursor: pointer;
         background: #f5f5f5;
-        opacity: 0.8;
+        opacity: 0.5;
         transition: all 0.3s;
         &:hover {
             box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
-            background: #ffffff;
-            transform: scale(1.01);
         }
+    }
+
+    .slider--rhl .slick-center {
+        transform: scale(1.1, 1.05);
     }
 
     &__slider {
         display: flex;
-        @include adaptiv-marginTop(103, 46);
+        @include adaptiv-marginTop(20, 10);
+        margin-right: 5vw;
+        margin-left: 7.2vw;
+        .slick-current {
+            .news--rhl {
+                &__block {
+                    // padding: 25px;
+                    opacity: 1;
+                    background: #ffffff;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
+                }
+                &__img {
+                    // width: 500px;
+                    // max-width: initial;
+                }
+                &__name {
+                    @include adaptiv-font(25, 18);
+                    @include adaptiv-lineHeight(30, 22);
+                }
+                &__content {
+                    @include adaptiv-font(18, 15);
+                    @include adaptiv-lineHeight(25, 21);
+                }
+                &__data {
+                    @include adaptiv-font(18, 15);
+                    @include adaptiv-lineHeight(27, 22);
+                }
+                &__button {
+                    @include adaptiv-font(18, 15);
+                    @include adaptiv-lineHeight(27, 22);
+                }
+            }
+        }
     }
 
     &__name {
+        display: block;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 800;
-        @include adaptiv-font(25, 18);
-        line-height: 30px;
+        @include adaptiv-font(23, 18);
+        @include adaptiv-lineHeight(28, 22);
         letter-spacing: 0.01em;
         color: #1b1b1b;
         @include adaptiv-marginTop(15, 18);
@@ -80,20 +120,22 @@
     }
 
     &__content {
+        display: block;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        @include adaptiv-font(18, 12);
-        line-height: 140%;
+        @include adaptiv-font(16, 15);
+        @include adaptiv-lineHeight(22, 21);
         letter-spacing: 0.01em;
         color: #1b1b1b;
-        max-width: 470px;
+        max-width: 460px;
         @include adaptiv-marginTop(9, 15);
     }
 
     &__img {
         width: 100%;
-        max-width: 470px;
+        max-width: 460px;
+        border-radius: 10px;
     }
 
     &__undername {
@@ -105,15 +147,15 @@
     &__arrows {
         display: flex;
         justify-content: center;
-        margin-top: 15px;
+        margin-top: 25px;
     }
 
     &__data {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        @include adaptiv-font(18, 12);
-        line-height: 150%;
+        @include adaptiv-font(16, 15);
+        @include adaptiv-lineHeight(24, 22);
         color: rgba(27, 27, 27, 0.5);
     }
 
@@ -122,20 +164,78 @@
         font-style: normal;
         font-weight: 800;
         font-weight: bold;
-        @include adaptiv-font(18, 12);
-        line-height: 150%;
+        @include adaptiv-font(16, 15);
+        @include adaptiv-lineHeight(24, 22);
         color: #952212;
         transition: all 0.3s;
         &:hover {
             color: #b34030;
         }
     }
+    &__link {
+        display: block;
+    }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 700px) {
     .news--rhl {
-        &__arrows {
-            display: none;
+        .slider--rhl .slick-center {
+            transform: initial;
+        }
+        .slick-current {
+            .news--rhl {
+                &__block {
+                    padding: 16px;
+                }
+                &__img {
+                    width: 292px;
+                    height: 270px;
+                }
+            }
+        }
+        &__block {
+            padding: 16px;
+            opacity: 1;
+            background: #ffffff;
+        }
+        &__img {
+            width: 292px;
+            height: 270px;
+        }
+        &__content {
+            max-width: 291px;
+        }
+        &__slider {
+            margin-right: 0px;
+            margin-left: -2vw;
+        }
+        .slider--rhl .slick-list {
+            height: initial;
+            padding: 15px 15px 20px 13px !important;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .news--rhl {
+        .line {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .news--rhl {
+        .line {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .news--rhl {
+        .line {
+            width: 40%;
         }
     }
 }

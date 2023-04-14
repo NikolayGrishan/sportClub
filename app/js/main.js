@@ -24,7 +24,7 @@ $(document).ready(function () {
 // popup в popup-е
 $(document).ready(function () {
     let elem2 = document.getElementById("form");
-    
+
     $(".stats__playerBombardier").click(function () {
         elem2.style.display = "flex";
     });
@@ -123,25 +123,68 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".slider--rhl").slick({
         arrows: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        // slidesToScroll: 1,
         speed: 1000,
         easing: "lenear",
         appendArrows: $(".news--rhl__arrows"),
-        draggable: false,
         infinite: true,
-        initialSlide: 2,
+        initialSlide: 0,
         touchThreshold: 15,
-        waitForAnimate: false,
         variableWidth: true,
-
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        // // draggable: false,
+        swipe: true,
+        swipeToSlide: true,
+        // // waitForAnimate: false,
+        centerMode: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 700,
                 settings: {
                     slidesToShow: 1,
                     arrows: false,
-                    variableWidth: true,
+                    initialSlide: 0,
+                    centerMode: false,
+                },
+            },
+        ],
+    });
+});
+
+$(document).ready(function () {
+    $(".slider-photo").slick({
+        arrows: true,
+        // slidesToScroll: 1,
+        speed: 1000,
+        easing: "ease",
+        appendArrows: $(".slider-photo__arrows"),
+        centerMode: true,
+        centerPadding: "50px", // добавляем опцию centerPadding
+        slidesToShow: 3,
+        infinite: true,
+        initialSlide: 0,
+        touchThreshold: 15,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        // // draggable: false,
+        swipe: true,
+        swipeToSlide: true,
+        // // waitForAnimate: false,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    initialSlide: 0,
+                    centerMode: false,
                 },
             },
         ],
@@ -168,8 +211,8 @@ $(document).ready(function () {
     $(".photo-item__container-content-slider").slick({
         arrows: false,
         rows: 2,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         variableWidth: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -177,22 +220,22 @@ $(document).ready(function () {
             {
                 breakpoint: 1750,
                 settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 },
             },
             {
                 breakpoint: 1300,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 },
             },
             {
                 breakpoint: 1000,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 },
             },
             {
@@ -200,8 +243,8 @@ $(document).ready(function () {
                 settings: {
                     rows: 1,
                     arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    swipe: true,
+                    swipeToSlide: true,
                 },
             },
         ],
