@@ -145,10 +145,10 @@ $(document).ready(function () {
             {
                 breakpoint: 700,
                 settings: {
+                    centerMode: false,
                     slidesToShow: 1,
                     arrows: false,
                     initialSlide: 0,
-                    centerMode: false,
                 },
             },
         ],
@@ -191,21 +191,18 @@ $(document).ready(function () {
     });
 });
 
-// $(document).ready(function () {
-//     $(".slider--bb").slick({
-//         arrows: true,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         speed: 1000,
-//         easing: "lenear",
-//         appendArrows: $(".stats__arrows"),
-//         draggable: false,
-//         infinite: true,
-//         initialSlide: 1,
-//         touchThreshold: 15,
-//         waitForAnimate: false,
-//     });
-// });
+$(document).ready(function () {
+    $(".stats__document-item").hover(
+        function () {
+            $(this)
+                .addClass("hover");
+        },
+        function () {
+            $(this)
+                .removeClass("hover");
+        }
+    );
+});
 
 $(document).ready(function () {
     $(".photo-item__container-content-slider").slick({

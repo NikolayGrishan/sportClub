@@ -186,6 +186,7 @@
         line-height: 18px;
         color: #ffffff;
         text-align: center;
+        opacity: 0.5;
         @include adaptiv-paddingTop(28, 20);
     }
 }

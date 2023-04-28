@@ -36,7 +36,6 @@
     &__otchetPlace {
         padding-bottom: 10px;
         border-bottom: 1px solid #d9d9d9;
-        margin-left: 3%;
         p {
             &:nth-child(1) {
                 font-family: "Montserrat";
@@ -418,7 +417,7 @@
     // Таблицы
     &__gameCompositionCase {
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
         justify-content: center;
         width: 100%;
     }
@@ -569,6 +568,9 @@
             margin-bottom: 30px;
         }
     }
+    &__rowComposition:last-child {
+        margin-bottom: 30px;
+    }
 
     &__titleCompositionTitle {
         display: flex;
@@ -679,11 +681,6 @@
         width: 18%;
     }
 
-    #otchetAboutLastSecondTable {
-        padding-bottom: 93px;
-        margin-bottom: 30px;
-    }
-
     &__gameAlign {
         display: flex;
         align-items: center;
@@ -698,7 +695,6 @@
         line-height: 22px;
         letter-spacing: 0.01em;
         color: #ffffff;
-        margin-left: 30px;
     }
 
     &__gameTextSize {
@@ -716,7 +712,6 @@
     &__btns {
         display: flex;
         justify-content: space-between;
-        margin-right: 30px;
     }
 
     &__lastOtchet {
@@ -751,12 +746,18 @@
             width: 30%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             width: 290px;
         }
 
-        &-img {
-            width: 50px;
+        &-case {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            max-width: 50px;
+            max-height: 50px;
         }
 
         &-text {
@@ -766,6 +767,8 @@
             font-size: 18px;
             line-height: 150%;
             color: #1b1b1b;
+            text-align: left;
+            padding-left: 10px;
         }
 
         &-player {
@@ -973,6 +976,7 @@
         &__bombardier {
             &-team {
                 width: 25%;
+                justify-content: center;
             }
             &-text {
                 display: none;
@@ -998,9 +1002,6 @@
 
         &__gameCompositionCase {
             margin-top: 30px;
-        }
-        #otchetAboutLastSecondTable {
-            padding-bottom: 0px;
         }
         &__otchetFirstTeam {
             padding-right: 0px;
@@ -1042,6 +1043,9 @@
             img {
                 width: 69px;
             }
+        }
+        &__rowComposition:last-child {
+            margin-bottom: 16px;
         }
         &__total {
             flex-direction: column;
@@ -1163,6 +1167,9 @@
                 }
             }
         }
+        &__title {
+            padding: 30px 16px;
+        }
     }
 }
 
@@ -1218,9 +1225,6 @@
 
 @media (max-width: 500px) {
     .otchetAbout {
-        &__gameCompositionText {
-            margin-left: 16px;
-        }
         &__otchetSecondTeam {
             margin-left: 0px;
         }
@@ -1230,7 +1234,7 @@
                 white-space: pre-wrap;
             }
             &-playComposition {
-                width: 85%;
+                width: 67%;
             }
         }
 
@@ -1274,13 +1278,20 @@
 @media (max-width: 400px) {
     .otchetAbout {
         &__gameComposition {
-            &-rowComposition {
-                width: 80%;
-                @include adaptiv-marginRight(5, 30);
-            }
             &--teamComposition {
                 width: 35%;
             }
+        }
+        &__gameComposition {
+            &-teamComposition {
+                width: 100px;
+            }
+            &-playComposition {
+                width: 53%;
+            }
+        }
+        &__headComposition {
+            width: 14%;
         }
     }
 }

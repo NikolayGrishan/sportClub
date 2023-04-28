@@ -1,5 +1,5 @@
 .photos {
-    @include adaptiv-marginTop(92, 61);
+    @include adaptiv-marginTop(70, 61);
     display: flex;
     justify-content: center;
 
@@ -14,12 +14,13 @@
         &-item {
             width: 678px;
             height: 448px;
-            margin: 162px 80px 162px 80px;
+            margin: 120px 80px 120px 80px;
             position: relative;
         }
         &__arrows {
             display: flex;
             justify-content: center;
+            margin-top: 33px;
         }
     }
     .slider-photo .slider-photo-item img {
@@ -64,6 +65,9 @@
 
 @media (max-width: 1100px) {
     .photos {
+        .slider-photo__arrows {
+            display: none;
+        }
         .slider-photo-item {
             margin-top: 0px;
             margin-left: 0px;

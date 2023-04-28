@@ -110,7 +110,8 @@
     }
 
     .match__name:hover {
-        color: rgba(27, 27, 27, 0.7);
+        transition: all 0.3s;
+        color: #952212;
     }
 
     .match__image {

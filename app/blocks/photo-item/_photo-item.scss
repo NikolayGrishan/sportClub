@@ -155,7 +155,7 @@
         }
     }
     .photo-item__container-content-slider .slick-slide {
-        max-width: 330px !important;
+        max-width: 310px !important;
         margin: 0px 16px 0px 0px !important;
     }
     .photo-item__container-content-slider {
@@ -164,17 +164,16 @@
         }
         .slider__item {
             width: 100%;
-            max-width: 330px;
+            max-width: 310px;
             height: 100%;
             max-height: 370px;
         }
         .slick-slide div {
-            width: 330px !important;
+            width: 310px !important;
             height: 100%;
             max-height: 370px !important;
             a > img {
-                width: 330px;
-                height: 370px;
+                max-width: 310px;
             }
         }
     }

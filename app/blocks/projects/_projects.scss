@@ -147,11 +147,8 @@
             &-item {
                 max-width: 166.5px;
                 height: 170px;
-                &-desktop {
-                    display: none;
-                }
-                &-mobile {
-                    display: block;
+                img {
+                    max-height: 100px;
                 }
             }
         }
@@ -165,12 +162,6 @@
             &-item {
                 max-width: 166.5px;
                 height: 170px;
-                &-desktop {
-                    display: none;
-                }
-                &-mobile {
-                    display: block;
-                }
             }
         }
     }

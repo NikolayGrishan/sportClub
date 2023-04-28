@@ -15,7 +15,7 @@
         line-height: 55px;
         color: #1b1b1b;
         white-space: nowrap;
-        @include adaptiv-paddingRight(31, 15);
+        @include adaptiv-marginRight(31, 15);
         padding-left: 5%;
     }
 
@@ -90,6 +90,22 @@
             &__photo {
                 border-radius: 0px;
             }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .team {
+        &__line {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .team {
+        &__line {
+            width: 55%;
         }
     }
 }
