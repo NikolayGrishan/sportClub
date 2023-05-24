@@ -32,7 +32,7 @@ $(document).ready(function () {
         elem2.style.display = "none";
     });
 });
-
+// слайдер Следующие матчи
 $(document).ready(function () {
     $(".slider").slick({
         arrows: true,
@@ -46,17 +46,14 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
         pauseOnFocus: true,
         pauseOnHover: true,
-        // draggable: false,
         swipe: true,
         touchThreshold: 15,
         swipeToSlide: true,
-        // waitForAnimate: false,
         variableWidth: true,
         appendArrows: $(".match__arrows"),
-
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 2,
                     arrows: false,
@@ -74,7 +71,7 @@ $(document).ready(function () {
         ],
     });
 });
-
+// слайдер Новости
 $(document).ready(function () {
     $(".slider--n").slick({
         arrows: true,
@@ -86,7 +83,6 @@ $(document).ready(function () {
         infinite: true,
         initialSlide: 0,
         touchThreshold: 15,
-        // waitForAnimate: false,
         variableWidth: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -94,20 +90,9 @@ $(document).ready(function () {
         pauseOnHover: true,
         swipe: true,
         swipeToSlide: true,
-        // draggable: false,
-
         responsive: [
             {
-                breakpoint: 1067,
-                settings: {
-                    slidesToShow: 1,
-                    arrows: false,
-                    variableWidth: true,
-                    dots: false,
-                },
-            },
-            {
-                breakpoint: 768,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 1,
                     variableWidth: true,
@@ -115,7 +100,7 @@ $(document).ready(function () {
                     dots: true,
                     dotsClass: "news-dots",
                 },
-            },
+            }
         ],
     });
 });
@@ -154,16 +139,15 @@ $(document).ready(function () {
         ],
     });
 });
-
+// слайдер фото на главной
 $(document).ready(function () {
     $(".slider-photo").slick({
         arrows: true,
-        // slidesToScroll: 1,
         speed: 1000,
         easing: "ease",
         appendArrows: $(".slider-photo__arrows"),
         centerMode: true,
-        centerPadding: "50px", // добавляем опцию centerPadding
+        centerPadding: "50px",
         slidesToShow: 3,
         infinite: true,
         initialSlide: 0,
@@ -173,21 +157,11 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
         pauseOnFocus: true,
         pauseOnHover: true,
-        // // draggable: false,
         swipe: true,
         swipeToSlide: true,
-        // // waitForAnimate: false,
         responsive: [
             {
                 breakpoint: 1100,
-                settings: {
-                    slidesToShow: 1,
-                    initialSlide: 0,
-                    centerMode: false,
-                },
-            },
-            {
-                breakpoint: 768,
                 settings: {
                     arrows: false,
                     dots: true,
@@ -196,11 +170,11 @@ $(document).ready(function () {
                     initialSlide: 0,
                     centerMode: false,
                 },
-            },
+            }
         ],
     });
 });
-
+// слайдер Проекты
 $(document).ready(function () {
     $(".projects__container-slider").slick({
         arrows: false,
@@ -211,7 +185,6 @@ $(document).ready(function () {
         infinite: true,
         initialSlide: 0,
         touchThreshold: 15,
-        // waitForAnimate: false,
         variableWidth: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -219,11 +192,9 @@ $(document).ready(function () {
         pauseOnHover: true,
         swipe: true,
         swipeToSlide: true,
-        // draggable: false,
-
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 1,
                     arrows: false,

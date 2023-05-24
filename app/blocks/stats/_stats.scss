@@ -2,8 +2,14 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    @include adaptiv-marginBottom(82, 30);
+    @include adaptiv-marginBottom(84, 30);
     // 0.0.10 version start
+    &__container {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 1920px;
+    }
     &__modal {
         display: flex;
         flex-direction: column;
@@ -141,10 +147,11 @@
 
     &__playOff {
         border-radius: 10px;
-        @include adaptiv-marginBottom(40, 25);
+        @include adaptiv-marginBottom(25, 15);
         transition: all 0.3s ease 0s;
         border: 1px solid rgba(27, 27, 27, 0.1);
         &-container {
+            height: 571px; // удалить
             @include adaptiv-paddingRight(31, 16);
             @include adaptiv-paddingBottom(31, 16);
             @include adaptiv-paddingLeft(31, 16);
@@ -299,7 +306,6 @@
     &__playOff:hover {
         box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
         transition: all 0.3s ease 0s;
-        cursor: pointer;
         border: 1px solid rgba(27, 27, 27, 0);
     }
 
@@ -685,10 +691,9 @@
     &__header {
         font-family: "Montserrat";
         font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
         @include adaptiv-font(40, 20);
         @include adaptiv-lineHeight(49, 24);
-        letter-spacing: 0.01em;
         color: #1b1b1b;
         position: relative;
         width: fit-content;
@@ -777,7 +782,7 @@
             text-align: center;
             font-family: "Montserrat";
             font-style: normal;
-            font-weight: 800;
+            font-weight: 700;
             @include adaptiv-font(20, 18);
             @include adaptiv-lineHeight(24, 22);
             color: rgba(255, 255, 255, 0.5);
@@ -801,7 +806,6 @@
     &__row {
         @include adaptiv-marginRight(20, 10);
         @include adaptiv-marginLeft(20, 10);
-        @include adaptiv-paddingLeft(10, 10);
         margin-bottom: 5px;
         display: flex;
         justify-content: space-between;
@@ -830,7 +834,7 @@
     }
     &__row:not(:nth-child(-n + 2)) {
         padding-top: 6px;
-        padding-bottom: 5px;
+        padding-bottom: 4px;
     }
     &__row:nth-child(2n) {
         background: rgba(217, 217, 217, 0.2);
@@ -858,6 +862,9 @@
         max-width: 328px;
         margin-left: 12px;
         margin-right: 9px;
+        &--head {
+            padding-left: 10px;
+        }
 
         &-text {
             display: flex;
@@ -870,22 +877,39 @@
             @include adaptiv-lineHeight(20, 12);
             text-decoration-line: underline;
             color: #1b1b1b;
-            &:hover {
-                transition: all 0.3s;
-                color: #952212;
+            &-team {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                @include adaptiv-font(16, 10);
+                @include adaptiv-lineHeight(20, 12);
+                text-decoration-line: underline;
+                color: #1b1b1b;
+                &:hover {
+                    transition: all 0.3s;
+                    color: #952212;
+                }
+            }
+            &-image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                max-width: 40px;
+                height: 40px;
+                @include adaptiv-marginRight(10, 10);
             }
         }
 
         &-img {
-            width: 40px;
-            height: 40px;
-            @include adaptiv-marginRight(10, 5);
+            width: 35px;
+            height: 35px;
         }
 
         &--head {
             font-family: "Montserrat";
             font-style: normal;
-            font-weight: 800;
+            font-weight: 700;
             @include adaptiv-font(16, 14);
             @include adaptiv-lineHeight(20, 17);
             color: #1b1b1b;
@@ -996,7 +1020,7 @@
     &__number {
         font-family: "Montserrat";
         font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
         @include adaptiv-font(16, 14);
         @include adaptiv-lineHeight(20, 17);
         text-align: center;
@@ -1051,8 +1075,6 @@
         @include adaptiv-marginRight(25, 5);
         border-radius: 10px;
         width: 700px;
-        // width: 100%;
-        // max-width: 700px;
         transition: all 0.3s ease 0s;
         border: 1px solid rgba(27, 27, 27, 0.1);
         &-title {
@@ -1163,7 +1185,7 @@
             padding-bottom: 10px;
             border-bottom: 1px solid #d9d9d9;
             .stats__command--head.stats__bombardier-play {
-                margin-left: 10px;
+                margin-left: 0px;
             }
         }
         &-row {
@@ -1187,6 +1209,7 @@
             @include adaptiv-font(16, 14);
             @include adaptiv-lineHeight(20, 17);
             color: #1b1b1b;
+            padding-left: 8px;
         }
 
         &-team {
@@ -1195,7 +1218,9 @@
             justify-content: flex-start;
             width: 100%;
             max-width: 260px;
-            margin-left: 15px;
+            margin-left: 25px;
+            margin-right: 15px;
+            padding-left: 0px;
         }
 
         &-case {
@@ -1280,11 +1305,20 @@
         }
     }
 }
-
-@media (max-width: 1650px) {
+@media (max-width: 1600px) {
     .stats {
+        &__name {
+            display: none;
+        }
+        &__charts {
+            &--container {
+                width: 70%;
+                max-width: initial;
+            }
+        }
         &__last {
-            width: 55.5%;
+            width: 30%;
+            max-width: initial;
         }
     }
 }
@@ -1295,6 +1329,10 @@
     .stats__bombardier {
         width: 100%;
         max-width: 788px;
+        &-team {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
     }
 }
 
@@ -1327,62 +1365,165 @@
 @media (max-width: 1370px) {
     .stats {
         &__charts--container {
-            width: 100%;
-            @include adaptiv-marginBottom(40, 25);
+            width: 65%;
         }
         &__last {
-            width: 100%;
-        }
-        &__scroll {
-            height: initial;
-            overflow: hidden;
-        }
-        &__title {
-            &--double {
-                justify-content: space-between;
-            }
+            width: 35%;
         }
         &__square {
             max-width: 130px;
-        }
-        &__name {
-            max-width: 160px;
         }
     }
 }
 
 @media (max-width: 1300px) {
     .stats {
-        &__total {
-            flex-direction: column;
+        &__charts--container {
+            width: 70%;
         }
-        &__document {
-            margin-right: 0px;
+        &__name {
             width: 100%;
+            max-width: 170px;
         }
         &__bombardier {
             min-width: initial;
             width: 100%;
-            max-width: initial;
-            margin-top: 15px;
+            max-width: 730px;
+            &-text {
+                display: none;
+            }
             &-team {
-                width: 25%;
-                justify-content: flex-start;
-                text-align: left;
+                justify-content: center;
             }
         }
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1250px) {
     .stats {
+        margin-bottom: 0px;
+        &__total {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+        &__charts--container {
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 15px;
+        }
+        &__last {
+            width: 100%;
+            max-width: 730px;
+            margin-bottom: 15px;
+        }
+        &__name {
+            display: block;
+            font-size: 14px;
+            line-height: 17px;
+            max-width: 175px;
+        }
+        &__scroll {
+            height: 464px;
+        }
+        &__command {
+            max-width: 250px;
+            margin-left: 0px;
+            margin-right: 0px;
+            &--head {
+                padding-left: 0px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &-text {
+                &-team {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+        &__row:not(:nth-child(-n + 2)) {
+            padding-top: 0px;
+            padding: 5px 0px 5px 0px;
+        }
+        &__title {
+            &--tab {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        &__number {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+        &__match {
+            max-width: 552px;
+            padding: 0 66px;
+        }
+        &__row {
+            &--last {
+                margin-bottom: 12px;
+            }
+        }
+        &__total {
+            &--command {
+                padding-bottom: 15px;
+            }
+        }
+        &__document {
+            margin-right: 0px;
+            margin-bottom: 13px;
+            width: 100%;
+            max-width: 730px;
+            margin-right: 0;
+            &-title {
+                align-items: center;
+                font-size: 20px;
+                line-height: 24px;
+                border-radius: 10px;
+                &--down {
+                    display: block;
+                }
+            }
+            &-text {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &-info {
+                display: none;
+            }
+        }
+        .active {
+            .stats__document-title--down {
+                display: none;
+            }
+            .stats__document-title--up {
+                display: block;
+            }
+        }
+        &__playOff {
+            margin-bottom: 15px;
+        }
+        &__row:nth-child(3) {
+            margin-top: 10px;
+        }
         &__bombardier {
             margin-top: 0px;
+            margin-bottom: 40px;
+            &-row {
+                padding: 10px 0px 10px 0px !important;
+                margin: 10px 10px 0px 10px;
+            }
+            &-row.greyLine {
+                margin: 5px 10px 0px 10px;
+                padding: 0px 0px 7px 0px;
+            }
             &-team {
                 justify-content: center;
                 font-size: 16px;
                 line-height: 20px;
-                width: 27%;
+                width: 29%;
                 margin-left: 0px;
             }
             &-text {
@@ -1391,13 +1532,8 @@
             &-play {
                 font-size: 16px;
                 line-height: 20px;
-                width: 39%;
-            }
-            &-row {
-                margin: 15px 10px 0px 10px;
-            }
-            &-row.greyLine {
-                padding-bottom: 7px;
+                width: 34%;
+                padding-left: 8px;
             }
             &-all {
                 font-size: 16px;
@@ -1406,9 +1542,24 @@
                 margin-top: 17px;
             }
         }
-        &__row:not(:nth-child(-n + 2)) {
-            padding-top: 12px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .stats {
+        &__container {
+            padding-left: 19px;
+            padding-right: 19px;
         }
+        &__header {
+            font-size: 30px;
+            line-height: 37px;
+            padding-left: 19px;
+        }
+        &__block--line {
+            margin-bottom: 20px;
+        }
+
         &__head {
             font-size: 16px;
             line-height: 20px;
@@ -1416,18 +1567,6 @@
         &__point {
             font-size: 16px;
             line-height: 20px;
-        }
-        &__document {
-            margin-bottom: 13px;
-            &-title {
-                font-size: 20px;
-                line-height: 24px;
-                border-radius: 10px;
-            }
-            &-text {
-                font-size: 16px;
-                line-height: 20px;
-            }
         }
         &__title {
             font-size: 20px;
@@ -1482,27 +1621,6 @@
                 }
             }
         }
-
-        &__document {
-            width: 100%;
-            margin-right: 0;
-            &-title {
-                &--down {
-                    display: block;
-                }
-            }
-            &-info {
-                display: none;
-            }
-        }
-        .active {
-            .stats__document-title--down {
-                display: none;
-            }
-            .stats__document-title--up {
-                display: block;
-            }
-        }
     }
 }
 
@@ -1521,20 +1639,8 @@
                 display: none;
             }
         }
-        &__title {
-            &--tab {
-                &:first-child {
-                    @include adaptiv-marginRight(200, 5);
-                }
-                &:last-child {
-                    @include adaptiv-marginLeft(200, 5);
-                }
-            }
-        }
-
         &__bombardier {
             width: 100%;
-            @include adaptiv-marginBottom(40, 25);
         }
     }
 }
@@ -1634,9 +1740,53 @@
 
 @media (max-width: 767px) {
     .stats {
+        &__container {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        &__row:not(:nth-child(-n + 2)) {
+            padding: 5px 0px 5px 5px;
+        }
+        &__row {
+            &--last {
+                margin-bottom: 8px;
+            }
+        }
+        &__command {
+            &--head {
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(20, 17);
+            }
+            max-width: 190px;
+            &-text {
+                align-items: flex-start;
+                flex-direction: column;
+                &-image {
+                    margin-right: 0px;
+                }
+            }
+        }
+        &__header {
+            @include adaptiv-font(40, 20);
+            @include adaptiv-lineHeight(49, 24);
+            padding-left: 16px;
+            padding-right: 20px;
+            margin-right: 0px;
+        }
         &__bombardier {
             &-text {
                 display: none;
+            }
+        }
+        &__command {
+            &-text {
+                &-team {
+                    @include adaptiv-font(16, 10);
+                    @include adaptiv-lineHeight(20, 12);
+                }
+            }
+            &--head {
+                margin-left: 5px;
             }
         }
     }
@@ -1670,12 +1820,15 @@
 
 @media (max-width: 650px) {
     .stats {
+        &__command {
+            max-width: 147px;
+        }
         &__bombardier {
             &-play {
                 @include adaptiv-font(16, 14);
                 @include adaptiv-lineHeight(20, 17);
                 margin-left: 8px;
-                width: 30%;
+                width: 21%;
             }
             &-team {
                 @include adaptiv-font(16, 14);
@@ -1706,20 +1859,12 @@
             max-width: 20px;
         }
         &__point {
-            @include adaptiv-font(16, 14);
-            @include adaptiv-lineHeight(20, 17);
+            @include adaptiv-font(16, 12);
+            @include adaptiv-lineHeight(20, 15);
             max-width: 20px;
         }
         &__row {
             padding-left: 0px;
-        }
-        &__command {
-            &-text {
-                flex-direction: column;
-                align-items: flex-start;
-                text-decoration-line: underline;
-                max-width: 150px;
-            }
         }
         &__document {
             &-text {
@@ -1756,7 +1901,12 @@
 @media (max-width: 500px) {
     .stats {
         &__bombardier {
-            margin-bottom: 0px;
+            margin-bottom: 30px;
+            &-play {
+                width: 100%;
+                max-width: 110px;
+                margin-left: 0px;
+            }
             &-img {
                 width: 40px;
                 height: 40px;
@@ -1773,6 +1923,9 @@
 
 @media (max-width: 400px) {
     .stats {
+        &__command {
+            max-width: 127px;
+        }
         &__name {
             font-size: 10px;
             width: 130px;

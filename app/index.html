@@ -898,7 +898,7 @@
         <h2 class="stats__header">СТАТИСТИКА</h2>
         <div class="stats__line line"></div>
     </div>
-    <div class="container">
+    <div class="stats__container">
         <div class="stats__total">
             <div class="stats__charts--container">
                 <table class="stats__chart">
@@ -919,14 +919,17 @@
                     </tr>
                     <tr class="stats__row">
                         <th class="stats__command">
-                            <a class="stats__command-text" href="">
-                                <img
-                                    class="stats__command-img"
-                                    src="images/svg/brest.svg"
-                                    alt=""
-                                />
-                                Команда Брестской области
-                            </a>
+                            <div class="stats__command-text">
+                                <a href="#" class="stats__command-text-image">
+                                    <img
+                                        class="stats__command-img"
+                                        src="images/svg/brest.svg"
+                                        alt=""
+                                /></a>
+                                <a href="" class="stats__command-text-team">
+                                    Команда Брестской области</a
+                                >
+                            </div>
                         </th>
                         <td class="stats__point">0</td>
                         <td class="stats__point">0</td>
@@ -938,14 +941,18 @@
                     </tr>
                     <tr class="stats__row stats__row">
                         <th class="stats__command">
-                            <a class="stats__command-text" href="">
-                                <img
-                                    class="stats__command-img"
-                                    src="images/svg/gomel.svg"
-                                    alt=""
-                                />
-                                Команда Гомельской области
-                            </a>
+                            <div class="stats__command-text">
+                                <a href="#" class="stats__command-text-image">
+                                    <img
+                                        class="stats__command-img"
+                                        src="images/svg/gomel.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="" class="stats__command-text-team"
+                                    >Команда Гомельской области</a
+                                >
+                            </div>
                         </th>
                         <td class="stats__point">0</td>
                         <td class="stats__point">0</td>
@@ -957,14 +964,18 @@
                     </tr>
                     <tr class="stats__row">
                         <th class="stats__command">
-                            <a class="stats__command-text" href="">
-                                <img
-                                    class="stats__command-img"
-                                    src="images/svg/vitebsk.svg"
-                                    alt=""
-                                />
-                                Команда Витебской области
-                            </a>
+                            <div class="stats__command-text">
+                                <a href="#" class="stats__command-text-image">
+                                    <img
+                                        class="stats__command-img"
+                                        src="images/svg/vitebsk.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="" class="stats__command-text-team"
+                                    >Команда Витебской области</a
+                                >
+                            </div>
                         </th>
                         <td class="stats__point">0</td>
                         <td class="stats__point">0</td>
@@ -976,14 +987,18 @@
                     </tr>
                     <tr class="stats__row stats__row">
                         <th class="stats__command">
-                            <a class="stats__command-text" href="">
-                                <img
-                                    class="stats__command-img"
-                                    src="images/svg/grodno.svg"
-                                    alt=""
-                                />
-                                Команда Гродненской области
-                            </a>
+                            <div class="stats__command-text">
+                                <a href="#" class="stats__command-text-image">
+                                    <img
+                                        class="stats__command-img"
+                                        src="images/svg/grodno.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="" class="stats__command-text-team"
+                                    >Команда Гродненской области</a
+                                >
+                            </div>
                         </th>
                         <td class="stats__point">0</td>
                         <td class="stats__point">0</td>
@@ -995,14 +1010,18 @@
                     </tr>
                     <tr class="stats__row">
                         <th class="stats__command">
-                            <a class="stats__command-text" href="">
-                                <img
-                                    class="stats__command-img"
-                                    src="images/svg/minsk.svg"
-                                    alt=""
-                                />
-                                Команда Минской области
-                            </a>
+                            <div class="stats__command-text">
+                                <a href="#" class="stats__command-text-image">
+                                    <img
+                                        class="stats__command-img"
+                                        src="images/svg/minsk.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="" class="stats__command-text-team"
+                                    >Команда Минской области</a
+                                >
+                            </div>
                         </th>
                         <td class="stats__point">0</td>
                         <td class="stats__point">0</td>
@@ -1014,14 +1033,18 @@
                     </tr>
                     <tr class="stats__row stats__row">
                         <th class="stats__command">
-                            <a class="stats__command-text" href="">
-                                <img
-                                    class="stats__command-img"
-                                    src="images/svg/presidents.svg"
-                                    alt=""
-                                />
-                                Команда Президента Республики Беларусь
-                            </a>
+                            <div class="stats__command-text">
+                                <a href="#" class="stats__command-text-image">
+                                    <img
+                                        class="stats__command-img"
+                                        src="images/svg/presidents.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="" class="stats__command-text-team"
+                                    >Команда Президента Республики Беларусь</a
+                                >
+                            </div>
                         </th>
                         <td class="stats__point">0</td>
                         <td class="stats__point">0</td>
@@ -1033,17 +1056,18 @@
                     </tr>
                     <tr class="stats__row stats__row--last">
                         <th class="stats__command">
-                            <a
-                                class="stats__command-text"
-                                href="mogilev-page.html"
-                            >
-                                <img
-                                    class="stats__command-img"
-                                    src="images/svg/mogilev.svg"
-                                    alt=""
-                                />
-                                Команда Могилевской области
-                            </a>
+                            <div class="stats__command-text">
+                                <a href="#" class="stats__command-text-image">
+                                    <img
+                                        class="stats__command-img"
+                                        src="images/svg/mogilev.svg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a href="" class="stats__command-text-team"
+                                    >Команда Могилевской области</a
+                                >
+                            </div>
                         </th>
                         <td class="stats__point">0</td>
                         <td class="stats__point">0</td>
@@ -1125,7 +1149,8 @@
                                         class="stats__logo"
                                     />
                                     <p class="stats__name">
-                                        Команда <br /> Брестской области
+                                        Команда <br />
+                                        Брестской области
                                     </p>
                                 </a>
                                 <p class="stats__versus">2 : 1</p>
@@ -1136,7 +1161,8 @@
                                         class="stats__logo"
                                     />
                                     <p class="stats__name">
-                                        Команда <br /> Гомельской области
+                                        Команда <br />
+                                        Гомельской области
                                     </p>
                                 </a>
                             </div>
@@ -1148,7 +1174,8 @@
                             <div class="stats__data">
                                 <p class="stats__number">02.04.2022</p>
                                 <p class="stats__square">
-                                    Минский <br /> Ледовый дворец
+                                    Минский <br />
+                                    Ледовый дворец
                                 </p>
                             </div>
                             <div class="stats__match">
@@ -1159,7 +1186,8 @@
                                         class="stats__logo"
                                     />
                                     <p class="stats__name">
-                                        Команда <br /> Минской области
+                                        Команда <br />
+                                        Минской области
                                     </p>
                                 </a>
                                 <p class="stats__versus">1 : 6</p>
@@ -1170,7 +1198,76 @@
                                         class="stats__logo"
                                     />
                                     <p class="stats__name">
-                                        Команда <br /> Брестской области
+                                        Команда <br />
+                                        Брестской области
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="stats__total--command"
+                            onclick="location.href='otchet-about-match.html'"
+                        >
+                            <div class="stats__data">
+                                <p class="stats__number">26.03.2022</p>
+                                <p class="stats__square">
+                                    Олимпик Арена (малая площадка)
+                                </p>
+                            </div>
+                            <div class="stats__match">
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="images/svg/presidents.svg"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Президента Республики Беларусь
+                                    </p>
+                                </a>
+                                <p class="stats__versus">8 : 6</p>
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="images/svg/gomel.svg"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Гомельской области
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="stats__total--command"
+                            onclick="location.href='otchet-about-match.html'"
+                        >
+                            <div class="stats__data">
+                                <p class="stats__number">26.03.2022</p>
+                                <p class="stats__square">
+                                    Олимпик Арена (малая площадка)
+                                </p>
+                            </div>
+                            <div class="stats__match">
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="images/svg/presidents.svg"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Президента Республики Беларусь
+                                    </p>
+                                </a>
+                                <p class="stats__versus">8 : 6</p>
+                                <a class="stats__team" href="">
+                                    <img
+                                        src="images/svg/gomel.svg"
+                                        alt=""
+                                        class="stats__logo"
+                                    />
+                                    <p class="stats__name">
+                                        Команда Гомельской области
                                     </p>
                                 </a>
                             </div>
@@ -1349,7 +1446,7 @@
                 <h2>Плей-офф</h2>
             </div>
             <div class="stats__playOff-container">
-                <div class="stats__playOff-container-line"></div>
+                <!-- <div class="stats__playOff-container-line"></div>
                 <div class="stats__playOff-container-content">
                     <div class="stats__playOff-container-content-case">
                         <div class="stats__playOff-container-content-case-item">
@@ -1586,14 +1683,12 @@
                                         <div
                                             class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
                                         >
-                                            <!-- <img src="" alt=""> -->
                                             <p></p>
                                             <span></span>
                                         </div>
                                         <div
                                             class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
                                         >
-                                            <!-- <img src="" alt=""> -->
                                             <p></p>
                                             <span></span>
                                         </div>
@@ -1644,7 +1739,6 @@
                                             class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
                                             style="display: none"
                                         >
-                                            <!-- <img src="images/svg/presidents.svg" alt=""> -->
                                             <p></p>
                                             <span></span>
                                         </div>
@@ -1665,14 +1759,12 @@
                                         <div
                                             class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
                                         >
-                                            <!-- <img src="images/svg/presidents.svg" alt=""> -->
                                             <p></p>
                                             <span></span>
                                         </div>
                                         <div
                                             class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
                                         >
-                                            <!-- <img src="images/svg/minsk.svg" alt=""> -->
                                             <p></p>
                                             <span></span>
                                         </div>
@@ -1681,7 +1773,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -1702,7 +1794,9 @@
                 </div>
                 <div class="stats__document-info">
                     <div class="stats__document-item">
-                        <a class="stats__document-text" href="#">Положение турнира</a>
+                        <a class="stats__document-text" href="#"
+                            >Положение турнира</a
+                        >
                         <div class="stats__document-download">
                             <a
                                 class="stats__document-link"
@@ -1719,7 +1813,9 @@
                         </div>
                     </div>
                     <div class="stats__document-item">
-                        <a class="stats__document-text" href="#">Календарь турнира</a>
+                        <a class="stats__document-text" href="#"
+                            >Календарь турнира</a
+                        >
                         <div class="stats__document-download">
                             <a
                                 class="stats__document-link"
@@ -1742,7 +1838,7 @@
                             href="#"
                         >
                             Бланк согласования игроков
-                    </a>
+                        </a>
                         <div class="stats__document-download">
                             <a
                                 class="stats__document-link"
@@ -1768,9 +1864,7 @@
                             Лучшие бомбардиры
                         </td>
                     </tr>
-                    <tr
-                        class="stats__bombardier-row greyLine"
-                    >
+                    <tr class="stats__bombardier-row greyLine">
                         <th class="stats__command--head stats__bombardier-play">
                             Игрок
                         </th>

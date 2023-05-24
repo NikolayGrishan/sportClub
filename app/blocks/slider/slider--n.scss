@@ -16,42 +16,13 @@
         flex-direction: column;
         justify-content: center;
         min-height: 300px;
-        padding: 31px 15px 30px 35px;
+        padding: 31px 15px 25px 30px;
     }
     .slick-track {
         align-items: stretch;
         justify-content: stretch;
     }
 }
-
-// .news__arrows .slick-arrow.slick-prev {
-//     font-size: 0;
-//     background: url("../images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
-//     width: 45px;
-//     height: 45px;
-//     border: none;
-//     transition: all 0.3s;
-//     margin-right: 15px;
-//     cursor: pointer;
-// }
-
-// .news__arrows .slick-arrow.slick-prev:hover {
-//     background: url("../images/svg/pagination-lhover.svg") 0 0 / 100% no-repeat;
-// }
-
-// .news__arrows .slick-arrow.slick-next {
-//     font-size: 0;
-//     background: url("../images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
-//     width: 45px;
-//     height: 45px;
-//     border: none;
-//     transition: all 0.3s;
-//     cursor: pointer;
-// }
-
-// .news__arrows .slick-arrow.slick-next:hover {
-//     background: url("../images/svg/pagination-rhover.svg") 0 0 / 100% no-repeat;
-// }
 
 .news__arrows .slick-arrow.slick-prev {
     font-size: 0;
@@ -93,7 +64,6 @@
 
 .news-dots li {
     list-style: none;
-    margin: 0 10px;
 }
 /* Активная точка */
 .news-dots button {
@@ -111,4 +81,13 @@
     border: 1px solid #952212;
     width: 12px;
     height: 12px;
+}
+
+
+@media (max-width: 1500px) {
+    .slider--n {
+        .slick-list {
+            padding: 31px 15px 25px 25px;
+        }
+    }
 }
