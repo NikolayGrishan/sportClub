@@ -1,29 +1,31 @@
 .slider-photo__arrows .slick-arrow.slick-prev {
     font-size: 0;
     background: url("../images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     border: none;
-    transition: all 0.3s;
-    margin-right: 15px;
+    transition: all 0.3s ease;
+    margin-right: 10px;
     cursor: pointer;
 }
 
 .slider-photo__arrows .slick-arrow.slick-prev:hover {
+    transition: all 0.3s ease;
     background: url("../images/svg/pagination-lhover.svg") 0 0 / 100% no-repeat;
 }
 
 .slider-photo__arrows .slick-arrow.slick-next {
     font-size: 0;
     background: url("../images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     border: none;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .slider-photo__arrows .slick-arrow.slick-next:hover {
+    transition: all 0.3s ease;
     background: url("../images/svg/pagination-rhover.svg") 0 0 / 100% no-repeat;
 }
 
@@ -31,7 +33,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .slider-photo .slick-dots li {

@@ -15,8 +15,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-height: 450px;
-        padding: 30px 15px 30px 25px;
+        min-height: 300px;
+        padding: 31px 15px 30px 35px;
     }
     .slick-track {
         align-items: stretch;
@@ -24,48 +24,79 @@
     }
 }
 
+// .news__arrows .slick-arrow.slick-prev {
+//     font-size: 0;
+//     background: url("../images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
+//     width: 45px;
+//     height: 45px;
+//     border: none;
+//     transition: all 0.3s;
+//     margin-right: 15px;
+//     cursor: pointer;
+// }
+
+// .news__arrows .slick-arrow.slick-prev:hover {
+//     background: url("../images/svg/pagination-lhover.svg") 0 0 / 100% no-repeat;
+// }
+
+// .news__arrows .slick-arrow.slick-next {
+//     font-size: 0;
+//     background: url("../images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
+//     width: 45px;
+//     height: 45px;
+//     border: none;
+//     transition: all 0.3s;
+//     cursor: pointer;
+// }
+
+// .news__arrows .slick-arrow.slick-next:hover {
+//     background: url("../images/svg/pagination-rhover.svg") 0 0 / 100% no-repeat;
+// }
+
 .news__arrows .slick-arrow.slick-prev {
     font-size: 0;
     background: url("../images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     border: none;
-    transition: all 0.3s;
-    margin-right: 15px;
+    transition: all 0.3s ease;
+    margin-right: 10px;
     cursor: pointer;
 }
 
 .news__arrows .slick-arrow.slick-prev:hover {
+    transition: all 0.3s ease;
     background: url("../images/svg/pagination-lhover.svg") 0 0 / 100% no-repeat;
 }
 
 .news__arrows .slick-arrow.slick-next {
     font-size: 0;
     background: url("../images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     border: none;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .news__arrows .slick-arrow.slick-next:hover {
+    transition: all 0.3s ease;
     background: url("../images/svg/pagination-rhover.svg") 0 0 / 100% no-repeat;
 }
 
-.slider--n .slick-dots {
+
+.news-dots {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
 }
 
-.slider--n .slick-dots li {
+.news-dots li {
     list-style: none;
     margin: 0 10px;
 }
 /* Активная точка */
-.slider--n .slick-dots button {
+.news-dots button {
     font-size: 0;
     width: 8px;
     height: 8px;
@@ -75,7 +106,7 @@
     transition: all 0.3s;
 }
 
-.slider--n .slick-dots li.slick-active button {
+.news-dots li.slick-active button {
     background: #952212;
     border: 1px solid #952212;
     width: 12px;

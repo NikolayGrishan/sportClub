@@ -14,17 +14,13 @@
     }
 
     &__searchingPopup {
-        padding: 20px;
-        // background-color: #f5f5f5;
-        // max-width: 900px;
+        padding: 32px 0px 20px 0px;
         margin: 0 auto;
         position: relative;
-        // box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
         border-radius: 10px;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        background: #f5f5f5;
     }
 
     &__cross:hover {
@@ -32,34 +28,91 @@
     }
 
     &__searchingCase {
-        width: 800px; /* Ширина поля с кнопкой */
-        border: 1px solid #000; /* Параметры рамки */
-        min-height: 54px; /* Минимальная высота */
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        background: #ffffff;
+        &__wrapper {
+            width: 100%;
+            max-width: 738px;
+            min-height: 60px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__searchingList {
+        &-wrapper {
+            width: 100%;
+            max-width: 738px;
+            background: #ffffff;
+            border-radius: 10px 5px 5px 10px;
+            padding: 10px 0px 0px 15px;
+            height: 746px;
+            overflow-x: auto;
+        }
+        &-wrapper::-webkit-scrollbar {
+            width: 5px;
+            height: 10px;
+        }
+        &-wrapper::-webkit-scrollbar-track {
+            background: #f7f7f7;
+            border-radius: 0px 10px 10px 0px;
+        }
+        &-wrapper::-webkit-scrollbar-thumb {
+            background: #952212;
+            border-radius: 10px 25px 25px 10px;
+            height: 106px;
+            max-height: 106px;
+        }
+        ul {
+            padding-left: 0px;
+            margin-bottom: 11px;
+            width: 100%;
+            max-width: 300px;
+            li {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(24, 21);
+                color: #1b1b1b;
+                margin-bottom: 8px;
+                padding-left: 20px;
+                a {
+                    color: #1b1b1b;
+                }
+            }
+            li.header__searchingList-heading {
+                font-weight: 700;
+                padding-left: 0px;
+            }
+        }
     }
 
     &__searchInput {
         border: none;
-        width: 800px;
-        // border: 1px solid #1b1b1b;
+        width: 738px;
         border-radius: 10px;
         padding-left: 15px;
         padding-right: 5px;
         outline: none; /* Убираем свечение в Chrome и Safari */
         -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
         vertical-align: middle; /* Выравнивание по середине */
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        color: #1b1b1b;
     }
 
     &__searchBtn {
-        width: 24px; /* Ширина кнопки */
-        height: 24px; /* Высота кнопки */
-        border: none; /* Убираем рамку */
+        width: 30px;
+        height: 30px;
+        border: none;
         cursor: pointer;
-        background: url("../images/svg/search.svg") no-repeat 50% 50%; /* Параметры фона */
-        margin-right: 18px;
+        background: url("../images/svg/searchCross.svg") no-repeat 50% 50%;
+        margin-right: 15px;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 700;
@@ -73,8 +126,8 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #d9d9d9;
-        @include adaptiv-paddingTop(34, 18.4);
-        @include adaptiv-paddingBottom(24, 19);
+        @include adaptiv-paddingTop(30, 10);
+        @include adaptiv-paddingBottom(19, 15);
     }
 
     &__title {
@@ -84,7 +137,7 @@
         @include adaptiv-font(18, 12);
         line-height: 22px;
         color: #1b1b1b;
-        @include adaptiv-paddingLeft(23, 20);
+        @include adaptiv-paddingLeft(5, 20);
         margin: auto;
     }
 
@@ -92,35 +145,34 @@
         display: flex;
         align-items: center;
         position: relative;
-        max-width: 406px;
+        max-width: 495px;
         overflow-wrap: break-word;
     }
 
     &__img {
-        // width: 8em;
         height: 67px;
         margin: auto;
     }
 
     &__nav {
         display: flex;
-        padding-right: 15px;
+        padding: 0px 175px 0px 0px;
 
         &-item {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
+            @include adaptiv-font(16, 16);
+            @include adaptiv-lineHeight(20, 20);
             color: #1b1b1b;
             white-space: nowrap;
 
             &:not(:last-child) {
-                @include adaptiv-paddingRight(30, 5);
+                @include adaptiv-paddingRight(30, 0);
             }
 
             &:hover {
-                transition: all 0.3s;
+                transition: all 0.3s ease;
                 opacity: 0.5;
             }
         }
@@ -131,50 +183,66 @@
         align-items: center;
 
         &__vk {
+            display: block;
             width: 24px;
             height: 24px;
             background: url("../images/svg/vk.svg");
             background-repeat: no-repeat;
             background-position: center center;
+            background-size: contain;
+            transition: all 0.3s ease;
 
             &:hover {
+                transition: all 0.3s ease;
                 background: url("../images/svg/vk-black.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
             }
         }
 
         &__inst {
+            display: block;
             width: 24px;
             height: 24px;
             background: url("../images/svg/inst.svg");
             background-repeat: no-repeat;
             background-position: center center;
+            transition: all 0.3s ease;
 
             &:hover {
                 background: url("../images/svg/inst-black.svg");
+                transition: all 0.3s ease;
             }
         }
 
         &__fb {
+            display: block;
             width: 24px;
             height: 24px;
             background: url("../images/svg/fb.svg");
             background-repeat: no-repeat;
             background-position: center center;
+            transition: all 0.3s ease;
 
             &:hover {
                 background: url("../images/svg/fb-black.svg");
+                transition: all 0.3s ease;
             }
         }
 
         &__YT {
+            display: block;
             width: 24px;
             height: 24px;
             background: url("../images/svg/YT.svg");
             background-repeat: no-repeat;
             background-position: center center;
+            transition: all 0.3s ease;
 
             &:hover {
                 background: url("../images/svg/YT-black.svg");
+                transition: all 0.3s ease;
             }
         }
 
@@ -182,7 +250,7 @@
             min-width: 24px;
 
             &:not(:first-child) {
-                @include adaptiv-marginLeft(20, 5);
+                @include adaptiv-marginLeft(30, 20);
             }
 
             &:hover {
@@ -193,15 +261,17 @@
     }
 
     &__search {
-        @include adaptiv-marginRight(10, 0);
+        display: block;
         width: 24px;
         height: 24px;
         background: url("../images/svg/search.svg");
         background-repeat: no-repeat;
         background-position: center center;
+        transition: all 0.3s ease;
         &:hover {
             cursor: pointer;
             background: url("../images/svg/search-black.svg");
+            transition: all 0.3s ease;
         }
     }
 
@@ -211,11 +281,31 @@
         margin-left: 20px;
     }
 }
-
-@media (max-width: 1100px) {
+@media (max-width: 1600px) {
     .header {
-        &__logo {
-            max-width: 400px;
+        &__nav {
+            padding: 0px 50px 0px 0px;
+        }
+    }
+}
+@media (max-width: 1400px) {
+    .header {
+        &__nav {
+            padding: 0px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        &__container {
+            padding-top: 10px;
+        }
+        &__img {
+            height: 61px;
+        }
+        &__title {
+            display: none;
         }
         &__nav {
             display: none;
@@ -227,6 +317,7 @@
         }
         &__burger {
             display: block;
+            margin-left: 25px;
         }
     }
 }
@@ -234,20 +325,23 @@
 @media (max-width: 1000px) {
     .header {
         &__searchingPopup {
-            padding: 10px;
+            padding: 19px 0px 0px 0px;
+        }
+        &__searchingList-wrapper {
+            max-width: 738px;
+            height: 471px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__searchingPopup {
+            width: 100%;
         }
         &__searchingCase {
             width: 100%;
-            max-width: 800px;
-            margin-top: 26px;
-        }
-        &__closeSearching {
-            margin-top: 12px;
-            margin-right: 20px;
-        }
-        &__searchInput {
-            width: 100%;
-            max-width: 800px;
+            max-width: 738px;
         }
     }
 }
@@ -267,6 +361,34 @@
         }
         &__img {
             height: 3.81em;
+        }
+        &__searchingPopup {
+            padding-top: 10px;
+        }
+        &__searchingCase {
+            max-width: 343px;
+            &__wrapper {
+                margin-bottom: 5px;
+            }
+        }
+        &__searchingList {
+            ul {
+                max-width: 270px;
+            }
+        }
+        &__searchingList-wrapper {
+            max-width: 343px;
+            height: 344px;
+        }
+        &__searchInput {
+            width: 100%;
+            max-width: 273px;
+            margin-right: 10px;
+            padding-right: 0%;
+        }
+        &__searchBtn {
+            margin-right: 0px;
+            margin-left: 15px;
         }
     }
 }

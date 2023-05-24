@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 89.271%;
     margin: 0 auto;
 }
 
@@ -35,4 +35,16 @@ body {
     width: 100%;
     background: #952212;
     width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 95.053%;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 91.47%;
+    }
 }

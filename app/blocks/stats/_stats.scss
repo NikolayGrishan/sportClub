@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    @include adaptiv-marginBottom(150, 60);
+    @include adaptiv-marginBottom(82, 30);
     // 0.0.10 version start
     &__modal {
         display: flex;
@@ -152,10 +152,11 @@
             width: 100%;
             max-width: 1710px;
             &-line {
-                width: 96%;
+                width: 97.9%;
                 border: 1px solid #d9d9d9;
                 position: absolute;
-                top: 87px;
+                top: 52px;
+                left: 20px;
                 z-index: 1;
             }
             &-content {
@@ -170,12 +171,12 @@
                                 font-family: "Montserrat";
                                 font-style: normal;
                                 font-weight: 800;
-                                @include adaptiv-font(30, 18);
-                                @include adaptiv-lineHeight(37, 22);
+                                @include adaptiv-font(20, 18);
+                                @include adaptiv-lineHeight(24, 22);
                                 letter-spacing: 0.01em;
                                 color: #1b1b1b;
                                 text-align: center;
-                                @include adaptiv-marginTop(25, 30);
+                                @include adaptiv-marginTop(15, 30);
                                 @include adaptiv-marginBottom(82, 35);
                                 max-width: 400px;
                                 overflow-wrap: break-word;
@@ -225,10 +226,14 @@
                                                 font-family: "Montserrat";
                                                 font-style: normal;
                                                 font-weight: 800;
-                                                font-size: 12px;
-                                                line-height: 15px;
+                                                @include adaptiv-font(16, 12);
+                                                @include adaptiv-lineHeight(
+                                                    20,
+                                                    15
+                                                );
+                                                text-decoration-line: underline;
                                                 color: #1b1b1b;
-                                                max-width: 152px;
+                                                max-width: 224px;
                                                 overflow-wrap: break-word;
                                                 margin-right: 20px;
                                             }
@@ -271,7 +276,7 @@
                     }
                 }
                 &-case:nth-of-type(1) {
-                    padding-left: 100px;
+                    padding-left: 107px;
                 }
                 &-case:nth-of-type(5) {
                     padding-right: 141px;
@@ -282,7 +287,11 @@
                     }
                 }
                 &-branch {
-                    @include adaptiv-marginTop(198, 138);
+                    @include adaptiv-marginTop(137, 138);
+                }
+
+                &-branchRight {
+                    @include adaptiv-marginTop(210, 138);
                 }
             }
         }
@@ -297,13 +306,13 @@
     &__playOffTitle {
         background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
         border-radius: 10px 10px 0px 0px;
-        padding: 31px 0px 31px 31px;
+        padding: 20px 0px 20px 20px;
         h2 {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 800;
-            @include adaptiv-font(25, 18);
-            @include adaptiv-lineHeight(30, 22);
+            @include adaptiv-font(20, 18);
+            @include adaptiv-lineHeight(24, 22);
             letter-spacing: 0.01em;
             color: #ffffff;
             overflow-wrap: break-word;
@@ -407,8 +416,8 @@
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 800;
-            @include adaptiv-font(18, 15);
-            line-height: 150%;
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
             color: #1b1b1b;
             text-align: left;
             @include adaptiv-paddingLeft(21px, 10px);
@@ -661,7 +670,7 @@
         &--line {
             display: flex;
             align-items: center;
-            @include adaptiv-marginBottom(50, 30);
+            @include adaptiv-marginBottom(40, 30);
         }
 
         &--tab {
@@ -674,11 +683,11 @@
     }
 
     &__header {
-        @include adaptiv-font(45, 20);
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 800;
-        @include adaptiv-lineHeight(55, 24);
+        @include adaptiv-font(40, 20);
+        @include adaptiv-lineHeight(49, 24);
         letter-spacing: 0.01em;
         color: #1b1b1b;
         position: relative;
@@ -695,21 +704,26 @@
     }
 
     &__total {
+        width: 100%;
         display: flex;
-        @include adaptiv-marginBottom(40, 25);
+        @include adaptiv-marginBottom(25, 15);
 
         &--command {
             display: flex;
-            align-items: flex-start;
-            padding-top: 30px;
+            align-items: center;
             justify-content: space-between;
-            @include adaptiv-marginRight(30, 16);
-            @include adaptiv-marginLeft(38, 16);
+            @include adaptiv-marginRight(10, 0);
+            @include adaptiv-marginLeft(20, 0);
             border-bottom: 1px solid #d9d9d9;
-            @include adaptiv-paddingBottom(21, 10);
+            @include adaptiv-paddingBottom(15, 10);
+            margin-top: 15px;
             &:hover {
                 cursor: pointer;
             }
+        }
+        &--command:first-child {
+            padding-top: 15px;
+            margin-top: 0px;
         }
         &--command:last-child {
             border-bottom: none;
@@ -717,16 +731,17 @@
     }
 
     &__charts--container {
-        width: 60%;
+        width: 100%;
+        max-width: 1060px;
         transition: all 0.3s ease 0s;
         border: 1px solid rgba(27, 27, 27, 0.1);
         border-radius: 10px;
-        @include adaptiv-marginRight(40, 5);
+        margin-right: 24px;
+        // @include adaptiv-marginRight(25, 5);
     }
     &__charts--container:hover {
         box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
         transition: all 0.3s ease 0s;
-        cursor: pointer;
         border: 1px solid rgba(27, 27, 27, 0);
     }
 
@@ -737,19 +752,19 @@
     &__title {
         display: flex;
         align-self: flex-start;
-        padding: 30px;
+        padding: 20px;
         width: 100%;
         font-family: "Montserrat";
         font-style: normal;
-        font-weight: 800;
-        @include adaptiv-font(25, 18);
-        line-height: 30px;
+        font-weight: 700;
+        @include adaptiv-font(20, 18);
+        @include adaptiv-lineHeight(24, 22);
         color: #ffffff;
 
         &--double {
             display: flex;
             justify-content: flex-start;
-            padding: 30px;
+            padding: 20px;
             background: linear-gradient(
                 90.5deg,
                 #2660ae -4.69%,
@@ -763,11 +778,10 @@
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 800;
-            @include adaptiv-font(25, 18);
-            line-height: 30px;
+            @include adaptiv-font(20, 18);
+            @include adaptiv-lineHeight(24, 22);
             color: rgba(255, 255, 255, 0.5);
             white-space: nowrap;
-            border-bottom: 3px solid rgb(255, 255, 255, 0);
 
             &:hover {
                 transition: all 0.3s;
@@ -776,31 +790,27 @@
 
             &_active {
                 color: #ffffff;
-                border-bottom: 3px solid #ffffff;
+                // border-bottom: 3px solid #ffffff;
             }
         }
         &--tab:first-child {
-            margin-right: 42px;
+            margin-right: 30px;
         }
     }
 
     &__row {
-        @include adaptiv-marginRight(30, 16);
-        @include adaptiv-marginLeft(25, 16);
-        padding-top: 9px;
-        padding-bottom: 9px;
-        padding-right: 15px;
+        @include adaptiv-marginRight(20, 10);
+        @include adaptiv-marginLeft(20, 10);
+        @include adaptiv-paddingLeft(10, 10);
+        margin-bottom: 5px;
         display: flex;
         justify-content: space-between;
 
         &--first {
-            margin-top: 11px;
+            margin-top: 15px;
             border-bottom: 1px solid rgba(217, 217, 217, 0.4);
             background: initial !important;
-        }
-
-        &--last {
-            @include adaptiv-marginBottom(30, 16);
+            padding-bottom: 8px;
         }
 
         &--even {
@@ -818,8 +828,15 @@
             width: 100%;
         }
     }
+    &__row:not(:nth-child(-n + 2)) {
+        padding-top: 6px;
+        padding-bottom: 5px;
+    }
     &__row:nth-child(2n) {
         background: rgba(217, 217, 217, 0.2);
+    }
+    &__row:nth-child(3) {
+        margin-top: 10px;
     }
 
     &__point {
@@ -829,27 +846,30 @@
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        @include adaptiv-font(18, 12);
-        line-height: 22px;
+        @include adaptiv-font(16, 12);
+        @include adaptiv-lineHeight(20, 15);
         color: #1b1b1b;
-        width: 7.13%;
+        width: 100%;
+        max-width: 60px;
     }
 
     &__command {
-        width: 50%;
+        width: 100%;
+        max-width: 328px;
+        margin-left: 12px;
+        margin-right: 9px;
 
         &-text {
             display: flex;
+            align-items: center;
             text-align: left;
             font-family: "Montserrat";
             font-style: normal;
-            font-weight: 800;
-            @include adaptiv-font(18, 10);
-            line-height: 150%;
+            font-weight: 700;
+            @include adaptiv-font(16, 10);
+            @include adaptiv-lineHeight(20, 12);
+            text-decoration-line: underline;
             color: #1b1b1b;
-            align-items: center;
-            padding-left: 9px;
-
             &:hover {
                 transition: all 0.3s;
                 color: #952212;
@@ -859,65 +879,75 @@
         &-img {
             width: 40px;
             height: 40px;
-            @include adaptiv-marginRight(13, 5);
+            @include adaptiv-marginRight(10, 5);
         }
 
         &--head {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 800;
-            @include adaptiv-font(18, 15);
-            line-height: 150%;
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
             color: #1b1b1b;
             text-align: left;
-            width: 50%;
+            width: 100%;
+            max-width: 326px;
         }
     }
 
     &__head {
         font-family: "Montserrat";
         font-style: normal;
-        font-weight: 800;
-        @include adaptiv-font(18, 15);
-        line-height: 22px;
+        font-weight: 700;
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
         color: #1b1b1b;
-        width: 7.14%;
+        text-align: center;
+        width: 100%;
+        max-width: 60px;
     }
 
     &__last {
-        width: 40%;
+        width: 100%;
+        max-width: 630px;
         transition: all 0.3s ease 0s;
         border: 1px solid rgba(27, 27, 27, 0.1);
         border-radius: 10px;
         display: flex;
         flex-direction: column;
+        height: 100%;
+        max-height: 528px;
     }
     &__last:hover {
         box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
         transition: all 0.3s ease 0s;
-        cursor: pointer;
         border: 1px solid rgba(27, 27, 27, 0);
     }
 
     &__scroll {
-        height: 535px;
+        height: 528px;
         overflow-x: auto;
     }
-    ::-webkit-scrollbar {
-        width: 9px;
+    &__scroll::-webkit-scrollbar {
+        width: 5px;
+        height: 10px;
     }
-    ::-webkit-scrollbar-track {
+    &__scroll::-webkit-scrollbar-track {
         background: rgba(217, 217, 217, 0.5);
     }
-    ::-webkit-scrollbar-thumb {
+    &__scroll::-webkit-scrollbar-thumb {
         background: #952212;
         border-radius: 5px;
+        height: 106px;
+        max-height: 106px;
     }
 
     &__match {
         display: flex;
         justify-content: space-between;
-        width: 75%;
+        // width: 75%;
+        width: 100%;
+        max-width: 432px;
     }
 
     &__team {
@@ -926,7 +956,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 39%;
+        width: 100%;
+        max-width: 172px;
+        // width: 39%;
         // max-width: 150px;
     }
 
@@ -935,11 +967,13 @@
         align-self: center;
         font-family: "Montserrat";
         font-style: normal;
-        font-weight: 800;
-        @include adaptiv-font(25, 18);
+        font-weight: 700;
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
         text-align: center;
         color: #952212;
-        width: 22%;
+        width: 100%;
+        max-width: 60px;
     }
 
     &__data {
@@ -947,25 +981,27 @@
         flex-direction: column;
         align-items: center;
         // align-self: center;
-        width: 25%;
-        margin-right: 7px;
+        // width: 25%;
+        width: 100%;
+        max-width: 128px;
+        // margin-right: 7px;
     }
 
     &__logo {
         width: 50px;
         height: 50px;
+        margin-bottom: 10px;
     }
 
     &__number {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 800;
-        font-size: 18px;
-        line-height: 22px;
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
         text-align: center;
         letter-spacing: 0.01em;
         color: #1b1b1b;
-        padding-top: 10px;
     }
 
     &__square {
@@ -976,14 +1012,17 @@
         line-height: 15px;
         text-align: center;
         color: #1b1b1b;
+        width: 100%;
+        max-width: 128px;
     }
 
     &__name {
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 800;
-        font-size: 12px;
-        line-height: 15px;
+        @include adaptiv-font(14, 10);
+        @include adaptiv-lineHeight(17, 12);
+        text-decoration-line: underline;
         text-align: center;
         color: #1b1b1b;
 
@@ -1005,12 +1044,15 @@
         border-radius: 50px;
         padding: 6px 15px;
         white-space: nowrap;
+        margin-bottom: 10px;
     }
 
     &__document {
-        @include adaptiv-marginRight(40, 5);
+        @include adaptiv-marginRight(25, 5);
         border-radius: 10px;
-        width: 40%;
+        width: 700px;
+        // width: 100%;
+        // max-width: 700px;
         transition: all 0.3s ease 0s;
         border: 1px solid rgba(27, 27, 27, 0.1);
         &-title {
@@ -1021,7 +1063,7 @@
                 #2660ae -4.69%,
                 #0ea1d2 112.03%
             );
-            border-radius: 10px;
+            border-radius: 10px 10px 0px 0px;
             cursor: pointer;
 
             &--up,
@@ -1034,10 +1076,8 @@
         }
 
         &-info {
-            @include adaptiv-paddingLeft(54, 16);
-            @include adaptiv-paddingRight(54, 16);
-            @include adaptiv-paddingTop(20, 5);
-            margin-bottom: 16px;
+            @include adaptiv-paddingLeft(20, 15);
+            @include adaptiv-paddingRight(20, 15);
         }
 
         &-item {
@@ -1045,38 +1085,31 @@
             justify-content: space-between;
             border-bottom: 1px solid #d9d9d9;
             align-items: center;
-            padding-top: 20px;
-            @include adaptiv-paddingBottom(20, 10);
+            padding-top: 15px;
+            padding-bottom: 15px;
             transition: all 0.3s ease 0s;
         }
-        &-item.hover {
+        &-item:hover {
             cursor: pointer;
             transition: all 0.3s ease 0s;
-            p {
-                color: #b34030;
-                transition: all 0.3s ease 0s;
-            }
-            .stats__document-link {
-                background: url("../images/icons/downloadHover.svg");
-                background-size: contain;
-                background-position: center center;
-                background-repeat: no-repeat;
-            }
-            .stats__document-pdf {
-                background: url("../images/icons/pdfHover.svg");
-                background-size: contain;
-                background-position: center center;
-                background-repeat: no-repeat;
-            }
+        }
+        &-item:last-child {
+            border-bottom: none;
         }
 
         &-text {
             font-family: "Montserrat";
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 22px;
+            font-style: normal;
+            font-weight: 700;
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
+            text-decoration-line: underline;
             color: #952212;
             margin-right: 15px;
+        }
+        &-text:hover {
+            color: #b34030;
+            transition: all 0.3s ease 0s;
         }
 
         #document-text-last-child {
@@ -1094,6 +1127,12 @@
             background-position: center center;
             background-repeat: no-repeat;
         }
+        &-link.hover {
+            background: url("../images/icons/downloadHover.svg");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
         &-pdf {
             width: 30px;
             height: 30px;
@@ -1102,42 +1141,61 @@
             background-position: center center;
             background-repeat: no-repeat;
         }
+        &-pdf.hover {
+            background: url("../images/icons/pdfHover.svg");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
     }
     &__document:hover {
         box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
         transition: all 0.3s ease 0s;
-        cursor: pointer;
         border: 1px solid rgba(27, 27, 27, 0);
     }
 
     &__bombardier {
-        width: 60%;
+        width: 990px;
         transition: all 0.3s ease 0s;
         border: 1px solid rgba(27, 27, 27, 0.1);
         border-radius: 10px;
-        &-table {
-            @include adaptiv-marginBottom(25, 5);
+        &-row.greyLine {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #d9d9d9;
+            .stats__command--head.stats__bombardier-play {
+                margin-left: 10px;
+            }
+        }
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 15px 0px 20px;
         }
 
-        &-row {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            @include adaptiv-paddingLeft(20, 10);
-            @include adaptiv-paddingRight(40, 20);
+        &-table {
+            @include adaptiv-marginBottom(10, 5);
         }
 
         &-play {
-            width: 32%;
+            width: 100%;
+            max-width: 240px;
             text-align: left;
             align-self: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
+            color: #1b1b1b;
         }
 
         &-team {
-            width: 30%;
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            width: 290px;
+            width: 100%;
+            max-width: 260px;
+            margin-left: 15px;
         }
 
         &-case {
@@ -1146,27 +1204,29 @@
             justify-content: center;
             width: 100%;
             height: 100%;
-            max-width: 50px;
-            max-height: 50px;
+            max-width: 35px;
+            max-height: 35px;
         }
 
         &-text {
             font-family: "Montserrat";
             font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 150%;
+            font-weight: 700;
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
+            text-decoration-line: underline;
             color: #1b1b1b;
             text-align: left;
-            padding-left: 10px;
+            padding-left: 13px;
         }
 
         &-player {
             font-family: "Montserrat";
             font-style: normal;
-            font-weight: 800;
-            @include adaptiv-font(18, 12);
-            line-height: 15px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-decoration-line: underline;
             color: #1b1b1b;
             max-width: 260px;
             overflow-wrap: break-word;
@@ -1179,13 +1239,16 @@
         &-all {
             display: flex;
             justify-content: flex-end;
-            margin-right: 25px;
-            @include adaptiv-marginBottom(31, 16);
+            margin-right: 18px;
+            @include adaptiv-marginBottom(10, 10);
             font-family: "Montserrat";
             font-style: normal;
-            font-weight: 800;
-            @include adaptiv-font(18, 15);
-            line-height: 22px;
+            font-weight: 700;
+            margin-top: 18px;
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
+            text-decoration-line: underline;
+
             color: #952212;
 
             &:hover {
@@ -1197,7 +1260,6 @@
     &__bombardier:hover {
         box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
         transition: all 0.3s ease 0s;
-        cursor: pointer;
         border: 1px solid rgba(27, 27, 27, 0);
     }
 }
@@ -1230,6 +1292,10 @@
     .stats__name {
         width: 150px;
     }
+    .stats__bombardier {
+        width: 100%;
+        max-width: 788px;
+    }
 }
 
 @media (max-width: 1500px) {
@@ -1252,9 +1318,121 @@
         }
     }
 }
+@media (max-width: 1400px) {
+    .stats__bombardier {
+        min-width: 775px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .stats {
+        &__charts--container {
+            width: 100%;
+            @include adaptiv-marginBottom(40, 25);
+        }
+        &__last {
+            width: 100%;
+        }
+        &__scroll {
+            height: initial;
+            overflow: hidden;
+        }
+        &__title {
+            &--double {
+                justify-content: space-between;
+            }
+        }
+        &__square {
+            max-width: 130px;
+        }
+        &__name {
+            max-width: 160px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .stats {
+        &__total {
+            flex-direction: column;
+        }
+        &__document {
+            margin-right: 0px;
+            width: 100%;
+        }
+        &__bombardier {
+            min-width: initial;
+            width: 100%;
+            max-width: initial;
+            margin-top: 15px;
+            &-team {
+                width: 25%;
+                justify-content: flex-start;
+                text-align: left;
+            }
+        }
+    }
+}
 
 @media (max-width: 1100px) {
     .stats {
+        &__bombardier {
+            margin-top: 0px;
+            &-team {
+                justify-content: center;
+                font-size: 16px;
+                line-height: 20px;
+                width: 27%;
+                margin-left: 0px;
+            }
+            &-text {
+                display: none;
+            }
+            &-play {
+                font-size: 16px;
+                line-height: 20px;
+                width: 39%;
+            }
+            &-row {
+                margin: 15px 10px 0px 10px;
+            }
+            &-row.greyLine {
+                padding-bottom: 7px;
+            }
+            &-all {
+                font-size: 16px;
+                line-height: 20px;
+                margin-right: 10px;
+                margin-top: 17px;
+            }
+        }
+        &__row:not(:nth-child(-n + 2)) {
+            padding-top: 12px;
+        }
+        &__head {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__point {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__document {
+            margin-bottom: 13px;
+            &-title {
+                font-size: 20px;
+                line-height: 24px;
+                border-radius: 10px;
+            }
+            &-text {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+        }
         &__playOff {
             &-container {
                 &-line {
@@ -1304,52 +1482,25 @@
                 }
             }
         }
-    }
-}
 
-@media (max-width: 1370px) {
-    .stats {
-        &__total {
-            flex-direction: column;
-        }
-        &__charts--container {
-            width: 100%;
-            @include adaptiv-marginBottom(40, 25);
-            margin-right: 0;
-        }
-        &__last {
-            width: 100%;
-        }
-        &__scroll {
-            height: initial;
-            overflow: hidden;
-        }
-        &__title {
-            &--double {
-                justify-content: space-between;
-            }
-        }
-        &__square {
-            max-width: 130px;
-        }
-        &__name {
-            max-width: 160px;
-        }
         &__document {
-            margin-bottom: 30px;
-        }
-    }
-}
-
-@media (max-width: 1300px) {
-    .stats {
-        &__bombardier {
-            &-team {
-                width: 25%;
-                justify-content: center;
+            width: 100%;
+            margin-right: 0;
+            &-title {
+                &--down {
+                    display: block;
+                }
             }
-            &-text {
+            &-info {
                 display: none;
+            }
+        }
+        .active {
+            .stats__document-title--down {
+                display: none;
+            }
+            .stats__document-title--up {
+                display: block;
             }
         }
     }
@@ -1367,6 +1518,34 @@
         &__linkTeamLogo {
             justify-content: center;
             p {
+                display: none;
+            }
+        }
+        &__title {
+            &--tab {
+                &:first-child {
+                    @include adaptiv-marginRight(200, 5);
+                }
+                &:last-child {
+                    @include adaptiv-marginLeft(200, 5);
+                }
+            }
+        }
+
+        &__bombardier {
+            width: 100%;
+            @include adaptiv-marginBottom(40, 25);
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .stats {
+        &__bombardier {
+            &-team {
+                justify-content: center;
+            }
+            &-text {
                 display: none;
             }
         }
@@ -1453,84 +1632,6 @@
     }
 }
 
-@media (max-width: 1000px) {
-    .stats {
-        &__title {
-            &--tab {
-                &:first-child {
-                    @include adaptiv-marginRight(200, 5);
-                }
-                &:last-child {
-                    @include adaptiv-marginLeft(200, 5);
-                }
-            }
-        }
-
-        &__document {
-            width: 100%;
-            @include adaptiv-marginBottom(40, 25);
-            margin-right: 0;
-            &-title {
-                &--down {
-                    display: block;
-                }
-            }
-            &-info {
-                display: none;
-            }
-        }
-        .active {
-            .stats__document-title--down {
-                display: none;
-            }
-            .stats__document-title--up {
-                display: block;
-            }
-        }
-
-        &__bombardier {
-            width: 100%;
-            @include adaptiv-marginBottom(40, 25);
-            &-team {
-                justify-content: flex-start;
-                width: 35%;
-            }
-            &-player {
-                text-decoration-line: underline;
-            }
-            &-text {
-                display: block;
-            }
-        }
-    }
-}
-
-@media (max-width: 950px) {
-    .stats {
-        &__bombardier {
-            &-team {
-                justify-content: center;
-            }
-            &-text {
-                display: none;
-            }
-        }
-    }
-}
-
-@media (max-width: 870px) {
-    .stats {
-        &__bombardier {
-            &-play {
-                width: 35%;
-            }
-            &-team {
-                width: 27%;
-            }
-        }
-    }
-}
-
 @media (max-width: 767px) {
     .stats {
         &__bombardier {
@@ -1567,13 +1668,52 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .stats {
-        &__command {
-            width: 43%;
-            &--head {
-                width: 43%;
+        &__bombardier {
+            &-play {
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(20, 17);
+                margin-left: 8px;
+                width: 30%;
             }
+            &-team {
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(20, 17);
+                width: 23%;
+            }
+            &-player {
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(20, 17);
+                white-space: normal;
+            }
+            &-all {
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(20, 17);
+                margin-top: 14px;
+                margin-bottom: 13px;
+            }
+        }
+        &__title {
+            @include adaptiv-font(20, 18);
+            @include adaptiv-lineHeight(24, 22);
+            padding: 20px;
+            align-items: center;
+        }
+        &__head {
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
+            max-width: 20px;
+        }
+        &__point {
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
+            max-width: 20px;
+        }
+        &__row {
+            padding-left: 0px;
+        }
+        &__command {
             &-text {
                 flex-direction: column;
                 align-items: flex-start;
@@ -1581,23 +1721,10 @@
                 max-width: 150px;
             }
         }
-    }
-}
-
-@media (max-width: 620px) {
-    .stats {
-        &__bombardier {
-            &-play {
-                width: 30%;
-            }
-            &-player {
-                white-space: normal;
-            }
-            &-team {
-                width: 30%;
-            }
+        &__document {
             &-text {
-                display: none;
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(20, 17);
             }
         }
     }
@@ -1624,9 +1751,6 @@
             padding-top: 0px;
         }
     }
-}
-
-@media (max-width: 550px) {
 }
 
 @media (max-width: 500px) {

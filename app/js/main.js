@@ -60,16 +60,15 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,
                     arrows: false,
-                    dots: false,
+                    dots: true,
                 },
             },
             {
-                breakpoint: 500,
+                breakpoint: 575,
                 settings: {
                     slidesToShow: 1,
-                    variableWidth: false,
                     arrows: false,
-                    dots: false,
+                    dots: true,
                 },
             },
         ],
@@ -108,12 +107,13 @@ $(document).ready(function () {
                 },
             },
             {
-                breakpoint: 500,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     variableWidth: true,
                     arrows: false,
-                    dots: false,
+                    dots: true,
+                    dotsClass: "news-dots",
                 },
             },
         ],
@@ -182,7 +182,17 @@ $(document).ready(function () {
                 breakpoint: 1100,
                 settings: {
                     slidesToShow: 1,
+                    initialSlide: 0,
+                    centerMode: false,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
                     arrows: false,
+                    dots: true,
+                    dotsClass: "slider-dots",
+                    slidesToShow: 1,
                     initialSlide: 0,
                     centerMode: false,
                 },
@@ -192,14 +202,103 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $(".stats__document-item").hover(
+    $(".projects__container-slider").slick({
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: "lenear",
+        infinite: true,
+        initialSlide: 0,
+        touchThreshold: 15,
+        // waitForAnimate: false,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        swipe: true,
+        swipeToSlide: true,
+        // draggable: false,
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dotsClass: "projects-dots",
+                    dots: true,
+                },
+            }
+        ],
+    });
+});
+
+$(document).ready(function () {
+    $(".newsMatch__container-wrapper-case-slider").slick({
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: "lenear",
+        appendArrows: $(".newsMatch__container-wrapper-case__arrows"),
+        infinite: true,
+        initialSlide: 0,
+        touchThreshold: 15,
+        // waitForAnimate: false,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        swipe: true,
+        swipeToSlide: true,
+        // draggable: false,
+        centerMode: true,
+        centerPadding: "110px", // добавляем опцию centerPadding
+
+        responsive: [
+            {
+                breakpoint: 1067,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    variableWidth: true,
+                    dots: false,
+                },
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: true,
+                    arrows: false,
+                    dots: false,
+                },
+            },
+        ],
+    });
+});
+
+$(document).ready(function () {
+    $(".stats__document-link").hover(
         function () {
-            $(this)
-                .addClass("hover");
+            $(this).addClass("hover");
         },
         function () {
-            $(this)
-                .removeClass("hover");
+            $(this).removeClass("hover");
+        }
+    );
+});
+
+$(document).ready(function () {
+    $(".stats__document-pdf").hover(
+        function () {
+            $(this).addClass("hover");
+        },
+        function () {
+            $(this).removeClass("hover");
         }
     );
 });

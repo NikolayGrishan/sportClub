@@ -1,10 +1,10 @@
 .photos {
-    @include adaptiv-marginTop(70, 61);
+    @include adaptiv-marginTop(39, 15);
     display: flex;
     justify-content: center;
 
     .photos__container {
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -13,25 +13,36 @@
         display: flex;
         &-item {
             width: 678px;
-            height: 448px;
-            margin: 120px 80px 120px 80px;
+            height: 555px;
+            margin: 66px 100px 66px 100px;
             position: relative;
+        }
+        &-wrapper {
+            position: relative;
+            margin-top: 23px;
+            &-right {
+                position: absolute;
+                right: 5.4%;
+                top: 12px;
+            }
         }
         &__arrows {
             display: flex;
             justify-content: center;
-            margin-top: 33px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
     .slider-photo .slider-photo-item img {
         width: 678px;
-        height: 448px;
+        height: 555px;
         opacity: 0.5;
         border-radius: 10px;
         transition: all linear 0.4s;
     }
     .slider-photo .slick-center img {
-        transform: scale(1.38, 1.53);
+        transform: scale(1.51327, 1.23243);
         opacity: 1;
         border-radius: 10px;
     }
@@ -39,23 +50,24 @@
     .photos__text {
         font-family: "Montserrat";
         font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 22px;
-        letter-spacing: 0.01em;
+        font-weight: 700;
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        text-decoration-line: underline;
         color: #952212;
         cursor: pointer;
+        transition: all 0.3s ease;
     }
 
     .photos__text:hover {
         color: #b34030;
-        transition: all 0.3s;
+        transition: all 0.3s ease;
     }
 
     .photos__nav--link {
         outline: none;
         text-decoration: none;
-        align-self: end;
+        display: flex;
     }
 
     .photos__href {
@@ -65,40 +77,155 @@
 
 @media (max-width: 1100px) {
     .photos {
-        .slider-photo__arrows {
-            display: none;
+        .slider-photo-wrapper {
+            margin-top: 20px;
+            &-right {
+                top: -12px;
+                right: 0;
+            }
+        }
+        margin-top: 18px;
+        .photos__container {
+            width: 95.053%;
         }
         .slider-photo-item {
+            width: 730px;
+            height: 486px;
             margin-top: 0px;
             margin-left: 0px;
             margin-bottom: 0px;
             @include adaptiv-marginRight(30, 14);
         }
+        .slider-photo .slider-photo-item img {
+            width: 730px;
+            height: 486px;
+            opacity: 1;
+        }
         &__nav--link {
             margin-top: 20px;
-        }
-        .slider-photo .slider-photo-item img {
-            opacity: 1;
         }
     }
 }
 
 @media (max-width: 767px) {
     .photos {
+        margin-top: 19px;
         .photos__container {
             width: 100%;
-            padding-left: 5%;
+            padding-left: 16px;
         }
+        .slider-photo {
+            flex-direction: column;
+        }
+        .slider-photo-wrapper-right {right: 16px;}
+        .slider-photo-wrapper {margin-top: 0;}
         .slider-photo-item {
-            width: 324px;
-            height: 317px;
+            width: 343px;
+            height: 229px;
+            margin-right: 8px;
         }
         .slider-photo .slider-photo-item img {
-            width: 324px;
-            height: 317px;
+            width: 343px;
+            height: 229px;
         }
         .photos__nav--link {
-            padding-right: 17px;
+            margin-top: 0px;
+        }
+        .slider-dots {
+            display: flex;
+        }
+        .slider-dots li:not(:nth-child(-n + 4)) {
+            display: none;
+        }
+        .slider-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 6px;
+        }
+
+        .slider-dots li {
+            list-style: none;
+            margin-right: 10px;
+        }
+        .slider-dots li:nth-child(4) {
+            list-style: none;
+            margin-right: 15px;
+        }
+        .slider-dots li:nth-child(1) button {
+            width: 12px;
+            height: 12px;
+            font-size: 0;
+            background: #ffffff;
+            border: 1px solid #1b1b1b;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        .slider-dots li.slick-active:nth-child(1) button {
+            background: #952212;
+            border: 1px solid #952212;
+            width: 12px;
+            height: 12px;
+        }
+        .slider-dots li:nth-child(2) button {
+            width: 8px;
+            height: 8px;
+            font-size: 0;
+            background: #ffffff;
+            border: 1px solid #1b1b1b;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        .slider-dots li.slick-active:nth-child(2) button {
+            background: #952212;
+            border: 1px solid #952212;
+            width: 8px;
+            height: 8px;
+        }
+        .slider-dots li:nth-child(3) button {
+            width: 6px;
+            height: 6px;
+            font-size: 0;
+            background: #ffffff;
+            border: 1px solid #1b1b1b;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        .slider-dots li.slick-active:nth-child(3) button {
+            background: #952212;
+            border: 1px solid #952212;
+            width: 6px;
+            height: 6px;
+        }
+        .slider-dots li:nth-child(4) button {
+            width: 4px;
+            height: 4px;
+            font-size: 0;
+            background: #ffffff;
+            border: 1px solid #1b1b1b;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        .slider-dots li.slick-active:nth-child(4) button {
+            background: #952212;
+            border: 1px solid #952212;
+            width: 4px;
+            height: 4px;
+        }
+        /* Активная точка */
+        .slider-dots button {
+            font-size: 0;
+            background: #ffffff;
+            border: 1px solid #1b1b1b;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .slider-dots li.slick-active button {
+            background: #952212;
+            border: 1px solid #952212;
+            width: 12px;
+            height: 12px;
         }
     }
 }

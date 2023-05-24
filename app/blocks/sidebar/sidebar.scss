@@ -1,109 +1,120 @@
 .sidebar {
-  z-index: 13;
-  transform: translateX(200%);
-  transition: all 0.3s;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  height: 100%;
-  background: #ffffff;
-  padding-left: 16px;
-  padding-top: 91px;
-  width: 375px;
-
-  &__close {
+    z-index: 13;
+    transform: translateX(200%);
+    transition: all 0.3s;
+    top: 0;
+    right: 0;
+    bottom: 0;
     position: absolute;
-    top: 20px;
-    right: 16px;
-  }
+    height: 100%;
+    background: #ffffff;
+    padding-left: 16px;
+    padding-top: 91px;
+    width: 375px;
 
-  &__info {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-
-    &-item {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
-      color: #1b1b1b;
-      padding-bottom: 30px;
-
-      &:hover {
-        transition: all 0.3s;
-        opacity: 0.5;
-      }
-    }
-  }
-
-  &__media {
-    display: flex;
-    align-items: center;
-
-    &__vk {
-      width: 24px;
-      height: 24px;
-      background: url('../images/svg/vk.svg');
-      background-repeat: no-repeat;
-      background-position: center center;
-
-      &:hover {
-        background: url('../images/svg/vk-black.svg');
-      }
+    &__close {
+        position: absolute;
+        top: 28px;
+        right: 19px;
     }
 
-    &__inst {
-      width: 24px;
-      height: 24px;
-      background: url('../images/svg/inst.svg');
-      background-repeat: no-repeat;
-      background-position: center center;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
 
-      &:hover {
-        background: url('../images/svg/inst-black.svg');
-      }
+        &-item {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            @include adaptiv-font(16, 16);
+            @include adaptiv-lineHeight(20, 20);
+            color: #1b1b1b;
+            padding-bottom: 30px;
+
+            &:hover {
+                transition: all 0.3s;
+                opacity: 0.5;
+            }
+        }
     }
 
-    &__fb {
-      width: 24px;
-      height: 24px;
-      background: url('../images/svg/fb.svg');
-      background-repeat: no-repeat;
-      background-position: center center;
+    &__media {
+        display: flex;
+        align-items: center;
 
-      &:hover {
-        background: url('../images/svg/fb-black.svg');
-      }
+        &__vk {
+            width: 24px;
+            height: 24px;
+            background: url("../images/svg/vk.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            &:hover {
+                background: url("../images/svg/vk-black.svg");
+            }
+        }
+
+        &__inst {
+            width: 24px;
+            height: 24px;
+            background: url("../images/svg/inst.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            &:hover {
+                background: url("../images/svg/inst-black.svg");
+            }
+        }
+
+        &__fb {
+            width: 24px;
+            height: 24px;
+            background: url("../images/svg/fb.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            &:hover {
+                background: url("../images/svg/fb-black.svg");
+            }
+        }
+
+        &__YT {
+            width: 24px;
+            height: 24px;
+            background: url("../images/svg/YT.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            &:hover {
+                background: url("../images/svg/YT-black.svg");
+            }
+        }
+
+        &-item {
+            margin-right: 20px;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.3s;
+            }
+        }
     }
+}
 
-    &__YT {
-      width: 24px;
-      height: 24px;
-      background: url('../images/svg/YT.svg');
-      background-repeat: no-repeat;
-      background-position: center center;
-
-      &:hover {
-        background: url('../images/svg/YT-black.svg');
-      }
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 100%;
+        padding-top: 133px;
     }
-
-    &-item {
-      margin-right: 20px;
-
-      &:hover {
-        transform: scale(1.1);
-        transition: all 0.3s;
-      }
-    }
-  }
 }
 
 @media (max-width: 500px) {
-  .sidebar {
-    width: 100%;
-  }
+    .sidebar {
+        padding-top: 95px;
+        &__close {
+            top: 20px;
+            right: 16px;
+        }
+    }
 }
