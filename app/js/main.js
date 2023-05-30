@@ -16,20 +16,33 @@ $(document).ready(function () {
     $(".stats__bombardier-all").click(function () {
         elem.style.display = "flex";
     });
-    $(".stats__closePopup.modal").click(function () {
+    $("#closeBombardir").click(function () {
         elem.style.display = "none";
     });
+    $(document).mouseup(function (e) {
+        // событие клика по веб-документу
+        var div = $("#allBombardires"); // тут указываем ID элемента
+        if (
+            !div.is(e.target) && // если клик был не по нашему блоку
+            div.has(e.target).length === 0
+        ) {
+            // и не по его дочерним элементам
+            elem.style.display = "none";
+        }
+    });
 });
-
 // popup в popup-е
 $(document).ready(function () {
+    let elem = document.getElementById("myModal");
     let elem2 = document.getElementById("form");
 
-    $(".stats__playerBombardier").click(function () {
+    $(".allBombardires__table-body-content-item-player").click(function () {
         elem2.style.display = "flex";
+        elem.style.display = "none";
     });
-    $(".stats__cross").click(function () {
+    $(".form-container-cross").click(function () {
         elem2.style.display = "none";
+        elem.style.display = "flex";
     });
 });
 // слайдер Следующие матчи
@@ -100,16 +113,15 @@ $(document).ready(function () {
                     dots: true,
                     dotsClass: "news-dots",
                 },
-            }
+            },
         ],
     });
 });
-
+// слайдер на странице Новости
 $(document).ready(function () {
     $(".slider--rhl").slick({
         arrows: true,
         slidesToShow: 3,
-        // slidesToScroll: 1,
         speed: 1000,
         easing: "lenear",
         appendArrows: $(".news--rhl__arrows"),
@@ -121,19 +133,18 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
         pauseOnFocus: true,
         pauseOnHover: true,
-        // // draggable: false,
         swipe: true,
         swipeToSlide: true,
-        // // waitForAnimate: false,
         centerMode: true,
         responsive: [
             {
-                breakpoint: 700,
+                breakpoint: 1001,
                 settings: {
-                    centerMode: false,
-                    slidesToShow: 1,
                     arrows: false,
+                    dots: true,
+                    slidesToShow: 1,
                     initialSlide: 0,
+                    centerMode: false,
                 },
             },
         ],
@@ -170,7 +181,7 @@ $(document).ready(function () {
                     initialSlide: 0,
                     centerMode: false,
                 },
-            }
+            },
         ],
     });
 });
@@ -201,11 +212,11 @@ $(document).ready(function () {
                     dotsClass: "projects-dots",
                     dots: true,
                 },
-            }
+            },
         ],
     });
 });
-
+// слайдер фото на странице подробной новости
 $(document).ready(function () {
     $(".newsMatch__container-wrapper-case-slider").slick({
         arrows: true,
@@ -217,7 +228,6 @@ $(document).ready(function () {
         infinite: true,
         initialSlide: 0,
         touchThreshold: 15,
-        // waitForAnimate: false,
         variableWidth: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -225,27 +235,16 @@ $(document).ready(function () {
         pauseOnHover: true,
         swipe: true,
         swipeToSlide: true,
-        // draggable: false,
         centerMode: true,
-        centerPadding: "110px", // добавляем опцию centerPadding
-
         responsive: [
             {
-                breakpoint: 1067,
+                breakpoint: 1350,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     arrows: false,
                     variableWidth: true,
-                    dots: false,
-                },
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 1,
-                    variableWidth: true,
-                    arrows: false,
-                    dots: false,
+                    dots: true,
+                    centerMode: false,
                 },
             },
         ],
@@ -273,7 +272,7 @@ $(document).ready(function () {
         }
     );
 });
-
+// слайдер Фотоотчета
 $(document).ready(function () {
     $(".photo-item__container-content-slider").slick({
         arrows: false,
@@ -299,19 +298,16 @@ $(document).ready(function () {
                 },
             },
             {
-                breakpoint: 1000,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 768,
+                breakpoint: 1101,
                 settings: {
                     rows: 1,
                     arrows: false,
                     swipe: true,
                     swipeToSlide: true,
+                    dots: true,
+                    variableWidth: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 },
             },
         ],
@@ -319,6 +315,39 @@ $(document).ready(function () {
     $(
         ".photo-item__container-content-slider .slick-cloned>div>div>a"
     ).removeAttr("data-fancybox");
+});
+
+// слайдер фото на странице фотогалереи
+$(document).ready(function () {
+    $(".photo-item__photoContainer-content-slider").slick({
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        easing: "lenear",
+        infinite: true,
+        initialSlide: 0,
+        touchThreshold: 15,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        swipe: true,
+        swipeToSlide: true,
+        responsive: [
+            {
+                breakpoint: 1101,
+                settings: {
+                    arrows: false,
+                    swipe: true,
+                    swipeToSlide: true,
+                    dots: true,
+                    dotsClass: "photo-item__photoContainer-content-slider-dots",
+                },
+            },
+        ],
+    });
 });
 
 $(".photo-item__container-content-slider .slick-cloned>div>div>a").removeAttr(
@@ -331,6 +360,13 @@ $(".photo-item__container-content-arrows-slickPrev").on("click", function () {
 
 $(".photo-item__container-content-arrows-slickNext").on("click", function () {
     $(".photo-item__container-content-slider").slick("slickNext");
+});
+$(".photo-item__photoContainer-case-arrows-slickPrev").on("click", function () {
+    $(".photo-item__photoContainer-content-slider").slick("slickPrev");
+});
+
+$(".photo-item__photoContainer-case-arrows-slickNext").on("click", function () {
+    $(".photo-item__photoContainer-content-slider").slick("slickNext");
 });
 
 document.addEventListener("DOMContentLoaded", function () {

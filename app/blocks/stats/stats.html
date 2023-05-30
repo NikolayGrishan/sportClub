@@ -1,421 +1,239 @@
 <section class="stats" id="stats">
     <div id="myModal" class="stats__modal" style="display: none">
         <div id="allBombardires" class="allBombardires">
-            <div class="stats__popupBombardires">
-                <div class="stats__capBombardires">
-                    <div class="stats__closePopup modal">
-                        <img
-                            src="images/svg/crossBombardires.svg"
-                            alt="cross"
-                            class="stats__cross"
-                            id="crossBombardires"
-                        />
-                    </div>
-                    <h2 class="stats__capTitle">Все бомбардиры</h2>
+            <div class="allBombardires__cross" id="closeBombardir">
+                <img src="images/svg/closeBombardir.svg" alt="cross" />
+            </div>
+            <div class="allBombardires__table">
+                <div class="allBombardires__table-heading">
+                    <h2>Все бомбардиры</h2>
                 </div>
-                <div class="stats__bodyBobbardires">
-                    <div class="stats__tableContainer">
-                        <div class="slider--bb stats__slider">
-                            <table class="stats__chart">
-                                <tr class="stats__row stats__row--first">
-                                    <th
-                                        class="stats__tableHead stats__tableHead--heading"
-                                    >
-                                        Игрок
-                                    </th>
-                                    <th
-                                        class="stats__tableHeadTeam stats__tableHeadTeam--teaming"
-                                    >
-                                        Команда
-                                    </th>
-                                    <th class="stats__tableHeadPoints">И</th>
-                                    <th class="stats__tableHeadPoints">Ш</th>
-                                    <th class="stats__tableHeadPoints">А</th>
-                                    <th class="stats__tableHeadPoints">О</th>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting"
-                                            href="#form"
-                                        >
-                                            Игорь Ворошилов
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <span
-                                                class="stats__linkTeamLogo-case"
-                                            >
-                                                <img
-                                                    src="images/svg/presidents.svg"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Игорь Коваленя
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <span
-                                                class="stats__linkTeamLogo-case"
-                                            >
-                                                <img
-                                                    src="images/svg/vitebsk.svg"
-                                                    alt=""
-                                            /></span>
-                                            <p>Команда Витебской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Андрей Костицин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <span
-                                                class="stats__linkTeamLogo-case"
-                                            >
-                                                <img
-                                                    src="images/svg/presidents.svg"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Павел Копытин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <span
-                                                class="stats__linkTeamLogo-case"
-                                            >
-                                                <img
-                                                    src="images/svg/minsk.svg"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Денис Кокарев
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <span
-                                                class="stats__linkTeamLogo-case"
-                                            >
-                                                <img
-                                                    src="images/svg/minsk.svg"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Дмитрий Луцевич
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <span
-                                                class="stats__linkTeamLogo-case"
-                                            >
-                                                <img
-                                                    src="images/svg/minsk.svg"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Артем Устименко
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <span
-                                                class="stats__linkTeamLogo-case"
-                                            >
-                                                <img
-                                                    src="images/svg/gomel.svg"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <p>Команда Гомельской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        16
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        23
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Павел Мусименко
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <span
-                                                class="stats__linkTeamLogo-case"
-                                            >
-                                                <img
-                                                    src="images/svg/gomel.svg"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <p>Команда Гомельской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                                <tr class="stats__row">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Олег Смолин
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <span
-                                                class="stats__linkTeamLogo-case"
-                                            >
-                                                <img
-                                                    src="images/svg/minsk.svg"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <p>Команда Минской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        7
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        14
-                                    </td>
-                                </tr>
-                                <tr class="stats__row stats__even">
-                                    <td class="stats__playerBombardier">
-                                        <a
-                                            class="stats__playerBombardier-texting popup"
-                                            href="#form"
-                                        >
-                                            Олег Полякевич
-                                        </a>
-                                    </td>
-                                    <td class="stats__teamLogo">
-                                        <a class="stats__linkTeamLogo" href="">
-                                            <span
-                                                class="stats__linkTeamLogo-case"
-                                            >
-                                                <img
-                                                    src="images/svg/vitebsk.svg"
-                                                    alt=""
-                                                />
-                                            </span>
-                                            <p>Команда Витебской области</p>
-                                        </a>
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        9
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        10
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        5
-                                    </td>
-                                    <td class="stats__tableHeadPoints--texting">
-                                        15
-                                    </td>
-                                </tr>
-                            </table>
+                <div class="allBombardires__table-body">
+                    <div class="allBombardires__table-body-heading">
+                        <h3 class="allBombardires__table-body-heading-player">Игрок</h3>
+                        <h3 class="allBombardires__table-body-heading-team">Команда</h3>
+                        <div class="allBombardires__table-body-heading-case">
+                            <p class="allBombardires__table-body-heading-case-i">И</p>
+                            <p class="allBombardires__table-body-heading-case-sh">Ш</p>
+                            <p class="allBombardires__table-body-heading-case-a">А</p>
+                            <p class="allBombardires__table-body-heading-case-o">О</p>
                         </div>
                     </div>
-                    <div class="stats__pagination">
-                        <ul>
-                            <li>
-                                <a href="#"><span></span></a>
-                            </li>
-                            <li>
-                                <span class="stats__pagination-currentPage"
-                                    >1</span
-                                >
-                            </li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">15</a></li>
-                            <li>
-                                <a href="#"><span></span></a>
-                            </li>
-                        </ul>
+                    <div class="allBombardires__table-body-content">
+                        <div class="allBombardires__table-body-content-item">
+                            <a href="#form" class="allBombardires__table-body-content-item-player">Игорь Ворошилов</a>
+                            <div class="allBombardires__table-body-content-item-logo">
+                                <a href="#" class="allBombardires__table-body-content-item-logo-img"><img src="images/svg/presidents.svg" alt="presidents"></a>
+                                <a href="#" class="allBombardires__table-body-content-item-logo-name">Команда Президента Республики Беларусь</a>
+                            </div>
+                            <div class="allBombardires__table-body-content-item-case">
+                                <p class="allBombardires__table-body-content-item-case-i">9</p>
+                                <p class="allBombardires__table-body-content-item-case-sh">7</p>
+                                <p class="allBombardires__table-body-content-item-case-a">7</p>
+                                <p class="allBombardires__table-body-content-item-case-o">7</p>
+                            </div>
+                        </div>
+                        <div class="allBombardires__table-body-content-item">
+                            <a href="#form" class="allBombardires__table-body-content-item-player">Игорь Коваленя</a>
+                            <div class="allBombardires__table-body-content-item-logo">
+                                <a href="#" class="allBombardires__table-body-content-item-logo-img"><img src="images/svg/vitebsk.svg" alt="vitebsk"></a>
+                                <a href="#" class="allBombardires__table-body-content-item-logo-name">Команда Витебской области</a>
+                            </div>
+                            <div class="allBombardires__table-body-content-item-case">
+                                <p class="allBombardires__table-body-content-item-case-i">9</p>
+                                <p class="allBombardires__table-body-content-item-case-sh">10</p>
+                                <p class="allBombardires__table-body-content-item-case-a">10</p>
+                                <p class="allBombardires__table-body-content-item-case-o">10</p>
+                            </div>
+                        </div>
+                        <div class="allBombardires__table-body-content-item">
+                            <a href="#form" class="allBombardires__table-body-content-item-player">Андрей Костицин</a>
+                            <div class="allBombardires__table-body-content-item-logo">
+                                <a href="#" class="allBombardires__table-body-content-item-logo-img"><img src="images/svg/presidents.svg" alt="presidents"></a>
+                                <a href="#" class="allBombardires__table-body-content-item-logo-name">Команда Президента Республики Беларусь</a>
+                            </div>
+                            <div class="allBombardires__table-body-content-item-case">
+                                <p class="allBombardires__table-body-content-item-case-i">7</p>
+                                <p class="allBombardires__table-body-content-item-case-sh">9</p>
+                                <p class="allBombardires__table-body-content-item-case-a">9</p>
+                                <p class="allBombardires__table-body-content-item-case-o">9</p>
+                            </div>
+                        </div>
+                        <div class="allBombardires__table-body-content-item">
+                            <a href="#form" class="allBombardires__table-body-content-item-player">Павел Копытин</a>
+                            <div class="allBombardires__table-body-content-item-logo">
+                                <a href="#" class="allBombardires__table-body-content-item-logo-img"><img src="images/svg/minsk.svg" alt="minsk"></a>
+                                <a href="#" class="allBombardires__table-body-content-item-logo-name">Команда Минской области</a>
+                            </div>
+                            <div class="allBombardires__table-body-content-item-case">
+                                <p class="allBombardires__table-body-content-item-case-i">9</p>
+                                <p class="allBombardires__table-body-content-item-case-sh">7</p>
+                                <p class="allBombardires__table-body-content-item-case-a">7</p>
+                                <p class="allBombardires__table-body-content-item-case-o">7</p>
+                            </div>
+                        </div>
+                        <div class="allBombardires__table-body-content-item">
+                            <a href="#form" class="allBombardires__table-body-content-item-player">Денис Кокарев</a>
+                            <div class="allBombardires__table-body-content-item-logo">
+                                <a href="#" class="allBombardires__table-body-content-item-logo-img"><img src="images/svg/minsk.svg" alt="minsk"></a>
+                                <a href="#" class="allBombardires__table-body-content-item-logo-name">Команда Минской области</a>
+                            </div>
+                            <div class="allBombardires__table-body-content-item-case">
+                                <p class="allBombardires__table-body-content-item-case-i">9</p>
+                                <p class="allBombardires__table-body-content-item-case-sh">10</p>
+                                <p class="allBombardires__table-body-content-item-case-a">10</p>
+                                <p class="allBombardires__table-body-content-item-case-o">10</p>
+                            </div>
+                        </div>
+                        <div class="allBombardires__table-body-content-item">
+                            <a href="#form" class="allBombardires__table-body-content-item-player">Дмитрий Луцевич</a>
+                            <div class="allBombardires__table-body-content-item-logo">
+                                <a href="#" class="allBombardires__table-body-content-item-logo-img"><img src="images/svg/minsk.svg" alt="minsk"></a>
+                                <a href="#" class="allBombardires__table-body-content-item-logo-name">Команда Минской области</a>
+                            </div>
+                            <div class="allBombardires__table-body-content-item-case">
+                                <p class="allBombardires__table-body-content-item-case-i">7</p>
+                                <p class="allBombardires__table-body-content-item-case-sh">9</p>
+                                <p class="allBombardires__table-body-content-item-case-a">9</p>
+                                <p class="allBombardires__table-body-content-item-case-o">9</p>
+                            </div>
+                        </div>
+                        <div class="allBombardires__table-body-content-item">
+                            <a href="#form" class="allBombardires__table-body-content-item-player">Артем Устименко</a>
+                            <div class="allBombardires__table-body-content-item-logo">
+                                <a href="#" class="allBombardires__table-body-content-item-logo-img"><img src="images/svg/gomel.svg" alt="gomel"></a>
+                                <a href="#" class="allBombardires__table-body-content-item-logo-name">Команда Гомельской области</a>
+                            </div>
+                            <div class="allBombardires__table-body-content-item-case">
+                                <p class="allBombardires__table-body-content-item-case-i">9</p>
+                                <p class="allBombardires__table-body-content-item-case-sh">7</p>
+                                <p class="allBombardires__table-body-content-item-case-a">7</p>
+                                <p class="allBombardires__table-body-content-item-case-o">7</p>
+                            </div>
+                        </div>
+                        <div class="allBombardires__table-body-content-item">
+                            <a href="#form" class="allBombardires__table-body-content-item-player">Павел Мусименко</a>
+                            <div class="allBombardires__table-body-content-item-logo">
+                                <a href="#" class="allBombardires__table-body-content-item-logo-img"><img src="images/svg/gomel.svg" alt="gomel"></a>
+                                <a href="#" class="allBombardires__table-body-content-item-logo-name">Команда Гомельской области</a>
+                            </div>
+                            <div class="allBombardires__table-body-content-item-case">
+                                <p class="allBombardires__table-body-content-item-case-i">9</p>
+                                <p class="allBombardires__table-body-content-item-case-sh">10</p>
+                                <p class="allBombardires__table-body-content-item-case-a">10</p>
+                                <p class="allBombardires__table-body-content-item-case-o">10</p>
+                            </div>
+                        </div>
+                        <div class="allBombardires__table-body-content-item">
+                            <a href="#form" class="allBombardires__table-body-content-item-player">Олег Смолин</a>
+                            <div class="allBombardires__table-body-content-item-logo">
+                                <a href="#" class="allBombardires__table-body-content-item-logo-img"><img src="images/svg/minsk.svg" alt="minsk"></a>
+                                <a href="#" class="allBombardires__table-body-content-item-logo-name">Команда Минской области</a>
+                            </div>
+                            <div class="allBombardires__table-body-content-item-case">
+                                <p class="allBombardires__table-body-content-item-case-i">7</p>
+                                <p class="allBombardires__table-body-content-item-case-sh">9</p>
+                                <p class="allBombardires__table-body-content-item-case-a">9</p>
+                                <p class="allBombardires__table-body-content-item-case-o">9</p>
+                            </div>
+                        </div>
+                        <div class="allBombardires__table-body-content-item">
+                            <a href="#form" class="allBombardires__table-body-content-item-player">Олег Полякевич</a>
+                            <div class="allBombardires__table-body-content-item-logo">
+                                <a href="#" class="allBombardires__table-body-content-item-logo-img"><img src="images/svg/vitebsk.svg" alt="vitebsk"></a>
+                                <a href="#" class="allBombardires__table-body-content-item-logo-name">Команда Витебской области</a>
+                            </div>
+                            <div class="allBombardires__table-body-content-item-case">
+                                <p class="allBombardires__table-body-content-item-case-i">9</p>
+                                <p class="allBombardires__table-body-content-item-case-sh">10</p>
+                                <p class="allBombardires__table-body-content-item-case-a">10</p>
+                                <p class="allBombardires__table-body-content-item-case-o">10</p>
+                            </div>
+                        </div>
                     </div>
+                    <ul class="allBombardires__table-body-pagination">
+                        <li><a href="#"></a></li>
+                        <li class="allBombardires__table-body-pagination-currentPage"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><span>...</span></li>
+                        <li><a href="#">15</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <div id="form" class="form" style="display: none">
-        <div class="stats__popup">
+        <div class="form-container" id="form-container">
+            <div class="form-container-cross">
+                <img src="images/svg/closeBombardir.svg" alt="cross">
+            </div>
+            <div class="form-container-content">
+                <div class="form-container-content-info">
+                    <div class="form-container-content-info-img">
+                        <img src="images/news__final.png" alt="player">
+                    </div>
+                    <div class="form-container-content-info-case">
+                        <h2 class="form-container-content-info-case-name">Михаил Грабовский</h2>
+                        <div class="form-container-content-info-case-team">
+                            <a href="#" class="form-container-content-info-case-team-img"><img src="images/svg/presidents.svg" alt="presidents"></a>
+                            <a href="#" class="form-container-content-info-case-team-team">Команда Президента Республики Беларусь</a>
+                        </div>
+                        <div class="form-container-content-info-case-about">
+                            <div class="form-container-content-info-case-about-year">
+                                <div class="form-container-content-info-case-about-item">
+                                    <p>Дата рождения:</p>
+                                    <span>31. 01. 1984</span>
+                                </div>
+                                <div class="form-container-content-info-case-about-item">
+                                    <p>Рост:</p>
+                                    <span>1,80 см</span>
+                                </div>
+                                <div class="form-container-content-info-case-about-item">
+                                    <p>Вес:</p>
+                                    <span>82 кг</span>
+                                </div>
+                            </div>
+                            <div class="form-container-content-info-case-about-number">
+                                <div class="form-container-content-info-case-about-item">
+                                    <p>Номер:</p>
+                                    <span>44</span>
+                                </div>
+                                <div class="form-container-content-info-case-about-item">
+                                    <p>Хват:</p>
+                                    <span>Правый</span>
+                                </div>
+                                <div class="form-container-content-info-case-about-item">
+                                    <p>Страна:</p>
+                                    <span>Беларусь</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container-content-stats">
+                    <div class="form-container-content-stats-title">
+                        <h3>Статистика</h3>
+                    </div>
+                    <div class="form-container-content-stats-numbers">
+                        <div class="form-container-content-stats-numbers-heading">
+                            <h3>И</h3>
+                            <h3>Ш</h3>
+                            <h3>А</h3>
+                            <h3>О</h3>
+                        </div>
+                        <div class="form-container-content-stats-numbers-body">
+                            <p>7</p>
+                            <p>9</p>
+                            <p>5</p>
+                            <p>14</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="stats__popup">
             <div class="stats__closePopup">
                 <img
                     src="images/svg/cross.svg"
@@ -502,7 +320,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="stats__block--line">
         <h2 class="stats__header">СТАТИСТИКА</h2>
@@ -1056,334 +874,507 @@
                 <h2>Плей-офф</h2>
             </div>
             <div class="stats__playOff-container">
-                <!-- <div class="stats__playOff-container-line"></div>
-                <div class="stats__playOff-container-content">
-                    <div class="stats__playOff-container-content-case">
-                        <div class="stats__playOff-container-content-case-item">
+                <!-- 1-ая версия playOff  -->
+                <div class="stats__playOff-container-firstVersion">
+                    <div class="stats__playOff-container-heading">
+                        <h2 class="stats__playOff-container-heading-semiFinal">
+                            Полуфинал
+                        </h2>
+                        <h2 class="stats__playOff-container-heading-final">
+                            Финальная серия
+                        </h2>
+                        <h2 class="stats__playOff-container-heading-winner">
+                            Победитель
+                        </h2>
+                    </div>
+                    <div class="stats__playOff-container-body">
+                        <div class="stats__playOff-container-body-semiFinal">
                             <div
-                                class="stats__playOff-container-content-case-item-heading"
-                            >
-                                <h2>Полуфинал</h2>
-                            </div>
-                            <div
-                                class="stats__playOff-container-content-case-item-info"
+                                class="stats__playOff-container-body-semiFinal-top"
                             >
                                 <div
-                                    class="stats__playOff-container-content-case-item-info-teamSeason teamLine"
+                                    class="stats__playOff-container-body-semiFinal-top-wrap"
                                 >
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-season"
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-semiFinal-top-wrap-image"
+                                        ><img
+                                            src="images/svg/presidents.svg"
+                                            alt="presidents"
+                                    /></a>
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-semiFinal-top-wrap-team"
+                                        >Команда Президента Республики
+                                        Беларусь</a
                                     >
-                                        <p></p>
-                                    </div>
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-teams"
-                                    >
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <img
-                                                src="images/svg/presidents.svg"
-                                                alt=""
-                                            />
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                            <span>8</span>
-                                        </div>
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <img
-                                                src="images/svg/gomel.svg"
-                                                alt=""
-                                            />
-                                            <p>Команда Гомельской области</p>
-                                            <span>6</span>
-                                        </div>
-                                    </div>
+                                    <p>8</p>
                                 </div>
                                 <div
-                                    class="stats__playOff-container-content-case-item-info-teamSeason"
+                                    class="stats__playOff-container-body-semiFinal-top-wrap"
+                                >
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-semiFinal-top-wrap-image"
+                                        ><img
+                                            src="images/svg/gomel.svg"
+                                            alt="gomel"
+                                    /></a>
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-semiFinal-top-wrap-team"
+                                        >Команда Гомельской области</a
+                                    >
+                                    <p>6</p>
+                                </div>
+                            </div>
+                            <div
+                                class="stats__playOff-container-body-semiFinal-bottom"
+                            >
+                                <div
+                                    class="stats__playOff-container-body-semiFinal-bottom-wrap"
+                                >
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-semiFinal-top-wrap-image"
+                                        ><img
+                                            src="images/svg/minsk.svg"
+                                            alt="minsk"
+                                    /></a>
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-semiFinal-top-wrap-team"
+                                        >Команда Минской области</a
+                                    >
+                                    <p>10</p>
+                                </div>
+                                <div
+                                    class="stats__playOff-container-body-semiFinal-bottom-wrap"
+                                >
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-semiFinal-top-wrap-image"
+                                        ><img
+                                            src="images/svg/brest.svg"
+                                            alt="brest"
+                                    /></a>
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-semiFinal-top-wrap-team"
+                                        >Команда Брестской области</a
+                                    >
+                                    <p>5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="stats__playOff-container-body-firstVersionBranchLeft"
+                        >
+                            <img
+                                src="images/svg/1versionBranchLeft.svg"
+                                alt="branch"
+                            />
+                        </div>
+                        <div class="stats__playOff-container-body-final">
+                            <div
+                                class="stats__playOff-container-body-final-firstMatch"
+                            >
+                                <h4>1-й матч</h4>
+                                <div
+                                    class="stats__playOff-container-body-final-firstMatch-teams"
                                 >
                                     <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-season"
+                                        class="stats__playOff-container-body-final-firstMatch-teams-team"
                                     >
-                                        <p></p>
-                                    </div>
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-teams"
-                                    >
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <img
+                                        <a
+                                            href="#"
+                                            class="stats__playOff-container-body-final-firstMatch-teams-team-img"
+                                            ><img
                                                 src="images/svg/minsk.svg"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                            <span>10</span>
-                                        </div>
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
+                                                alt="minsk"
+                                        /></a>
+                                        <a
+                                            href="#"
+                                            class="stats__playOff-container-body-final-firstMatch-teams-team-command"
+                                            >Команда Минской области</a
                                         >
-                                            <img
-                                                src="images/svg/brest.svg"
-                                                alt=""
-                                            />
-                                            <p>Команда Брестской области</p>
-                                            <span>5</span>
-                                        </div>
+                                        <p>1</p>
+                                    </div>
+                                    <div
+                                        class="stats__playOff-container-body-final-firstMatch-teams-team"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="stats__playOff-container-body-final-firstMatch-teams-team-img"
+                                            ><img
+                                                src="images/svg/presidents.svg"
+                                                alt="presidents"
+                                        /></a>
+                                        <a
+                                            href="#"
+                                            class="stats__playOff-container-body-final-firstMatch-teams-team-command"
+                                            >Команда Президента Республики
+                                            Беларусь</a
+                                        >
+                                        <p>6</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="stats__playOff-container-content-branch">
-                        <img src="images/playOffBranch.png" alt="" />
-                    </div>
-
-                    <div class="stats__playOff-container-content-case">
-                        <div class="stats__playOff-container-content-case-item">
                             <div
-                                class="stats__playOff-container-content-case-item-heading"
+                                class="stats__playOff-container-body-final-firstMatch"
                             >
-                                <h2>Финальная серия</h2>
-                            </div>
-                            <div
-                                class="stats__playOff-container-content-case-item-info"
-                            >
+                                <h4>2-й матч</h4>
                                 <div
-                                    class="stats__playOff-container-content-case-item-info-teamSeason teamLine"
+                                    class="stats__playOff-container-body-final-firstMatch-teams"
                                 >
                                     <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-season"
+                                        class="stats__playOff-container-body-final-firstMatch-teams-team"
                                     >
-                                        <p>1-й матч</p>
+                                        <a
+                                            href="#"
+                                            class="stats__playOff-container-body-final-firstMatch-teams-team-img"
+                                            ><img
+                                                src="images/svg/presidents.svg"
+                                                alt="presidents"
+                                        /></a>
+                                        <a
+                                            href="#"
+                                            class="stats__playOff-container-body-final-firstMatch-teams-team-command"
+                                            >Команда Президента Республики
+                                            Беларусь</a
+                                        >
+                                        <p>5</p>
                                     </div>
                                     <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-teams"
+                                        class="stats__playOff-container-body-final-firstMatch-teams-team"
                                     >
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <img
+                                        <a
+                                            href="#"
+                                            class="stats__playOff-container-body-final-firstMatch-teams-team-img"
+                                            ><img
                                                 src="images/svg/minsk.svg"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                            <span>1</span>
-                                        </div>
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
+                                                alt="minsk"
+                                        /></a>
+                                        <a
+                                            href="#"
+                                            class="stats__playOff-container-body-final-firstMatch-teams-team-command"
+                                            >Команда Минской области</a
                                         >
-                                            <img
-                                                src="images/svg/presidents.svg"
-                                                alt=""
-                                            />
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                            <span>6</span>
-                                        </div>
+                                        <p>1</p>
                                     </div>
                                 </div>
+                            </div>
+                            <div
+                                class="stats__playOff-container-body-final-matchThirdPlace"
+                            >
                                 <div
-                                    class="stats__playOff-container-content-case-item-info-teamSeason"
+                                    class="stats__playOff-container-body-final-matchThirdPlace-heading"
                                 >
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-season"
+                                    <h3>Матч за 3-е место</h3>
+                                </div>
+                                <div
+                                    class="stats__playOff-container-body-final-matchThirdPlace-team"
+                                >
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-final-matchThirdPlace-team-img"
+                                        ><img
+                                            src="images/svg/brest.svg"
+                                            alt="brest"
+                                    /></a>
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-final-matchThirdPlace-team-command"
+                                        >Команда Брестской области</a
                                     >
-                                        <p>2-й матч</p>
-                                    </div>
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-teams"
+                                    <p>2</p>
+                                </div>
+                                <div
+                                    class="stats__playOff-container-body-final-matchThirdPlace-team"
+                                >
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-final-matchThirdPlace-team-img"
+                                        ><img
+                                            src="images/svg/gomel.svg"
+                                            alt="gomel"
+                                    /></a>
+                                    <a
+                                        href="#"
+                                        class="stats__playOff-container-body-final-matchThirdPlace-team-command"
+                                        >Команда Гомельской области</a
                                     >
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <img
-                                                src="images/svg/presidents.svg"
-                                                alt=""
-                                            />
-                                            <p>
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                            <span>5</span>
-                                        </div>
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <img
-                                                src="images/svg/minsk.svg"
-                                                alt=""
-                                            />
-                                            <p>Команда Минской области</p>
-                                            <span>1</span>
-                                        </div>
-                                    </div>
+                                    <p>1</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="stats__playOff-container-content-branchRight">
-                        <img src="images/playOffBranchRight.png" alt="" />
-                    </div>
-
-                    <div class="stats__playOff-container-content-case">
-                        <div class="stats__playOff-container-content-case-item">
-                            <div
-                                class="stats__playOff-container-content-case-item-heading"
-                            >
-                                <h2>Матч за 3-е место</h2>
-                            </div>
-                            <div
-                                class="stats__playOff-container-content-case-item-info"
-                            >
-                                <div
-                                    class="stats__playOff-container-content-case-item-info-teamSeason"
-                                >
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-season"
-                                    >
-                                        <p></p>
-                                    </div>
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-teams"
-                                    >
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <img
-                                                src="images/svg/brest.svg"
-                                                alt=""
-                                            />
-                                            <p>Команда Брестской области</p>
-                                            <span>2</span>
-                                        </div>
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <img
-                                                src="images/svg/gomel.svg"
-                                                alt=""
-                                            />
-                                            <p>Команда Гомельской области</p>
-                                            <span>1</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="stats__playOff-container-content-case-item-info-teamSeason"
-                                >
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-season"
-                                    >
-                                        <p></p>
-                                    </div>
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-teams"
-                                        style="display: none"
-                                    >
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <p></p>
-                                            <span></span>
-                                        </div>
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <p></p>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div
+                            class="stats__playOff-container-body-firstVersionBranchRight"
+                        >
+                            <img
+                                src="images/svg/1versionBranchRight.svg"
+                                alt="branch"
+                            />
                         </div>
-
-                        <div class="stats__playOff-container-content-case-item">
+                        <div class="stats__playOff-container-body-winner">
                             <div
-                                class="stats__playOff-container-content-case-item-heading"
+                                class="stats__playOff-container-body-winner-wrap"
                             >
-                                <h2
-                                    class="stats__playOff-container-content-case-item-heading"
-                                    id="winner"
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-body-winner-wrap-img"
+                                    ><img
+                                        src="images/svg/presidents.svg"
+                                        alt="presidents"
+                                /></a>
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-body-winner-wrap-team"
+                                    >Команда Президента Республики Беларусь</a
                                 >
-                                    Победитель
-                                </h2>
-                            </div>
-                            <div
-                                class="stats__playOff-container-content-case-item-info"
-                            >
-                                <div
-                                    class="stats__playOff-container-content-case-item-info-teamSeason"
-                                >
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-season"
-                                    >
-                                        <p></p>
-                                    </div>
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-teams"
-                                    >
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team winner"
-                                        >
-                                            <img
-                                                src="images/svg/presidents.svg"
-                                                alt=""
-                                            />
-                                            <p id="winnerText">
-                                                Команда Президента Республики
-                                                Беларусь
-                                            </p>
-                                            <span></span>
-                                        </div>
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                            style="display: none"
-                                        >
-                                            <p></p>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="stats__playOff-container-content-case-item-info-teamSeason"
-                                    style="display: none"
-                                >
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-season"
-                                    >
-                                        <p></p>
-                                    </div>
-                                    <div
-                                        class="stats__playOff-container-content-case-item-info-teamSeason-teams"
-                                    >
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <p></p>
-                                            <span></span>
-                                        </div>
-                                        <div
-                                            class="stats__playOff-container-content-case-item-info-teamSeason-season-teams-team"
-                                        >
-                                            <p></p>
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
+                <div class="stats__playOff-container-firstVersion-tablet">
+                    <div
+                        class="stats__playOff-container-firstVersion-tablet-semiFinal"
+                    >
+                        <h3>Полуфинал</h3>
+                    </div>
+                    <div
+                        class="stats__playOff-container-firstVersion-tablet-semiTeams"
+                    >
+                        <div
+                            class="stats__playOff-container-firstVersion-tablet-semiTeams-left"
+                        >
+                            <div
+                                class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team"
+                            >
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team-img"
+                                    ><img
+                                        src="images/svg/presidents.svg"
+                                        alt="presidents"
+                                /></a>
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team-command"
+                                    >Команда Президента Республики Беларусь</a
+                                >
+                                <p>8</p>
+                            </div>
+                            <div
+                                class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team"
+                            >
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team-img"
+                                    ><img
+                                        src="images/svg/gomel.svg"
+                                        alt="gomel"
+                                /></a>
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team-command"
+                                    >Команда Гомельской области</a
+                                >
+                                <p>6</p>
+                            </div>
+                        </div>
+                        <div
+                            class="stats__playOff-container-firstVersion-tablet-semiTeams-right"
+                        >
+                            <div
+                                class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team"
+                            >
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team-img"
+                                    ><img
+                                        src="images/svg/minsk.svg"
+                                        alt="minsk"
+                                /></a>
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team-command"
+                                    >Команда Минской области</a
+                                >
+                                <p>10</p>
+                            </div>
+                            <div
+                                class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team"
+                            >
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team-img"
+                                    ><img
+                                        src="images/svg/brest.svg"
+                                        alt="brest"
+                                /></a>
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-semiTeams-left-team-command"
+                                    >Команда Брестской области</a
+                                >
+                                <p>5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="stats__playOff-container-firstVersion-tablet-final"
+                    >
+                        <h3>Финальная серия</h3>
+                    </div>
+                    <div
+                        class="stats__playOff-container-firstVersion-tablet-finalTeams"
+                    >
+                        <div
+                            class="stats__playOff-container-firstVersion-tablet-finalTeams-left"
+                        >
+                            <h4>1-й матч</h4>
+                            <div
+                                class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team"
+                            >
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team-img"
+                                    ><img
+                                        src="images/svg/minsk.svg"
+                                        alt="minsk"
+                                /></a>
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team-command"
+                                    >Команда Минской области</a
+                                >
+                                <p>1</p>
+                            </div>
+                            <div
+                                class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team"
+                            >
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team-img"
+                                    ><img
+                                        src="images/svg/presidents.svg"
+                                        alt="presidents"
+                                /></a>
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team-command"
+                                    >Команда Президента Республики Беларусь</a
+                                >
+                                <p>6</p>
+                            </div>
+                        </div>
+                        <div
+                            class="stats__playOff-container-firstVersion-tablet-finalTeams-right"
+                        >
+                            <h4>2-й матч</h4>
+                            <div
+                                class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team"
+                            >
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team-img"
+                                    ><img
+                                        src="images/svg/presidents.svg"
+                                        alt="presidents"
+                                /></a>
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team-command"
+                                    >Команда Президента Республики Беларусь</a
+                                >
+                                <p>5</p>
+                            </div>
+                            <div
+                                class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team"
+                            >
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team-img"
+                                    ><img
+                                        src="images/svg/minsk.svg"
+                                        alt="minsk"
+                                /></a>
+                                <a
+                                    href="#"
+                                    class="stats__playOff-container-firstVersion-tablet-finalTeams-left-team-command"
+                                    >Команда Минской области</a
+                                >
+                                <p>1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="stats__playOff-container-firstVersion-tablet-winner"
+                    >
+                        <h3>Победитель</h3>
+                    </div>
+                    <div
+                        class="stats__playOff-container-firstVersion-tablet-winnerTeam"
+                    >
+                        <div
+                            class="stats__playOff-container-firstVersion-tablet-winnerTeam-team"
+                        >
+                            <a
+                                href="#"
+                                class="stats__playOff-container-firstVersion-tablet-winnerTeam-team-img"
+                                ><img
+                                    src="images/svg/presidents.svg"
+                                    alt="presidents"
+                            /></a>
+                            <a
+                                href="#"
+                                class="stats__playOff-container-firstVersion-tablet-winnerTeam-team-command"
+                                >Команда Президента Республики Беларусь</a
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="stats__playOff-container-firstVersion-tablet-threePlace"
+                    >
+                        <h3>Матч за 3-е место</h3>
+                    </div>
+                    <div
+                        class="stats__playOff-container-firstVersion-tablet-threePlaceteams"
+                    >
+                        <div
+                            class="stats__playOff-container-firstVersion-tablet-threePlaceteams-team"
+                        >
+                            <a
+                                href="#"
+                                class="stats__playOff-container-firstVersion-tablet-threePlaceteams-team-img"
+                                ><img src="images/svg/brest.svg" alt="brest"
+                            /></a>
+                            <a
+                                href="#"
+                                class="stats__playOff-container-firstVersion-tablet-threePlaceteams-team-command"
+                                >Команда Брестской области</a
+                            >
+                            <p>1</p>
+                        </div>
+                        <div
+                            class="stats__playOff-container-firstVersion-tablet-threePlaceteams-team"
+                        >
+                            <a
+                                href="#"
+                                class="stats__playOff-container-firstVersion-tablet-threePlaceteams-team-img"
+                                ><img src="images/svg/gomel.svg" alt="gomel"
+                            /></a>
+                            <a
+                                href="#"
+                                class="stats__playOff-container-firstVersion-tablet-threePlaceteams-team-command"
+                                >Команда Брестской области</a
+                            >
+                            <p>6</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Конец 1-ая версия playOff  -->
             </div>
         </div>
 

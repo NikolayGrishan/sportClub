@@ -1,5 +1,6 @@
 .photos {
     @include adaptiv-marginTop(39, 15);
+    @include adaptiv-marginBottom(113, 15);
     display: flex;
     justify-content: center;
     .photos__container {

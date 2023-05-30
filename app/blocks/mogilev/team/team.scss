@@ -1,21 +1,22 @@
 .team {
-    @include adaptiv-paddingTop(50, 40);
+    @include adaptiv-paddingTop(40, 20);
 
     &__title {
         display: flex;
         align-items: center;
-        @include adaptiv-marginBottom(48, 37);
+        @include adaptiv-marginBottom(40, 15);
     }
 
     &__name {
         font-family: "Montserrat";
         font-style: normal;
-        font-weight: 800;
-        @include adaptiv-font(45, 20);
-        line-height: 55px;
+        font-weight: 700;
+        @include adaptiv-font(40, 20);
+        @include adaptiv-lineHeight(49, 26);
+        text-transform: uppercase;
         color: #1b1b1b;
         white-space: nowrap;
-        @include adaptiv-marginRight(31, 15);
+        @include adaptiv-marginRight(30, 15);
         padding-left: 5%;
     }
 
@@ -23,29 +24,40 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        @include adaptiv-marginBottom(100, 60);
+        @include adaptiv-marginBottom(80, 30);
     }
 
     &__description {
         display: flex;
         justify-content: center;
         align-items: center;
-        @include adaptiv-marginBottom(46, 20);
+        @include adaptiv-marginBottom(20, 10);
+    }
+
+    &__imgWrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include adaptiv-marginRight(30, 20);
+        width: 100%;
+        max-width: 150px;
+        height: 150px;
     }
 
     &__logo {
-        @include adaptiv-marginRight(50, 20);
-        width: 162px;
+        width: 130px;
+        height: 130px;
     }
 
     &__text {
         font-family: "Montserrat";
         font-style: normal;
-        width: 403px;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 24px;
         color: #1f1412;
+        width: 100%;
+        max-width: 403px;
     }
 
     &__wrap {
@@ -55,57 +67,187 @@
         justify-content: center;
         &__photo {
             width: 100%;
-            max-width: 1130px;
-            border-radius: 10px;
+            max-width: 904px;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-img {
+                border-radius: 10px;
+                height: 100%;
+                max-height: 600px;
+            }
         }
     }
 }
-
-@media (max-width: 620px) {
+@media (max-width: 1100px) {
     .team {
-        &__title {
-            align-items: start;
-        }
         &__name {
-            white-space: normal;
-            width: 800px;
-            line-height: 24px;
+            font-size: 30px;
+            line-height: 37px;
+            padding-left: 16px;
         }
-        &__line {
-            margin-top: 12px;
+        &__title {
+            margin-bottom: 15px;
         }
         &__description {
-            flex-direction: column;
+            margin-bottom: 20px;
         }
-        &__logo {
-            width: 135px;
-            margin-right: 0;
-            margin-bottom: 25px;
+        &__wrapper {
+            width: 100%;
+            max-width: 730px;
         }
         &__text {
-            width: 100%;
+            max-width: 550px;
         }
         &__wrap {
             width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
             &__photo {
-                border-radius: 0px;
+                height: 485px;
+                &-img {
+                    max-height: initial;
+                    height: 485px;
+                    width: 100%;
+                    max-width: 730px;
+                }
             }
         }
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     .team {
+        &__title {
+            flex-wrap: nowrap;
+        }
+        &__name {
+            @include adaptiv-font(40, 20);
+            @include adaptiv-lineHeight(49, 26);
+            width: 380px;
+            overflow-wrap: normal;
+            white-space: normal;
+            flex-shrink: 0;
+        }
         &__line {
-            width: 80%;
+            flex: 1;
+        }
+        &__description {
+            flex-direction: column;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        &__imgWrap {
+            height: 100px;
+            max-width: 100px;
+            margin-right: 0px;
+        }
+        &__wrap__photo {
+            height: initial;
+            &-img {
+                height: initial;
+            }
+        }
+        &__logo {
+            width: 90px;
+            height: 90px;
+        }
+        &__text {
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(24, 21);
+            max-width: initial;
+        }
+        &__description {
+            margin-bottom: 10px;
         }
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 740px) {
     .team {
-        &__line {
-            width: 55%;
+        &__name {
+            width: 375px;
+        }
+    }
+}
+
+@media (max-width: 685px) {
+    .team {
+        &__name {
+            width: 365px;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .team {
+        &__name {
+            width: 355px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .team {
+        &__name {
+            width: 345px;
+        }
+    }
+}
+
+@media (max-width: 545px) {
+    .team {
+        &__name {
+            width: 340px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .team {
+        &__name {
+            width: 335px;
+        }
+    }
+}
+
+@media (max-width: 491px) {
+    .team {
+        &__name {
+            width: 330px;
+        }
+    }
+}
+
+@media (max-width: 463px) {
+    .team {
+        &__name {
+            width: 325px;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    .team {
+        &__name {
+            width: 320px;
+        }
+    }
+}
+
+@media (max-width: 408px) {
+    .team {
+        &__name {
+            width: 315px;
+        }
+    }
+}
+
+@media (max-width: 379px) {
+    .team {
+        &__name {
+            width: 310px;
         }
     }
 }

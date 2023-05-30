@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    @include adaptiv-marginBottom(150, 80);
     &__container {
         &-desktop {
             width: 100%;
@@ -284,9 +283,6 @@
     }
 }
 @media (max-width: 767px) {
-    .projects {
-        margin-bottom: 80px;
-    }
     .projects__container-slider {
         padding-left: 16px;
     }

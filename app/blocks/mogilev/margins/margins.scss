@@ -1,5 +1,21 @@
 .margins {
     &__container {
-        @include adaptiv-marginTop(200, 100);
+        margin-top: -80px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .margins {
+        &__container {
+            margin-top: -37px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .margins {
+        &__container {
+            margin-top: -17px;
+        }
     }
 }

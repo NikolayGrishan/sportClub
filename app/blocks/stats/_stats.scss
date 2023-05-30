@@ -9,11 +9,12 @@
         padding-left: 5%;
         padding-right: 5%;
         max-width: 1920px;
+        margin: 0 auto;
     }
     &__modal {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         position: fixed;
         z-index: 70;
         left: 0;
@@ -21,7 +22,7 @@
         width: 100%;
         height: 100%;
         overflow: auto;
-        background-color: rgba(245, 245, 245, 0.9);
+        background: rgba(0, 0, 0, 0.5);
         &-content {
             background-color: #fefefe;
             margin: 15% auto;
@@ -33,7 +34,7 @@
     .form {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         position: fixed;
         z-index: 70;
         left: 0;
@@ -41,7 +42,7 @@
         width: 100%;
         height: 100%;
         overflow: auto;
-        background-color: rgba(245, 245, 245, 0.9);
+        background: rgba(0, 0, 0, 0.5);
         z-index: 71;
     }
     &__pagination {
@@ -105,6 +106,7 @@
                 no-repeat;
         }
     }
+
     // 0.0.10 version start end
 
     .hidden {
@@ -146,159 +148,335 @@
     }
 
     &__playOff {
+        width: 100%;
+        max-width: 1714px;
         border-radius: 10px;
         @include adaptiv-marginBottom(25, 15);
         transition: all 0.3s ease 0s;
         border: 1px solid rgba(27, 27, 27, 0.1);
         &-container {
+            padding: 15px 20px;
             height: 571px; // удалить
-            @include adaptiv-paddingRight(31, 16);
-            @include adaptiv-paddingBottom(31, 16);
-            @include adaptiv-paddingLeft(31, 16);
-            position: relative;
-            width: 100%;
-            max-width: 1710px;
-            &-line {
-                width: 97.9%;
-                border: 1px solid #d9d9d9;
-                position: absolute;
-                top: 52px;
-                left: 20px;
-                z-index: 1;
+            display: flex;
+            flex-direction: column;
+            &-firstVersion {
+                &-tablet {
+                    display: none;
+                }
             }
-            &-content {
-                position: relative;
+            &-heading {
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
-                z-index: 2;
-                &-case {
-                    &-item {
-                        &-heading {
-                            h2 {
-                                font-family: "Montserrat";
-                                font-style: normal;
-                                font-weight: 800;
-                                @include adaptiv-font(20, 18);
-                                @include adaptiv-lineHeight(24, 22);
-                                letter-spacing: 0.01em;
-                                color: #1b1b1b;
-                                text-align: center;
-                                @include adaptiv-marginTop(15, 30);
-                                @include adaptiv-marginBottom(82, 35);
-                                max-width: 400px;
-                                overflow-wrap: break-word;
-                            }
-                            #winner {
-                                border-bottom: 1px solid #d9d9d9;
-                                padding-bottom: 17px;
-                                margin-bottom: 15px;
-                                @include adaptiv-marginTop(45, 30);
-                                width: 298px;
-                            }
-                        }
-                        &-info {
-                            &-teamSeason {
+                padding-bottom: 15px;
+                border-bottom: 1px solid #d9d9d9;
+                padding: 0px 88px 15px 80px;
+                h2 {
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #1b1b1b;
+                }
+                &-semiFinal {
+                    width: 100%;
+                    max-width: 446px;
+                }
+                &-final {
+                    width: 100%;
+                    max-width: 370px;
+                }
+                &-winner {
+                    width: 100%;
+                    max-width: 290px;
+                }
+            }
+            &-body {
+                display: flex;
+                width: 100%;
+                @include adaptiv-paddingLeft(80, 0);
+                &-semiFinal {
+                    width: 100%;
+                    max-width: 446px;
+                    height: 489px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    &-top {
+                        width: 100%;
+                        max-width: 339px;
+                        padding-top: 15px;
+                        &-wrap {
+                            display: flex;
+                            align-items: center;
+                            &-image {
                                 display: flex;
                                 align-items: center;
-                                &-season {
-                                    margin-right: 10px;
-                                    p {
-                                        font-family: "Montserrat";
-                                        font-style: normal;
-                                        font-weight: 800;
-                                        font-size: 25px;
-                                        line-height: 150%;
-                                        text-align: center;
-                                        color: #d9d9d9;
-                                        writing-mode: vertical-lr;
-                                        transform: rotate(180deg);
-                                        max-width: 50px;
-                                        max-height: 200px;
-                                        overflow-wrap: break-word;
-                                    }
-                                    &-teams {
-                                        margin-left: 10px;
-                                        &-team {
-                                            display: flex;
-                                            align-items: center;
-                                            margin-bottom: 10px;
-                                            img {
-                                                width: 100%;
-                                                max-width: 50px;
-                                                // height: 100%;
-                                                // max-height: 50px;
-                                                margin-right: 10px;
-                                            }
-                                            p {
-                                                font-family: "Montserrat";
-                                                font-style: normal;
-                                                font-weight: 800;
-                                                @include adaptiv-font(16, 12);
-                                                @include adaptiv-lineHeight(
-                                                    20,
-                                                    15
-                                                );
-                                                text-decoration-line: underline;
-                                                color: #1b1b1b;
-                                                max-width: 224px;
-                                                overflow-wrap: break-word;
-                                                margin-right: 20px;
-                                            }
-                                            span {
-                                                font-family: "Montserrat";
-                                                font-style: normal;
-                                                font-weight: 800;
-                                                font-size: 25px;
-                                                line-height: 150%;
-                                                text-align: center;
-                                                color: #952212;
-                                                max-width: 50px;
-                                                overflow-wrap: break-word;
-                                            }
-                                        }
-                                        &-team.winner img {
-                                            max-width: 75px;
-                                            max-height: 75px;
-                                            margin-right: 5px;
-                                        }
-                                        &-team.winner p {
-                                            font-family: "Montserrat";
-                                            font-style: normal;
-                                            font-weight: 800;
-                                            font-size: 18px;
-                                            line-height: 22px;
-                                            color: #1b1b1b;
-                                            max-width: 225px;
-                                            overflow-wrap: break-word;
-                                        }
-                                    }
+                                justify-content: center;
+                                width: 100%;
+                                max-width: 60px;
+                                height: 60px;
+                                margin-right: 5px;
+                                img {
+                                    width: 50px;
+                                    height: 50px;
                                 }
                             }
-                            &-teamSeason.teamLine {
-                                border-bottom: 1px solid #d9d9d9;
-                                padding-bottom: 15px;
-                                margin-bottom: 15px;
+                            &-team {
+                                display: flex;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                text-decoration-line: underline;
+                                color: #1b1b1b;
+                                width: 100%;
+                                max-width: 224px;
+                                margin-right: 20px;
+                                transition: all 0.3s;
+                            }
+                            &-team:hover {
+                                transition: all 0.3s;
+                                color: #952212;
+                            }
+                            p {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                text-align: center;
+                                color: #952212;
+                                width: 100%;
+                                max-width: 30px;
+                            }
+                        }
+                    }
+                    &-bottom {
+                        width: 100%;
+                        max-width: 339px;
+                        padding-bottom: 130px;
+                        &-wrap {
+                            display: flex;
+                            align-items: center;
+                            p {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                text-align: center;
+                                color: #952212;
+                                width: 100%;
+                                max-width: 30px;
                             }
                         }
                     }
                 }
-                &-case:nth-of-type(1) {
-                    padding-left: 107px;
+                &-firstVersionBranchLeft {
+                    padding-top: 82px;
+                    @include adaptiv-paddingLeft(30, 0);
+                    @include adaptiv-paddingRight(30, 0);
                 }
-                &-case:nth-of-type(5) {
-                    padding-right: 141px;
-                    .stats__playOff-container-content-case-item {
+                &-final {
+                    width: 100%;
+                    max-width: 370px;
+                    padding-top: 15px;
+                    &-firstMatch {
                         display: flex;
-                        flex-direction: column;
                         align-items: center;
+                        justify-content: space-between;
+                        padding-bottom: 14px;
+                        border-bottom: 1px solid #d9d9d9;
+                        h4 {
+                            transform: rotate(-90deg) translateX(-18px)
+                                translateY(-6px);
+                            transform-origin: center center;
+                            white-space: nowrap;
+                            display: inline-block;
+                            width: 30px; /* Установите желаемую ширину элемента */
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-align: center;
+                            color: #d9d9d9;
+                            padding-right: 10px;
+                        }
+                        &-teams {
+                            width: 100%;
+                            &-team {
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 10px;
+                                &-img {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 100%;
+                                    max-width: 60px;
+                                    height: 60px;
+                                    margin-right: 5px;
+                                    img {
+                                        width: 50px;
+                                        height: 50px;
+                                    }
+                                }
+                                &-command {
+                                    display: flex;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    text-decoration-line: underline;
+                                    color: #1b1b1b;
+                                    width: 100%;
+                                    max-width: 215px;
+                                    margin-right: 20px;
+                                    transition: all 0.3s;
+                                }
+                                &-command:hover {
+                                    transition: all 0.3s;
+                                    color: #952212;
+                                }
+                                p {
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    color: #952212;
+                                    width: 100%;
+                                    max-width: 30px;
+                                }
+                            }
+                            &-team:last-child {
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    &-firstMatch:nth-child(2) {
+                        padding-top: 15px;
+                        border-bottom: none;
+                    }
+                    &-matchThirdPlace {
+                        &-heading {
+                            width: 100%;
+                            max-width: 347px;
+                            margin: 0 auto;
+                            padding-bottom: 15px;
+                            border-bottom: 1px solid #d9d9d9;
+                            h3 {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #1b1b1b;
+                                text-align: center;
+                            }
+                        }
+                        &-team {
+                            display: flex;
+                            align-items: center;
+                            margin-left: 30px;
+                            &-img {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                max-width: 60px;
+                                height: 60px;
+                                margin-right: 5px;
+                                img {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+                            &-command {
+                                display: flex;
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                text-decoration-line: underline;
+                                color: #1b1b1b;
+                                width: 100%;
+                                max-width: 215px;
+                                margin-right: 20px;
+                                transition: all 0.3s;
+                            }
+                            &-command:hover {
+                                transition: all 0.3s;
+                                color: #952212;
+                            }
+                            p {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                text-align: center;
+                                color: #952212;
+                                width: 100%;
+                                max-width: 30px;
+                            }
+                        }
+                        &-team:nth-child(2) {
+                            margin-top: 15px;
+                            margin-bottom: 10px;
+                        }
                     }
                 }
-                &-branch {
-                    @include adaptiv-marginTop(137, 138);
+                &-firstVersionBranchRight {
+                    padding-top: 159px;
+                    @include adaptiv-paddingLeft(30, 0);
+                    @include adaptiv-paddingRight(30, 0);
                 }
-
-                &-branchRight {
-                    @include adaptiv-marginTop(210, 138);
+                &-winner {
+                    margin-top: 127px;
+                    &-wrap {
+                        display: flex;
+                        align-items: center;
+                        &-img {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            max-width: 60px;
+                            height: 60px;
+                            margin-right: 5px;
+                            img {
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                        &-team {
+                            display: flex;
+                            font-family: "Montserrat";
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-decoration-line: underline;
+                            color: #1b1b1b;
+                            width: 100%;
+                            max-width: 224px;
+                            transition: all 0.3s;
+                        }
+                        &-team:hover {
+                            transition: all 0.3s;
+                            color: #952212;
+                        }
+                    }
                 }
             }
         }
@@ -1281,6 +1459,18 @@
                 color: #b34030;
             }
         }
+        &-case {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 42px;
+            height: 42px;
+        }
+        &-img {
+            width: 37px;
+            height: 37px;
+        }
     }
     &__bombardier:hover {
         box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
@@ -1289,18 +1479,566 @@
     }
 }
 
+.allBombardires {
+    position: relative;
+    width: 100%;
+    max-width: 1015px;
+    margin-top: 4.2%;
+}
+.allBombardires__cross {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 6px;
+    img:hover {
+        cursor: pointer;
+    }
+}
+.allBombardires__table {
+}
+.allBombardires__table-heading {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    background: linear-gradient(90.5deg, #2660ae -4.69%, #0ea1d2 112.03%);
+    border-radius: 10px 10px 0px 0px;
+    h2 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        @include adaptiv-font(20, 18);
+        @include adaptiv-lineHeight(24, 22);
+        color: #ffffff;
+    }
+}
+.allBombardires__table-body {
+    background: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px 20px 20px 20px;
+}
+.allBombardires__table-body-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+.allBombardires__table-body-heading-player {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 290px;
+    padding-left: 10px;
+}
+.allBombardires__table-body-heading-team {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 250px;
+}
+.allBombardires__table-body-heading-case {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 345px;
+    margin-right: 20px;
+}
+.allBombardires__table-body-heading-case-i {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 60px;
+}
+.allBombardires__table-body-heading-case-sh {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 60px;
+}
+.allBombardires__table-body-heading-case-a {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 60px;
+}
+.allBombardires__table-body-heading-case-o {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 60px;
+}
+.allBombardires__table-body-content {
+}
+.allBombardires__table-body-content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0px;
+    margin-bottom: 3px;
+}
+.allBombardires__table-body-content-item:nth-child(2n) {
+    background: #f7f7f7;
+}
+.allBombardires__table-body-content-item-player {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #1b1b1b;
+    transition: all 0.3s;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+.allBombardires__table-body-content-item-player:hover {
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #952212;
+}
+.allBombardires__table-body-content-item-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+}
+.allBombardires__table-body-content-item-logo-img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    img {
+        width: 37px;
+        height: 37px;
+    }
+}
+.allBombardires__table-body-content-item-logo-name {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #1b1b1b;
+    transition: all 0.3s;
+}
+.allBombardires__table-body-content-item-logo-name:hover {
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #952212;
+}
+.allBombardires__table-body-content-item-case {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 345px;
+    margin-right: 20px;
+}
+.allBombardires__table-body-content-item-case-i {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 60px;
+}
+.allBombardires__table-body-content-item-case-sh {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 60px;
+}
+.allBombardires__table-body-content-item-case-a {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 60px;
+}
+.allBombardires__table-body-content-item-case-o {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 60px;
+}
+.allBombardires__table-body-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12px;
+}
+.allBombardires__table-body-pagination li {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 24px;
+}
+.allBombardires__table-body-pagination
+    li.allBombardires__table-body-pagination-currentPage {
+    font-weight: 700;
+}
+.allBombardires__table-body-pagination li:first-child {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    max-width: initial;
+}
+.allBombardires__table-body-pagination li:first-child a {
+    display: block;
+    font-size: 0;
+    background: url("../images/svg/pagination-left.svg") 0 0/100% no-repeat;
+    width: 35px;
+    height: 35px;
+    border: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.allBombardires__table-body-pagination li:first-child a:hover {
+    background: url("../images/svg/pagination-lhover.svg") 0 0/100% no-repeat;
+}
+.allBombardires__table-body-pagination li:last-child {
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    max-width: initial;
+}
+.allBombardires__table-body-pagination li:last-child a {
+    display: block;
+    font-size: 0;
+    background: url("../images/svg/pagination-right.svg") 0 0/100% no-repeat;
+    width: 35px;
+    height: 35px;
+    border: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.allBombardires__table-body-pagination li:last-child a:hover {
+    background: url("../images/svg/pagination-rhover.svg") 0 0/100% no-repeat;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 692px;
+    margin-top: 16%;
+}
+.form-container-cross {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 6px;
+}
+.form-container-content {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 692px;
+}
+.form-container-content-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 652px;
+}
+.form-container-content-info-img {
+    width: 12em;
+    height: 12em;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #F7F7F7;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // width: 100%;
+    // max-width: 200px;
+    // height: 200px;
+    img {
+        width: 10em;
+    }
+}
+.form-container-content-info-case {
+    width: 100%;
+    max-width: 422px;
+}
+.form-container-content-info-case-name {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1b1b1b;
+    margin-bottom: 15px;
+}
+.form-container-content-info-case-team {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 260px;
+}
+.form-container-content-info-case-team-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 42px;
+    height: 42px;
+    img {
+        width: 37px;
+        height: 37px;
+    }
+    margin-right: 10px;
+}
+.form-container-content-info-case-team-team {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 208px;
+}
+.form-container-content-info-case-about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #d9d9d9;
+}
+.form-container-content-info-case-about-year {
+    width: 100%;
+    max-width: 238px;
+    .form-container-content-info-case-about-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        span {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #1b1b1b;
+            width: 100%;
+            max-width: 83px;
+        }
+        p {
+            display: block;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #1b1b1b;
+            width: 100%;
+            max-width: 140px;
+        }
+    }
+}
+.form-container-content-info-case-about-item {
+    display: flex;
+    justify-content: space-between;
+}
+.form-container-content-info-case-about-number {
+    width: 100%;
+    max-width: 169px;
+    .form-container-content-info-case-about-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        span {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #1b1b1b;
+            width: 100%;
+            max-width: 79px;
+        }
+        p {
+            display: block;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #1b1b1b;
+            width: 100%;
+            max-width: 75px;
+        }
+    }
+}
+.form-container-content-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    background: #f7f7f7;
+    padding: 5px 6px 5px 10px;
+}
+.form-container-content-stats-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1b1b1b;
+    width: 100%;
+    max-width: 241px;
+}
+.form-container-content-stats-numbers {
+    width: 100%;
+    max-width: 345px;
+}
+.form-container-content-stats-numbers-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    h3 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #1b1b1b;
+        width: 100%;
+        max-width: 60px;
+    }
+}
+.form-container-content-stats-numbers-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #1b1b1b;
+        width: 100%;
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 1800px) {
+    .stats {
+        &__playOff {
+            &-container {
+                &-heading {
+                    padding: 0px 48px 15px 0px;
+                }
+                &-body {
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1750px) {
+    .stats {
+        &__playOff {
+            &-container {
+                &-heading {
+                    padding: 0px 0px 15px 0px;
+                }
+                &-body {
+                    justify-content: space-between;
+                    &-firstVersionBranchLeft {
+                        display: none;
+                    }
+                    &-firstVersionBranchRight {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1700px) {
     .stats {
         &__playOff {
             &-container {
-                &-content {
-                    &-case:nth-of-type(1) {
-                        padding-left: 0px;
-                    }
-                    &-case:nth-of-type(5) {
-                        padding-right: 0px;
-                    }
-                }
+                // &-content {
+                //     &-case:nth-of-type(1) {
+                //         padding-left: 0px;
+                //     }
+                //     &-case:nth-of-type(5) {
+                //         padding-right: 0px;
+                //     }
+                // }
             }
         }
     }
@@ -1347,11 +2085,11 @@
     .stats {
         &__playOff {
             &-container {
-                &-content {
-                    &-branch {
-                        display: none;
-                    }
-                }
+                // &-content {
+                //     &-branch {
+                //         display: none;
+                //     }
+                // }
             }
         }
     }
@@ -1378,6 +2116,15 @@
 
 @media (max-width: 1300px) {
     .stats {
+        &__playOff {
+            &-container {
+                &-body {
+                    &-semiFinal {
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
         &__charts--container {
             width: 70%;
         }
@@ -1542,6 +2289,325 @@
                 margin-top: 17px;
             }
         }
+        &__playOff {
+            &-container {
+                height: initial;
+                padding: 15px 10px;
+                &-firstVersion {
+                    display: none;
+                    &-tablet {
+                        display: block;
+                        &-semiFinal {
+                            padding-bottom: 10px;
+                            border-bottom: 1px solid #d9d9d9;
+                            h3 {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                text-align: center;
+                                color: #1b1b1b;
+                            }
+                        }
+                        &-semiTeams {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 10px;
+                            &-left {
+                                width: 100%;
+                                max-width: 300px;
+                                margin-right: 30px;
+                                &-team {
+                                    display: flex;
+                                    align-items: center;
+                                    width: 100%;
+                                    max-width: 300px;
+                                    margin-bottom: 5px;
+                                    &-img {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        max-width: 60px;
+                                        height: 60px;
+                                        margin-right: 5px;
+                                        img {
+                                            width: 50px;
+                                            height: 50px;
+                                        }
+                                    }
+                                    &-command {
+                                        display: flex;
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        text-decoration-line: underline;
+                                        color: #1b1b1b;
+                                        width: 100%;
+                                        max-width: 195px;
+                                        margin-right: 10px;
+                                        transition: all 0.3s;
+                                    }
+                                    &-command:hover {
+                                        transition: all 0.3s;
+                                        color: #952212;
+                                    }
+                                    p {
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        text-align: center;
+                                        color: #952212;
+                                        width: 100%;
+                                        max-width: 30px;
+                                    }
+                                }
+                                &-team:last-child {
+                                    margin-bottom: 0px;
+                                }
+                            }
+                            &-right {
+                                width: 100%;
+                                max-width: 300px;
+                                margin-left: 30px;
+                            }
+                        }
+                        &-final {
+                            margin-top: 15px;
+                            padding-bottom: 10px;
+                            border-bottom: 1px solid #d9d9d9;
+                            margin-left: 9px;
+                            margin-right: 9px;
+                            h3 {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                text-align: center;
+                                color: #1b1b1b;
+                            }
+                        }
+                        &-finalTeams {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 10px;
+                            &-left {
+                                width: 100%;
+                                max-width: 300px;
+                                margin-right: 30px;
+                                h4 {
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    color: #d9d9d9;
+                                    margin-bottom: 10px;
+                                }
+                                &-team {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 10px;
+                                    &-img {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        max-width: 60px;
+                                        height: 60px;
+                                        margin-right: 5px;
+                                        img {
+                                            width: 50px;
+                                            height: 50px;
+                                        }
+                                    }
+                                    &-command {
+                                        display: flex;
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        text-decoration-line: underline;
+                                        color: #1b1b1b;
+                                        width: 100%;
+                                        max-width: 195px;
+                                        margin-right: 10px;
+                                        transition: all 0.3s;
+                                    }
+                                    &-command:hover {
+                                        transition: all 0.3s;
+                                        color: #952212;
+                                    }
+                                    p {
+                                        font-family: "Montserrat";
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        text-align: center;
+                                        color: #952212;
+                                        width: 100%;
+                                        max-width: 30px;
+                                    }
+                                }
+                                &-team:last-child {
+                                    margin-bottom: 0px;
+                                }
+                            }
+                            &-right {
+                                width: 100%;
+                                max-width: 300px;
+                                margin-left: 30px;
+                                h4 {
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    color: #d9d9d9;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                        &-winner {
+                            margin-top: 15px;
+                            padding-bottom: 8px;
+                            border-bottom: 1px solid #d9d9d9;
+                            h3 {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                text-align: center;
+                                color: #1b1b1b;
+                            }
+                        }
+                        &-winnerTeam {
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 10px;
+                            &-team {
+                                display: flex;
+                                align-items: center;
+                                &-img {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 100%;
+                                    max-width: 60px;
+                                    height: 60px;
+                                    margin-right: 5px;
+                                    img {
+                                        width: 50px;
+                                        height: 50px;
+                                    }
+                                }
+                                &-command {
+                                    display: flex;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    text-decoration-line: underline;
+                                    color: #1b1b1b;
+                                    width: 100%;
+                                    max-width: 224px;
+                                    margin-right: 10px;
+                                    transition: all 0.3s;
+                                }
+                                &-command:hover {
+                                    transition: all 0.3s;
+                                    color: #952212;
+                                }
+                            }
+                        }
+                        &-threePlace {
+                            margin-top: 15px;
+                            padding-bottom: 9px;
+                            border-bottom: 1px solid #d9d9d9;
+                            h3 {
+                                font-family: "Montserrat";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #1b1b1b;
+                                text-align: center;
+                            }
+                        }
+                        &-threePlaceteams {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin-top: 10px;
+                            &-team {
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 10px;
+                                &-img {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 100%;
+                                    max-width: 60px;
+                                    height: 60px;
+                                    margin-right: 5px;
+                                    img {
+                                        width: 50px;
+                                        height: 50px;
+                                    }
+                                }
+                                &-command {
+                                    display: flex;
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    text-decoration-line: underline;
+                                    color: #1b1b1b;
+                                    width: 100%;
+                                    max-width: 224px;
+                                    margin-right: 10px;
+                                    transition: all 0.3s;
+                                }
+                                &-command:hover {
+                                    transition: all 0.3s;
+                                    color: #952212;
+                                }
+                                p {
+                                    font-family: "Montserrat";
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    color: #952212;
+                                    width: 100%;
+                                    max-width: 30px;
+                                }
+                            }
+                            &-team:last-child {
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1572,55 +2638,92 @@
             font-size: 20px;
             line-height: 24px;
         }
-        &__playOff {
-            &-container {
-                &-line {
-                    display: none;
-                }
-                &-content {
-                    flex-direction: column;
-                    &-case {
-                        &-item {
-                            &-heading {
-                                border-bottom: 1px solid #d9d9d9;
-                                padding-bottom: 15px;
-                                @include adaptiv-marginTop(25, 30);
-                                @include adaptiv-marginBottom(56, 20);
-                                text-align: center;
-                                display: flex;
-                                justify-content: center;
-                                h2 {
-                                    margin-top: 0;
-                                    margin-bottom: 0;
-                                }
-                            }
-                            &-info {
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                            }
-                            #winner {
-                                border: none;
-                                padding-bottom: 0px;
-                                margin-top: 0px;
-                                margin-bottom: 0px;
-                            }
-                            #winnerText {
-                                margin-right: 0px;
-                            }
-                        }
-                    }
-                    &-case:nth-of-type(5) {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        .stats__playOff-container-content-case-item {
-                            align-items: initial;
-                        }
-                    }
-                }
-            }
-        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .allBombardires {
+        max-width: 730px;
+        margin-right: 19px;
+        margin-left: 19px;
+        margin-top: 5.7%;
+    }
+    .allBombardires__table-heading h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .allBombardires__table-body-heading-player {
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 5px;
+        max-width: 155px;
+    }
+    .allBombardires__table-body-heading-team {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 250px;
+    }
+    .allBombardires__table-body-heading-case {
+        max-width: 245px;
+        margin-right: 0px;
+    }
+    .allBombardires__table-body-heading-case-i {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 35px;
+    }
+    .allBombardires__table-body-heading-case-sh {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 35px;
+    }
+    .allBombardires__table-body-heading-case-a {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 35px;
+    }
+    .allBombardires__table-body-heading-case-o {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 35px;
+    }
+    .allBombardires__table-body-content-item-player {
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 5px;
+        max-width: 115px;
+    }
+    .allBombardires__table-body-content-item-logo {
+        max-width: 250px;
+        margin-left: 45px;
+    }
+    .allBombardires__table-body-content-item-logo-name {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .allBombardires__table-body-content-item-case {
+        max-width: 245px;
+        margin-right: 0px;
+    }
+    .allBombardires__table-body-content-item-case-i {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 35px;
+    }
+    .allBombardires__table-body-content-item-case-sh {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 35px;
+    }
+    .allBombardires__table-body-content-item-case-a {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 35px;
+    }
+    .allBombardires__table-body-content-item-case-o {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 35px;
     }
 }
 
@@ -1740,6 +2843,12 @@
 
 @media (max-width: 767px) {
     .stats {
+        &__title {
+            &--tab {
+                @include adaptiv-font(20, 18);
+                @include adaptiv-lineHeight(24, 22);
+            }
+        }
         &__container {
             padding-left: 0px;
             padding-right: 0px;
@@ -1789,6 +2898,251 @@
                 margin-left: 5px;
             }
         }
+        &__playOffTitle {
+            padding: 20px 0px 20px 20px;
+        }
+        &__playOff {
+            &-container {
+                &-firstVersion {
+                    &-tablet {
+                        &-semiFinal {
+                            h3 {
+                                @include adaptiv-font(20, 18);
+                                @include adaptiv-lineHeight(24, 22);
+                            }
+                        }
+                        &-semiTeams {
+                            &-left {
+                                &-team {
+                                    &-command {
+                                        @include adaptiv-font(16, 12);
+                                        @include adaptiv-lineHeight(20, 15);
+                                    }
+                                }
+                            }
+                        }
+                        &-final {
+                            h3 {
+                                @include adaptiv-font(20, 18);
+                                @include adaptiv-lineHeight(24, 22);
+                            }
+                        }
+                        &-winner {
+                            h3 {
+                                @include adaptiv-font(20, 18);
+                                @include adaptiv-lineHeight(24, 22);
+                            }
+                        }
+                        &-threePlace {
+                            h3 {
+                                @include adaptiv-font(20, 18);
+                                @include adaptiv-lineHeight(24, 22);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .allBombardires {
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 8.2%;
+    }
+    .allBombardires__table-body {
+        padding: 15px 10px 15px 10px;
+    }
+    .allBombardires__table-heading h2 {
+        @include adaptiv-font(20, 18);
+        @include adaptiv-lineHeight(24, 22);
+    }
+    .allBombardires__table-body-heading-player {
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        max-width: 70px;
+    }
+    .allBombardires__table-body-heading-team {
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        max-width: 67px;
+    }
+    .allBombardires__table-body-heading-case {
+        max-width: 134px;
+    }
+    .allBombardires__table-body-heading-case-i {
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        max-width: 20px;
+    }
+    .allBombardires__table-body-heading-case-sh {
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        max-width: 20px;
+    }
+    .allBombardires__table-body-heading-case-a {
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        max-width: 20px;
+    }
+    .allBombardires__table-body-heading-case-o {
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        max-width: 20px;
+    }
+    .allBombardires__table-body-content-item-player {
+        @include adaptiv-font(16, 10);
+        @include adaptiv-lineHeight(20, 12);
+        max-width: 70px;
+    }
+    .allBombardires__table-body-content-item-logo {
+        max-width: 67px;
+        margin-left: 0px;
+        justify-content: center;
+    }
+    .allBombardires__table-body-content-item-logo-img {
+        margin-right: 0px;
+    }
+    .allBombardires__table-body-content-item-logo-name {
+        display: none;
+    }
+    .allBombardires__table-body-content-item-case {
+        max-width: 134px;
+    }
+    .allBombardires__table-body-content-item-case-i {
+    }
+
+    .allBombardires__table-body-content-item-case-i {
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        max-width: 20px;
+    }
+    .allBombardires__table-body-content-item-case-sh {
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        max-width: 20px;
+    }
+    .allBombardires__table-body-content-item-case-a {
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        max-width: 20px;
+    }
+    .allBombardires__table-body-content-item-case-o {
+        @include adaptiv-font(16, 14);
+        @include adaptiv-lineHeight(20, 17);
+        max-width: 20px;
+    }
+    .form-container {
+        margin-top: 141px;
+        padding-right: 16px;
+        padding-left: 16px;
+        max-width: 375px;
+    }
+    .form-container-content {
+        padding: 15px;
+    }
+    .form-container-content-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-container-content-info-img {
+        width: 9em;
+        height: 9em;
+        overflow: hidden;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #F7F7F7;
+        img {
+            width: 7em;
+        }
+    }
+    .form-container-content-info-case-name {
+        @include adaptiv-font(20, 18);
+        @include adaptiv-lineHeight(24, 22);
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .form-container-content-info-case-team-team {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .form-container-content-info-case-about {
+        margin-top: 10px;
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    .form-container-content-info-case-about-year {
+        max-width: initial;
+        .form-container-content-info-case-about-item {
+            p {
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(20, 17);
+                max-width: 225px;
+            }
+            span {
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(20, 17);
+                max-width: 73px;
+                text-align: right;
+            }
+        }
+    }
+    .form-container-content-info-case-about-number {
+        max-width: initial;
+        .form-container-content-info-case-about-item {
+            p {
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(20, 17);
+                max-width: 225px;
+            }
+            span {
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(20, 17);
+                max-width: 80px;
+                text-align: right;
+            }
+        }
+    }
+    .form-container-content-stats {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .form-container-content-stats-title {
+        max-width: initial;
+        padding: 0px 0px 10px 5px;
+        h3 {
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
+            text-align: center;
+        }
+    }
+    .form-container-content-stats-numbers-heading {
+        max-width: 225px;
+        h3 {
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
+            max-width: 30px;
+        }
+    }
+    .form-container-content-stats-numbers-body {
+        max-width: 225px;
+        p {
+            @include adaptiv-font(16, 14);
+            @include adaptiv-lineHeight(20, 17);
+            max-width: 30px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .stats {
+        &__match {
+            padding: 0;
+            justify-content: center;
+        }
     }
 }
 
@@ -1800,26 +3154,53 @@
         &__title {
             padding: 30px 16px;
             &--double {
-                padding: 30px 16px 30px 16px;
-                justify-content: space-between;
+                padding: 20px 0px 20px 20px;
             }
             &--tab {
                 &:first-child {
                     margin-right: 0;
+                    padding-right: 30px;
                 }
                 &:last-child {
                     margin-left: 0;
                 }
             }
         }
-        &__playOffTitle {
-            padding: 30px 16px;
+        &__playOff {
+            &-container {
+                &-firstVersion {
+                    &-tablet {
+                        &-semiTeams {
+                            flex-direction: column;
+                            &-left {
+                                margin-right: 0px;
+                            }
+                            &-right {
+                                margin-left: 0px;
+                            }
+                        }
+                        &-finalTeams {
+                            flex-direction: column;
+                            &-left {
+                                margin-right: 0px;
+                            }
+                            &-right {
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
 @media (max-width: 650px) {
     .stats {
+        &__name {
+            @include adaptiv-font(14, 10);
+            @include adaptiv-lineHeight(17, 12);
+        }
         &__command {
             max-width: 147px;
         }
@@ -1912,11 +3293,73 @@
                 height: 40px;
             }
         }
-        &__team {
-            width: 150px;
-        }
+        // &__team {
+        //     width: 150px;
+        // }
         &__versus {
             width: 35px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .stats {
+        &__playOff {
+            &-container {
+                &-firstVersion {
+                    &-tablet {
+                        &-semiTeams {
+                            &-left {
+                                max-width: initial;
+                                margin-bottom: 15px;
+                                &-team {
+                                    justify-content: space-between;
+                                    max-width: initial;
+                                    margin-bottom: 2.5px;
+                                    &-command {
+                                        max-width: 150px;
+                                    }
+                                    p {
+                                        margin-left: auto;
+                                    }
+                                }
+                            }
+                            &-right {
+                                max-width: initial;
+                            }
+                        }
+                        &-finalTeams {
+                            &-left {
+                                max-width: initial;
+                                margin-bottom: 20px;
+                                &-team {
+                                    justify-content: space-between;
+                                    max-width: initial;
+                                    margin-bottom: 0px;
+                                    p {
+                                        margin-left: auto;
+                                    }
+                                }
+                            }
+                            &-right {
+                                max-width: initial;
+                            }
+                        }
+                        &-winnerTeam {
+                            justify-content: flex-start;
+                        }
+                        &-threePlaceteams {
+                            width: 100%;
+                            align-items: initial;
+                            &-team {
+                                margin-bottom: 0px;
+                                p {
+                                    margin-left: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

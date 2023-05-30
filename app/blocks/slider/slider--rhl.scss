@@ -16,37 +16,39 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 740px;
-        padding: 30px 15px 35px 35px !important;
+        height: 665px;
+        padding: 0px 0px 0px 0px !important;
     }
 }
 
 .news--rhl__arrows .slick-arrow.slick-prev {
     font-size: 0;
     background: url("../images/svg/pagination-left.svg") 0 0 / 100% no-repeat;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     border: none;
-    transition: all 0.3s;
-    margin-right: 15px;
+    transition: all 0.3s ease;
+    margin-right: 10px;
     cursor: pointer;
 }
 
 .news--rhl__arrows .slick-arrow.slick-prev:hover {
+    transition: all 0.3s ease;
     background: url("../images/svg/pagination-lhover.svg") 0 0 / 100% no-repeat;
 }
 
 .news--rhl__arrows .slick-arrow.slick-next {
     font-size: 0;
     background: url("../images/svg/pagination-right.svg") 0 0 / 100% no-repeat;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     border: none;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .news--rhl__arrows .slick-arrow.slick-next:hover {
+    transition: all 0.3s ease;
     background: url("../images/svg/pagination-rhover.svg") 0 0 / 100% no-repeat;
 }
 
@@ -59,7 +61,6 @@
 
 .slider--rhl .slick-dots li {
     list-style: none;
-    margin: 0 10px;
 }
 /* Активная точка */
 .slider--rhl .slick-dots button {
