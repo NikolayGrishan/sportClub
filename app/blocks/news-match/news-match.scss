@@ -85,16 +85,14 @@
             &-article {
                 margin-top: 20px;
                 margin-bottom: 5px;
-                p {
-                    font-family: "Montserrat";
-                    font-style: normal;
-                    font-weight: 400;
-                    @include adaptiv-font(16, 14);
-                    @include adaptiv-lineHeight(24, 21);
-                    text-align: justify;
-                    font-variant: small-caps;
-                    color: #1f1412;
-                }
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                @include adaptiv-font(16, 14);
+                @include adaptiv-lineHeight(24, 21);
+                text-align: justify;
+                font-variant: small-caps;
+                color: #1f1412;
                 p:first-child {
                     margin-bottom: 20px;
                 }
@@ -104,32 +102,23 @@
                 p:last-child {
                     margin-bottom: 0px;
                 }
-                img {
-                    height: 100%;
-                    max-height: 604px;
-                    width: 100%;
-                }
                 &-imageLeft {
                     display: flex;
                     align-items: center;
                     margin-bottom: 10px;
+                    font-family: "Montserrat";
+                    font-style: normal;
+                    font-weight: 700;
+                    @include adaptiv-font(20, 14);
+                    @include adaptiv-lineHeight(24, 17);
+                    text-align: justify;
+                    color: #1f1412;
+                    div {
+                        margin-bottom: 0px !important;
+                    }
                     p {
-                        font-family: "Montserrat";
-                        font-style: normal;
-                        font-weight: 700;
-                        @include adaptiv-font(20, 14);
-                        @include adaptiv-lineHeight(24, 17);
-                        text-align: justify;
-                        color: #1f1412;
                         margin-bottom: 0px !important;
                         b {
-                            font-family: "Montserrat";
-                            font-style: normal;
-                            font-weight: 700;
-                            @include adaptiv-font(20, 14);
-                            @include adaptiv-lineHeight(24, 17);
-                            text-align: justify;
-                            color: #1f1412;
                             margin-bottom: 0px !important;
                         }
                     }
@@ -146,15 +135,18 @@
                     align-items: start;
                     margin: 10px 0px 10px 0px;
                     &-text {
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: 400;
+                        @include adaptiv-font(16, 14);
+                        @include adaptiv-lineHeight(24, 21);
+                        text-align: justify;
+                        font-variant: small-caps;
+                        color: #1f1412;
+                        div {
+                            margin-bottom: 10px;
+                        }
                         p {
-                            font-family: "Montserrat";
-                            font-style: normal;
-                            font-weight: 400;
-                            @include adaptiv-font(16, 14);
-                            @include adaptiv-lineHeight(24, 21);
-                            text-align: justify;
-                            font-variant: small-caps;
-                            color: #1f1412;
                             margin-bottom: 10px;
                         }
                         p:first-child {
@@ -497,15 +489,8 @@
                 &-textAboveSlider {
                     padding-right: 19px;
                     text-align: justify;
-                    p {
-                        text-align: justify;
-                        font-size: 18px;
-                        line-height: 22px;
-                    }
-                    b {
-                        font-size: 18px;
-                        line-height: 22px;
-                    }
+                    font-size: 18px;
+                    line-height: 22px;
                 }
                 &-case {
                     margin: 10px auto 0px auto;
@@ -514,21 +499,15 @@
                     margin-top: 10px;
                     margin-bottom: 10px;
                     padding-right: 19px;
-                    p {
-                        font-size: 16px;
-                        line-height: 24px;
-                        text-align: justify;
-                    }
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: justify;
                     p:first-child {
                         margin-bottom: 10px;
                     }
                     &-imageLeft {
-                        p {
-                            b {
-                                font-size: 18px;
-                                line-height: 22px;
-                            }
-                        }
+                        font-size: 18px;
+                        line-height: 22px;
                     }
                 }
                 &-underVideo {
@@ -608,14 +587,8 @@
             &-wrapper {
                 &-textAboveSlider {
                     padding-right: 16px;
-                    p {
-                        @include adaptiv-font(20, 14);
-                        @include adaptiv-lineHeight(24, 17);
-                    }
-                    b {
-                        @include adaptiv-font(20, 14);
-                        @include adaptiv-lineHeight(24, 17);
-                    }
+                    @include adaptiv-font(20, 14);
+                    @include adaptiv-lineHeight(24, 17);
                 }
                 &-case {
                     &-slider {
@@ -630,14 +603,8 @@
                 }
                 &-article {
                     padding-right: 16px;
-                    p {
-                        @include adaptiv-font(16, 14);
-                        @include adaptiv-lineHeight(24, 21);
-                        b {
-                            @include adaptiv-font(20, 14);
-                            @include adaptiv-lineHeight(24, 17);
-                        }
-                    }
+                    @include adaptiv-font(16, 14);
+                    @include adaptiv-lineHeight(24, 21);
                 }
                 &-video {
                     height: 257px;

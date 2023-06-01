@@ -534,6 +534,7 @@
         align-items: stretch;
         justify-content: center;
         width: 100%;
+        gap: 25px;
     }
 
     &__gameCompositionSecond {
@@ -625,7 +626,7 @@
                         padding: 5px 0px 5px 0px;
                     }
                     &-grey.greyLastTable {
-                        padding: 5px 0px 75px 0px;
+                        padding: 5px 0px 5px 0px;
                     }
                     &-player {
                         font-family: "Montserrat";
@@ -667,9 +668,6 @@
                         max-width: 58px;
                         margin-right: 10px;
                     }
-                }
-                &-item.whiteStart {
-                    padding: 10px 0px 10px 0px;
                 }
             }
         }
@@ -773,7 +771,7 @@
                     &-grey.greyLast {
                         padding: 5px 0px 5px 0px;
                     }
-                    &-grey.greyLastTable {
+                    &-grey:last-child {
                         padding: 5px 0px 5px 0px;
                     }
                     &-player {
@@ -816,9 +814,6 @@
                         max-width: 58px;
                         margin-right: 10px;
                     }
-                }
-                &-item.whiteStart {
-                    padding: 10px 0px 10px 0px;
                 }
             }
         }

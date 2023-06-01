@@ -68,7 +68,7 @@
             padding-left: 0px;
             margin-bottom: 11px;
             width: 100%;
-            max-width: 300px;
+            // max-width: 300px;
             li {
                 font-family: "Montserrat";
                 font-style: normal;
@@ -371,11 +371,11 @@
                 margin-bottom: 5px;
             }
         }
-        &__searchingList {
-            ul {
-                max-width: 270px;
-            }
-        }
+        // &__searchingList {
+        //     ul {
+        //         max-width: 270px;
+        //     }
+        // }
         &__searchingList-wrapper {
             max-width: 343px;
             height: 344px;

@@ -1,13 +1,18 @@
 $(document).ready(function () {
-    $(".searchingPopup").magnificPopup({
-        alignTop: true,
-    });
+    let e = document.getElementsByName(".searchingPopup");
+    if (e) {
+        $(".searchingPopup").magnificPopup({
+            alignTop: true,
+        });
+    }
 });
 
 $(document).ready(function () {
-    $("#crossSearching").click(function () {
-        $.magnificPopup.close();
-    });
+    if ($("#crossSearching").length) {
+        $("#crossSearching").click(function () {
+            $.magnificPopup.close();
+        });
+    }
 });
 
 // popup в popup-е
@@ -20,14 +25,16 @@ $(document).ready(function () {
         elem.style.display = "none";
     });
     $(document).mouseup(function (e) {
-        // событие клика по веб-документу
-        var div = $("#allBombardires"); // тут указываем ID элемента
-        if (
-            !div.is(e.target) && // если клик был не по нашему блоку
-            div.has(e.target).length === 0
-        ) {
-            // и не по его дочерним элементам
-            elem.style.display = "none";
+        let div = $("#allBombardires"); // тут указываем ID элемента
+        if (div) {
+            // событие клика по веб-документу
+            if (
+                !div.is(e.target) && // если клик был не по нашему блоку
+                div.has(e.target).length === 0
+            ) {
+                // и не по его дочерним элементам
+                elem.style.display = "none";
+            }
         }
     });
 });
