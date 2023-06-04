@@ -64,6 +64,8 @@
 
 .news-dots li {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 /* Активная точка */
 .news-dots button {

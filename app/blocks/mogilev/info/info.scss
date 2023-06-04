@@ -99,7 +99,8 @@
                     justify-content: space-between;
                     padding-left: 10px;
                     padding-right: 20px;
-                    padding-bottom: 15px;
+                    padding-top: 7.5px;
+                    padding-bottom: 7.5px;
                     @include adaptiv-marginLeft(20, 10);
                     @include adaptiv-marginRight(20, 10);
                     &-name {
@@ -155,20 +156,11 @@
                         background: #f7f7f7;
                     }
                 }
-                &-item.first-grey {
+                &-item:first-child {
                     padding-top: 5px;
                 }
-                &-item.last-grey {
-                    padding-bottom: 5px;
-                }
-                &-item.white-start {
-                    padding-top: 10px;
-                }
-                &-item.white-end {
-                    padding-bottom: 10px;
-                }
-                &-item.last-grey {
-                    padding-bottom: 5px;
+                &-item:last-child {
+                    padding-bottom:5px;
                 }
             }
         }
@@ -646,7 +638,7 @@
         margin-bottom: 38px;
         &__teamCase {
             width: 100%;
-            max-width: 845px;
+            // max-width: 845px;
             margin-bottom: 15px;
             &-head {
                 &-heading {
@@ -706,7 +698,7 @@
         }
         &__play {
             width: 100%;
-            max-width: 730px;
+            max-width: initial;
             margin-left: 0px;
         }
         &__title {
@@ -722,7 +714,7 @@
             margin-bottom: 15px;
         }
         &__matches {
-            padding: 0 63px;
+            padding: 0px 0px 0px 63px;
         }
         &__scroll {
             height: 464px;

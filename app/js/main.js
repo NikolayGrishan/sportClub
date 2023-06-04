@@ -27,13 +27,15 @@ $(document).ready(function () {
     $(document).mouseup(function (e) {
         let div = $("#allBombardires"); // тут указываем ID элемента
         if (div) {
-            // событие клика по веб-документу
-            if (
-                !div.is(e.target) && // если клик был не по нашему блоку
-                div.has(e.target).length === 0
-            ) {
-                // и не по его дочерним элементам
-                elem.style.display = "none";
+            if (elem) {
+                // событие клика по веб-документу
+                if (
+                    !div.is(e.target) && // если клик был не по нашему блоку
+                    div.has(e.target).length === 0
+                ) {
+                    // и не по его дочерним элементам
+                    elem.style.display = "none";
+                }
             }
         }
     });
@@ -245,7 +247,7 @@ $(document).ready(function () {
         centerMode: true,
         responsive: [
             {
-                breakpoint: 1350,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 2,
                     arrows: false,

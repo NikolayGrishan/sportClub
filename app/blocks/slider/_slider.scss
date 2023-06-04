@@ -102,6 +102,8 @@
 
 .slider .slick-dots li {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 /* Активная точка */
 .slider .slick-dots button {

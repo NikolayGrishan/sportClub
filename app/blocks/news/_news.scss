@@ -231,6 +231,8 @@
         .news-dots li {
             list-style: none;
             height: 20px;
+            display: flex;
+            align-items: center;
         }
         .news-dots button {
             font-size: 0;
@@ -337,7 +339,7 @@
         }
         &__newsWrap {
             &-right {
-                top: -16px;
+                top: -18px;
                 right: 19px;
             }
         }
@@ -403,11 +405,12 @@
         }
         .news-dots {
             margin-left: -7px;
+            margin-top: 5px;
         }
         &__newsWrap {
             height: 26px;
             &-right {
-                top: -14px;
+                top: -18px;
                 right: 16px;
             }
         }

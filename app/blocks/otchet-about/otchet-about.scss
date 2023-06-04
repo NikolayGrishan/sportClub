@@ -107,26 +107,35 @@
     }
 
     &__otchetTeam {
+        // width: 100%;
+        // margin-top: 20px;
+        // margin-bottom: 40px;
+        // display: flex;
+        // justify-content: center;
         width: 100%;
         margin-top: 20px;
         margin-bottom: 40px;
         display: flex;
         justify-content: center;
+        align-items: stretch;
     }
 
     &__otchetFirstTeam {
         width: 100%;
         max-width: 310px;
         margin-right: 52px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // width: 100%;
+        // max-width: 310px;
+        // margin-right: 52px;
     }
 
     &__otchetTeamLogo {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #d9d9d9;
-        @include adaptiv-marginBottom(20, 20);
         &-img {
             display: flex;
             align-items: center;
@@ -163,10 +172,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        min-height: 375px;
     }
 
     &__listFirstTeam {
+        width: 100%;
+        max-width: 310px;
+        padding-top: 20px;
+        border-top: 1px solid #d9d9d9;
+        @include adaptiv-marginTop(20, 20);
         p {
             font-family: "Montserrat";
             font-style: normal;
@@ -348,15 +361,18 @@
         width: 100%;
         max-width: 310px;
         margin-left: 52px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // width: 100%;
+        // max-width: 310px;
+        // margin-left: 52px;
     }
 
     &__otchetSecondTeamLogo {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #d9d9d9;
-        @include adaptiv-marginBottom(20, 20);
         &-img {
             display: flex;
             align-items: center;
@@ -393,10 +409,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        min-height: 375px;
     }
 
     &__listSecondTeam {
+        width: 100%;
+        max-width: 310px;
+        padding-top: 20px;
+        border-top: 1px solid #d9d9d9;
+        @include adaptiv-marginTop(20, 20);
         p {
             font-family: "Montserrat";
             font-style: normal;
@@ -1539,6 +1559,12 @@
 
 @media (max-width: 1100px) {
     .otchetAbout {
+        &__lastOtchet {
+            max-width: initial;
+        }
+        &__bombardier {
+            max-width: initial;
+        }
         &__gameComposition {
             display: none;
             &-playerComposition {
@@ -1771,7 +1797,6 @@
         }
         &__bombardier {
             margin-top: 15px;
-            max-width: 730px;
             &-heading {
                 h2 {
                     font-size: 20px;
@@ -1783,7 +1808,7 @@
                     margin-right: 10px;
                     margin-left: 10px;
                     &-team {
-                        max-width: 105px;
+                        // max-width: 105px;
                     }
                     &-case {
                         max-width: 255px;
@@ -1794,13 +1819,13 @@
                         margin-right: 10px;
                         margin-left: 10px;
                         &-logo {
-                            max-width: 104px;
+                            // max-width: 104px;
                             justify-content: center;
                             &-img {
-                                margin-right: 0px;
+                                // margin-right: 0px;
                             }
                             &-name {
-                                display: none;
+                                // display: none;
                             }
                         }
                         &-case {
@@ -1810,6 +1835,33 @@
                 }
                 &-all {
                     margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .otchetAbout {
+        &__bombardier {
+            &-body {
+                &-heading {
+                    &-team {
+                        max-width: 105px;
+                    }
+                }
+                &-content {
+                    &-item {
+                        &-logo {
+                            max-width: 104px;
+                            &-img {
+                                margin-right: 0px;
+                            }
+                            &-name {
+                                display: none;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1921,7 +1973,7 @@
                 &-score {
                     @include adaptiv-font(16, 10);
                     @include adaptiv-lineHeight(20, 12);
-                    max-width: 28px;
+                    max-width: 33px;
                 }
             }
         }
@@ -1936,21 +1988,23 @@
                 }
                 p {
                     b {
-                        @include adaptiv-font(16, 10);
-                        @include adaptiv-lineHeight(20, 12);
+                        font-size: 10px;
+                        line-height: 12px;
+                        max-width: 79px;
+                        // @include adaptiv-font(16, 10);
+                        // @include adaptiv-lineHeight(20, 12);
                     }
                 }
                 a {
-                    @include adaptiv-font(16, 10);
-                    @include adaptiv-lineHeight(20, 12);
+                    font-size: 10px;
+                    line-height: 12px;
+                    // @include adaptiv-font(16, 10);
+                    // @include adaptiv-lineHeight(20, 12);
                 }
             }
             &-item:first-child {
                 margin-bottom: 5px;
             }
-        }
-        &__otchetFirstTeamTable {
-            min-height: 300px;
         }
         &__listSecondTeam {
             &-item {
@@ -1967,7 +2021,7 @@
                 &-score {
                     @include adaptiv-font(16, 10);
                     @include adaptiv-lineHeight(20, 12);
-                    max-width: 27px;
+                    max-width: 33px;
                 }
             }
         }
@@ -1982,21 +2036,23 @@
                 }
                 p {
                     b {
-                        @include adaptiv-font(16, 10);
-                        @include adaptiv-lineHeight(20, 12);
+                        font-size: 10px;
+                        line-height: 12px;
+                        max-width: 79px;
+                        // @include adaptiv-font(16, 10);
+                        // @include adaptiv-lineHeight(20, 12);
                     }
                 }
                 a {
-                    @include adaptiv-font(16, 10);
-                    @include adaptiv-lineHeight(20, 12);
+                    font-size: 10px;
+                    line-height: 12px;
+                    // @include adaptiv-font(16, 10);
+                    // @include adaptiv-lineHeight(20, 12);
                 }
             }
             &-item:first-child {
                 margin-bottom: 5px;
             }
-        }
-        &__otchetSecondTeamTable {
-            min-height: 300px;
         }
         &__otchetTeam {
             margin-bottom: 30px;
@@ -2199,15 +2255,3 @@
         }
     }
 }
-
-@media (max-width: 500px) {
-    .otchetAbout {
-        &__otchetFirstTeamTable {
-            min-height: 270px;
-        }
-        &__otchetSecondTeamTable {
-            min-height: 270px;
-        }
-    }
-}
-

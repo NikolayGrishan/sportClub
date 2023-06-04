@@ -61,6 +61,8 @@
 
 .slider--rhl .slick-dots li {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 /* Активная точка */
 .slider--rhl .slick-dots button {

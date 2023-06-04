@@ -1908,6 +1908,7 @@
         border: 1px solid rgba(27, 27, 27, 0.1);
         border-radius: 10px;
         margin-right: 24px;
+
         // @include adaptiv-marginRight(25, 5);
     }
     &__charts--container:hover {
@@ -2106,7 +2107,7 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        max-height: 528px;
+        max-height: 578px;
     }
     &__last:hover {
         box-shadow: 0px 4px 30px rgba(6, 110, 174, 0.2);
@@ -2115,7 +2116,7 @@
     }
 
     &__scroll {
-        height: 528px;
+        height: 513px;
         overflow-x: auto;
     }
     &__scroll::-webkit-scrollbar {
@@ -3241,6 +3242,9 @@
             flex-direction: column;
             align-items: center;
             margin-bottom: 0px;
+            &--command {
+                justify-content: center;
+            }
         }
         &__charts--container {
             width: 100%;
@@ -3249,7 +3253,7 @@
         }
         &__last {
             width: 100%;
-            max-width: 730px;
+            // max-width: 730px;
             margin-bottom: 15px;
         }
         &__name {
@@ -3294,7 +3298,7 @@
         }
         &__match {
             max-width: 552px;
-            padding: 0 66px;
+            padding: 0px 0px 0px 66px;
         }
         &__row {
             &--last {
@@ -3310,7 +3314,7 @@
             margin-right: 0px;
             margin-bottom: 13px;
             width: 100%;
-            max-width: 730px;
+            // max-width: 730px;
             margin-right: 0;
             &-title {
                 align-items: center;
@@ -3346,6 +3350,7 @@
         &__bombardier {
             margin-top: 0px;
             margin-bottom: 40px;
+            max-width: initial;
             &-row {
                 padding: 10px 0px 10px 0px !important;
                 margin: 10px 10px 0px 10px;
@@ -3362,7 +3367,7 @@
                 margin-left: 0px;
             }
             &-text {
-                display: none;
+                display: flex;
             }
             &-play {
                 font-size: 16px;

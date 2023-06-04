@@ -59,6 +59,8 @@
 .slider--bb .slick-dots li {
   list-style: none;
   margin: 0 10px;
+  display: flex;
+  align-items: center;
 }
 /* Активная точка */
 .slider--bb .slick-dots button {

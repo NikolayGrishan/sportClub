@@ -127,6 +127,8 @@
         .slider-dots li {
             list-style: none;
             margin-right: 10px;
+            display: flex;
+            align-items: center;
         }
         .slider-dots li:nth-child(4) {
             list-style: none;
@@ -213,7 +215,7 @@
     .photos {
         margin-top: 19px;
         .slider-dots {
-            margin-top: 6px;
+            margin-top: 15px;
         }
         .slider-photo .slick-list {
             padding-left: 0px;
@@ -224,7 +226,7 @@
             @include adaptiv-lineHeight(20, 17);
         }
         .slider-photo-wrapper-right {
-            top: -12px;
+            top: -14px;
             right: 16px;
         }
         .photos__container {

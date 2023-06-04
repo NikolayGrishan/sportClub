@@ -45,9 +45,9 @@
             width: 100%;
             max-width: 738px;
             background: #ffffff;
-            border-radius: 10px 5px 5px 10px;
-            padding: 10px 0px 0px 15px;
-            height: 746px;
+            border-radius: 10px 10px 5px 10px;
+            padding: 10px 35px 0px 15px;
+            max-height: 746px;
             overflow-x: auto;
         }
         &-wrapper::-webkit-scrollbar {
@@ -329,7 +329,7 @@
         }
         &__searchingList-wrapper {
             max-width: 738px;
-            height: 471px;
+            max-height: 471px;
         }
     }
 }
@@ -378,7 +378,7 @@
         // }
         &__searchingList-wrapper {
             max-width: 343px;
-            height: 344px;
+            max-height: 344px;
         }
         &__searchInput {
             width: 100%;

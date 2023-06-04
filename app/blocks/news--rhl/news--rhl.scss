@@ -308,6 +308,8 @@
             .slick-dots li {
                 list-style: none;
                 margin-right: 10px;
+                display: flex;
+                align-items: center;
             }
             .slick-dots li:nth-child(4) {
                 list-style: none;
@@ -533,6 +535,7 @@
         }
         .slider--rhl .slick-dots {
             margin-right: 0px;
+            margin-top: 11px;
         }
         .slider--rhl .slick-slide {
             margin: 0px 4px 0px 4px;
